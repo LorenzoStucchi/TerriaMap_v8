@@ -1,0 +1,38 @@
+
+{
+    "homeCamera": {
+      "north": 48,
+      "east": 19,
+      "south": 35,
+      "west": 6
+    },
+    "catalog": [
+      {
+        "name": "stime energetiche",
+        "type": "group",
+        "preserveOrder": true,
+        "isOpen": false,
+        "description": "riporta il calcolo dal coefficiente di autoconsumo comunale",
+        "items": [
+          {
+            "layers": "atlante_integrato:v_comuni_consumi",
+            "name": "Indice di autosufficienza",
+            "type": "wms",
+            "description": "Indice di autosufficienza. Rapporto tra produzione FER comunale e consumi elettrici comunali. Anno 2015, MT e BT. Riferimento rapporto atlante integrato.\n\n <a href=\"http://www.rse-web.it/documenti/documento/318553\" target=\"_blank\">Rapporto RSE 18007806 - Atlante Integrato per il Sistema Energetico Nazionale e le fonti rinnovabili (ai:SEN)</a></p>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"autosuff", "title":"Indice di autosufficienza"},
+            "styles":"autosuff",
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

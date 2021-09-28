@@ -1,0 +1,40 @@
+{
+    "homeCamera": {
+      "north": 48,
+      "east": 19,
+      "south": 35,
+      "west": 6
+    },
+    "baseMapName": "Positron (Light)",
+    "viewerMode":"2d",
+    "catalog": [
+      {
+        "name": "TOTEM",
+        "type": "group",
+        "preserveOrder": true,
+        "isOpen": true,
+        "items": [
+          {
+            "layers": "new_atlante_integrato:v_province_terria",
+            "name": "TOTEMWEB selezione provincia",
+            "type": "wms",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "isShown": "true",
+            "dataUrl": "text",
+            "opacity": 1.0,
+            "isPromoted": true,
+            "availableStyles": {
+              "name":"polygon",
+              "title":"Potenza totale effettiva installata regionale"
+            },
+            "styles": "polygon",
+            "featureInfoTemplate": {
+                "template": "<p>Apri <a href='http://localhost:5000/?anno={{anno}}&prov={{den_uts}}'>TOTEMWEB</a> per la provincia di <b>{{den_uts}}</b> per l'anno <b>{{anno}}</b></p><p>Se l'informazione è sbagliata cambia l'anno o seleziona un'altra provincia</p>"
+            }
+        }
+    ]
+    }
+    ]
+}

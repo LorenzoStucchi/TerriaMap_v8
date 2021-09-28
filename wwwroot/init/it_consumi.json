@@ -1,0 +1,228 @@
+{
+    "homeCamera": {
+      "north": 48,
+      "east": 19,
+      "south": 35,
+      "west": 6
+    },
+    "catalog": [
+      {
+        "name": "consumi elettrici",
+        "type": "group",
+        "preserveOrder": true,
+        "isOpen": false,
+        "description": "comprende i dati dei consumi elettrici stimati a varie scale territoriali e temporali",
+        "items": [
+          {
+            "layers": "new_atlante_integrato:v_regioni_t",
+            "name": "Consumi elettrici totali a livello regionale (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici totali a livello regionale (GWh). \n\n Mappa della distribuzione regionale dei consumi elettrici.<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"consumi_reg", "title":"Consumi elettrici totali regionali (GWh)"},
+            "styles":"consumi_reg",
+            "parameters":{"cql_filter":"var_id=102"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_regioni_t",
+            "name": "Consumi elettrici del comparto industriale regionale (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici del comparto industriale regionale (GWh) \n\n Mappa della distribuzione regionale dei consumi elettrici del comparto industriale (GWh).<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"t2_industriale_gwh", "title":"Consumi elettrici del comparto industriale regionale (GWh)"},
+            "styles":"t2_industriale_gwh",
+            "parameters":{"cql_filter":"var_id=99"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_regioni_t",
+            "name": "Consumi elettrici del comparto agricolo regionale (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici del comparto agricolo regionale (GWh) \n\n Mappa della distribuzione regionale dei consumi elettrici del comparto agricolo (GWh).<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"t1_agricolo_gwh", "title":"Consumi elettrici del comparto agricolo regionale (GWh)"},
+            "styles":"t1_agricolo_gwh",
+            "parameters":{"cql_filter":"var_id=98"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_regioni_t",
+            "name": "Consumi elettrici del comparto terziario regionale (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici del comparto terziario regionale (GWh). \n\n Mappa della distribuzione regionale dei consumi elettrici del comparto terziario (GWh).<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"t38_terziario_gwh", "title":"Consumi elettrici del comparto terziario regionale (GWh)"},
+            "styles":"t38_terziario_gwh",
+            "parameters":{"cql_filter":"var_id=100"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_regioni_t",
+            "name": "Consumi elettrici del comparto domestico regionale (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici del comparto domestico regionale (GWh). \n\n Mappa della distribuzione regionale dei consumi elettrici del comparto domestico (GWh).<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"t50_domestico_gwh", "title":"Consumi elettrici del comparto domestico regionale (GWh)"},
+            "styles":"t50_domestico_gwh",
+            "parameters":{"cql_filter":"var_id=101"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_regioni_t",
+            "name": "Consumi elettrici FS regionali (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici FS regionali (GWh). \n\n Mappa della distribuzione regionale dei consumi elettrici FS regionali (GWh).<br> SONO DI TERNA????  o Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"consumi_fs_reg_gwh", "title":"Consumi elettrici FS regionali (GWh)"},
+            "styles":"consumi_fs_reg_gwh",
+            "parameters":{"cql_filter":"var_id=209"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_province_t",
+            "name": "Consumi elettrici del comparto agricolo provinciale (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici del comparto agricolo provinciale (GWh). \n\n Mappa della distribuzione dei consumi elettrici del comparto agricolo provinciale (GWh).<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"cons_el_comparto_agr_prov", "title":"Consumi elettrici del comparto agricolo provinciale (GWh)"},
+            "styles":"cons_el_comparto_agr_prov",
+            "parameters":{"cql_filter":"var_id=80"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_province_t",
+            "name": "Consumi elettrici del comparto industriale provinciale (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici del comparto industriale provinciale (GWh). \n\n Mappa della distribuzione consumi elettrici del comparto industriale provinciale (GWh).<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"cons_el_comparto_ind_prov", "title":"Consumi elettrici del comparto industriale provinciale (GWh)"},
+            "styles":"cons_el_comparto_ind_prov",
+            "parameters":{"cql_filter":"var_id=81"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_province_t",
+            "name": "Consumi elettrici del comparto terziario provinciale (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici del comparto terziario provinciale (GWh). \n\n Mappa della distribuzione Consumi elettrici del comparto terziario provinciale (GWh).<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"cons_el_comparto_terz_prov", "title":"Consumi elettrici del comparto terziario provinciale (GWh)"},
+            "styles":"cons_el_comparto_terz_prov",
+            "parameters":{"cql_filter":"var_id=82"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_province_t",
+            "name": "Consumi elettrici del comparto domestico provinciale (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici del comparto domestico provinciale (GWh). \n\n Mappa della distribuzione dei consumi elettrici del comparto domestico provinciale (GWh).<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"cons_el_comparto_dom_prov", "title":"Consumi elettrici del comparto domestico provinciale (GWh)"},
+            "styles":"cons_el_comparto_dom_prov",
+            "parameters":{"cql_filter":"var_id=83"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          },
+          {
+            "layers": "new_atlante_integrato:v_province_t",
+            "name": "Consumi elettrici totali a livello provinciale esclusi consumi FS (GWh)",
+            "type": "wms",
+            "description": "Consumi elettrici totali a livello provinciale esclusi consumi FS (GWh). \n\n Mappa della distribuzione dei consumi elettrici totali a livello provinciale esclusi consumi FS (GWh).<br> Rapporto Statistico - Energia da fonti rinnovabili - GSE</p> \n\n <a href=\"https://www.gse.it/documenti_site/Documenti GSE/Rapporti statistici/\" target=\"_blank\">GSE S.p.A., Rapporto Statistico</a>",
+            "url": "http://gis2.rse-web.it:8080/geoserver/wms",
+            "dataCustodian": "text",
+            "dataUrlType": "direct",
+            "dataUrl": "text",
+            "availableStyles":{"name":"cons_el_tot_prov_no_FS", "title":"Consumi elettrici totali a livello provinciale esclusi consumi FS (GWh)"},
+            "styles":"cons_el_tot_prov_no_FS",
+            "parameters":{"cql_filter":"var_id=84"},
+            "info": [
+              {
+                "name": "Licence",
+                "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

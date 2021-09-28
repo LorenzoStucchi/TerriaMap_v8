@@ -1,0 +1,21 @@
+= Testo in Related Maps =
+Si può cambiare il testo andando a modicare il file TerriaMap/lib/Views/ReletedMaps.jsx
+Scrivendo all'interno del file in formato HTML
+
+= Aggiunta Pulsante =
+Aggiugnere <MenuItem> in TerriaMap/lib/Views/UserInterface.jsx
+È poi possibile inserire la pagina a cui punti come nuova pagina in TerriaMap/wwwroot/
+
+= Aggiungere linguaggio in Italiano in terriajs =
+Aggiungere il file translation.json con i testi in italiano nella cartella node_modules/terriajs/lib/Language/it/
+Poi andare a modificare il file i18n.js in node_modules/terriajs/lib/Models con questo codice:
+
+import translationIT from "../Language/it/translation.json";
+const resources = {
+  en: {
+    translation: translationEN
+  },
+  it: {
+    translation: translationIT
+  }
+};

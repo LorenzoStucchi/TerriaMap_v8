@@ -9417,10 +9417,10 @@ terriajs-server@^3.3.3:
     when "^3.7.7"
     yargs "^13.2.4"
 
-terriajs@7.11.17:
-  version "7.11.17"
-  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-7.11.17.tgz#15bc27f8ca730c6b66e3739411202db2701589b7"
-  integrity sha512-k66vy8bsF7wmYiJ3qmJlunt480UQPuPdmOnxUfxHHRSVGgsDVxzlG5T10IEP6AiRXscHV2I/KE1WF74tFNdN6g==
+terriajs@7.11.16:
+  version "7.11.16"
+  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-7.11.16.tgz#cd9b6dbcfc0df766165ac8bff22938de06ea7bee"
+  integrity sha512-md1iiKYw65qiWmm/0L4PcTe7G9VYMFiYsoFnfPQeqMI/DXYfmWG3DFjtGxV3bu5ieXMND5gqk1UQjMfp4aNC1g==
   dependencies:
     "@babel/core" "^7.3.3"
     "@babel/plugin-transform-modules-commonjs" "^7.2.0"

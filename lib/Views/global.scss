@@ -14,6 +14,26 @@ body {
     }
   }
 
+  .tjs-branding__branding {
+    a:first-child,
+    a:last-child {
+      display: none;
+
+      @media screen and (min-width: $sm) {
+        display: inline;
+      }
+    }
+    // Different font size for the branding
+    font-weight: 300;
+    color: white;
+    font-size: 26px;
+    height: 210px;
+  }
+
+  .tjs-workbench-list__workbench-content {
+    height: calc(100vh - 342px);
+  }
+
   // To customise the look of your Terria Map, uncomment this section and make changes to your heart's content
   // You will also want to uncomment and change values in lib/Styles/variables.scss
   /*
@@ -52,12 +72,12 @@ body {
         background:$dark-darker;
     }
     // Individual sections within the left panel
-    .tjs-side-panel__workBench {
-        font-family:$font-base;
-        font-weight:400;
-        font-size:18px;
-        background:$dark-darker;
-    }
+      .tjs-side-panel__workBench {
+    font-family:$font-base;
+    font-weight:400;
+    font-size:18px;
+    background:$dark-darker;
+}
 
     // All kinds of buttons in various screens
     .tjs-_buttons__btn {

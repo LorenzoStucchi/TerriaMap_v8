@@ -1,7 +1,13 @@
 {
-    //* Names of init files (in wwwroot/init), without the .json extension, to load by default */
+    /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
     initializationUrls: [
-        "terria"
+        "it_cartografia",
+        "it_dati_territoriali",
+        "it_infrastrutture",
+        "it_risorsa",
+        "it_impianti",
+        "it_consumi",
+        "it_stime_energetiche"
     ],
     parameters: {
         googleUrlShortenerKey: null,
@@ -13,39 +19,39 @@
             url: ""
         },
         tabbedCatalog: true,
-        //*
+        /*
         // Text that will be added to any pages printed from your site.
-        //printDisclaimer:{
-        //    text:"Put your print disclaimer here.",
-        //    url: "#"
-        //},
-        //*/
+        printDisclaimer:{
+            text:"Put your print disclaimer here.",
+            url: "#"
+        },
+        */
          
         // Pop-up disclaimer that will be shown at the start
         // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
-        globalDisclaimer: {
-             confirmationRequired: false,
-             buttonTitle: "I agree",
-             title: "Disclaimer",
+        // globalDisclaimer: {
+        //     confirmationRequired: false,
+        //     buttonTitle: "I agree",
+        //     title: "Disclaimer",
         //     // If the current browser location is not prod, or is dev, then show a "not the real site" warning.
         //     // The text of that is in lib/Views/DevelopmentDisclaimerPreamble.html
         //     //prodHostRegex: "gov.\\.au$",
         //     //devHostRegex: "\\b(staging|preview|test|dev)\\.",
-             enableOnLocalhost: true // If false, don't show this when running on localhost
-        },
+        //     enableOnLocalhost: true // If false, don't show this when running on localhost
+        // },
         
-        //*
-        //developerAttribution: {
-        //    text: "Your organisation",
-        //    link: "http://www.example.com"
-        //},*/
+        /*
+        developerAttribution: {
+            text: "Your organisation",
+            link: "http://www.example.com"
+        },*/
         // This is used in various text messages. You should also set <title> in index.html
         appName: "Nuovo Atlante Integrato",
 
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
-            "",
-            "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+            "<a target=\"_blank\" href=\"http://www.rse-web.it\"><img src=\"images/logo_rse.png\" style=\"display: block; margin-left: auto; margin-right: auto;  margin-top: 10px; width: 50%;\" /></a>",
+            "<p style=\"text-align: center; font-size: 20px; margin-top: 10px; margin-left: auto; margin-right: auto;\"><b>Atlante Integrato per il Sistema Energetico Nazionale e le Fonti Rinnovabili</b></p>",
             ""
         ],
         // Shown when things go wrong.
@@ -66,7 +72,7 @@
         // regionMappingDefinitionsUrl: "data/regionMapping.json"
 
         // True to display welcome message on startup.
-        // "showWelcomeMessage": false,
+        //"showWelcomeMessage": true,
 
         // True to display in-app guides.
         // "showInAppGuides": false,
@@ -76,4 +82,3 @@
 
     }
 }
-

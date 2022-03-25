@@ -11,7 +11,7 @@
           "id": "eolica",
           "type": "group",
           "name": "eolica",
-          "description": "Questa raccolta comprende dati della risorsa eolica media nazionale",
+          "description": "Questa raccolta comprende dati della risorsa eolica media nazionale\n\n <a title=\"Ximonic (Simo Räsänen), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Coconut_trees_in_Boa_Vista,_Cape_Verde,_December_2010.jpg\"><img width=\"640\" alt=\"Coconut trees in Boa Vista, Cape Verde, December 2010\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg/512px-Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg\"></a>",
           "isOpen": false,
           "members": [
             {
@@ -49,8 +49,8 @@
         {
           "id": "idroel",
           "type": "group",
-          "name": "idroelettrica",
-          "description": "Questa raccolta comprende dati della risorsa idroelettrica storici e derivati da collaborazione con ...... ",
+          "name": "idrica",
+          "description": "Questa raccolta comprende dati della risorsa idroelettrica e dati storici <div><a title=\"JJ Harrison (https://www.jjharrison.com.au/), CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Water_Dolphin.jpg\"><img width=\"512\" alt=\"Water Dolphin\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Water_Dolphin.jpg/512px-Water_Dolphin.jpg\"></a></div>",
           "isOpen": false,
           "members": [
             {
@@ -172,7 +172,7 @@
           "id": "sunny",
           "type": "group",
           "name": "solare",
-          "description": "Questa raccolta comprende informazioni della risorsa solare. Per ulteriori approfondimenti si rimanda al dedicato atlante solare \n <a href=\"http://sunrise.rse-web.it/\" target=\"_blank\"> SunRISE </a>",
+          "description": "Questa raccolta comprende informazioni della risorsa solare. Per ulteriori approfondimenti si rimanda al dedicato atlante solare \n <a href=\"http://sunrise.rse-web.it/\" target=\"_blank\"> SunRISE </a> <div><img src=\"/public/img/shutterstock_1117990592_cut.jpg\" style=\"width:640px;height:427px;\"></div>",
           "isOpen": false,
           "members": [
             {
@@ -193,7 +193,7 @@
           "id": "seaside",
           "type": "group",
           "name": "marina",
-          "description": "Questa raccolta comprende informazioni riguardo alle risorse marine",
+          "description": "Questa raccolta comprende informazioni riguardo alle risorse marine <div><a title=\"© Friedrich Haag / Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:002_2017_11_14_Wind.jpg\"><img width=\"512\" alt=\"002 2017 11 14 Wind\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/002_2017_11_14_Wind.jpg/512px-002_2017_11_14_Wind.jpg\"></a></div>",
           "isOpen": false,
           "members": [
             {  

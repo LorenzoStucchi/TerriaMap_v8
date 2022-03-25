@@ -23,7 +23,7 @@
                 "template": "<p>La velocita' del vento rientra nella classe <b>{{classe}}</b> m/s </p>"
               },
               "metadataUrls":[{
-                "title":"link metadato anno 2018",
+                "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=128&anno=2018"
               }],
               "layers": "atlante_integrato:vento_75",
@@ -38,7 +38,7 @@
                 "template": "<p>La producibilità' del vento rientra nella classe <b>{{classe}}</b> MWh/MW </p>"
               },
               "metadataUrls":[{
-                "title":"link metadato anno 2018",
+                "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=129&anno=2018"
               }],
               "layers": "atlante_integrato:prod_75",

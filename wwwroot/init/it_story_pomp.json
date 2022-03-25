@@ -9,7 +9,7 @@
         "template": "<p>Potenza comunale fattibile (MW) <b>{{id_pomp_esistenti_nuovi_potenza_mw}}</b></p>", //<p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
       },
       //"metadataUrls":[{
-      //  "title":"link metadato anno 2015",
+      //  "title":"link metadato",
       //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=44&anno=2015"
       //}],
       "layers": "atlante_integrato:v_comuni_pompaggio_trad",

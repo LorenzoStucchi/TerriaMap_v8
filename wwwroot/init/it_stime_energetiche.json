@@ -16,7 +16,7 @@
             "template": "<p>Indice di autosufficienza <b>{{consumi_autosufficienza}}</b> del comune {{comune}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=8\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2015",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=8"
           }],
           "layers": "atlante_integrato:v_comuni_consumi",

@@ -355,7 +355,7 @@
                     "template": "<p>Numero impianti regionali <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=183&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -393,7 +393,7 @@
                     "template": "<p>Produzione regionale da impianti a bacino (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=185&anno=2019"
                   }],
                   "styles":"id_prod_reg_bac",
@@ -412,7 +412,7 @@
                     "template": "<p>Produzione regionale da impianti ad acqua fluente (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=186&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -431,7 +431,7 @@
                     "template": "<p>Produzione regionale al netto del pompaggio (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=184&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -450,7 +450,7 @@
                     "template": "<p>Produzione regionale da pompaggio (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=188&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -469,7 +469,7 @@
                     "template": "<p>Produzione regionale da serbatoio al netto del pompaggio (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=187&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -488,7 +488,7 @@
                     "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=77&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
@@ -516,7 +516,7 @@
                     "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=91&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -535,7 +535,7 @@
                     "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=72&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
@@ -554,7 +554,7 @@
                     "template": "<p>Produzione regionale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=92&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -573,7 +573,7 @@
                     "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=73&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
@@ -592,7 +592,7 @@
                     "template": "<p>Numero regionale di impianti <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=71&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -611,7 +611,7 @@
                     "template": "<p>Numero provinciale di impianti <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=181&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
@@ -677,7 +677,7 @@
                     "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=93&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -696,7 +696,7 @@
                     "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=74&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
@@ -734,7 +734,7 @@
                     "template": "<p>Produzione regionale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=94&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -753,7 +753,7 @@
                     "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=75&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
@@ -772,7 +772,7 @@
                     "template": "<p>Numero regionale di impianti <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=177&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -791,7 +791,7 @@
                     "template": "<p>Numero di impianti provinciali <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=178&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
@@ -825,7 +825,7 @@
                   "name": "Geotermoelettrico - Impianti",
                   "description": "Impianti geotermoelettrici - impianti geotermici censiti nell'anno 2020", "url": "http://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
-                    "title":"link metadato anno 2020",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203&anno=2020"
                   }],
                   "layers": "new_atlante_integrato:v_impianti_geot_esist",
@@ -849,7 +849,7 @@
                     "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=78&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -868,7 +868,7 @@
                     "template": "<p>Numero regionale di impianti <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=201&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -887,7 +887,7 @@
                     "template": "<p>Produzione regionale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=97&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -906,7 +906,7 @@
                     "template": "<p>Produzione regionale da biogas (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
-                    "title":"link metadato anno 2019",
+                    "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=195&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",

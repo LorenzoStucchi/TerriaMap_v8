@@ -15,7 +15,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=102&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
@@ -37,7 +37,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=99&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
@@ -56,7 +56,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=98&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
@@ -76,7 +76,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=100&anno=2019"
           }],
           "parameters": {
@@ -94,7 +94,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=101&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
@@ -113,7 +113,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=209&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
@@ -132,7 +132,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=80&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_province_t",
@@ -157,7 +157,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=81&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_province_t",
@@ -176,7 +176,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=82&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_province_t",
@@ -195,7 +195,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=83&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_province_t",
@@ -214,7 +214,7 @@
             "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
           },
           "metadataUrls":[{
-            "title":"link metadato anno 2019",
+            "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=84&anno=2019"
           }],
           "layers": "new_atlante_integrato:v_province_t",

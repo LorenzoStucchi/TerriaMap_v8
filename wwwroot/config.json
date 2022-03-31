@@ -1,6 +1,16 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["simple"],
+  "initializationUrls": [
+    "it_cartografia",
+    "it_dati_territoriali",
+    "it_infrastrutture",
+    "it_risorsa",
+    "it_impianti",
+    "it_consumi",
+    "it_stime_energetiche",
+    "it_story_eff",
+    "it"
+  ],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,

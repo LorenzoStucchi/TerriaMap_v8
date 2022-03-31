@@ -826,10 +826,11 @@
                 {
                   "type": "wms",
                   "name": "Geotermoelettrico - Impianti",
-                  "description": "Impianti geotermoelettrici - impianti geotermici censiti nell'anno 2020", "url": "http://gis2.rse-web.it/geoserver/wms",
+                  "description": "Impianti geotermoelettrici - Potenza installata (MW). \n\n Mappa della distribuzione degli impianti termoelettrici in funzione al 2019, potenza installata.\n\n Elaborazioni RSE a partire dal Global Power Plant Database",
+                  "url": "http://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203&anno=2020"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203&anno=2019"
                   }],
                   "layers": "new_atlante_integrato:v_impianti_geot_esist",
                   "id": "ge_impianti"
@@ -1095,7 +1096,7 @@
                 {
                   "type": "wms",
                   "name": "Impianti termoelettrici",
-                  "description": "Impianti termoelettrici - Potenza installata (MW), Combustibile, Tecnologia di conversione. \n\n Mappa della distribuzione degli impianti termoelettrici in funzione al 2020, della potenza installata, principale combustibile e tecnologia di conversione.\n\n Elaborazioni RSE a partire dal Global Power Plant Database",
+                  "description": "Impianti termoelettrici - Potenza installata (MW), Combustibile, Tecnologia di conversione. \n\n Mappa della distribuzione degli impianti termoelettrici in funzione al 2020, potenza installata, principale combustibile e tecnologia di conversione.\n\n Elaborazioni RSE a partire dal Global Power Plant Database",
                   "url": "http://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:v_imp_termoel",
                   "metadataUrls":[{
@@ -1129,7 +1130,15 @@
                 "name": "Impianti pompaggio esistenti",
                 "description": "Impianti di pompaggio idroelettrico esistenti.\n\n Per ogni tipologia di impianto sono visualizzati la potenza in turbinaggio (MW), la potenza in pompaggio (MW) e la capacità di accumulo (MWh).\n\n I valori sono aggregati a scala comunale.\n\n",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
-                "layers": "new_atlante_integrato:v_imp_po_com_esist",
+                "layers": "new_atlante_integrato:po_esistenti_comunali",
+                "featureInfoTemplate": {
+                  "template": "<p>•	Comune : {{comune}}; <br> <p> •	Potenza pompaggio (MW): {{pot_po_mw}}; <br> <p> •	Potenza turbinaggio (MW): {{pot_tur_mw}}; <br> <p> •	Capacità di accumulo (MWh): {{cap_acc_mwh}}; <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=222\">link al metadato</a></p>"
+                },
+                "styles":"new_atlante_integrato:id_pompaggio_comunale",
+                "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=222"
+                }],
                 "id": "po_com_esist"
               }
             ]
@@ -1144,8 +1153,8 @@
               "members": [
               {
                 "type": "wms",
-                "name": "Pompaggio - potenziali fattibili economicamente - potenza",
-                "description": "Nuovi impianti di pompaggio potenziali, economicamente fattibili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi;\n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n   -	pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n  -	pompaggio tra laghi esistenti;\n\n  Per ogni tipologia di impianto è visualizzatibile la potenza installabile (MW).\n\n I valori sono aggregati a scala comunale.\n\n <br> Riferimenti (rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266). Valutazioni anno 2015.",
+                "name": "Pompaggio - potenziali realizzabili economicamente - potenza",
+                "description": "Nuovi impianti di pompaggio potenziali, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi;\n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n   -	pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n  -	pompaggio tra laghi esistenti;\n\n  Per ogni tipologia di impianto è visualizzatibile la potenza installabile (MW).\n\n I valori sono aggregati a scala comunale.\n\n <br> Riferimenti (rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266). Valutazioni anno 2015.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "featureInfoTemplate": {
                   "template": "<p>•	Comune : {{comune}}; <br> <p> •	Pompaggio tradizionale, potenza installabile (MW): {{pot_po_44}}; <br> <p> •	Pompaggio marino, potenza installabile (MW):  {{pot_po_38}}; <br> <p> •	Pompaggio sotterraneo, potenza installabile (MW): {{pot_po_40}}; <br> <p> •	Pompaggio tra laghi esistenti, potenza installabile (MW): {{pot_po_42}}; <br> <p> •	Potenza installabile totale (MW): {{pot_po_sum}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=43\">link al metadato</a></p>"
@@ -1177,8 +1186,8 @@
               }, */
               {
                 "type": "wms",
-                "name": "Pompaggio - potenziali fattibili economicamente - capacità",
-                "description": "Nuovi impianti di pompaggio potenziali, economicamente fattibili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi;\n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n   -	pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n  -	pompaggio tra laghi esistenti;\n\n  Per ogni tipologia di impianto è visualizzatibile la capacità di accumulo (MWh).\n\n I valori sono aggregati a scala comunale.\n\n <br> Riferimenti (rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266). Valutazioni anno 2015.\n ",
+                "name": "Pompaggio - potenziali realizzabili economicamente - capacità",
+                "description": "Nuovi impianti di pompaggio potenziali, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi;\n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n   -	pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n  -	pompaggio tra laghi esistenti;\n\n  Per ogni tipologia di impianto è visualizzatibile la capacità di accumulo (MWh).\n\n I valori sono aggregati a scala comunale.\n\n <br> Riferimenti (rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266). Valutazioni anno 2015.\n ",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "featureInfoTemplate": {
                   "template": "<p>•	Comune : {{comune}}; <br> <p> •	Pompaggio tradizionale, capacità di accumulo (MWh): {{acc_var_45}}; <br> <p> •	Pompaggio marino, capacità di accumulo (MWh): {{acc_var_39}}; <br> <p> •	Pompaggio sotterraneo, capacità di accumulo (MWh): {{acc_var_41}}; <br> <p> •	Pompaggio tra laghi esistenti, capacità di accumulo (MWh): {{acc_var_43}}; <br> <p> •	Capacità di accumulo totale (MWh): {{acc_sum_ac}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=45\">link al metadato</a></p>"
@@ -1196,7 +1205,15 @@
                 "name": "Impianti pompaggio potenziali compatibili con gli scenari energetici",
                 "description": "Nuovi impianti di pompaggio potenziali selezionati nell'ambito degli studi per il raggiungimento degli obbiettivi negli scenari energetici.\n\n Il potenziale riguarda i seguenti tipi di impianto: \n\n-	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi (detto anche a doppio invaso); \n\n -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n Per ogni tipologia di impianto sono visualizzati la potenza installabile in turbinaggio (MW), la potenza installabile in pompaggio (MW) e la capacità di accumulo (MWh).\n\n I valori sono aggregati a scala comunale.\n\n Riferimento: rapporto RSE RdS prot.20000116 ",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
-                "layers": "new_atlante_integrato:v_imp_po_com_poten",
+                "layers": "new_atlante_integrato:po_poten_comunali",
+                "featureInfoTemplate": {
+                  "template": "<p>•	Comune : {{comune}}; <br> <p> •	Potenza pompaggio (MW): {{pot_po_mw}}; <br> <p> •	Potenza turbinaggio (MW): {{pot_tur_mw}}; <br> <p> •	Capacità di accumulo (MWh): {{cap_acc_mwh}}; <br> <p>•	Tipologia di impianto: {{tipologia}}; <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=223\">link al metadato</a></p>"
+                },
+                "styles":"new_atlante_integrato:id_pompaggio_comunale",
+                "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=223"
+                }],
                 "id": "po_com_potenz"
               }
               ]

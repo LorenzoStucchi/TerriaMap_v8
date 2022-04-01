@@ -810,11 +810,11 @@
                   "description": "Impianti geotermoelettrici - Numero impianti geotermici - raggruppamento comunale (anno di riferimento 2020)\n\n Numero impianti geotermici - raggruppamento comunale (anno di riferimento 2020) ",
                   "url": "http://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Numero comunale impianti <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203&anno=2020\">link al metadato </a> </p>"
+                    "template": "<p>Numero comunale impianti: <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203&anno=2020\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203&anno=2020"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203"
                   }],
                   "layers": "new_atlante_integrato:v_comuni_t",
                   "parameters": {
@@ -826,11 +826,14 @@
                 {
                   "type": "wms",
                   "name": "Geotermoelettrico - Impianti",
-                  "description": "Impianti geotermoelettrici - Potenza installata (MW). \n\n Mappa della distribuzione degli impianti termoelettrici in funzione al 2019, potenza installata.\n\n Elaborazioni RSE a partire dal Global Power Plant Database",
+                  "description": "Impianti geotermoelettrici - Potenza installata (MW). \n\n Mappa della distribuzione degli impianti geotermoelettrici in funzione al 2019, potenza installata.\n\n Elaborazioni RSE a partire dal Global Power Plant Database",
+                  "featureInfoTemplate": {
+                    "template": "<p>Comune: <b>{{comune}}</b></p><p>Potenza (MW): <b>{{potenza_mw}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=202\">link al metadato </a> </p>"
+                  },
                   "url": "http://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203&anno=2019"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=202"
                   }],
                   "layers": "new_atlante_integrato:v_impianti_geot_esist",
                   "id": "ge_impianti"

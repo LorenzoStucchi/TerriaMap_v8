@@ -177,8 +177,8 @@
           "members": [
             {
               "type": "wms",
-              "name": "Valore medio della somma annuale di radiazione globale (kWh/m2)",
-              "description": "Valore medio della somma annuale di radiazione</br>\" + spazi1 + \"globale (periodo di riferimento: 2005-2015)</font> \n\n Valore medio della somma annuale di radiazione globale (kWh/m2)\n\n Le mappe sono realizzate impiegando i dati dell'archivio RADSAF dell'irradianza globale al suolo stimata sul territorio italiano, attraverso una metodologia sviluppata da RSE. La metodologia si basa sull'elaborazione delle immagini riprese dal satellite geostazionario MSG (Meteosat Second Generation) posto a 36000 km di altezza sopra il Golfo di Guinea che riprende interamente il territorio italiano. La risoluzione spaziale delle immagini è di circa 3-5 km, quella temporale di 15 minuti. Un algoritmo denominato SAFNWC, sviluppato congiuntamente da diversi istituti meteorologici europei, permette il riconoscimento automatico della copertura nuvolosa e della sua tipologia a partire dalle immagini satellitari acquisite ogni 15 minuti da una stazione di ricezione a terra di cui RSE è dotata.</p>\n Informazioni sul layer RISORSA SOLARE </br><a href=\"http://sunrise.rse-web.it\" target=\"_blank\">Atlante Solare (sunRise)</a>. ",
+              "name": "Valore medio della somma annuale di radiazione globale (kWh/m\u00b2)",
+              "description": "Valore medio della somma annuale di radiazione</br>\" + spazi1 + \"globale (periodo di riferimento: 2005-2015)</font> \n\n Valore medio della somma annuale di radiazione globale (kWh/m<sup>2</sup>)\n\n Le mappe sono realizzate impiegando i dati dell'archivio RADSAF dell'irradianza globale al suolo stimata sul territorio italiano, attraverso una metodologia sviluppata da RSE. La metodologia si basa sull'elaborazione delle immagini riprese dal satellite geostazionario MSG (Meteosat Second Generation) posto a 36000 km di altezza sopra il Golfo di Guinea che riprende interamente il territorio italiano. La risoluzione spaziale delle immagini è di circa 3-5 km, quella temporale di 15 minuti. Un algoritmo denominato SAFNWC, sviluppato congiuntamente da diversi istituti meteorologici europei, permette il riconoscimento automatico della copertura nuvolosa e della sua tipologia a partire dalle immagini satellitari acquisite ogni 15 minuti da una stazione di ricezione a terra di cui RSE è dotata.</p>\n Informazioni sul layer RISORSA SOLARE </br><a href=\"http://sunrise.rse-web.it\" target=\"_blank\">Atlante Solare (sunRise)</a>. ",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "layers": "solare_10anni",
               "metadataUrls":[{
@@ -362,8 +362,8 @@
             },
             {
               "type": "wms",
-              "name": "Flusso di potenza delle correnti (W/m2)",
-              "description": "Flusso di potenza delle correnti (W/m2) \n\n E' stata elaborata una mappatura dei mari italiani in funzione del flusso di potenza specifico delle correnti marine a scala sinottica (Rapporto RSE n. 12000352 del 31/03/2012). La risoluzione spaziale dei risultati ottenuti è di fatto legata alla risoluzione temporale dei valori correntometrici utilizzati per l'elaborazione. Si fa riferimento ai risultati numerici disponibili presso http://marine.copernicus.eu, con valori correntometrici giornalieri relativi al periodo 2004-2010, con risoluzione orizzontale di circa 7 km e disposti su 71 livelli verticali. Solo i siti sufficientemente vicini alla costa (distanti al massimo 10 km) e a profondità abbastanza modeste (minori di 50 m) sono considerati praticabili. Il flusso di potenza specifico rappresenta la potenza fornita dalla corrente per unità di sezione utile della turbina, nel punto lungo la verticale, in cui tale flusso presenta il suo massimo valore. La mappa risultante fornisce delle indicazioni di massima (data l'approssimazione legata alla risoluzione temporale delle medie della velocità) per studi a meso e micro-scala, al fine dello sfruttamento di energia da correnti marine nelle acque italiane.</p> \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://marenergy.rse-web.it\" target=\"_blank\">MARENERGY</a>",
+              "name": "Flusso di potenza delle correnti (W/m\u00b2)",
+              "description": "Flusso di potenza delle correnti (W/m<sup>2</sup>) \n\n E' stata elaborata una mappatura dei mari italiani in funzione del flusso di potenza specifico delle correnti marine a scala sinottica (Rapporto RSE n. 12000352 del 31/03/2012). La risoluzione spaziale dei risultati ottenuti è di fatto legata alla risoluzione temporale dei valori correntometrici utilizzati per l'elaborazione. Si fa riferimento ai risultati numerici disponibili presso http://marine.copernicus.eu, con valori correntometrici giornalieri relativi al periodo 2004-2010, con risoluzione orizzontale di circa 7 km e disposti su 71 livelli verticali. Solo i siti sufficientemente vicini alla costa (distanti al massimo 10 km) e a profondità abbastanza modeste (minori di 50 m) sono considerati praticabili. Il flusso di potenza specifico rappresenta la potenza fornita dalla corrente per unità di sezione utile della turbina, nel punto lungo la verticale, in cui tale flusso presenta il suo massimo valore. La mappa risultante fornisce delle indicazioni di massima (data l'approssimazione legata alla risoluzione temporale delle medie della velocità) per studi a meso e micro-scala, al fine dello sfruttamento di energia da correnti marine nelle acque italiane.</p> \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://marenergy.rse-web.it\" target=\"_blank\">MARENERGY</a>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "layers": "correnti",
               "metadataUrls":[{
@@ -383,67 +383,101 @@
           "members": [
             {
               "type": "wms",
-              "name": "Profondità delle aree a temperatura omogenea di 140° C (metri)",
-              "description": "Profondità delle aree a temperatura omogenea di 140° C (metri) \n\n Mappe delle profondità relative alla temperatura di 140° C. Queste mappe sono state elaborate da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p> \n\n <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\">GEO WebGIS</br>CCS -- Geotermia -- Stoccaggio Gas</a>",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:aree_omogenee",
-              "id": "aree_geot"
-            },
-            {
-              "type": "wms",
-              "name": "Quota della sommità del potenziale serbatoio (m slm)",
-              "description": "Quota della sommità del potenziale serbatoio (m slm) \n\n La mappa riporta la quota della sommità, in metri slm, del tetto del potenziale serbatoio carbonatico. Il complesso carbonatico, essendo caratterizzato da una significativa permeabilità, da notevoli spessori e da una elevata estensione areale, costituisce il principale serbatoio dei campi geotermici italiani. La mappa è stata elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:tetto_carbonati_clip3857",
-              "id": "tetto_carb"
-            },
-            {
-              "type": "wms",
-              "name": "Flusso di calore (mW/m2)",
-              "description": "Flusso di calore (mW/m2)\n\n Mappa del flusso di calore superficiale espressa in mW/m2 elaborata da RSE S.p.A. utilizzando i dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:Flusso_calore_clip3857",
-              "id": "Flusso_cal"
-            },
-            {
-              "type": "wms",
               "name": "Temperatura alla profondità di 1000 m (°C)",
-              "description": "Temperatura alla profondità di 1000 m (°C)\n\n Mappe delle temperature del sottosuolo espresse in gradi celsius alla profondità di 1000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>",
+              "description": "Temperatura alla profondità di 1000 m (°C)\n\n Mappe delle temperature del sottosuolo espresse in gradi celsius alla profondità di 1000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>\n\n <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:mappa_T_1000_mt_clip3857",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=142"
+              }],
               "id": "T_1000"
             },
             {
               "type": "wms",
               "name": "Temperatura alla profondità di 2000 m (°C)",
-              "description": "Temperatura alla profondità di 2000 m (°C)\n\n Mappe delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>",
+              "description": "Temperatura alla profondità di 2000 m (°C)\n\n Mappe delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>\n\n <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
+              }],
               "id": "T_2000"
             },
             {
               "type": "wms",
               "name": "Temperatura alla profondità di 3000 m (°C)",
-              "description": "Temperatura alla profondità di 3000 m (°C)\n\n Mappe delle temperature del sottosuolo espresse in gradi celsius alla profondità di 3000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>",
+              "description": "Temperatura alla profondità di 3000 m (°C)\n\n Mappe delle temperature del sottosuolo espresse in gradi celsius alla profondità di 3000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>\n\n <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
+              }],
               "id": "T_3000"
             },
             {
               "type": "wms",
+              "name": "Flusso di calore (mW/m\u00b2)",
+              "description": "Flusso di calore (mW/m<sup>2</sup>)\n\n Mappa del flusso di calore superficiale espressa in mW/m<sup>2</sup> elaborata da RSE S.p.A. utilizzando i dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>\n\n <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "layers": "atlante_integrato:Flusso_calore_clip3857",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=141"
+              }],
+              "id": "Flusso_cal"
+            },
+            {
+              "type": "wms",
+              "name": "Quota della sommità del potenziale serbatoio (m slm)",
+              "description": "Quota della sommità del potenziale serbatoio (m slm) \n\n La mappa riporta la quota della sommità, in metri slm, del tetto del potenziale serbatoio carbonatico. Il complesso carbonatico, essendo caratterizzato da una significativa permeabilità, da notevoli spessori e da una elevata estensione areale, costituisce il principale serbatoio dei campi geotermici italiani. La mappa è stata elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p>\n\n <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=140"
+              }],
+              "layers": "atlante_integrato:tetto_carbonati_clip3857",
+              "id": "tetto_carb"
+            },
+            {
+              "type": "wms",
               "name": "Zonazione geotermica",
-              "description": "Zonazione geotermica\n\n Viene presentata la distribuzione sul territorio italiano di alcuni parametri geotermici che possono supportare l'individuazione di un possibile serbatoio di fluido geotermico industrialmente utilizzabile. Le informazioni sono presentate su base comunale e riguardano: </br> - La temperatura (°C) minima, media e massima a 1.000, 2.000 e 3.000 metri di profondità (campi T1000, T2000 e T3000);</br> - Il flusso di calore (mW/m<sup>2</sup>) minimo, medio e massimo (campi Flow);</br> - La profondità (metri) minima, media e massima del tetto delle rocce potenzialmente idonee a contenere un sistema geotermico (tetto serbatoio carbonatico ove mappato) (campi Carbo)</p> \n\n <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\">GEO WebGIS</br>CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "description": "Zonazione geotermica\n\n Viene presentata la distribuzione sul territorio italiano di alcuni parametri geotermici che possono supportare l'individuazione di un possibile serbatoio di fluido geotermico industrialmente utilizzabile. Le informazioni sono presentate su base comunale e riguardano: </br> - La temperatura (°C) minima, media e massima a 1.000, 2.000 e 3.000 metri di profondità (campi T1000, T2000 e T3000);</br> - Il flusso di calore (mW/m<sup>2</sup>) minimo, medio e massimo (campi Flow);</br> - La profondità (metri) minima, media e massima del tetto delle rocce potenzialmente idonee a contenere un sistema geotermico (tetto serbatoio carbonatico ove mappato) (campi Carbo)</p>\n\n <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:v_comuni_valori_mappe",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=145"
+              }],
               "id": "Zon_Geoter"
             },
             {
               "type": "wms",
-              "name": "Energia producibile (MWh/anno)",
-              "description": "Energia producibile (MWh/anno)\n\n Viene presentata la distribuzione sul territorio italiano di alcuni parametri geotermici ...</p> \n\n <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\">GEO WebGIS</br>CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "name": "Profondità delle aree a temperatura omogenea di 120° C (metri)",
+              "description": "Profondità delle aree a temperatura omogenea di 120° C (metri) \n\n Mappe delle profondità relative alla temperatura di 120° C. Queste mappe sono state elaborate da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p> ",
               "url": "http://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:energ_ge",
-              "id": "En_Geoter"
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=224"
+              }],
+              "layers": "new_atlante_integrato:mappa_profondita_120C_fino_3000m",
+              "styles":"new_atlante_integrato:mappa_profond_120C",
+              "id": "aree_geot_120"
+            },
+            {
+              "type": "wms",
+              "name": "Potenziale geotermico producibile (MWh/anno)",
+              "description": "Energia producibile (MWh/anno)\n\n Viene presentata la distribuzione sul territorio italiano di alcuni parametri geotermici ... Il flusso di calore (mW/m<sup>2</sup>) minimo, medio e massimo (campi Flow);</br> - La profondità (metri) minima, media e massima del tetto delle rocce potenzialmente idonee a contenere un sistema geotermico (tetto serbatoio carbonatico ove mappato) (campi Carbo)</p> ",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=225"
+              }],
+              "layers": "new_atlante_integrato:comuni_potenziale_120c",
+              "styles":"new_atlante_integrato:potenziale_120c",
+              "id": "Potenziale_Geoter"
             }
           ]
         }

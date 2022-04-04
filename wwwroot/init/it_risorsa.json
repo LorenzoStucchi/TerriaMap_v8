@@ -469,7 +469,7 @@
             {
               "type": "wms",
               "name": "Potenziale geotermico producibile (MWh/anno)",
-              "description": "Energia producibile (MWh/anno)\n\n Viene presentata la distribuzione sul territorio italiano di alcuni parametri geotermici ... Il flusso di calore (mW/m<sup>2</sup>) minimo, medio e massimo (campi Flow);</br> - La profondità (metri) minima, media e massima del tetto delle rocce potenzialmente idonee a contenere un sistema geotermico (tetto serbatoio carbonatico ove mappato) (campi Carbo)</p> ",
+              "description": "Per le aree del territorio italiano che presentano una temperatura maggiore o uguale a 120°C è riportata la stima del potenziale geotermoelettrico espresso come energia termica ricavabile all'anno (MWh/anno). Tale stima è stata eseguita utilizzando il metodo del volume.</br> - Queste mappe sono state elaborate da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p> ",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"link metadato",

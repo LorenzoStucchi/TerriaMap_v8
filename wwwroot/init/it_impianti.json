@@ -788,14 +788,14 @@
                 {
                   "type": "wms",
                   "name": "Geotermoelettrico - Potenza comunale (MW) ",
-                  "description": "Impianti geotermoelettrici - Potenza comunale impianti - dati disponibili per l'anno 2020\n\n Potenza impianti geotermici (MW) - raggruppamento comunale (anno di riferimento 2020)",
+                  "description": "Impianti geotermoelettrici - Potenza comunale impianti\n\n Potenza impianti geotermici (MW) - raggruppamento comunale",
                   "url": "http://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Potenza comunale impianti (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=220&anno=2020\">link al metadato </a> </p>"
+                    "template": "<p>Potenza comunale impianti (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=220\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=220&anno=2020"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=220"
                   }],
                   "layers": "new_atlante_integrato:v_comuni_t",
                   "parameters": {
@@ -807,10 +807,10 @@
                 {
                   "type": "wms",
                   "name": "Geotermoelettrico - Numero impianti comunale",
-                  "description": "Impianti geotermoelettrici - Numero impianti geotermici - raggruppamento comunale (anno di riferimento 2020)\n\n Numero impianti geotermici - raggruppamento comunale (anno di riferimento 2020) ",
+                  "description": "Impianti geotermoelettrici - Numero impianti geotermici - raggruppamento comunale\n\n Numero impianti geotermici - raggruppamento comunale",
                   "url": "http://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Numero comunale impianti: <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203&anno=2020\">link al metadato </a> </p>"
+                    "template": "<p>Numero comunale impianti: <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203&anno=2019\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",

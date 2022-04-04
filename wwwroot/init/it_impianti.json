@@ -48,6 +48,13 @@
                   "url": "http://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"eo_imp_reg_potenza_mini",
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo averlo aggiunto alla mappa.",
+                    "key": "pot_mini",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "featureInfoTemplate": {
                     "template": "<p>Potenza totale effettiva regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
@@ -121,11 +128,18 @@
                     "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "url": "http://gis2.rse-web.it/geoserver/wms",
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo averlo aggiunto alla mappa.",
+                    "key": "pot_prov_mini",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"eo_mini_potenza_mw",
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=85&anno=2019"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=85"
                   }],
                   "parameters": {
                     "cql_filter": "var_id=85"
@@ -298,14 +312,21 @@
                   "description": "Impianti mini idroelettrici - Potenza effettiva installata regionale (MW)\n\n <p> Mappa della distribuzione regionale della potenza mini idroelettrica installata nel tempo, dati aggiornati al 2015.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n  ",
                   "url": "http://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=104&anno=2019"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=104"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"new_atlante_integrato:id_imp_reg_pot_mini",
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo averlo aggiunto alla mappa.",
+                    "key": "pot_mini_idro",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "parameters": {
                     "cql_filter": "var_id=104"
                   },
@@ -469,14 +490,21 @@
                   "description": "Impianti mini idroelettrici - Potenza effettiva installata provinciale (MW)\n\n Mappa della distribuzione provinciale della potenza mini idroelettrica installata nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "http://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=86&anno=2019"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=86"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"id_imp_prov_potenza_installata_mini",
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo averlo aggiunto alla mappa.",
+                    "key": "pot_prov_mini_idro",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "parameters": {
                     "cql_filter": "var_id=86"
                   },

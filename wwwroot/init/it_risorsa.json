@@ -328,8 +328,12 @@
               {
                 "type": "wms",
                 "name": "Moli sfruttabili per moto ondoso",
-                "description": "Moli disponibili per potenziale shoreline del moto ondoso. \n\n Moli esistenti potenzialmente idonei allo sfruttamento del moto ondoso per la produzione di energia elettrica. (anno 2019? controllare) </p>",
+                "description": "Moli disponibili per potenziale shoreline del moto ondoso. \n\n Moli esistenti potenzialmente idonei allo sfruttamento del moto ondoso per la produzione di energia elettrica.</p>",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
+                "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=174"
+                }],
                 "layers": "atlante_integrato:v_strutture_portuali",
                 "id": "strutture_porti"
               }

@@ -205,25 +205,39 @@
               "members": [
                 {
                 "type": "wms",
-                "name": "Risorsa del moto ondoso (kW/m)",
-                "description": "Potenziale offshore del moto ondoso (kW/m). \n\n  prendere testo da report mare 2020...",
+                "name": "Risorsa del moto ondoso offshore",
+                "description": "Energia media delle onde (kW/m). \n\n  Per ciascun punto sono riportati: energia media delle onde (kW/m), profondità (m) e distanza dalla costa (km) per le quali sono verificate le condizioni di moto ondoso offshore. \n Per approfondimenti: \n\n - Besio, G., Mentaschi, L. and Mazzino, A., 2016. Wave energy resource assessment in the Mediterranean Sea on the basis of a 35-year hindcast. Energy, 94, pp.50-63. https://doi.org/10.1016/j.energy.2015.10.044 \n\n - Lira-Loarca, A., Ferrari, F., Mazzino, A. and Besio, G., 2021. Future wind and wave energy resources and exploitability in the Mediterranean Sea by 2100. Applied Energy, Elsevier vol.302, https://doi.org/10.1016/j.apenergy.2021.117492 \n\n - rapporto RSE RdS prot. 20010732",
+                "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226"
+                }],
                 "url": "http://gis2.rse-web.it/geoserver/wms",
-                "layers": "new_atlante_integrato:ma_punti",
+                "featureInfoTemplate": {
+                  "template": "<p>Profondità (m): {{depth__m_}}</p><p>Distanza (km): {{distance_t}}</p><p>Energia media delle onde (kW/m): {{energia}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1\">link al metadato </a> </p>"
+                 },
+                "layers": "new_atlante_integrato:v_ma_points",
                 "id": "onde_risorsa"
                 },
                 {  
                   "id": "disp",
                   "type": "group",
-                  "name": "Potenziale dei dispositivi",
+                  "name": "Potenziale offshore dei dispositivi",
                   "description": "Questa raccolta comprende informazioni riguardanti simulazioni effettuate sul potenziale offshore del moto ondoso di alcuni dispositivi",
                   "isOpen": false,
                   "members": [
                   {
                     "type": "wms",
-                    "name": "Dispositivo AquaBuOY",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi:AquaBuOY \n\n CF dispositivo AquaBuOY. \n\n Questa mappa descrive le caratteristioche di alcun punti di interesse delle coste italiane sotto il profilo del potenziale energetico legato al moto ondoso al largo, ..... (DAVIDE) ...  rispetto ai lavori precedentemente pubblicati in materia (Rapporto RSE n. 11000809 del 30/03/2011)</p>. \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://map.rse-web.it/mares\" target=\"_blank\">MARENERGY</a></br></br><a href=\"http://doc.rse-web.it/?tipo=documento&id=316268\" target=\"_blank\">Misure e valutazioni ondametriche presso la costa laziale: campagna 2015</a>.",
+                    "name": "AquaBuOY",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: AquaBuOY \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
+                    "metadataUrls":[{
+                      "title":"link metadato",
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1"
+                    }],
                     "layers": "new_atlante_integrato:v_dispositivi",
+                    "featureInfoTemplate": {
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1\">link al metadato </a> </p>"
+                     },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
                       "cql_filter": "id_n_disp=1"
@@ -232,10 +246,17 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Dispositivo CycWEC",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: CycWEC \n\n CF dispositivo CycWEC. \n\n Questa mappa descrive le caratteristioche di alcun punti di interesse delle coste italiane sotto il profilo del potenziale energetico legato al moto ondoso al largo, ..... (DAVIDE) ... rispetto ai lavori precedentemente pubblicati in materia (Rapporto RSE n. 11000809 del 30/03/2011)</p>. \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://map.rse-web.it/mares\" target=\"_blank\">MARENERGY</a></br></br><a href=\"http://doc.rse-web.it/?tipo=documento&id=316268\" target=\"_blank\">Misure e valutazioni ondametriche presso la costa laziale: campagna 2015</a>.",
+                    "name": "CycWEC",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: CycWEC \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
+                    "metadataUrls":[{
+                      "title":"link metadato",
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                    }],
                     "layers": "new_atlante_integrato:v_dispositivi",
+                    "featureInfoTemplate": {
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                     },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
                       "cql_filter": "id_n_disp=2"
@@ -244,10 +265,17 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Dispositivo Drakoo",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Drakoo\n\n Capacity Factor dispositivo Drakoo. \n\n Questa mappa descrive le caratteristioche di alcun punti di interesse delle coste italiane sotto il profilo del potenziale energetico legato al moto ondoso al largo, ..... (DAVIDE) ... incrementata  rispetto ai lavori precedentemente pubblicati in materia (Rapporto RSE n. 11000809 del 30/03/2011)</p>. \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://map.rse-web.it/mares\" target=\"_blank\">MARENERGY</a></br></br><a href=\"http://doc.rse-web.it/?tipo=documento&id=316268\" target=\"_blank\">Misure e valutazioni ondametriche presso la costa laziale: campagna 2015</a>.",
+                    "name": "Drakoo",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Drakoo \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
+                    "metadataUrls":[{
+                      "title":"link metadato",
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                    }],
                     "layers": "new_atlante_integrato:v_dispositivi",
+                    "featureInfoTemplate": {
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                     },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
                       "cql_filter": "id_n_disp=3"
@@ -256,10 +284,17 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Dispositivo Pelamis",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Pelamis \n\n CF dispositivo Pelamis. \n\n Questa mappa descrive le caratteristioche di alcun punti di interesse delle coste italiane sotto il profilo del potenziale energetico legato al moto ondoso al largo, ..... (DAVIDE) ... rispetto ai lavori precedentemente pubblicati in materia (Rapporto RSE n. 11000809 del 30/03/2011)</p>. \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://map.rse-web.it/mares\" target=\"_blank\">MARENERGY</a></br></br><a href=\"http://doc.rse-web.it/?tipo=documento&id=316268\" target=\"_blank\">Misure e valutazioni ondametriche presso la costa laziale: campagna 2015</a>.",
+                    "name": "Pelamis",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Pelamis \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
+                    "metadataUrls":[{
+                      "title":"link metadato",
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                    }],
                     "layers": "new_atlante_integrato:v_dispositivi",
+                    "featureInfoTemplate": {
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                     },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
                       "cql_filter": "id_n_disp=4"
@@ -268,10 +303,17 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Dispositivo Seabased",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Seabased \n\n CF dispositivo Seabased. \n\n Questa mappa descrive le caratteristioche di alcun punti di interesse delle coste italiane sotto il profilo del potenziale energetico legato al moto ondoso al largo, ..... (DAVIDE) ... rispetto ai lavori precedentemente pubblicati in materia (Rapporto RSE n. 11000809 del 30/03/2011)</p>. \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://marenergy.rse-web.it/map.phtml\" target=\"_blank\">MARENERGY</a></br></br><a href=\"http://doc.rse-web.it/?tipo=documento&id=316268\" target=\"_blank\">Misure e valutazioni ondametriche presso la costa laziale: campagna 2015</a>.",
+                    "name": "Seabased",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Seabased \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
+                    "metadataUrls":[{
+                      "title":"link metadato",
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                    }],
                     "layers": "new_atlante_integrato:v_dispositivi",
+                    "featureInfoTemplate": {
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                     },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
                       "cql_filter": "id_n_disp=5"
@@ -280,10 +322,17 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Dispositivo Symphony",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Symphony \n\n CF dispositivo Symphony. \n\n Questa mappa descrive le caratteristioche di alcun punti di interesse delle coste italiane sotto il profilo del potenziale energetico legato al moto ondoso al largo, ..... (DAVIDE) ...  rispetto ai lavori precedentemente pubblicati in materia (Rapporto RSE n. 11000809 del 30/03/2011)</p>. \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://marenergy.rse-web.it/map.phtml\" target=\"_blank\">MARENERGY</a></br></br><a href=\"http://doc.rse-web.it/?tipo=documento&id=316268\" target=\"_blank\">Misure e valutazioni ondametriche presso la costa laziale: campagna 2015</a>.",
+                    "name": "Symphony",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Symphony \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
+                    "metadataUrls":[{
+                      "title":"link metadato",
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                    }],
                     "layers": "new_atlante_integrato:v_dispositivi",
+                    "featureInfoTemplate": {
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                     },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
                       "cql_filter": "id_n_disp=6"
@@ -292,10 +341,17 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Dispositivo Wavebob",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavebob \n\n CF dispositivo Wavebob. \n\n Questa mappa descrive le caratteristioche di alcun punti di interesse delle coste italiane sotto il profilo del potenziale energetico legato al moto ondoso al largo, ..... (DAVIDE) ..  rispetto ai lavori precedentemente pubblicati in materia (Rapporto RSE n. 11000809 del 30/03/2011)</p>. \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://marenergy.rse-web.it/map.phtml\" target=\"_blank\">MARENERGY</a></br></br><a href=\"http://doc.rse-web.it/?tipo=documento&id=316268\" target=\"_blank\">Misure e valutazioni ondametriche presso la costa laziale: campagna 2015</a>.",
+                    "name": "Wavebob",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavebob \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
+                    "metadataUrls":[{
+                      "title":"link metadato",
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                    }],
                     "layers": "new_atlante_integrato:v_dispositivi",
+                    "featureInfoTemplate": {
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                     },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
                       "cql_filter": "id_n_disp=7"
@@ -304,10 +360,17 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Dispositivo Wavedragon",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavedragon \n\n CF dispositivo Wavedragon. \n\n Questa mappa descrive le caratteristioche di alcun punti di interesse delle coste italiane sotto il profilo del potenziale energetico legato al moto ondoso al largo, ..... (DAVIDE) ...  rispetto ai lavori precedentemente pubblicati in materia (Rapporto RSE n. 11000809 del 30/03/2011)</p>. \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://marenergy.rse-web.it/map.phtml\" target=\"_blank\">MARENERGY</a></br></br><a href=\"http://doc.rse-web.it/?tipo=documento&id=316268\" target=\"_blank\">Misure e valutazioni ondametriche presso la costa laziale: campagna 2015</a>.",
+                    "name": "Wavedragon",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavedragon \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
+                    "metadataUrls":[{
+                      "title":"link metadato",
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                    }],
                     "layers": "new_atlante_integrato:v_dispositivi",
+                    "featureInfoTemplate": {
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                     },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
                       "cql_filter": "id_n_disp=8"
@@ -349,9 +412,13 @@
                 {
                   "type": "wms",
                   "name": "Campagne di misure ondametriche - Civitavecchia",
-                  "description": "Campagne di misure ondametriche. \n\n Misure del moto ondoso e dei flussi di corrente realizzate nel periodo 9 feb 2017-12 mar 2017, nello specchio di mare antistante il porto di Civitavecchia a circa 40 m di profondit&#224;: altezza d'onda, correnti, velocità e direzione, periodo di picco, potenza disponibile. \n\n Informazioni sul layer Campagne di misure ondametriche</br></br>Documento 17002141</a>.",
+                  "description": "Campagne di misure ondametriche. \n\n Misure del moto ondoso e dei flussi di corrente realizzate nel periodo 9 feb 2017-12 mar 2017, nello specchio di mare antistante il porto di Civitavecchia a circa 40 m di profondit&#224;: altezza d'onda, correnti, velocità e direzione, periodo di picco, potenza disponibile. \n\n Informazioni sul layer Campagne di misure ondametriche</br></br>Documento RSE RdS prot. 17002141</a>.",
                   "url": "http://gis2.rse-web.it/geoserver/wms",
                   "layers": "atlante_integrato:siti_campagna_misura",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=135"
+                  }],
                   "id": "ondametrico"
                 },
                 {
@@ -367,7 +434,7 @@
             {
               "type": "wms",
               "name": "Flusso di potenza delle correnti (W/m\u00b2)",
-              "description": "Flusso di potenza delle correnti (W/m<sup>2</sup>) \n\n E' stata elaborata una mappatura dei mari italiani in funzione del flusso di potenza specifico delle correnti marine a scala sinottica (Rapporto RSE n. 12000352 del 31/03/2012). La risoluzione spaziale dei risultati ottenuti è di fatto legata alla risoluzione temporale dei valori correntometrici utilizzati per l'elaborazione. Si fa riferimento ai risultati numerici disponibili presso http://marine.copernicus.eu, con valori correntometrici giornalieri relativi al periodo 2004-2010, con risoluzione orizzontale di circa 7 km e disposti su 71 livelli verticali. Solo i siti sufficientemente vicini alla costa (distanti al massimo 10 km) e a profondità abbastanza modeste (minori di 50 m) sono considerati praticabili. Il flusso di potenza specifico rappresenta la potenza fornita dalla corrente per unità di sezione utile della turbina, nel punto lungo la verticale, in cui tale flusso presenta il suo massimo valore. La mappa risultante fornisce delle indicazioni di massima (data l'approssimazione legata alla risoluzione temporale delle medie della velocità) per studi a meso e micro-scala, al fine dello sfruttamento di energia da correnti marine nelle acque italiane.</p> \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://marenergy.rse-web.it\" target=\"_blank\">MARENERGY</a>",
+              "description": "Flusso di potenza delle correnti (W/m<sup>2</sup>) \n\n E' stata elaborata una mappatura dei mari italiani in funzione del flusso di potenza specifico delle correnti marine a scala sinottica (Rapporto RSE RdS prot. 12000352 del 31/03/2012). La risoluzione spaziale dei risultati ottenuti è di fatto legata alla risoluzione temporale dei valori correntometrici utilizzati per l'elaborazione. Si fa riferimento ai risultati numerici disponibili presso http://marine.copernicus.eu, con valori correntometrici giornalieri relativi al periodo 2004-2010, con risoluzione orizzontale di circa 7 km e disposti su 71 livelli verticali. Solo i siti sufficientemente vicini alla costa (distanti al massimo 10 km) e a profondità abbastanza modeste (minori di 50 m) sono considerati praticabili. Il flusso di potenza specifico rappresenta la potenza fornita dalla corrente per unità di sezione utile della turbina, nel punto lungo la verticale, in cui tale flusso presenta il suo massimo valore. La mappa risultante fornisce delle indicazioni di massima (data l'approssimazione legata alla risoluzione temporale delle medie della velocità) per studi a meso e micro-scala, al fine dello sfruttamento di energia da correnti marine nelle acque italiane.</p> \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://marenergy.rse-web.it\" target=\"_blank\">MARENERGY</a>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "layers": "correnti",
               "metadataUrls":[{

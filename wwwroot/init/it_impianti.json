@@ -1234,7 +1234,7 @@
               {
                 "type": "wms",
                 "name": "Impianti pompaggio potenziali compatibili con gli scenari energetici",
-                "description": "Nuovi impianti di pompaggio potenziali selezionati nell'ambito degli studi per il raggiungimento degli obbiettivi negli scenari energetici.\n\n Il potenziale riguarda i seguenti tipi di impianto: \n\n-	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi (detto anche a doppio invaso); \n\n -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n Per ogni tipologia di impianto sono visualizzati la potenza installabile in turbinaggio (MW), la potenza installabile in pompaggio (MW) e la capacità di accumulo (MWh).\n\n I valori sono aggregati a scala comunale.\n\n Riferimento: rapporto RSE RdS prot.20000116 ",
+                "description": "Nuovi impianti di pompaggio potenziali selezionati nell'ambito degli studi per il raggiungimento degli obbiettivi negli scenari energetici.\n\n Il potenziale riguarda i seguenti tipi di impianto: \n\n-	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi (detto anche a doppio invaso); \n\n -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n Per ogni tipologia di impianto sono visualizzati la potenza installabile in turbinaggio (MW), la potenza installabile in pompaggio (MW) e la capacità di accumulo (MWh).\n\n I valori sono aggregati a scala comunale.\n\n Riferimento: rapporto RSE RdS prot. 20000116 ",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "layers": "new_atlante_integrato:po_poten_comunali",
                 "featureInfoTemplate": {

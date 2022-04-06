@@ -72,31 +72,31 @@ export function defaultBaseMaps(terria: Terria): any[] {
     });
   }
 
-  baseMaps.push({
-    item: {
-      id: "basemap-natural-earth-II",
-      name: "Natural Earth II",
-      type: "wms",
-      url:
-        "https://geoserver.nationalmap.nicta.com.au/imagery/natural-earth-ii/wms",
-      layers: "NE2_HR_LC_SR_W_DR",
-      opacity: 1.0
-    },
-    image: "build/TerriaJS/images/natural-earth.png"
-  });
+  // baseMaps.push({
+  //   item: {
+  //     id: "basemap-natural-earth-II",
+  //     name: "Natural Earth II",
+  //     type: "wms",
+  //     url:
+  //       "https://geoserver.nationalmap.nicta.com.au/imagery/natural-earth-ii/wms",
+  //     layers: "NE2_HR_LC_SR_W_DR",
+  //     opacity: 1.0
+  //   },
+  //   image: "build/TerriaJS/images/natural-earth.png"
+  // });
 
-  baseMaps.push({
-    item: {
-      id: "basemap-black-marble",
-      name: "NASA Black Marble",
-      type: "wms",
-      url:
-        "https://geoserver.nationalmap.nicta.com.au/imagery/nasa-black-marble/wms",
-      layers: "nasa-black-marble:dnb_land_ocean_ice.2012.54000x27000_geo",
-      opacity: 1.0
-    },
-    image: "build/TerriaJS/images/black-marble.png"
-  });
+  // baseMaps.push({
+  //   item: {
+  //     id: "basemap-black-marble",
+  //     name: "NASA Black Marble",
+  //     type: "wms",
+  //     url:
+  //       "https://geoserver.nationalmap.nicta.com.au/imagery/nasa-black-marble/wms",
+  //     layers: "nasa-black-marble:dnb_land_ocean_ice.2012.54000x27000_geo",
+  //     opacity: 1.0
+  //   },
+  //   image: "build/TerriaJS/images/black-marble.png"
+  // });
 
   baseMaps.push({
     item: {

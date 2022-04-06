@@ -212,8 +212,9 @@
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226"
                 }],
                 "url": "http://gis2.rse-web.it/geoserver/wms",
+                "styles":"new_atlante_integrato:ma_points",
                 "featureInfoTemplate": {
-                  "template": "<p>Profondità (m): {{depth__m_}}</p><p>Distanza (km): {{distance_t}}</p><p>Energia media delle onde (kW/m): {{energia}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1\">link al metadato </a> </p>"
+                  "template": "<p>Profondità (m): {{depth__m_}}</p><p>Distanza (km): {{distance_t}}</p><p>Energia media delle onde (kW/m): {{energia}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226\">link al metadato </a> </p>"
                  },
                 "layers": "new_atlante_integrato:v_ma_points",
                 "id": "onde_risorsa"
@@ -227,16 +228,16 @@
                   "members": [
                   {
                     "type": "wms",
-                    "name": "AquaBuOY",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: AquaBuOY \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "name": "AquaBuOY - Capacity Factor",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: AquaBuOY \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-), il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"link metadato",
-                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1"
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1\">link al metadato </a> </p>"
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -246,16 +247,16 @@
                   },
                   {
                     "type": "wms",
-                    "name": "CycWEC",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: CycWEC \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "name": "CycWEC - Capacity Factor",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: CycWEC \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"link metadato",
-                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -265,16 +266,16 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Drakoo",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Drakoo \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "name": "Drakoo - Capacity Factor",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Drakoo \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"link metadato",
-                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -284,16 +285,16 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Pelamis",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Pelamis \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "name": "Pelamis - Capacity Factor",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Pelamis \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"link metadato",
-                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -303,16 +304,16 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Seabased",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Seabased \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "name": "Seabased - Capacity Factor",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Seabased \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"link metadato",
-                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -322,16 +323,16 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Symphony",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Symphony \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "name": "Symphony - Capacity Factor",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Symphony \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"link metadato",
-                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -341,16 +342,16 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Wavebob",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavebob \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "name": "Wavebob - Capacity Factor",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavebob \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"link metadato",
-                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -360,16 +361,16 @@
                   },
                   {
                     "type": "wms",
-                    "name": "Wavedragon",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavedragon \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala, il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "name": "Wavedragon - Capacity Factor",
+                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavedragon \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
                     "url": "http://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"link metadato",
-                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno=2020"
+                      "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
+                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {

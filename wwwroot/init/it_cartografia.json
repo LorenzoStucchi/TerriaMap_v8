@@ -10,13 +10,13 @@
             "type": "wms",
             "name": "Confini regionali",
             "description": "Limiti amministrativi regionali selezionabili in differenti anni. Fonte dati ISTAT.",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
               "template": "<p>Regione <b>{{den_reg}}</b> , visualizzazione anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">link al metadato </a> </p>"
             },
             "metadataUrls":[{
               "title":"link metadato",
-              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2021"
+              "url":"https://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2021"
             }],
             "layers": "new_atlante_integrato:v_regioni_terria",
             "id": "confreg"
@@ -25,7 +25,7 @@
             "type": "wms",
             "name": "Confini provinciali",
             "description": "Limiti amministrativi provinciali selezionabili in differenti anni. Fonte dati ISTAT.",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
               "template": "<p>Provincia <b>{{den_uts}}</b> , visualizzazione anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=109&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -39,7 +39,7 @@
             "type": "wms",
             "name": "Confini comunali",
             "description": "Limiti amministrativi comunali selezionabili in differenti anni. Fonte dati ISTAT.",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
              "template": "<p>Comune <b>{{comune}}</b> , visualizzazione anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -53,7 +53,7 @@
             "type": "wms",
             "name": "Centri abitati",
             "description": "Centri abitati. \n\n Località italiane definite dal censimento ISTAT 2011",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             "metadataUrls":[{
               "title":"link metadato",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=151"
@@ -75,7 +75,7 @@
             "type": "wms",
             "name": "Batimetria (m)",
             "description": "Batimetria 2018 - Batimetria riclassificata a partire da dati dell' European Marine Observation and Data Network (EMODnet) DTM for European sea regions (2018) https://www.emodnet-bathymetry.eu/metadata-data.\n Elaborazione RSE.",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             "layers": "new_atlante_integrato:bati_2018",
             "metadataUrls":[{
               "title":"link metadato",

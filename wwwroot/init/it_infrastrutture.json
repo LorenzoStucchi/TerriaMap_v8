@@ -12,7 +12,7 @@
           "type": "wms",
           "name": "Comuni con Cabine Primarie con inversione di flusso",
           "description": "Comuni con Cabine Primarie con inversione di flusso \n\n Distribuzione a scala comunale degli eventi di inversione del flusso di energia rilevati nel 2015 nelle Cabine primarie, categorizzati in base alla durata. \n\n I dati riguardano le cabine di flusso di proprietà e-distribuzione e sono visibili i dati degli anni 2015 e/o 2020.\n\n Questi dati riportano informazioni della sola società Enel Distribuzione che copre circa l’85% dell’energia servita da cabine primarie nel territorio italiano (il restante 15% è in carico a circa altri 100 distributori). \n\nI dati si riferiscono alle sole cabine primarie CON inversione di flusso, non riportano le cabine SENZA inversione di flusso. L’informazione mappata risulta corretta per quanto riguarda i comuni con cabine con inversione di flusso 1% o 5%, è incerta per i comuni non citati (potrebbero essere di altri gestori con inversione di flusso oppure di e-distribuzione con inversione nulla).",
-          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Comune:<b> {{comune}}</b></p><p>Anno: {{data}}</p><p>Inversione di flusso: {{valore}} %</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
            },
@@ -38,7 +38,7 @@
           "type": "wms",
           "name": "Rete AT - OSM",
           "description": "OSM linee elettriche aeree \n\n Fonte dei dati Open Street Map https://www.openstreetmap.org/",
-          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "url": "https://gis2.rse-web.it/geoserver/wms",
           "layers": "new_atlante_integrato:OSM_power_line",
           "id": "OSM_l"
         }

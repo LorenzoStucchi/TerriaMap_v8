@@ -39,6 +39,10 @@
           "name": "Rete AT - OSM",
           "description": "OSM linee elettriche aeree \n\n Fonte dei dati Open Street Map https://www.openstreetmap.org/",
           "url": "https://gis2.rse-web.it/geoserver/wms",
+          "metadataUrls":[{
+            "title":"link metadato",
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=216"
+          }],
           "layers": "new_atlante_integrato:OSM_power_line",
           "id": "OSM_l"
         }

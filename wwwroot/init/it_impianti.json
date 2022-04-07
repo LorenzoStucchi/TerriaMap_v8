@@ -149,7 +149,7 @@
                 {
                   "type": "wms",
                   "name": "Eolico - Numero impianti provinciale",
-                  "description": "Numero di impianti eolici -  Numero totale provinciale\n\n Mappa della distribuzione provinciale del numero di pale eoliche riferito all'anno 2019 <br> Elaborazione di Ricerca sul Sistema Energetico - RSE S.p.A. a partire da dati puntuali di potenza forniti da GSE.",
+                  "description": "Numero di impianti eolici -  Numero totale provinciale\n\n Mappa della distribuzione provinciale del numero di impianti eolici riferito all'anno 2019 <br> Elaborazione di Ricerca sul Sistema Energetico - RSE S.p.A. a partire da dati puntuali di potenza forniti da GSE.",
                   "featureInfoTemplate": {
                     "template": "<p>Numero impianti <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },

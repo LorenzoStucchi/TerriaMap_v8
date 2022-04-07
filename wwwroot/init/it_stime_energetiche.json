@@ -10,7 +10,7 @@
         {
           "type": "wms",
           "name": "Indice di autosufficienza",
-          "description": "Indice di autosufficienza. Rapporto tra produzione FER comunale e consumi elettrici comunali. Anno 2015, MT e BT. Riferimento rapporto atlante integrato.\n\n <a href=\"http://www.rse-web.it/documenti/documento/318553\" target=\"_blank\">Rapporto RSE 18007806 - Atlante Integrato per il Sistema Energetico Nazionale e le fonti rinnovabili (ai:SEN)</a></p>",
+          "description": "Indice di autosufficienza. Rapporto tra produzione FER comunale e consumi elettrici comunali. Anno 2015, MT e BT.\n\n <a href=\"http://www.rse-web.it/documenti/documento/318553\" target=\"_blank\">Rapporto RSE 18007806 - Atlante Integrato per il Sistema Energetico Nazionale e le fonti rinnovabili (ai:SEN)</a></p>",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Indice di autosufficienza <b>{{consumi_autosufficienza}}</b> del comune {{comune}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=8\">link al metadato </a> </p>"

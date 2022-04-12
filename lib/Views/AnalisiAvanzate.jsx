@@ -129,7 +129,7 @@ function AnalisiAvanzate(props) {
             </a>
             <p>
               L'acqua per l'energia, l'energia per l'acqua. Flussi energetici e
-              idrici nazionali scala nazionale.
+              idrici nazionali a scala nazionale.
             </p>
             <a
               target="_blank"
@@ -147,7 +147,7 @@ function AnalisiAvanzate(props) {
       <div className={classNames(PanelStyles.section, Styles.section)}>
         <ul>
           <li class="list-group-item">
-            <h2>Nuovo Geoportale Energia e Territorio</h2>
+            <h2>Geoportale Energia e Territorio</h2>
             <a target="_blank" href="http://gis2.rse-web.it/mapstore">
               <img
                 className={Styles.image}
@@ -156,9 +156,16 @@ function AnalisiAvanzate(props) {
               />
             </a>
             <p>
-              Nel portale sono presenti tutti i siti di approfondimento
+              {/* Nel portale sono presenti tutti i siti di approfondimento
               geografico del gruppo AmbienteRisorseTerritorio. Vi sono anche
-              mappe dedicate a tematismi di interesse e storymaps.
+              mappe dedicate a tematismi di interesse e storymaps. */}
+              Il Geoportale Energia e Territorio è un contenitore di
+              informazioni territoriali aventi per oggetto la distribuzione
+              delle diverse fonti energetiche rinnovabili e le loro relazioni
+              con il territorio. Esso costituisce il punto di accesso
+              all'Atlante Integrato, ai principali atlanti tematici e ad altri
+              contenuti interattivi legati ad approfondimenti su aspetti del
+              sistema energetico di particolare rilevanza.
             </p>
             <a
               target="_blank"

@@ -20,7 +20,7 @@
               "description": "Velocita' media annua del vento a 75 m s.l.t./s.l.m. \n\n Velocità media annua del vento alla quota di 75 metri s.l.t./s.l.m. espressa in m/s.<br>Atlante Eolico Interattivo RSE</p> \n Informazioni sul layer RISORSA EOLICA </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La velocita' del vento rientra nella classe <b>{{classe}}</b> m/s </p>"
+                "template": "<p>Velocita' media del vento (m/s) <b>{{classe}}</b></p>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -35,7 +35,7 @@
               "description": "Producibilita' specifica a 75 m s.l.t./s.l.m. (MWh/MW) \n\n Producibilità specifica media annua alla quota di 75 metri s.l.t./s.l.m. espressa in MWh/MW.<br>Atlante Eolico Interattivo RSE</p> \n Informazioni sul layer RISORSA EOLICA </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La producibilità' del vento rientra nella classe <b>{{classe}}</b> MWh/MW </p>"
+                "template": "<p>Producibilità' media del vento (MWh/MW) <b>{{classe}}</b></p>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -128,7 +128,7 @@
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "atlante_integrato:v_idrometri",
                   "featureInfoTemplate": {
-                    "template": "<br><p>L'idrometro che hai selezionato è:  <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://atlanteintegrato.rse-web.it/export_idroNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
+                    "template": "<br><p>Idrometro selezionato <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://atlanteintegrato.rse-web.it/export_idroNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -143,7 +143,7 @@
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "atlante_integrato:v_pluviometri",
                   "featureInfoTemplate": {
-                    "template": "<br><p>Il pluviometro che hai selezionato è:  <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://atlanteintegrato.rse-web.it/export_pluvioNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
+                    "template": "<br><p>Pluviometro selezionato <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://atlanteintegrato.rse-web.it/export_pluvioNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -214,7 +214,7 @@
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "styles":"new_atlante_integrato:ma_points",
                 "featureInfoTemplate": {
-                  "template": "<p>Profondità (m): {{depth__m_}}</p><p>Distanza (km): {{distance_t}}</p><p>Energia media delle onde (kW/m): {{energia}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226\">link al metadato </a> </p>"
+                  "template": "<p>Profondità (m) {{depth__m_}}</p><p>Distanza (km) {{distance_t}}</p><p>Energia media delle onde (kW/m) {{energia}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226\">link al metadato </a> </p>"
                  },
                 "layers": "new_atlante_integrato:v_ma_points",
                 "id": "onde_risorsa"
@@ -237,7 +237,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -256,7 +256,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -275,7 +275,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -294,7 +294,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -313,7 +313,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -332,7 +332,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -351,7 +351,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -370,7 +370,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Nome dispositivo: <b>{{dispositivo}}</b></p><p>Fattore di scala: {{scale}}</p><p>Capacity Factor: {{cf}}</p><p>Energia annuale prodotta (kWh): {{aeo}}</p><p>Capacità nominale del dispositivo: {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -548,7 +548,7 @@
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=225"
               }],
               "featureInfoTemplate": {
-                "template": "<p>Potenziale geotermico del comune di {{comune}} è: <b>{{pot_sum}} MWh/anno </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=225\">link al metadato </a> </p>"
+                "template": "<p>Potenziale geotermico (MWh/anno) <b>{{pot_sum}} </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=225\">link al metadato </a> </p>"
               },
               "layers": "new_atlante_integrato:comuni_potenziale_120c",
               "styles":"new_atlante_integrato:potenziale_120c",

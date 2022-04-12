@@ -12,7 +12,7 @@
             "description": "Limiti amministrativi regionali selezionabili in differenti anni. Fonte dati ISTAT.",
             "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
-              "template": "<p>Regione <b>{{den_reg}}</b> , visualizzazione anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">link al metadato </a> </p>"
+              "template": "<p>Regione <b>{{den_reg}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">link al metadato </a> </p>"
             },
             "metadataUrls":[{
               "title":"link metadato",
@@ -27,7 +27,7 @@
             "description": "Limiti amministrativi provinciali selezionabili in differenti anni. Fonte dati ISTAT.",
             "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
-              "template": "<p>Provincia <b>{{den_uts}}</b> , visualizzazione anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=109&anno={{anno}}\">link al metadato </a> </p>"
+              "template": "<p>Provincia <b>{{den_uts}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=109&anno={{anno}}\">link al metadato </a> </p>"
             },
             "metadataUrls":[{
               "title":"link metadato",
@@ -41,7 +41,7 @@
             "description": "Limiti amministrativi comunali selezionabili in differenti anni. Fonte dati ISTAT.",
             "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
-             "template": "<p>Comune <b>{{comune}}</b> , visualizzazione anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">link al metadato </a> </p>"
+             "template": "<p>Comune <b>{{comune}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">link al metadato </a> </p>"
             },
             "metadataUrls":[{
               "title":"link metadato",

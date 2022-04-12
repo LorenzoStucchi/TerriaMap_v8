@@ -151,7 +151,7 @@
                   "name": "Eolico - Numero impianti provinciale",
                   "description": "Numero di impianti eolici -  Numero totale provinciale\n\n Mappa della distribuzione provinciale del numero di impianti eolici riferito all'anno 2019 <br> Elaborazione di Ricerca sul Sistema Energetico - RSE S.p.A. a partire da dati puntuali di potenza forniti da GSE.",
                   "featureInfoTemplate": {
-                    "template": "<p>Numero impianti <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Numero impianti proviniciali <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:v_province_t",
@@ -208,7 +208,7 @@
                   "name": "Eolico - Numero di impianti comunali",
                   "description": "Numero di impianti comunali - raggruppamento comunale (anno di riferimento 2019)",
                   "featureInfoTemplate": {
-                    "template": "<p>Numero impianti <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Numero impianti comunali <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
@@ -781,7 +781,7 @@
                   "description": "Impianti geotermoelettrici - Numero impianti provinciali\n\n Mappa della distribuzione provinciale della numerosità degli impianti geotermoelettrici.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Numero di impianti provinciali <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Numero impianti provinciali <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -856,7 +856,7 @@
                   "name": "Geotermoelettrico - Impianti",
                   "description": "Impianti geotermoelettrici - Potenza installata (MW). \n\n Mappa della distribuzione degli impianti geotermoelettrici in funzione al 2019, potenza installata.\n\n Elaborazioni RSE a partire dal Global Power Plant Database",
                   "featureInfoTemplate": {
-                    "template": "<p>Comune: <b>{{comune}}</b></p><p>Potenza (MW): <b>{{potenza_mw}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=202\">link al metadato </a> </p>"
+                    "template": "<p>Potenza (MW)  <b>{{potenza_mw}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=202\">link al metadato </a> </p>"
                   },
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
@@ -938,7 +938,7 @@
                   "description": "Impianti a biomasse - Produzione elettrica da biogas regionale (GWh)\n\n Mappa della distribuzione regionale della produzione da bioenergie nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Produzione regionale da biogas (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Produzione regionale da biogas (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -957,7 +957,7 @@
                   "description": "Impianti a biomasse - Produzione elettrica da bioliquidi regionale (GWh)\n\n Mappa della distribuzione regionale della produzione elettrica da bioliquidi nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Produzione regionale da bioliquidi (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Produzione regionale da bioliquidi (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -976,7 +976,7 @@
                   "description": "Impianti a biomasse - Produzione elettrica da biomasse solide diverse dai rifiuti regionale (GWh)\n\n Mappa della distribuzione regionale della produzione da bioenergie installata nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Produzione regionale da biomasse solide (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Produzione regionale da biomasse solide (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -995,7 +995,7 @@
                   "description": "Impianti a biomasse - Produzione elettrica da RU biodegradabili regionale (GWh)\n\n Mappa della distribuzione regionale della produzione da bioenergie nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Produzione regionale da RU biodegradabili (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Produzione regionale da RU biodegradabili (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -1014,7 +1014,7 @@
                   "description": "Impianti a biomasse - Produzione annuale provinciale (GWh)\n\n Mappa della distribuzione provinciale della produzione da bioenergie nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Produzione provinciale (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -1033,7 +1033,7 @@
                   "description": "Impianti a biomasse - Produzione elettrica provinciale da biogas (GWh)\n\n Mappa della distribuzione provinciale della produzione da bioenergie nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Produzione provinciale da biogas (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Produzione provinciale da biogas (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -1052,7 +1052,7 @@
                   "description": "Impianti a biomasse - Produzione elettrica provinciale da RU biodegradabili (GWh)\n\n Mappa della distribuzione provinciale della produzione da bioenergie nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Produzione provinciale da RU biodegradabili (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Produzione provinciale da RU biodegradabili (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -1071,7 +1071,7 @@
                   "description": "Impianti a biomasse - Produzione elettrica provinciale da bioliquidi (GWh)\n\n Mappa della distribuzione provinciale della produzione da bioenergie nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Produzione provinciale da bioliquidi (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Produzione provinciale da bioliquidi (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -1090,7 +1090,7 @@
                   "description": "Impianti a biomasse - Produzione elettrica provinciale da biomasse solide diverse dai rifiuti (GWh)\n\n Mappa della distribuzione provinciale della produzione da bioenergie nel tempo.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Produzione provinciale da biomasse (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                    "template": "<p>Produzione provinciale da biomasse (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -1163,7 +1163,7 @@
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "new_atlante_integrato:po_esistenti_comunali",
                 "featureInfoTemplate": {
-                  "template": "<p>•	Comune : {{comune}}; <br> <p> •	Potenza pompaggio (MW): {{pot_po_mw}}; <br> <p> •	Potenza turbinaggio (MW): {{pot_tur_mw}}; <br> <p> •	Capacità di accumulo (MWh): {{cap_acc_mwh}}; <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=222\">link al metadato</a></p>"
+                  "template": "<p>Comune {{comune}}; <br> <p>Potenza pompaggio (MW) {{pot_po_mw}}; <br> <p>Potenza turbinaggio (MW) {{pot_tur_mw}}; <br> <p>Capacità di accumulo (MWh) {{cap_acc_mwh}}; <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=222\">link al metadato</a></p>"
                 },
                 "styles":"new_atlante_integrato:id_pompaggio_comunale",
                 "metadataUrls":[{
@@ -1188,7 +1188,7 @@
                 "description": "Nuovi impianti di pompaggio potenziali, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi;\n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n   -	pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n  -	pompaggio tra laghi esistenti;\n\n  Per ogni tipologia di impianto è visualizzatibile la potenza installabile (MW).\n\n I valori sono aggregati a scala comunale.\n\n <br> Riferimenti (rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266). Valutazioni anno 2015.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "featureInfoTemplate": {
-                  "template": "<p>•	Comune : {{comune}}; <br> <p> •	Pompaggio tradizionale, potenza installabile (MW): {{pot_po_44}}; <br> <p> •	Pompaggio marino, potenza installabile (MW):  {{pot_po_38}}; <br> <p> •	Pompaggio sotterraneo, potenza installabile (MW): {{pot_po_40}}; <br> <p> •	Pompaggio tra laghi esistenti, potenza installabile (MW): {{pot_po_42}}; <br> <p> •	Potenza installabile totale (MW): {{pot_po_sum}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=43\">link al metadato</a></p>"
+                  "template": "<p>Comune {{comune}}; <br> <p>Pompaggio tradizionale, potenza installabile (MW) {{pot_po_44}}; <br> <p>Pompaggio marino, potenza installabile (MW)  {{pot_po_38}}; <br> <p>Pompaggio sotterraneo, potenza installabile (MW) {{pot_po_40}}; <br> <p>Pompaggio tra laghi esistenti, potenza installabile (MW) {{pot_po_42}}; <br> <p>Potenza installabile totale (MW) {{pot_po_sum}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=43\">link al metadato</a></p>"
                 },
                 "metadataUrls":[{
                   "title":"link metadato",
@@ -1221,7 +1221,7 @@
                 "description": "Nuovi impianti di pompaggio potenziali, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi;\n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n   -	pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n  -	pompaggio tra laghi esistenti;\n\n  Per ogni tipologia di impianto è visualizzatibile la capacità di accumulo (MWh).\n\n I valori sono aggregati a scala comunale.\n\n <br> Riferimenti (rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266). Valutazioni anno 2015.\n ",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "featureInfoTemplate": {
-                  "template": "<p>•	Comune : {{comune}}; <br> <p> •	Pompaggio tradizionale, capacità di accumulo (MWh): {{acc_var_45}}; <br> <p> •	Pompaggio marino, capacità di accumulo (MWh): {{acc_var_39}}; <br> <p> •	Pompaggio sotterraneo, capacità di accumulo (MWh): {{acc_var_41}}; <br> <p> •	Pompaggio tra laghi esistenti, capacità di accumulo (MWh): {{acc_var_43}}; <br> <p> •	Capacità di accumulo totale (MWh): {{acc_sum_ac}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=45\">link al metadato</a></p>"
+                  "template": "<p>Comune {{comune}}; <br> <p>Pompaggio tradizionale, capacità di accumulo (MWh) {{acc_var_45}}; <br> <p>Pompaggio marino, capacità di accumulo (MWh) {{acc_var_39}}; <br> <p>Pompaggio sotterraneo, capacità di accumulo (MWh) {{acc_var_41}}; <br> <p>Pompaggio tra laghi esistenti, capacità di accumulo (MWh {{acc_var_43}}; <br> <p>Capacità di accumulo totale (MWh) {{acc_sum_ac}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=45\">link al metadato</a></p>"
                 },
                 "metadataUrls":[{
                   "title":"link metadato",
@@ -1238,7 +1238,7 @@
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "new_atlante_integrato:po_poten_comunali",
                 "featureInfoTemplate": {
-                  "template": "<p>•	Comune : {{comune}}; <br> <p> •	Potenza pompaggio (MW): {{pot_po_mw}}; <br> <p> •	Potenza turbinaggio (MW): {{pot_tur_mw}}; <br> <p> •	Capacità di accumulo (MWh): {{cap_acc_mwh}}; <br> <p>•	Tipologia di impianto: {{tipologia}}; <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=223\">link al metadato</a></p>"
+                  "template": "<p>Comune {{comune}}; <br> <p>Potenza pompaggio (MW) {{pot_po_mw}}; <br> <p>Potenza turbinaggio (MW) {{pot_tur_mw}}; <br> <p>Capacità di accumulo (MWh) {{cap_acc_mwh}}; <br> <p>Tipologia di impianto {{tipologia}}; <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=223\">link al metadato</a></p>"
                 },
                 "styles":"new_atlante_integrato:id_pompaggio_comunale",
                 "metadataUrls":[{

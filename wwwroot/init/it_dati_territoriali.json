@@ -50,7 +50,7 @@
               "description": "Zone di Protezione Speciale presenti sul territorio italiano aggiornate a gennaio 2017. Le zone di protezione speciale (ZPS), in Italia, ai sensi dell'art. 1 comma 5 della Legge n° 157/1992 sono zone di protezione scelte lungo le rotte di migrazione dell'avifauna, finalizzate al mantenimento ed alla sistemazione di idonei habitat per la conservazione e gestione delle popolazioni di uccelli selvatici migratori. La tabella associata contiene una serie di informazioni tra cui codice, denominazione, superficie, perimetro e Regione di appartenenza di ciascuna zona.<br><br>Ministero dell'Ambiente e della Tutela del Territorio e del Mare - Direzione generale per la protezione della natura e del mare. \n Metadati a: http://www.pcn.minambiente.it/mattm/visualizzazione-metadati/</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Consumi registrati nell'anno {{anno}} in {{den_reg}} sono stati: <b>{{valore}} GWh </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -138,7 +138,7 @@
               "description": "Distribuzione regionale della popolazione residente che viene calcolata al 31 dicembre di ogni anno e diffusa al 1° gennaio dell'anno successivo.<br><br>Istituto Nazionale di Statistica - ISTAT</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Popolazione anno {{anno}} in {{den_reg}}: <b>{{valore}} unità </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -157,7 +157,7 @@
               "description": "Distribuzione provinciale della popolazione residente (aggregazione del dato comunale) che viene calcolata al 31 dicembre di ogni anno e diffusa al 1° gennaio dell'anno successivo.<br><br>Istituto Nazionale di Statistica - ISTAT </p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Popolazione anno {{anno}} in {{den_uts}}: <b>{{valore}} unità </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -176,7 +176,7 @@
               "description": "Popolazione residente a livello comunale \n\n Distribuzione comunale della popolazione residente che viene calcolata al 31 dicembre di ogni anno e diffusa al 1° gennaio dell'anno successivo.<br><br>Istituto Nazionale di Statistica - ISTAT (a partire dall'anno 2015/anni dal 2015 al 2019)</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Popolazione anno {{data}} in {{comune}}: <b>{{valore}} unità </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
               },
               "metadataUrls":[{
                 "title":"link metadato",

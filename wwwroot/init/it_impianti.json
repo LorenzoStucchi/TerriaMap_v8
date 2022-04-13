@@ -654,7 +654,7 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Fotovoltaico - Potenza comunale impianti.",
+                  "name": "Fotovoltaico - Potenza comunale impianti",
                   "description": "Potenza fotovoltaica installata comunale - dati aggiornati all'anno 2019. \n\n Mappa della distribuzione comunale degli impianti fotovoltaici installati a terra con potenza dell'impianto superiore ad 1 MW.<br>\n\n",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {

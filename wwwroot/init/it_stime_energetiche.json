@@ -24,7 +24,8 @@
           "id": "autosuff"
         }
       ]
-    },
+    }
+    /* ,
     {
       "id": "altro",
       "type": "group",
@@ -105,6 +106,6 @@
       "shareKeys": [
         "Root Group/stime energetiche"
       ]
-    }
+    } */
   ]
 }

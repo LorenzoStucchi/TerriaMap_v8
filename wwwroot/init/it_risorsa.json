@@ -16,33 +16,63 @@
           "members": [
             {
               "type": "wms",
-              "name": "Velocita' media annua del vento a 75 m s.l.t./s.l.m.",
-              "description": "Velocita' media annua del vento a 75 m s.l.t./s.l.m. \n\n Velocità media annua del vento alla quota di 75 metri s.l.t./s.l.m. espressa in m/s.<br>Atlante Eolico Interattivo RSE</p> \n Informazioni sul layer RISORSA EOLICA </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
+              "name": "Velocita' media annua del vento offshore a 100 m s.l.m.",
+              "description": "Velocita' media annua del vento offshore a 100 m s.l.m. \n\n Velocità media annua del vento offshore alla quota di 100 metri s.l.m. espressa in m/s.<br>Atlante Eolico Interattivo RSE</p> \n Informazioni sul layer RISORSA EOLICA </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Velocita' media del vento (m/s) <b>{{classe}}</b></p>"
+                "template": "<p>Velocita' media del vento <b>{{classe}}</b></p>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=128&anno=2018"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=237"
               }],
-              "layers": "atlante_integrato:vento_75",
-              "id": "eol_75"
+              "layers": "aeolian:eo_speed100_offshore",
+              "id": "aeol_100"
             },
             {
               "type": "wms",
-              "name": "Producibilita' specifica a 75 m s.l.t./s.l.m.",
-              "description": "Producibilita' specifica a 75 m s.l.t./s.l.m. (MWh/MW) \n\n Producibilità specifica media annua alla quota di 75 metri s.l.t./s.l.m. espressa in MWh/MW.<br>Atlante Eolico Interattivo RSE</p> \n Informazioni sul layer RISORSA EOLICA </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
+              "name": "Velocita' media annua del vento onshore a 100 m s.l.t.",
+              "description": "Velocita' media annua del vento onshore a 100 m s.l.t.\n\n Velocità media annua del vento onshore alla quota di 100 metri s.l.t. espressa in m/s.<br>Atlante Eolico Interattivo RSE</p> \n Informazioni sul layer RISORSA EOLICA </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Producibilità' media del vento (MWh/MW) <b>{{classe}}</b></p>"
+                "template": "<p>Velocita' media del vento <b>{{classe}}</b></p>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=129&anno=2018"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=232"
               }],
-              "layers": "atlante_integrato:prod_75",
-              "id": "prod_75"
+              "layers": "aeolian:eo_speed100_onshore",
+              "id": "aeol_100_on"
+            },
+            {
+              "type": "wms",
+              "name": "Producibilita' specifica del vento offshore a 100 m s.l.m.(MWh/MW)",
+              "description": "Producibilita' specifica del vento offshore a 100 m s.l.m. \n\n Producibilita' specifica del vento offshore alla quota di 100 metri s.l.m. espressa in MWh/MW.<br>Atlante Eolico Interattivo RSE</p> \n Informazioni sul layer RISORSA EOLICA </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>Producibilita' specifica del vento <b>{{classe}}</b></p>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=243"
+              }],
+              "layers": "aeolian:eo_prod100_offshore",
+              "id": "aeol_100_prod"
+            },
+            {
+              "type": "wms",
+              "name": "Producibilita' specifica del vento onshore a 100 m s.l.t.(MWh/MW) ",
+              "description": "Producibilita' specifica del vento onshore a 100 m s.l.t.\n\n Producibilita' specifica annua del vento onshore alla quota di 100 metri s.l.t. espressa in (MWh/MW) .<br>Atlante Eolico Interattivo RSE</p> \n Informazioni sul layer RISORSA EOLICA </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>Producibilita' specifica del vento <b>{{classe}}</b></p>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=242"
+              }],
+              "layers": "aeolian:eo_prod100_onshore",
+              "id": "aeol_100_prod_on"
             }
           ]
         },
@@ -79,41 +109,260 @@
               }],
               "id": "pot_bac"
             },
-            /* {
+            {
               "id": "Bbang",
               "type": "group",
               "name": "dati BIG BANG",
               "description": "Questa raccolta comprende parte dei dati risultanti dal modello idrologico BIG BANG.",
               "isOpen": false,
               "members": [
+                //11-19
                 {
                   "type": "wms",
                   "name": "Dati elaborati big_bang - Piovosità media",
-                  "description": "Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "description": "TP_2011-2019 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
-                  "layers": "atlante_integrato:v_idrometri",
+                  "layers": "new_atlante_integrato:BB_prec_TP_2011-2019",
+                  "styles":"stile_TP",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_2011"
+                  ],
                   "metadataUrls":[{
                     "title":"link metadato DA MODIFICARE",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
                   }],
-                  "id": "BBang1"
+                  "id": "bbTP_2011"
                 },
+                //01-10
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Piovosità media",
+                  "description": "TP_2001-2010 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "dataCustodian": "text",
+                  "layers": "new_atlante_integrato:BB_prec_TP_2001-2010",
+                  "styles":"stile_TP",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_2001"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }],
+                  "id": "bbTP_2001"
+                },
+                //91-2000
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Piovosità media",
+                  "description": "TP_1991-2000 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "dataCustodian": "text",
+                  "layers": "new_atlante_integrato:BB_prec_TP_1991-2000",
+                  "styles":"stile_TP",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1991"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }],
+                  "id": "bbTP_1991"
+                },
+                //81-90
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Piovosità media",
+                  "description": "TP_1981-1990 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "dataCustodian": "text",
+                  "layers": "new_atlante_integrato:BB_prec_TP_1981-1990",
+                  "styles":"stile_TP",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1981"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }],
+                  "id": "bbTP_1981"
+                },
+                //71-80
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Piovosità media",
+                  "description": "TP_1971-1980 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "dataCustodian": "text",
+                  "layers": "new_atlante_integrato:BB_prec_TP_1971-1980",
+                  "styles":"stile_TP",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1971"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }],
+                  "id": "bbTP_1971"
+                },
+                //61-70
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Piovosità media",
+                  "description": "TP_1961-1970 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "dataCustodian": "text",
+                  "layers": "new_atlante_integrato:BB_prec_TP_1961-1970",
+                  "styles":"stile_TP",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1971"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }],
+                  "id": "bbTP_1971"
+                },
+                //1951-60
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Piovosità media",
+                  "description": "TP_1951-1960 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "dataCustodian": "text",
+                  "layers": "new_atlante_integrato:BB_prec_TP_1951-1960",
+                  "styles":"stile_TP",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1951"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }],
+                  "id": "bbTP_1951"
+                },
+                //2011
                 {
                   "type": "wms",
                   "name": "Dati elaborati big_bang - Ruscellamento medio",
-                  "description": "Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "description": "RF_2011-2019 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "dataCustodian": "text",
-                  "layers": "atlante_integrato:v_idrometri",
+                  "layers": "new_atlante_integrato:RF_2011-2019",
+                  "id": "bbRF_2011",
+                  "styles":"stile_RF",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_2011"
+                  ],
                   "metadataUrls":[{
                     "title":"link metadato DA MODIFICARE",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
-                  }],
-                  "id": "BBang2"
-                }
+                  }]
+                },
+                //2001
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Ruscellamento medio",
+                  "description": "RF_2001-2010 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "new_atlante_integrato:RF_2001-2010",
+                  "id": "bbRF_2001",
+                  "styles":"stile_RF",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_2001"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }]
+                },
+                //91
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Ruscellamento medio",
+                  "description": "RF_1991-2000 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "new_atlante_integrato:RF_1991-2000",
+                  "id": "bbRF_1991",
+                  "styles":"stile_RF",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1991"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }]
+                },
+                //81
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Ruscellamento medio",
+                  "description": "RF_1981-1990 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "new_atlante_integrato:RF_1981-1990",
+                  "id": "bbRF_1981",
+                  "styles":"stile_RF",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1981"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }]
+                },
+                //rf 71-80
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Ruscellamento medio",
+                  "description": "RF_1971-1980 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "new_atlante_integrato:RF_1971-1980",
+                  "id": "bbRF_1971",
+                  "styles":"stile_RF",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1971"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }]
+                },
+                //61
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Ruscellamento medio",
+                  "description": "RF_1961-1970 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "new_atlante_integrato:RF_1961-1970",
+                  "id": "bbRF_1961",
+                  "styles":"stile_RF",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1961"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }]
+                },
+                //51
+                {
+                  "type": "wms",
+                  "name": "Dati elaborati big_bang - Ruscellamento medio",
+                  "description": "RF_1951-1960 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIG BANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "new_atlante_integrato:RF_1951-1960",
+                  "id": "bbRF_1951",
+                  "styles":"stile_RF",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1951"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato DA MODIFICARE",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                  }]
+                }                
               ]
-            }, */
+            },
             {
               "id": "dati",
               "type": "group",
@@ -128,7 +377,7 @@
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "atlante_integrato:v_idrometri",
                   "featureInfoTemplate": {
-                    "template": "<br><p>Idrometro selezionato <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://atlanteintegrato.rse-web.it/export_idroNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
+                    "template": "<br><p>Idrometro selezionato <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"https://dbeta.rse-web.it/sankey/export_idroNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -143,7 +392,7 @@
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "atlante_integrato:v_pluviometri",
                   "featureInfoTemplate": {
-                    "template": "<br><p>Pluviometro selezionato <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://atlanteintegrato.rse-web.it/export_pluvioNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
+                    "template": "<br><p>Pluviometro selezionato <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://dbeta.rse-web.it/sankey/export_pluvioNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -415,7 +664,7 @@
                   "name": "Campagne di misure ondametriche - Civitavecchia",
                   "description": "Campagne di misure ondametriche. \n\n Misure del moto ondoso e dei flussi di corrente realizzate nel periodo 9 feb 2017-12 mar 2017, nello specchio di mare antistante il porto di Civitavecchia a circa 40 m di profondit&#224;: altezza d'onda, correnti, velocità e direzione, periodo di picco, potenza disponibile. \n\n Informazioni sul layer Campagne di misure ondametriche</br></br>Documento RSE RdS prot. 17002141</a>.",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "layers": "atlante_integrato:siti_campagna_misura",
+                  "layers": "new_atlante_integrato:ma_misure_civitavecchia_punto",
                   "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=135"
@@ -427,7 +676,7 @@
                   "name": "Campagne di misura boa MOBI - Canale di Sicilia",
                   "description": "MOBI - Stazione di misura offshore su boa galleggiante",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "layers": "atlante_integrato:boa_mobi",
+                  "layers": "new_atlante_integrato:boa_mobi",
                   "id": "mobi"
                 }
               ]  

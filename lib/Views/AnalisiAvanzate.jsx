@@ -43,7 +43,7 @@ function AnalisiAvanzate(props) {
             {/*<div class="row">
             <div class="col-sm-6">*/}
             <h2> TOTEM </h2>
-            <a target="_blank" href="http://rakino.ricerca.lan">
+            <a target="_blank" href="https://totem.rse-web.it">
               <img
                 className={Styles.image}
                 src={require("../../wwwroot/images/logo_totem_TrW_new.png")}
@@ -69,7 +69,7 @@ function AnalisiAvanzate(props) {
               necessari a software di analisi multienergetiche. Prima di
               attivare il tool è necessario selezionare, a partire dal link qui
               di seguito, il <i>territorio provinciale e l'anno </i> in cui se
-              vuole effettuare l'analisi. */}{" "}
+              vuole effettuare l'analisi.  href="http://rakino.ricerca.lan"*/}{" "}
             </p>
           </li>
         </ul>
@@ -81,8 +81,10 @@ function AnalisiAvanzate(props) {
             <h2> Sulcis - Iglesiente </h2>
             <a
               target="_blank"
-              href="http://gis2.rse-web.it:8080/mapstore/#/geostory/131"
+              href="https://geoportale.rse-web.it/#/geostory/131"
             >
+              {" "}
+              {/* href="http://gis2.rse-web.it:8080/mapstore/#/geostory/131 */}
               <img
                 className={Styles.image}
                 src={require("../../wwwroot/images/location_Wtr.png")}
@@ -101,7 +103,7 @@ function AnalisiAvanzate(props) {
               <a
                 target="_blank"
                 className={Styles.link}
-                href="http://gis2.rse-web.it:8080/mapstore/#/geostory/131"
+                href="https://geoportale.rse-web.it/#/geostory/131"
               >
                 {" "}
                 Sulcis Iglesiente
@@ -119,7 +121,8 @@ function AnalisiAvanzate(props) {
             <a
               target="_blank"
               // href="http://atlanteintegrato.rse-web.it/sankey.php"
-              href="http://atlanteintegrato.rse-web.it/sankey_it.php"
+              //href="https://atlanteintegrato.rse-web.it/sankey_it.php"
+              href="https://dbeta.rse-web.it/sankey/sankey_it.php"
             >
               <img
                 className={Styles.image}
@@ -134,7 +137,8 @@ function AnalisiAvanzate(props) {
             <a
               target="_blank"
               //href="http://atlanteintegrato.rse-web.it/sankey.php"
-              href="http://atlanteintegrato.rse-web.it/sankey_it.php"
+              //href="https://atlanteintegrato.rse-web.it/sankey_it.php"
+              href="https://dbeta.rse-web.it/sankey/sankey_it.php"
               className={Styles.link}
             >
               WEN - Water Energy Nexus
@@ -148,7 +152,7 @@ function AnalisiAvanzate(props) {
         <ul>
           <li class="list-group-item">
             <h2>Geoportale Energia e Territorio</h2>
-            <a target="_blank" href="http://gis2.rse-web.it/mapstore">
+            <a target="_blank" href="https://geoportale.rse-web.it/#/">
               <img
                 className={Styles.image}
                 src={require("../../wwwroot/images/geo_ET_TrGG.png")}
@@ -169,9 +173,11 @@ function AnalisiAvanzate(props) {
             </p>
             <a
               target="_blank"
-              href="http://gis2.rse-web.it/mapstore"
+              href="https://geoportale.rse-web.it/#/"
               className={Styles.link}
             >
+              {" "}
+              {/* href="http://gis2.rse-web.it/mapstore"*/}
               Geoportale Energia e Territorio
             </a>
           </li>

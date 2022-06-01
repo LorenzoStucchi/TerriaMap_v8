@@ -8,7 +8,7 @@
     "it_impianti",
     "it_consumi",
     "it_stime_energetiche",
-    "it_story_eff",
+    //"it_story_eff",
     "it"
   ],
   "parameters": {
@@ -28,7 +28,7 @@
       "text": "Disclaimer: questa mappa non deve essere usata per la navigazione o per un'analisi spaziale precisa",
       "url": ""
     },
-    /*
+      /*
         // Text that will be added to any pages printed from your site.
         printDisclaimer:{
             text:"Put your print disclaimer here.",
@@ -38,16 +38,16 @@
 
     // Pop-up disclaimer that will be shown at the start
     // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
-    // globalDisclaimer: {
-    //     confirmationRequired: false,
-    //     buttonTitle: "I agree",
-    //     title: "Disclaimer",
-    //     // If the current browser location is not prod, or is dev, then show a "not the real site" warning.
-    //     // The text of that is in lib/Views/DevelopmentDisclaimerPreamble.html
-    //     //prodHostRegex: "gov.\\.au$",
-    //     //devHostRegex: "\\b(staging|preview|test|dev)\\.",
-    //     enableOnLocalhost: true // If false, don't show this when running on localhost
-    // },
+    "globalDisclaimer": {
+         "confirmationRequired": false,
+         "buttonTitle": "I agree- prosegui",
+         "title": "Disclaimer-iniziale",
+         // If the current browser location is not prod, or is dev, then show a "not the real site" warning.
+         // The text of that is in lib/Views/DevelopmentDisclaimerPreamble.html
+         //prodHostRegex: "gov.\\.au$",
+         //devHostRegex: "\\b(staging|preview|test|dev)\\.",
+         "enableOnLocalhost": true // If false, don't show this when running on localhost
+     },
 
     /*
         developerAttribution: {

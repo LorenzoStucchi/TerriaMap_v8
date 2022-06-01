@@ -1,10 +1,9 @@
 {
     "stories":[
         {
-
             "id": "st_autosuff",
-            "title" : "indice di autosufficienza",
-            "text" : "Descrive l'indice di autosufficienza e come viene determinato",
+            "title" : "Indice di autosufficienza",
+            "text" : "<div>Questo indice fornice indicazioni di massima sul livello di generazione locale da Fonti Energetiche Rinnovabili, rispetto ai consumi del medesimo contesto territoriale.<br>L’Indicatore di Autosufficienza Energetica (IAE) è  calcolato come rapporto tra la generazione prodotta da impianti FER collocati nel territorio comunale allacciati alla reta di distribuzione e i consumi elettrici residenziali del medesimo comune.</div>",
             "ShareData" :
             {
                 "version":"8.0.0",
@@ -194,7 +193,7 @@
         {
             "id":"st_produzione",
             "title":"Indice di autosufficienza - Produzione",
-            "text":"<div>Determinazione della potenza installata per le singole tecnologie FER in ogni comune.<br> Individuazione del corrispondente valore del parametro ore equivalenti di funzionamento dell'impianto (hequ) da abbinare a ciascun comune per stimare la produzione energetica, a scala comunale, di ogni singola tipologia FER.</div>",
+            "text":"<div>La produzione FER comunale è calcolata come segue:<br> - determinazione della potenza in esercizio per le singole tecnologie FER in ogni comune, all’anno di riferimento. Sono considerati gli impianti di Potenza inferiore ai 6 MW come proxy per la stima della  potenza allacciata alla rete MT e BT;<br> - stima delle ore equivalenti annue di funzionamento (h_equ) per ciascuna tecnologia FER e per ciascun comune.<br>Le stime sono elaborazioni di dati GSE.</div>",
             "shareData":
             {
                 "version":"8.0.0",
@@ -353,7 +352,7 @@
         {
             "id":"st_consumi",
             "title":"Indice di autosufficienza - Consumi",
-            "text":"<div>Per la determinazione dei <b>consumi</b> comunali i dati di partenza sono quelli relativi ai consumi elettrici provinciali dei macro-settori economici agricoltura, industria, terziario e domestico, reperibili nella sezione statistiche/consumi di energia elettrica per settore merceologico del sito internet di Terna.</div><div>I dati di consumo provinciale sono poi stati ripartiti tra i comuni appartenenti alla medesima provincia secondo la seguente etodologia. Per le attività economiche (agricoltura, industria e terziario) è stato utilizzato il numero di <b>addetti</b> impiegato nei singoli comuni in relazione ai diversi settori oggetto dell'analisi (dato ISTAT Censimento 2011) per il settore domestico, invece, la ripartizione è fatta in base alla <b>popolazione</b> residente (dato ISTAT 2015).</div>",
+            "text":"I <b>consumi</b> elettrici comunali sono stimati a partire dai dati pubblicati dei consumi elettrici provinciali dei macrosettori economici”, reperibili nella sezione statistiche/consumi di energia elettrica per settore merceologico del sito internet di Terna.<br> I dati di consumo provinciale sono ripartiti tra i comuni della provincia in base alla popolazione residente (dato ISTAT all’anno di riferimento), per quanto riguarda il settore domestico, e in base agli addetti impiegati nei singoli comuni, per quanto riguarda i settori agricoltura, industria e terziari(dati ISTAT Censimento 2011).</div><div><img width=\"512\" src=\"/images/autosuff.png\"></div>",
             "shareData":
             {
                 "version":"8.0.0",
@@ -545,195 +544,9 @@
             }
         },
         {
-            "id":"st_cons_unitario",
-            "title":"Coefficienti di consumo provinciale unitario",
-            "text":"I diversi coefficienti di consumo provinciale unitario calcolati sono mostrati nelle mappe riportate quì di seguito. Sono riportati i macro-settori e il settore domestico. In particolare l'immagine riporta la mappa dei valori di tali coefficienti provinciali in MWh/uomo. In tutti i casi si è utilizzata una rappresentazione (legenda) a gradazione di colore.<br>In legenda i valori riportati tra parentesi quadre, di fianco ad ogni singola classe rappresentata, sono indicativi del numero di province italiane incluse nelle diverse classi.</div><div><img width=\"512\" src=\"/images/autosuff.png\"></div>",
-            "shareData":
-            {
-                "version":"8.0.0",
-                "initSources":[
-                    {
-                    "stratum":"user",
-                    "models":{
-                    "72":
-                    {
-                        "isOpenInWorkbench":false,
-                        "currentTime":"2019-12-31T22:00:00Z",
-                        "startTime":"2015-12-31T22:00:00Z",
-                        "stopTime":"2019-12-31T22:00:00Z",
-                        "multiplier":12623040.1,
-                        "isPaused":true,
-                        "show":true,
-                        "knownContainerUniqueIds":["sun"],
-                        "type":"wms"
-                    },
-                    "79":
-                    {
-                        "isOpenInWorkbench":false,
-                        "show":false,
-                        "knownContainerUniqueIds":["biom"],
-                        "type":"wms"
-                    },
-                    "104":
-                    {
-                        "isOpenInWorkbench":false,
-                        "currentTime":"2019-12-31T22:00:00Z",
-                        "startTime":"2015-12-31T22:00:00Z",
-                        "stopTime":"2019-12-31T22:00:00Z",
-                        "multiplier":12623040.1,
-                        "isPaused":true,
-                        "show":false,
-                        "knownContainerUniqueIds":["idro"],
-                        "type":"wms"
-                    },
-                    "territory":
-                    {
-                        "isOpen":true,
-                        "knownContainerUniqueIds":["/"],
-                        "type":"group"
-                    },
-                    "rete":
-                    {
-                        "isOpen":true,
-                        "knownContainerUniqueIds":["/"],
-                        "type":"group"
-                    },
-                    "risorsa":
-                    {
-                        "isOpen":true,
-                        "knownContainerUniqueIds":["/"],
-                        "type":"group"
-                    },
-                    "plants":
-                    {
-                        "isOpen":true,
-                        "knownContainerUniqueIds":["/"],
-                        "type":"group"
-                    },
-                    "eolo":
-                    {
-                        "isOpen":false,
-                        "knownContainerUniqueIds":["plants"],
-                        "type":"group"
-                    },
-                    "eo_218":
-                    {
-                        "isOpenInWorkbench":false,
-                        "currentTime":"2019-12-31T22:00:00Z",
-                        "isPaused":true,"show":true,
-                        "knownContainerUniqueIds":["eolo"],
-                        "type":"wms"
-                    },
-                    "idro":
-                    {
-                        "isOpen":false,
-                        "knownContainerUniqueIds":["plants"],
-                        "type":"group"
-                    },
-                    "sun":
-                    {
-                        "isOpen":false,
-                        "knownContainerUniqueIds":["plants"],
-                        "type":"group"
-                    },
-                    "geot":
-                    {
-                        "isOpen":false,
-                        "knownContainerUniqueIds":["plants"],
-                        "type":"group"
-                    },
-                    "ge_220":
-                    {
-                        "isOpenInWorkbench":true,
-                        "currentTime":"2019-12-31T22:00:00Z",
-                        "isPaused":true,
-                        "show":false,
-                        "knownContainerUniqueIds":["geot"],
-                        "type":"wms"
-                    },
-                    "biom":
-                    {
-                        "isOpen":true,
-                        "knownContainerUniqueIds":["plants"],
-                        "type":"group"
-                    },
-                    "//consumi elettrici":
-                    {
-                        "isOpen":true,
-                        "knownContainerUniqueIds":["/"],
-                        "type":"group"
-                    },
-                    "//consumi elettrici/Consumi elettrici del comparto agricolo provinciale (GWh)":
-                    {
-                        "isOpenInWorkbench":false,
-                        "show":true,
-                        "knownContainerUniqueIds":["//consumi elettrici"],
-                        "type":"wms"
-                    },
-                    "//consumi elettrici/Consumi elettrici del comparto industriale provinciale (GWh)":
-                    {
-                        "isOpenInWorkbench":false,
-                        "show":true,
-                        "knownContainerUniqueIds":["//consumi elettrici"],
-                        "type":"wms"
-                    },
-                    "//consumi elettrici/Consumi elettrici del comparto terziario provinciale (GWh)":
-                    {
-                        "isOpenInWorkbench":false,
-                        "show":true,
-                        "knownContainerUniqueIds":["//consumi elettrici"],
-                        "type":"wms"
-                    },
-                    "//consumi elettrici/Consumi elettrici del comparto domestico provinciale (GWh)":
-                    {
-                        "isOpenInWorkbench":false,
-                        "show":true,
-                        "knownContainerUniqueIds":["//consumi elettrici"],
-                        "type":"wms"
-                    },
-                    "mzQgVb":
-                    {
-                        "isOpen":true,
-                        "knownContainerUniqueIds":["/"],
-                        "type":"group"
-                    }
-                },
-                "workbench":[],
-                "timeline":[],
-                "initialCamera":
-                {
-                    "west":3.537597656250001,
-                    "south":38.340947725176655,
-                    "east":22.565917968750004,
-                    "north":48.96520080040308
-                },
-                "homeCamera":
-                {
-                    "west":6.000000000000001,
-                    "south":35,
-                    "east":19,
-                    "north":48.00000000000001
-                },
-                "baseMaps":
-                {
-                    "defaultBaseMapId":"basemap-positron"
-                },
-                "viewerMode":"2d",
-                "currentTime":
-                {
-                    "dayNumber":2458849,
-                    "secondsOfDay":36037
-                },
-                "showSplitter":false,
-                "splitPosition":0.4999
-                    }
-                ]
-            }
-        },
-        {
             "id":"st_indice",
             "title":"Indice di autosufficienza energetica da FER",
-            "text":"<div> Questo indice vuole fornire indicazioni sul contesto energetico legato alle FER a scala locale. <br> In particolare è calcolato a livello della rete di distribuzione che interessa il territorio di ciascun comune italiano, e considera sia la situazione attuale, sia quella correlata a possibili sviluppi futuri della generazione da FER ad essa allacciata.<br>A questo scopo è stato identificato un indicatore con finalità di evidenziare la propensione di ogni singolo comune all'autonomia energetica da FER. Tale indicatore, denominato <b> indice di autosufficienza energetica da FER </b> (IAE), da un'indicazione quantitativa di come un comune potrebbe sostenere i consumi energetici imputabili alle attività umane svolte sul proprio territorio con la sola produzione di energia elettrica da impianti FER di generazione distribuita operativi sul territorio stesso.</div>",
+            "text":"<div> Nella mappa sono rappresentati i risultati ottenuti per l’anno di riferimento 2015. <br>L’applicazione dell’indice a scenari di sviluppo futuri della generazione distribuita fornisce un'indicazione quantitativa di come un comune potrebbe sostenere i consumi energetici imputabili alle attività umane svolte sul proprio territorio con la sola produzione di energia elettrica da impianti FER di generazione distribuita operativi sul territorio stesso.<br> Approfondimenti su questo studio sono reperibili nel Rapporto RdS 18007806.</div>",
             "shareData":
             {
                 "version":"8.0.0",

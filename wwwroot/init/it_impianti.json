@@ -240,6 +240,21 @@
                   },
                   "id": "eo_217",
                   "styles":"new_atlante_integrato:eo_num_ae_comun"
+                },
+                {
+                  "type": "wms",
+                  "name": "Eolico - DB aerogeneratori",
+                  "description": "Eolico - DB aerogeneratori (anno di aggiornato 2019) Posizione degli aerogeneratori a scala nazionale, derivante da un' elaborazione di Ricerca sul Sistema Energetico - RSE S.p.A. a partire da dati GSE , The Wind Power e da immagini satellitari Sentinel-2. A ciascun aerogeneratore è associata una classe di potenza.",
+                  "featureInfoTemplate": {
+                    "template": "<p>Classe di potenza <b>{{classe_pot}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=229\">link al metadato </a> </p>"
+                  },
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=229&anno=2019"
+                  }],
+                  "layers": "new_atlante_integrato:aerogeneratori",
+                  "id": "eo_aerogen"
                 }
               ]
             },

@@ -1,4 +1,8 @@
 {
+  "corsDomains" : [
+    "gis2.rse-web.it",
+    "gis2.rse-web.it:8080"
+  ],
   "catalog": [
     {
       "type": "group",
@@ -16,7 +20,7 @@
             },
             "metadataUrls":[{
               "title":"link metadato",
-              "url":"https://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2021"
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2021"
             }],
             "layers": "new_atlante_integrato:v_regioni_terria",
             "id": "confreg"

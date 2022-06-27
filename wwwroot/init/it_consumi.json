@@ -2,15 +2,15 @@
   "catalog": [
     {
       "type": "group",
-      "name": "consumi elettrici",
-      "description": "Questa raccolta comprende i dati dei consumi elettrici a varie scale.\n\n <div><img src=\"/public/img/shutterstock_1033815145.jpg\" style=\"width:400px;height:300px;\"></div>",
+      "name": "Consumi elettrici",
+      "description": "Questa raccolta comprende informazioni sui consumi elettrici a diversi livelli di aggregazione spaziale, negli anni.\n\n <div><img src=\"/public/img/shutterstock_1033815145.jpg\" style=\"width:400px;height:300px;\"></div>",
       /*        <div><img src=\"/images/vecteezy_electric-measuring-power-meter-for-energy-cost-at-home-and-office_3115062.jpg\" style=\"width:400px;height:300px;\"></div><a href=\"https://it.vecteezy.com/foto-gratuito\">Foto d’archivio di Vecteezy</a>", */
       "isOpen": false,
       "members": [
         {
           "type": "wms",
           "name": "Consumi elettrici totali a livello regionale (GWh)",
-          "description": "Consumi elettrici totali a livello regionale (GWh). \n\n Mappa della distribuzione regionale dei consumi elettrici.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione regionale dei consumi elettrici (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -32,7 +32,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici del comparto industriale regionale (GWh)",
-          "description": "Consumi elettrici del comparto industriale regionale (GWh) \n\n Mappa della distribuzione regionale dei consumi elettrici del comparto industriale (GWh).\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione regionale dei consumi elettrici del comparto industriale (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -51,7 +51,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici del comparto agricolo regionale (GWh)",
-          "description": "Consumi elettrici del comparto agricolo regionale (GWh) \n\n Mappa della distribuzione regionale dei consumi elettrici del comparto agricolo (GWh). \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione regionale dei consumi elettrici del comparto agricolo (GWh), negli anni. \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -70,7 +70,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici del comparto terziario regionale (GWh)",
-          "description": "Consumi elettrici del comparto terziario regionale (GWh). \n\n Mappa della distribuzione regionale dei consumi elettrici del comparto terziario (GWh). \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione regionale dei consumi elettrici del comparto terziario (GWh), negli anni. \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "layers": "new_atlante_integrato:v_regioni_t",
           "featureInfoTemplate": {
@@ -89,7 +89,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici del comparto domestico regionale (GWh)",
-          "description": "Consumi elettrici del comparto domestico regionale (GWh). \n\n Mappa della distribuzione regionale dei consumi elettrici del comparto domestico (GWh). \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione regionale dei consumi elettrici del comparto domestico (GWh), negli anni. \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -108,7 +108,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici FS regionali (GWh)",
-          "description": "Consumi elettrici FS regionali (GWh). \n\n Mappa della distribuzione regionale dei consumi elettrici FS regionali (GWh). \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione regionale dei consumi elettrici FS regionali (GWh), negli anni. \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -127,7 +127,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici del comparto agricolo provinciale (GWh)",
-          "description": "Consumi elettrici del comparto agricolo provinciale (GWh). \n\n Mappa della distribuzione dei consumi elettrici del comparto agricolo provinciale (GWh).\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto agricolo (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -146,7 +146,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici del comparto industriale provinciale (GWh)",
-          "description": "Consumi elettrici del comparto industriale provinciale (GWh). \n\n Mappa della distribuzione consumi elettrici del comparto industriale provinciale (GWh).\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto industriale (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "info": [
             {
               "name": "Licence",
@@ -171,7 +171,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici del comparto terziario provinciale (GWh)",
-          "description": "Consumi elettrici del comparto terziario provinciale (GWh). \n\n Mappa della distribuzione Consumi elettrici del comparto terziario provinciale (GWh).\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto terziario (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -190,7 +190,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici del comparto domestico provinciale (GWh)",
-          "description": "Consumi elettrici del comparto domestico provinciale (GWh). \n\n Mappa della distribuzione dei consumi elettrici del comparto domestico provinciale (GWh).<br> \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto domestico (GWh), negli anni.<br> \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -209,7 +209,7 @@
         {
           "type": "wms",
           "name": "Consumi elettrici totali a livello provinciale esclusi consumi FS (GWh)",
-          "description": "Consumi elettrici totali a livello provinciale esclusi consumi FS (GWh). \n\n Mappa della distribuzione dei consumi elettrici totali a livello provinciale esclusi consumi FS (GWh).<br> \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi). Per ulteriori informazione vedasi metadato.",
+          "description": "Mappa della distribuzione dei consumi elettrici totali a livello provinciale esclusi consumi FS (GWh), negli anni.<br> \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"

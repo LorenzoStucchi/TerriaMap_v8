@@ -8,10 +8,14 @@
     "it_impianti",
     "it_consumi",
     "it_stime_energetiche",
-    "it_story_eff",
+    //"it_story_eff",
     "it"
   ],
   "parameters": {
+    "tabbedCatalog": true,
+    "useCesiumIonTerrain": false,
+    "cesiumTerrainAssetId": false,
+
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
@@ -34,16 +38,16 @@
 
     // Pop-up disclaimer that will be shown at the start
     // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
-    // globalDisclaimer: {
-    //     confirmationRequired: false,
-    //     buttonTitle: "I agree",
-    //     title: "Disclaimer",
+    "globalDisclaimer": {
+         "confirmationRequired": false,
+         "buttonTitle": "OK",
+         "title": "  ",
     //     // If the current browser location is not prod, or is dev, then show a "not the real site" warning.
     //     // The text of that is in lib/Views/DevelopmentDisclaimerPreamble.html
     //     //prodHostRegex: "gov.\\.au$",
     //     //devHostRegex: "\\b(staging|preview|test|dev)\\.",
-    //     enableOnLocalhost: true // If false, don't show this when running on localhost
-    // },
+         "enableOnLocalhost": true // If false, don't show this when running on localhost
+     },
 
     /*
         developerAttribution: {
@@ -60,7 +64,7 @@
       ""
     ],
     // Shown when things go wrong.
-    "supportEmail": "help@example.com",
+    "supportEmail": "rse@legalmail.it",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this

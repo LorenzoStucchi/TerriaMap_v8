@@ -21,7 +21,7 @@
     "googleAnalyticsOptions": null,
 
     // Log ConsoleAnalytics events to console
-    // logToConsole: true,
+    //"logToConsole": true,
 
     /* Text that appears at the bottom of the map */
     "disclaimer": {
@@ -68,7 +68,7 @@
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
-    "feedbackUrl": "feedback",
+    //"feedbackUrl": "feedback",
 
     // Default mobile viewer mode when loading the map for the first time on mobile platforms.
     // Options are: "3DTerrain", "3DSmooth", "2D"

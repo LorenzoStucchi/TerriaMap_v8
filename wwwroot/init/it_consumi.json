@@ -141,9 +141,11 @@
             "cql_filter": "var_id=80"
           },
 		      "availableStyles":[{"layerName":"cons_el_comparto_agr_prov"}],
-          "styles":"cons_el_comparto_agr_prov"
+          "styles":"cons_el_comparto_agr_prov",
+          "id":"cons_80"
         },
-        {
+        { 
+          "id":"cons_81",
           "type": "wms",
           "name": "Consumi elettrici del comparto industriale provinciale (GWh)",
           "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto industriale (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
@@ -169,6 +171,7 @@
           "styles":"cons_el_comparto_ind_prov"
         },
         {
+          "id":"cons_82",
           "type": "wms",
           "name": "Consumi elettrici del comparto terziario provinciale (GWh)",
           "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto terziario (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
@@ -188,6 +191,7 @@
           "styles":"cons_el_comparto_terz_prov"
         },
         {
+          "id":"cons_83",
           "type": "wms",
           "name": "Consumi elettrici del comparto domestico provinciale (GWh)",
           "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto domestico (GWh), negli anni.<br> \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",

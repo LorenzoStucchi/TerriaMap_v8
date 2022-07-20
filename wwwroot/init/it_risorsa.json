@@ -645,14 +645,14 @@
             {  
               "id": "monitor",
               "type": "group",
-              "name": "Dati di monitoraggio",
+              "name": "Campagne di misura",
               "description": "Questa raccolta comprende le misure effettuate in punti di monitoraggio",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Campagne di misure ondametriche - Civitavecchia",
-                  "description": "Misure del moto ondoso e dei flussi di corrente realizzate nel periodo 9 feb 2017-12 mar 2017, nello specchio di mare antistante il porto di Civitavecchia a circa 40 m di profondit&#224;: altezza d'onda, correnti, velocità e direzione, periodo di picco, potenza disponibile. \n\n Informazioni aggiuntive: </br></br>Documento RSE RdS prot. 17002141</a>.",
+                  "name": "Campagne di misura ondametriche - Civitavecchia",
+                  "description": "Misure del moto ondoso e dei flussi di corrente realizzate nei periodi: 9 feb 2017-12 mar 2017, 12 mar 2017 - 08 giu 2017 e 10 ott 2017 - 20 dic 2017, nello specchio di mare antistante il porto di Civitavecchia a circa 40 m di profondit&#224;: altezza d'onda, correnti, velocità e direzione, periodo di picco, potenza disponibile. \n\n Informazioni aggiuntive: </br></br>Documento RSE RdS prot. 17002141</a>.",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:ma_misure_civitavecchia_punto",
                   "metadataUrls":[{

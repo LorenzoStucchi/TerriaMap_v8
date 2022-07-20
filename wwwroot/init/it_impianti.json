@@ -154,6 +154,13 @@
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"eo_num_impianti_prov",
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=221",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=221&anno=2019"
@@ -781,6 +788,13 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=74&anno=2019"
                   }],
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=74",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"ge_imp_prov_potenza_installata",
                   "parameters": {
@@ -1052,6 +1066,13 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=197&anno=2019"
                   }],
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=197",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"bi_prod_prov",
                   "parameters": {
@@ -1071,6 +1092,13 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=194&anno=2019"
                   }],
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=194",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"bi_ru_biodegradabili_energia_prov",
                   "parameters": {
@@ -1090,6 +1118,13 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=191&anno=2019"
                   }],
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=191",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"bi_bioliquidi_energia_prov",
                   "parameters": {
@@ -1109,6 +1144,13 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=200&anno=2019"
                   }],
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=200",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"bi_soli_energia_prov",
                   "parameters": {
@@ -1194,7 +1236,8 @@
               "members": [
               {
                 "type": "wms",
-                "name": "Impianti di pompaggio idroelettrico - potenziale realizzabile potenza comunale (MW)",              "description": "Mappa a livello comunale del potenziale di pompaggio installabile (potenza espressa in MW). Il potenziale fa riferimento a nuovi impianti di pompaggio potenziali, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi;\n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n   -	pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n  -	pompaggio tra laghi esistenti.\n\n <br>Informazioni aggiuntive: Rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266. Valutazioni anno 2015.",
+                "name": "Impianti di pompaggio idroelettrico - potenziale realizzabile potenza comunale (MW)",
+                "description": "Mappa a livello comunale del potenziale di pompaggio installabile (potenza espressa in MW). Il potenziale fa riferimento a nuovi impianti di pompaggio potenziali, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi;\n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n   -	pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n  -	pompaggio tra laghi esistenti.\n\n <br>Informazioni aggiuntive: Rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266. Valutazioni anno 2015.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "featureInfoTemplate": {
                   "template": "<p>Comune {{comune}}; <br> <p>Pompaggio tradizionale, potenza installabile (MW) {{pot_po_44}}; <br> <p>Pompaggio marino, potenza installabile (MW)  {{pot_po_38}}; <br> <p>Pompaggio sotterraneo, potenza installabile (MW) {{pot_po_40}}; <br> <p>Pompaggio tra laghi esistenti, potenza installabile (MW) {{pot_po_42}}; <br> <p>Potenza installabile totale (MW) {{pot_po_sum}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=43\">link al metadato</a></p>"

@@ -755,14 +755,15 @@
             {
               "type": "wms",
               "name": "Zonazione geotermica",
-              "description": "Viene presentata la distribuzione sul territorio italiano di alcuni parametri geotermici che possono supportare l'individuazione di un possibile serbatoio di fluido geotermico industrialmente utilizzabile. Le informazioni sono presentate su base comunale e riguardano: </br> - La temperatura (°C) minima, media e massima a 1.000, 2.000 e 3.000 metri di profondità (campi T1000, T2000 e T3000);</br> - Il flusso di calore (mW/m<sup>2</sup>) minimo, medio e massimo (campi Flow);</br> - La profondità (metri) minima, media e massima del tetto delle rocce potenzialmente idonee a contenere un sistema geotermico (tetto serbatoio carbonatico ove mappato) (campi Carbo)\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "description": "La zonazione geotermica permette di supportare l'individuazione a scala comunale delle aree nelle quali sussistono incrementi rilevanti delle temperature nel sottosuolo a profondità inferiori rispetto alla media che generano le condizioni teoriche necessarie per attingere calore, supportando l'individuazione di un possibile serbatoio di fluido geotermico industrialmente utilizzabile. \n Questa mappa riporta per ciascun comune le seguenti informazioni:\n - la temperatura (°C) minima, media e massima a 1.000, 2.000 e 3.000 metri di profondità (campi T1000, T2000 e T3000);\n - Il flusso di calore (mW/m2) minimo, medio e massimo (campi Flow);\n - la profondità (metri) minima, media e massima del tetto delle rocce potenzialmente idonee a contenere un sistema geotermico (tetto serbatoio carbonatico ove mappato) (campi Carbo).\n Nella mappa visualizzata viene mostrata a titolo di esempio la distribuzione del parametro di temperatura media a 1.000 m di profondità, ma selezionando l’opportuna legenda è possibile visualizzare la distribuzione degli altri parametri presenti.\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:v_comuni_valori_mappe",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=145"
               }],
-              "id": "Zon_Geoter"
+              "id": "Zon_Geoter",
+              "styles":"zon_geo_t1000_mean"
             },
             {
               "type": "wms",

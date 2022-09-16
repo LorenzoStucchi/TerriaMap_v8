@@ -17,11 +17,12 @@
     "cesiumTerrainAssetId": false,
 
     "googleUrlShortenerKey": null,
-    "googleAnalyticsKey": "UA-3419972-41",
+    "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
 
     // Log ConsoleAnalytics events to console
     //"logToConsole": true,
+    //"UA-3419972-41"
 
     /* Text that appears at the bottom of the map */
     "disclaimer": {

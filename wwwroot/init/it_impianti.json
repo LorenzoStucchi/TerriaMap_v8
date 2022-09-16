@@ -156,8 +156,8 @@
                   "styles":"eo_num_impianti_prov",
                   "initialMessage": {
                     "title": "Visualizzazione strato:",
-                    "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
-                    "key": "var_id=221",
+                    "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "eo_221",
                     "confirmation": true,
                     "confirmText": "Ho capito"
                   },
@@ -206,6 +206,13 @@
                     "cql_filter": "var_id=218"
                   },
                   "id": "eo_218",
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "eo_218",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "styles":"eo_imp_com_potenza"
                 },
                 {
@@ -225,6 +232,13 @@
                     "cql_filter": "var_id=204"
                   },
                   "id": "eo_204",
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "eo_204",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "styles":"new_atlante_integrato:eo_num_comun"
                 },
                 {
@@ -244,6 +258,13 @@
                     "cql_filter": "var_id=217"
                   },
                   "id": "eo_217",
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "eo_217",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "styles":"new_atlante_integrato:eo_num_ae_comun"
                 },
                 {
@@ -268,7 +289,6 @@
               "type": "group",
               "name": "Idroelettrici",
               "description": "Questa raccolta comprende dati relativi agli impianti idroelettrici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n <div><img src=\"/public/img/shutterstock_1208041777.jpg\" style=\"width:640px;height:427px;\"></div>",
-              /* <div><img src=\"/images/vecteezy_2015-dnieper-river-england-hydroelectric-dam-on-the-dnieper-river_2186388.jpg\" style=\"width:400px;height:300px;\"></div><a href=\"https://it.vecteezy.com/foto-gratuito\">Foto d’archivio di Vecteezy</a>", */
               "isOpen": false,
               "members": [
                 {
@@ -689,7 +709,14 @@
                   "parameters": {
                     "cql_filter": "var_id=219"
                   },
-                  "id": "219"
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2021 dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "so_219",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
+                  "id": "so_219"
                 },
                 {
                   "type": "wms",
@@ -707,6 +734,13 @@
                   "styles":"so_n_imp_com",
                   "parameters": {
                     "cql_filter": "var_id=215"
+                  },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2021 dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "so_215",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
                   },
                   "id": "215"
                 }
@@ -856,6 +890,13 @@
                   "parameters": {
                     "cql_filter": "var_id=220"
                   },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "ge_220",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "styles":"ge_pot_imp_com",
                   "id": "ge_220"
                 },
@@ -874,6 +915,13 @@
                   "layers": "new_atlante_integrato:v_comuni_t",
                   "parameters": {
                     "cql_filter": "var_id=203"
+                  },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "ge_203",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
                   },
                   "styles":"ge_num_impianti_com",
                   "id": "ge_203"
@@ -937,6 +985,13 @@
                   "styles":"bi_num_imp_reg",
                   "parameters": {
                     "cql_filter": "var_id=201"
+                  },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per gli anni 2015 - 2019 .<br>Per visualizzare questo layer occorre selezionare nella barra laterale un'annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "so_219",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
                   },
                   "id": "201"
                 },
@@ -1167,8 +1222,6 @@
           "type": "group",
           "name": "Tradizionali",
           "description": "Questa raccolta comprende dati relativi agli impianti a fonti energetiche tradizionali presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n <div><img src=\"/public/img/shutterstock_179942231.jpg\" style=\"width:640px;height:427px;\"></div>",
-          /* <a href=\"https://creativecommons.org/licenses/by/2.5/ar/deed.en\" rel=\"license\">CC BY 2.5 AR</a>\n\n <a title=\"Juan Corral (Fotógrafo, Subdirección de Prensa y Contenidos Públicos del Municipio de Bahía Blanca), CC BY 2.5 AR &lt;https://creativecommons.org/licenses/by/2.5/ar/deed.en&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Parque_E%C3%B3lico_Molinos_Corti_(05).jpg\"><img width=\"512\" alt=\"Parque Eólico Molinos Corti (05)\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg/512px-Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg\"></a>",
-           */
           "isOpen": false,
           "members": [
             {
@@ -1176,7 +1229,6 @@
               "type": "group",
               "name": "Termoelettrici",
               "description": "Questa raccolta comprende dati relativi agli impianti termoelettrici presenti sul territorio nazionale.\n\n <div><img src=\"/public/img/shutterstock_142892392.jpg\" style=\"width:640px;height:427px;\"></div>",
-              /* <a href=\"https://creativecommons.org/licenses/by/2.5/ar/deed.en\" rel=\"license\">CC BY 2.5 AR</a>\n\n <a title=\"Juan Corral (Fotógrafo, Subdirección de Prensa y Contenidos Públicos del Municipio de Bahía Blanca), CC BY 2.5 AR &lt;https://creativecommons.org/licenses/by/2.5/ar/deed.en&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Parque_E%C3%B3lico_Molinos_Corti_(05).jpg\"><img width=\"512\" alt=\"Parque Eólico Molinos Corti (05)\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg/512px-Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg\"></a>", */
               "isOpen": false,
               "members": [
                 {
@@ -1253,7 +1305,7 @@
               {
                 "type": "wms",
                 "name": "Impianti di pompaggio idroelettrico - potenziale realizzabile - Capacità di accumulo (MWh)",
-                "description": "Mappa a livello comunale della capacità di accumulo (MWh) potenziale. Il potenziale, espresso in capacità di accumulo, si riferisce a nuovi impianti di pompaggio, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi;\n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n   -	pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n  -	pompaggio tra laghi esistenti;\n\n <br> Informazioni aggiuntive: Rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266. Valutazioni anno 2015.\n ",
+                "description": "Mappa a livello comunale della capacità di accumulo (MWh) potenziale. Il potenziale, espresso in capacità di accumulo, si riferisce a nuovi impianti di pompaggio, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto:\n\n - pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi; \n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n - pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n - pompaggio tra laghi esistenti;\n\n <br> Informazioni aggiuntive: Rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266. Valutazioni anno 2015.\n ",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "featureInfoTemplate": {
                   "template": "<p>Comune {{comune}}; <br> <p>Pompaggio tradizionale, capacità di accumulo (MWh) {{acc_var_45}}; <br> <p>Pompaggio marino, capacità di accumulo (MWh) {{acc_var_39}}; <br> <p>Pompaggio sotterraneo, capacità di accumulo (MWh) {{acc_var_41}}; <br> <p>Pompaggio tra laghi esistenti, capacità di accumulo (MWh {{acc_var_43}}; <br> <p>Capacità di accumulo totale (MWh) {{acc_sum_ac}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=45\">link al metadato</a></p>"

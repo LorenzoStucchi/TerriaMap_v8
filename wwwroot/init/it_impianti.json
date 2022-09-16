@@ -206,13 +206,13 @@
                     "cql_filter": "var_id=218"
                   },
                   "id": "eo_218",
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "eo_218",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  },
+                  }, */
                   "styles":"eo_imp_com_potenza"
                 },
                 {
@@ -232,13 +232,13 @@
                     "cql_filter": "var_id=204"
                   },
                   "id": "eo_204",
-                  "initialMessage": {
+                  /*                   "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "eo_204",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  },
+                  }, */
                   "styles":"new_atlante_integrato:eo_num_comun"
                 },
                 {
@@ -258,13 +258,13 @@
                     "cql_filter": "var_id=217"
                   },
                   "id": "eo_217",
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "eo_217",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  },
+                  }, */
                   "styles":"new_atlante_integrato:eo_num_ae_comun"
                 },
                 {
@@ -890,13 +890,13 @@
                   "parameters": {
                     "cql_filter": "var_id=220"
                   },
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "ge_220",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  },
+                  }, */
                   "styles":"ge_pot_imp_com",
                   "id": "ge_220"
                 },
@@ -916,20 +916,20 @@
                   "parameters": {
                     "cql_filter": "var_id=203"
                   },
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "ge_203",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  },
+                  }, */
                   "styles":"ge_num_impianti_com",
                   "id": "ge_203"
                 },
                 {
                   "type": "wms",
                   "name": "Geotermoelettrici - Impianti",
-                  "description": "Mappa della distribuzione degli impianti geotermoelettrici in funzione al 2019,con associato dato di potenza installata (MW).\n\n Elaborazioni RSE a partire dal Global Power Plant Database",
+                  "description": "Mappa della distribuzione degli impianti geotermoelettrici in funzione al 2019, con associato dato di potenza installata (MW).\n\n Elaborazioni RSE a partire dal Global Power Plant Database",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza (MW)  <b>{{potenza_mw}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=202\">link al metadato </a> </p>"
                   },

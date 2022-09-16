@@ -674,15 +674,15 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Fotovoltaici - Potenza comunale impianti a terra (> 1 MW)",
-                  "description": "Mappa della potenza degli impianti fotovoltaici installati a terra a livello comunale relativa ai soli impianti con potenza  superiore ad 1 MW (anno di riferimento, 2019).<br>Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n",
+                  "name": "Fotovoltaici - Potenza comunale impianti a terra (> 100 kW)",
+                  "description": "Mappa della potenza degli impianti fotovoltaici installati a terra a livello comunale relativa ai soli impianti con potenza  superiore a 100 kW (anno di riferimento, 2021).<br>Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza comunale a terra (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=219&anno=2019"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=219"
                   }],
                   "layers": "new_atlante_integrato:v_comuni_t",
                   "styles":"so_imp_com_potenza_intallata",
@@ -693,15 +693,15 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Fotovoltaici - Numero impianti a terra (> 1 MW) comunale",
-                  "description": "Mappa della numerosità degli impianti fotovoltaici installati a terra a livello comunale relativa ai soli impianti con potenza  superiore ad 1 MW. (anno di riferimento, 2019).<br>              Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).",
+                  "name": "Fotovoltaici - Numero impianti a terra (> 100 kW) comunale",
+                  "description": "Mappa della numerosità degli impianti fotovoltaici installati a terra a livello comunale relativa ai soli impianti con potenza  superiore a 100 kW (anno di riferimento, 2021).<br>              Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Numero comunale di impianti <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=215&anno=2019"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=215"
                   }],
                   "layers": "new_atlante_integrato:v_comuni_t",
                   "styles":"so_n_imp_com",

@@ -84,7 +84,7 @@
                 {
                   "type": "wms",
                   "name": "Stazioni anemometriche",
-                  "description": "Stazioni anemometriche installate dal 2000 al 2014 e non più attive. \n\n Download dati al sito: </br><a href=\"https://atlanteeolico.rse-web.it/download_dati-IT.php\" target=\"_blank\">Atlante Eolico - Stazioni anemometriche </a>",
+                  "description": "Stazioni anemometriche installate dal 2000 al 2014 e non più attive. \n\n Download dati al sito: </br><a href=\"https://atlanteeolico.rse-web.it/download_terria_dati-IT.php\" target=\"_blank\">Atlante Eolico - Stazioni anemometriche </a>",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",

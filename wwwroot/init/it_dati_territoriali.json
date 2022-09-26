@@ -4,7 +4,7 @@
       "id": "territory",
       "type": "group",
       "name": "Dati territoriali",
-      "description":"Questa raccolta comprende informazioni su vincoli ambientali su vincoli ambientali, aspetti di valutazione del rischio (rischio sismico) e popolazione residente (a diversi livelli di aggregazione spaziale, negli anni).\n\n\n <a title=\"Tesla Delacroix, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Isel_near_Clarah%C3%BCtte.jpg\"><img width=\"512\" alt=\"Isel near Clarahütte\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Isel_near_Clarah%C3%BCtte.jpg/512px-Isel_near_Clarah%C3%BCtte.jpg\"></a>",
+      "description":"Questa raccolta comprende informazioni su vincoli ambientali su vincoli ambientali, aspetti di valutazione del rischio (rischio sismico) e popolazione residente (a diversi livelli di aggregazione spaziale, negli anni).\n\n\n <a title=\"Tesla Delacroix, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Isel_near_Clarah%C3%BCtte.jpg\"><img width=\"640\" alt=\"Isel near Clarahütte\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Isel_near_Clarah%C3%BCtte.jpg/512px-Isel_near_Clarah%C3%BCtte.jpg\"></a>",
       "isOpen": false,
       "members": [
         {
@@ -65,7 +65,7 @@
             {
               "type": "wms",
               "name": "Specchi d'acqua interni",
-              "description": "Elementi poligonali appartenenti al DBPrior10K rappresentanti gli specchi d’acqua interni come laghi, lagune, stagni, bacini artificiali, ecc.<br><br>Ministero dell'Ambiente e della Tutela del Territorio e del Mare - Geoportale nazionale - Centro interregionale per i sistemi informatici, geografici, statistici - Comitato permanente per i sistemi geografici</p>",
+              "description": "Elementi poligonali appartenenti al DBPrior10K rappresentanti gli specchi d’acqua interni come laghi, lagune, stagni, bacini artificiali, ecc.<br><br>Ministero dell'Ambiente e della Tutela del Territorio e del Mare - Geoportale nazionale - Centro interregionale per i sistemi informatici, geografici, statistici - Comitato permanente per i sistemi geografici.</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"link metadato",

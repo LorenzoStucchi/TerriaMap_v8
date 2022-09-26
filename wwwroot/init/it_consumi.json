@@ -3,7 +3,7 @@
     {
       "type": "group",
       "name": "Consumi elettrici",
-      "description": "Questa raccolta comprende informazioni sui consumi elettrici a diversi livelli di aggregazione spaziale, negli anni.\n\n <div><img src=\"/public/img/shutterstock_1033815145.jpg\" style=\"width:400px;height:300px;\"></div>",
+      "description": "Questa raccolta comprende informazioni sui consumi elettrici a diversi livelli di aggregazione spaziale, negli anni.\n\n <div><img src=\"/public/img/shutterstock_1033815145.jpg\" style=\"width:640px;height:427px;\"></div>",
       /*        <div><img src=\"/images/vecteezy_electric-measuring-power-meter-for-energy-cost-at-home-and-office_3115062.jpg\" style=\"width:400px;height:300px;\"></div><a href=\"https://it.vecteezy.com/foto-gratuito\">Foto d’archivio di Vecteezy</a>", */
       "isOpen": false,
       "members": [

@@ -4,7 +4,7 @@
       "id": "rete",
       "type": "group",
       "name": "Infrastrutture di rete",
-      "description": "Questa raccolta comprende informazioni su flussi e qualità della tensione.\n\n <div><img src=\"/public/img/shutterstock_668568088.jpg\" style=\"width:400px;height:300px;\"></div>",
+      "description": "Questa raccolta comprende informazioni su flussi e qualità della tensione.\n\n <div><img src=\"/public/img/shutterstock_668568088.jpg\" style=\"width:640px;height:427px;\"></div>",
       "isOpen": true,
       "members": [
         {

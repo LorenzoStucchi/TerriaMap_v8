@@ -688,6 +688,10 @@
                   "description": "MOBI - Stazione di misura offshore su boa galleggiante",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:boa_mobi",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=259"
+                  }],
                   "id": "mobi"
                 }
               ]  

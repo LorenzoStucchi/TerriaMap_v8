@@ -18,7 +18,7 @@
               "id": "eolo",
               "type": "group",
               "name": "Eolici",
-              "description": "Questa raccolta comprende dati relativi agli impianti eolici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n <a href=\"https://creativecommons.org/licenses/by/2.5/ar/deed.en\" rel=\"license\">CC BY 2.5 AR</a>\n\n <a title=\"Juan Corral (Fotógrafo, Subdirección de Prensa y Contenidos Públicos del Municipio de Bahía Blanca), CC BY 2.5 AR &lt;https://creativecommons.org/licenses/by/2.5/ar/deed.en&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Parque_E%C3%B3lico_Molinos_Corti_(05).jpg\"><img width=\"512\" alt=\"Parque Eólico Molinos Corti (05)\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg/512px-Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg\"></a>",
+              "description": "Questa raccolta comprende dati relativi agli impianti eolici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n <a href=\"https://creativecommons.org/licenses/by/2.5/ar/deed.en\" rel=\"license\">CC BY 2.5 AR</a>\n\n <a title=\"Juan Corral (Fotógrafo, Subdirección de Prensa y Contenidos Públicos del Municipio de Bahía Blanca), CC BY 2.5 AR &lt;https://creativecommons.org/licenses/by/2.5/ar/deed.en&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Parque_E%C3%B3lico_Molinos_Corti_(05).jpg\"><img width=\"640\" alt=\"Parque Eólico Molinos Corti (05)\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg/512px-Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg\"></a>",
               "isOpen": false,
               "members": [
                 {
@@ -575,7 +575,7 @@
               "id": "sun",
               "type": "group",
               "name": "Fotovoltaici",
-              "description": "Questa raccolta comprende dati relativi agli impianti fotovoltaici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n <a title=\"Jeffrey Beall, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Alamosa_Photovoltaic_Power_Plant.JPG\"><img width=\"512\" alt=\"Alamosa Photovoltaic Power Plant\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Alamosa_Photovoltaic_Power_Plant.JPG/512px-Alamosa_Photovoltaic_Power_Plant.JPG\"></a>",
+              "description": "Questa raccolta comprende dati relativi agli impianti fotovoltaici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n <a title=\"Jeffrey Beall, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Alamosa_Photovoltaic_Power_Plant.JPG\"><img width=\"640\" alt=\"Alamosa Photovoltaic Power Plant\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Alamosa_Photovoltaic_Power_Plant.JPG/512px-Alamosa_Photovoltaic_Power_Plant.JPG\"></a>",
               "isOpen": false,
               "members": [
                 {
@@ -750,7 +750,7 @@
               "id": "geot",
               "type": "group",
               "name": "Geotermici",
-              "description": "Questa raccolta comprende dati relativi agli impianti geotermici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni. \n\n <a title=\"Mathieu Neville, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:The_Hellishei%C3%B0i_Geothermal_Power_Plant,_2018,_Iceland.jpg\"><img width=\"512\" alt=\"The Hellisheiði Geothermal Power Plant, 2018, Iceland\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_Hellishei%C3%B0i_Geothermal_Power_Plant%2C_2018%2C_Iceland.jpg/512px-The_Hellishei%C3%B0i_Geothermal_Power_Plant%2C_2018%2C_Iceland.jpg\"></a>",
+              "description": "Questa raccolta comprende dati relativi agli impianti geotermici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni. \n\n <a title=\"Mathieu Neville, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:The_Hellishei%C3%B0i_Geothermal_Power_Plant,_2018,_Iceland.jpg\"><img width=\"640\" alt=\"The Hellisheiði Geothermal Power Plant, 2018, Iceland\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_Hellishei%C3%B0i_Geothermal_Power_Plant%2C_2018%2C_Iceland.jpg/512px-The_Hellishei%C3%B0i_Geothermal_Power_Plant%2C_2018%2C_Iceland.jpg\"></a>",
               "isOpen": false,
               "members": [
                 {
@@ -947,7 +947,7 @@
               "id": "biom",
               "type": "group",
               "name": " a Biomasse",
-              "description": "Questa raccolta comprende dati relativi agli impianti a biomasse presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n <a title=\"Herzi Pinki, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg\"><img width=\"512\" alt=\"Biomasse - Fernheizwerk Mittleres Schwarzatal\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg/512px-Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg\"></a>",
+              "description": "Questa raccolta comprende dati relativi agli impianti a biomasse presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n <a title=\"Herzi Pinki, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg\"><img width=\"640\" alt=\"Biomasse - Fernheizwerk Mittleres Schwarzatal\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg/512px-Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg\"></a>",
               "isOpen": false,
               "members": [
                 {
@@ -1305,7 +1305,7 @@
               {
                 "type": "wms",
                 "name": "Impianti di pompaggio idroelettrico - potenziale realizzabile - Capacità di accumulo (MWh)",
-                "description": "Mappa a livello comunale della capacità di accumulo (MWh) potenziale. Il potenziale, espresso in capacità di accumulo, si riferisce a nuovi impianti di pompaggio, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto:\n\n - pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi; \n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n - pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n - pompaggio tra laghi esistenti;\n\n <br> Informazioni aggiuntive: Rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266. Valutazioni anno 2015.\n ",
+                "description": "Mappa a livello comunale della capacità di accumulo (MWh) potenziale. Il potenziale, espresso in capacità di accumulo, si riferisce a nuovi impianti di pompaggio, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto:\n\n - pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi; \n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n - pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n - pompaggio tra laghi esistenti.\n\n <br> Informazioni aggiuntive: Rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266. Valutazioni anno 2015.\n ",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "featureInfoTemplate": {
                   "template": "<p>Comune {{comune}}; <br> <p>Pompaggio tradizionale, capacità di accumulo (MWh) {{acc_var_45}}; <br> <p>Pompaggio marino, capacità di accumulo (MWh) {{acc_var_39}}; <br> <p>Pompaggio sotterraneo, capacità di accumulo (MWh) {{acc_var_41}}; <br> <p>Pompaggio tra laghi esistenti, capacità di accumulo (MWh {{acc_var_43}}; <br> <p>Capacità di accumulo totale (MWh) {{acc_sum_ac}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=45\">link al metadato</a></p>"
@@ -1320,7 +1320,7 @@
               },
               {
                 "type": "wms",
-                "name": "Impianti di pompaggio idroelettrico- Potenza installabile compatibilie con gli scenari energetici (MW) ",
+                "name": "Impianti di pompaggio idroelettrico- Potenza installabile compatibile con gli scenari energetici (MW) ",
                 "description": "Mappa a livello comunale della potenza di pompaggio installabile (MW), riferita a nuovi impianti di pompaggio selezionati nell'ambito degli studi per il raggiungimento degli obbiettivi negli scenari energetici.\n\n Il potenziale riguarda i seguenti tipi di impianto: \n\n -	pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi (detto anche a doppio invaso); \n\n -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n Oltre alla potenza di pompaggio installabile, sono associati ai singoli impianti anche dati di potenza in turbinaggio (MW) e capacità di accumulo (MWh).\n\n Informazioni aggiuntive: Rapporto RSE RdS prot. 20000116",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "new_atlante_integrato:po_poten_comunali",

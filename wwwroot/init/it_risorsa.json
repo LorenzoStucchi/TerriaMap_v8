@@ -84,7 +84,7 @@
                 {
                   "type": "wms",
                   "name": "Stazioni anemometriche",
-                  "description": "Stazioni anemometriche installate dal 2000 al 2014 e non più attive. \n\n Download dati al sito: </br><a href=\"https://atlanteeolico.rse-web.it/download_dati-IT.php\" target=\"_blank\">Atlante Eolico - Stazioni anemometriche </a>",
+                  "description": "Stazioni anemometriche installate dal 2000 al 2014 e non più attive. \n\n Download dati al sito: </br><a href=\"https://atlanteeolico.rse-web.it/download_terria_dati-IT.php\" target=\"_blank\">Atlante Eolico - Stazioni anemometriche </a>",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -101,7 +101,7 @@
           "id": "idroel",
           "type": "group",
           "name": "Idroelettrica",
-          "description": "Questa raccolta comprende informazioni sulla risorsa idroelettrica. <div><a title=\"JJ Harrison (https://www.jjharrison.com.au/), CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Water_Dolphin.jpg\"><img width=\"512\" alt=\"Water Dolphin\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Water_Dolphin.jpg/512px-Water_Dolphin.jpg\"></a></div>",
+          "description": "Questa raccolta comprende informazioni sulla risorsa idroelettrica. <div><a title=\"JJ Harrison (https://www.jjharrison.com.au/), CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Water_Dolphin.jpg\"><img width=\"640\" alt=\"Water Dolphin\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Water_Dolphin.jpg/512px-Water_Dolphin.jpg\"></a></div>",
           "isOpen": false,
           "members": [
             {
@@ -453,7 +453,7 @@
           "id": "seaside",
           "type": "group",
           "name": "Marina",
-          "description": "Questa raccolta comprende informazioni riguardo all'energia marina. <div><a title=\"© Friedrich Haag / Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:002_2017_11_14_Wind.jpg\"><img width=\"512\" alt=\"002 2017 11 14 Wind\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/002_2017_11_14_Wind.jpg/512px-002_2017_11_14_Wind.jpg\"></a></div>",
+          "description": "Questa raccolta comprende informazioni riguardo all'energia marina. <div><a title=\"© Friedrich Haag / Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:002_2017_11_14_Wind.jpg\"><img width=\"640\" alt=\"002 2017 11 14 Wind\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/002_2017_11_14_Wind.jpg/512px-002_2017_11_14_Wind.jpg\"></a></div>",
           "isOpen": false,
           "members": [
             {  
@@ -483,7 +483,7 @@
                   "id": "disp",
                   "type": "group",
                   "name": "Potenziale offshore dei dispositivi",
-                  "description": "Questa raccolta comprende informazioni riguardanti simulazioni effettuate sul potenziale offshore del moto ondoso di alcuni dispositivi",
+                  "description": "Questa raccolta comprende informazioni riguardanti simulazioni effettuate sul potenziale offshore del moto ondoso di alcuni dispositivi.",
                   "isOpen": false,
                   "members": [
                   {
@@ -714,13 +714,13 @@
           "id": "geotermia",
           "type": "group",
           "name": "Geotermica",
-          "description": "Questa raccolta comprende informazioni sulla risorsa geotermica. \n\n <a title=\"Virtual-Pano, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Hveravellir_thermal_energy.jpg\"><img width=\"512\" alt=\"Hveravellir thermal energy\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hveravellir_thermal_energy.jpg/512px-Hveravellir_thermal_energy.jpg\"></a>",
+          "description": "Questa raccolta comprende informazioni sulla risorsa geotermica. \n\n <a title=\"Virtual-Pano, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Hveravellir_thermal_energy.jpg\"><img width=\"640\" alt=\"Hveravellir thermal energy\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hveravellir_thermal_energy.jpg/512px-Hveravellir_thermal_energy.jpg\"></a>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
               "name": "Temperatura alla profondità di 1000 m (°C)",
-              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 1000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 1000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:mappa_T_1000_mt_clip3857",
               "metadataUrls":[{
@@ -732,7 +732,7 @@
             {
               "type": "wms",
               "name": "Temperatura alla profondità di 2000 m (°C)",
-              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
               "metadataUrls":[{
@@ -744,7 +744,7 @@
             {
               "type": "wms",
               "name": "Temperatura alla profondità di 3000 m (°C)",
-              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 3000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 3000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
               "metadataUrls":[{
@@ -756,7 +756,7 @@
             {
               "type": "wms",
               "name": "Flusso di calore (mW/m\u00b2)",
-              "description": "Mappa del flusso di calore superficiale espressa in mW/m<sup>2</sup> elaborata da RSE S.p.A. utilizzando i dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "description": "Mappa del flusso di calore superficiale espressa in mW/m<sup>2</sup> elaborata da RSE S.p.A. utilizzando i dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:Flusso_calore_clip3857",
               "metadataUrls":[{
@@ -768,7 +768,7 @@
             {
               "type": "wms",
               "name": "Quota della sommità del potenziale serbatoio (m s.l.m.)",
-              "description": "La mappa riporta la quota della sommità, in metri slm, del tetto del potenziale serbatoio carbonatico. Il complesso carbonatico, essendo caratterizzato da una significativa permeabilità, da notevoli spessori e da una elevata estensione areale, costituisce il principale serbatoio dei campi geotermici italiani. La mappa è stata elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "description": "La mappa riporta la quota della sommità, in metri slm, del tetto del potenziale serbatoio carbonatico. Il complesso carbonatico, essendo caratterizzato da una significativa permeabilità, da notevoli spessori e da una elevata estensione areale, costituisce il principale serbatoio dei campi geotermici italiani. La mappa è stata elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"link metadato",
@@ -793,7 +793,7 @@
             {
               "type": "wms",
               "name": "Profondità delle aree a temperatura omogenea di 120° C (metri)",
-              "description": "Mappa delle profondità relative alla temperatura di 120° C. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p> ",
+              "description": "Mappa delle profondità relative alla temperatura di 120° C. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"link metadato",
@@ -806,7 +806,7 @@
             {
               "type": "wms",
               "name": "Potenziale geotermico producibile (MWh/anno)",
-              "description": "Mappa del potenziale geotermico a livello comunale: per le aree del territorio italiano che presentano una temperatura maggiore o uguale a 120°C è riportata la stima del potenziale geotermoelettrico espresso come energia termica ricavabile all'anno (MWh/anno). Tale stima è stata eseguita utilizzando il metodo del volume.</br> - Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali)</p> ",
+              "description": "Mappa del potenziale geotermico a livello comunale: per le aree del territorio italiano che presentano una temperatura maggiore o uguale a 120°C è riportata la stima del potenziale geotermoelettrico espresso come energia termica ricavabile all'anno (MWh/anno). Tale stima è stata eseguita utilizzando il metodo del volume.</br> - Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"link metadato",

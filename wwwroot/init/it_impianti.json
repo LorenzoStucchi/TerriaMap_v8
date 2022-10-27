@@ -4,7 +4,7 @@
       "id": "plants",
       "type": "group",
       "name": "Impianti",
-      "description": "Questa raccolta comprende informazioni sugli impianti di produzione di energia (FER e NO-FER) a diversi livelli di aggregazione spaziale, negli anni. \n\n <div><img src=\"/images/1920-conduttura-della-pompa-dell-acqua.jpg\" style=\"width:640px;height:427px;\"></div><a href=\"https://it.vecteezy.com/foto-gratuito\">Foto d’archivio di Vecteezy</a>",
+      "description": "Questa raccolta comprende informazioni sugli impianti di produzione di energia (FER e NO-FER) a diversi livelli di aggregazione spaziale negli anni, utili per una caratterizzazione dello stato attuale del sistema energetico e per l’analisi dei suoi potenziali sviluppi. Questi dati possono costituire validi input a modelli per la pianificazione energetica del territorio. \n\n <div><img src=\"/images/1920-conduttura-della-pompa-dell-acqua.jpg\" style=\"width:640px;height:427px;\"></div><a href=\"https://it.vecteezy.com/foto-gratuito\">Foto d’archivio di Vecteezy</a>",
       "isOpen": false,
       "members": [
         {

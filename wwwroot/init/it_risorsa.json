@@ -4,7 +4,7 @@
       "id": "risorsa",
       "type": "group",
       "name": "Risorsa",
-      "description": "Questa raccolta comprende informazioni sulle risorse energetiche rinnovabili disponibili sul territorio.\n\n <div><img src=\"/images/1920-piccolo-lago-di-alta-montagna-con-trasparente.jpg\" style=\"width:640px;height:427px;\"</div> <a href=\"https://it.vecteezy.com/foto-gratuito\">Foto d’archivio di Vecteezy</a>",
+      "description": "Questa raccolta comprende informazioni sulle risorse energetiche rinnovabili disponibili sul territorio, fondamentale per una caratterizzazione di dettaglio del territorio in esame e per analisi del potenziale di sviluppo di un sistema energetico nel territorio. Questi dati possono costituire validi input a modelli per la pianificazione energetica del territorio. \n\n <div><img src=\"/images/1920-piccolo-lago-di-alta-montagna-con-trasparente.jpg\" style=\"width:640px;height:427px;\"</div> <a href=\"https://it.vecteezy.com/foto-gratuito\">Foto d’archivio di Vecteezy</a>",
       "isOpen": false,
       "members": [
         {
@@ -78,7 +78,7 @@
               "id": "dati_eol",
               "type": "group",
               "name": "Dati storici",
-              "description": "Questa raccolta comprende dati storici relativi agli anemometri presenti sul territorio nazionale\n\n <div></div>",
+              "description": "Questa raccolta comprende informazioni sulle risorse energetiche rinnovabili disponibili sul territorio, fondamentale per una caratterizzazione di dettaglio del territorio in esame e per analisi del potenziale di sviluppo di un sistema energetico nel territorio. Questi dati possono costituire validi input a modelli per la pianificazione energetica del territorio. \n\n <div></div>",
               "isOpen": false,
               "members": [
                 {

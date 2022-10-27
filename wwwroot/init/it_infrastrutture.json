@@ -4,7 +4,7 @@
       "id": "rete",
       "type": "group",
       "name": "Infrastrutture di rete",
-      "description": "Questa raccolta comprende informazioni su flussi e qualità della tensione.\n\n <div><img src=\"/public/img/shutterstock_668568088.jpg\" style=\"width:640px;height:427px;\"></div>",
+      "description": "Questa raccolta comprende informazioni su flussi e qualità della tensione e mette a disposizione la cartografia delle linee elettriche ad alta tensione. Queste informazioni sono utili a supporto di valutazioni sul sistema energetico nel suo complesso e per l’individuazione di potenziali criticità.\n\n <div><img src=\"/public/img/shutterstock_668568088.jpg\" style=\"width:640px;height:427px;\"></div>",
       "isOpen": true,
       "members": [
         {

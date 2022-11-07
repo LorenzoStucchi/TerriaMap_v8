@@ -111,7 +111,7 @@
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:bacini_view",
               "styles":"bacini",
-              /*<a href=\"http://www.aim2014.eu/tools/vapidro-aste.php\" target=\"_blank\"> VAPIDRO-ASTE</a> <a href=\"http://www.aim2014.eu/tools/smart-mini-idro.php\" target=\"_blank\"> SMART Mini-Idro</a>*/
+              /*<a href=\"http://www.aim2014.eu/tools/vapidro-aste.phppp\" target=\"_blank\"> VAPIDRO-ASTE</a> <a href=\"http://www.aim2014.eu/tools/smart-mini-idro.php\" target=\"_blank\"> SMART Mini-Idro</a>*/
               "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=170"

@@ -192,7 +192,7 @@
                 {
                   "type": "wms",
                   "name": "Eolici - Potenza comunale (MW)",
-                  "description": "Mappa della potenza eolica a livello comunale espressa in MW (anno di riferimento 2019).<br>                  Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).",
+                  "description": "Mappa della potenza eolica a livello comunale espressa in MW (anno di riferimento 2019).<br> Elaborazione di RSE a partire da dati GSE, The Wind Power, da immagini satellitari Sentinel-2 e ISTAT (confini amministrativi).",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza comunale (MW): <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -244,7 +244,7 @@
                 {
                   "type": "wms",
                   "name": "Eolici - Numero di aerogeneratori comunali",
-                  "description": "Mappa della numerosità degli aerogeneratori a livello comunale (anno di riferimento 2019).<br>                  Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).",
+                  "description": "Mappa della numerosità degli aerogeneratori con potenza superiore a 200 kW a livello comunale (anno di riferimento 2019).<br> Elaborazione di RSE a partire da dati GSE, The Wind Power, da immagini satellitari Sentinel-2 e ISTAT (confini amministrativi).",
                   "featureInfoTemplate": {
                     "template": "<p>Numero di aerogeneratori <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                   },
@@ -270,7 +270,7 @@
                 {
                   "type": "wms",
                   "name": "Eolici - Aerogeneratori",
-                  "description": "Mappa degli aerogeneratori presenti sul territorio nazionale con potenza superiore a 200 kW (anno di riferimento 2019), derivante da un' elaborazione di Ricerca sul Sistema Energetico - RSE S.p.A. a partire da dati GSE , The Wind Power e da immagini satellitari Sentinel-2. A ciascun aerogeneratore è associata una classe di potenza.",
+                  "description": "Mappa degli aerogeneratori presenti sul territorio nazionale con potenza superiore a 200 kW (anno di riferimento 2019), derivante da un' elaborazione di RSE a partire da dati GSE, The Wind Power e da immagini satellitari Sentinel-2. A ciascun aerogeneratore è associata una classe di potenza.",
                   "featureInfoTemplate": {
                     "template": "<p>Classe di potenza <b>{{classe_pot}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=229\">link al metadato </a> </p>"
                   },

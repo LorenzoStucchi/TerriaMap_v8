@@ -1,0 +1,161 @@
+{
+  "catalog": [
+    {
+      "id": "available_areas",
+      "type": "group",
+      "name": "Aree idonee",
+      "description":"Il raggiungimento degli sfidanti obiettivi per lo sviluppo delle FER al 2030 è fortemente dipendente dall’occupazione del suolo e degli usi competitivi dello stesso. Mentre la disponibilità di risorsa, seppure con rilevanti differenze nord-sud, risulta più omogeneamente distribuita e comunque sfruttabile sull’intero territorio nazionale, la disponibilità di aree atte ad ospitare le installazioni, invece, appare come elemento discriminante delle diverse realtà territoriali e in grado di evidenziare anche potenziali limiti allo sviluppo stesso. La potenza aggiuntiva fotovoltaica al 2030 viene, quindi, calcolata anche sulla base delle superfici disponibili per alcune tipologie di aree “eleggibili” (ovvero da considerarsi potenzialmente sfruttabili) per le installazioni su tetto e a terra. </br> </p> Questa raccolta comprende informazioni a scala comunale riguardanti le estensioni delle aree disponibili a nuove installazioni fotovoltaiche a terra e su tetto. Tali dati possono costituire validi input ad analisi di ripartizione tra Regioni e Province Autonome degli obiettivi FER nazionali al 2030. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+      "isOpen": false,
+      "members": [
+        {
+          "id": "tetto",
+          "type": "group",
+          "name": "Aree disponibili per il fotovoltaico su tetto",
+          "description": "Questa raccolta comprende le stime a scala comunale delle estensioni delle aree disponibili a nuove installazioni fotovoltaiche su tetto ottenute a partire da dati regionali o dati del programma Copernicus.",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "wms",
+              "name": "Estensione dell'edificato derivata da CTR o DBT",
+              "description": "Stima a scala comunale dell'estensione dell'edificato ottenuta a partire dalle Carte Tecniche Regionali o dai Database Topografici Regionali. </br> </p> Il dettaglio sui dati utilizzati per la stima è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:CTR_DBT",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "ctr"
+            },
+            {
+              "type": "wms",
+              "name": "Estensione dell'edificato derivata da dati Copernicus",
+              "description": "Stima a scala comunale dell'estensione dell'edificato ottenuta a partire dalla Carta Nazionale di Uso dei Suoli (risoluzione spaziale 20 m) elaborata da ISPRA e prodotta nell'ambito del programma Copernicus",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:CN_Copernicus",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "cn"
+            }
+          ]
+        },
+        {
+          "id": "terra",
+          "type": "group",
+          "name": "Aree disponibili per il fotovoltaico a terra",
+          "description": "Questa raccolta comprende le stime a scala comunale delle estensioni delle aree disponibili a nuove installazioni fotovoltaiche a terra ottenute a partire dalla mappa di copertura del suolo Corine Land Cover del 2018 e da dati territoriali relativi ai vincoli ambientali e paesaggistici aventi copertura omogenea su tutto il territorio nazionale.",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "wms",
+              "name": "Estensione delle aree estrattive",
+              "description": "Stima a scala comunale dell'estensione della classe Corine Land Cover 131 – Aree estrattive [kmq]",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:clc_131_aree_estrattive",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "estrattive"
+            },
+            {
+              "type": "wms",
+              "name": "Estensione delle discariche",
+              "description": "Stima a scala comunale dell'estensione della classe Corine Land Cover 132 – Discariche [kmq]",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:clc_132_discariche",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "discariche"
+            },
+            {
+              "type": "wms",
+              "name": "Estensione delle aree industriali, commerciali e dei servizi pubblici e privati",
+              "description": "Stima a scala comunale dell'estensione totale della classe Corine Land Cover 121 – Aree industriali, commerciali e dei servizi pubblici e privati [kmq]",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:clc_121_aree_industriali",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "industriali"
+            },
+            {
+              "type": "wms",
+              "name": "Estensione totale delle superfici agricole utilizzate",
+              "description": "Stima a scala comunale dell'estensione totale della classe Corine Land Cover 2 – Superfici agricole utilizzate [kmq], a meno delle risaie (classe 213)",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:clc_2_totale",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "agricole"
+            },           
+            {
+              "type": "wms",
+              "name": "Estensione delle superfici agricole utilizzate al netto dei vincoli",
+              "description": "Stima a scala comunale dell'estensione della classe Corine Land Cover 2 – Superfici agricole utilizzate [kmq], a meno delle risaie (classe 213), al netto dei vincoli ambientali e paesaggistici. Il dettaglio sui dati utilizzati per la stima e le relative fonti è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:clc_2_netta",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "agricole_nette"
+            },
+            {
+              "type": "wms",
+              "name": "Estensione totale dei seminativi in aree non irrigue",
+              "description": "Stima a scala comunale dell'estensione della classe Corine Land Cover 211 – Seminativi in aree non irrigue [kmq] al netto dei vincoli ambientali e paesaggistici. Il dettaglio sui dati utilizzati per la stima e le relative fonti è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:clc_211_totale",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "seminativi_tot"
+            },
+            {
+              "type": "wms",
+              "name": "Estensione dei seminativi in aree non irrigue al netto dei vincoli",
+              "description": "Stima a scala comunale dell'estensione della classe Corine Land Cover 211 – Seminativi in aree non irrigue [kmq] al netto dei vincoli ambientali e paesaggistici. Il dettaglio sui dati utilizzati per la stima e le relative fonti è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:clc_211_netta",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "seminativi_netti"
+            },
+            {
+              "type": "wms",
+              "name": "Estensione dei seminativi in aree non irrigue al netto dei vincoli e aree suoli ad elevata capacità",
+              "description": "Stima a scala comunale dell'estensione della classe Corine Land Cover 211 – Seminativi in aree non irrigue [kmq] al netto dei vincoli ambientali e paesaggistici e delle classi di uso del suolo ad elevata capacità (classi 1 e 2). Il dettaglio sui dati utilizzati per la stima e le relative fonti è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:clc_211_netta_lcc",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "id": "seminativi_netti_lcc"
+            },
+          ]
+        }
+      ]
+    }
+  ]
+}

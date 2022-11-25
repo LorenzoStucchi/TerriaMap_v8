@@ -142,7 +142,7 @@
             },
             {
               "type": "wms",
-              "name": "Estensione dei seminativi in aree non irrigue al netto dei vincoli e aree suoli ad elevata capacità",
+              "name": "Estensione dei seminativi in aree non irrigue al netto dei vincoli e dei suoli ad elevata capacità",
               "description": "Stima a scala comunale dell'estensione della classe Corine Land Cover 211 – Seminativi in aree non irrigue [kmq] al netto dei vincoli ambientali e paesaggistici e delle classi di uso del suolo ad elevata capacità (classi 1 e 2). Il dettaglio sui dati utilizzati per la stima e le relative fonti è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{

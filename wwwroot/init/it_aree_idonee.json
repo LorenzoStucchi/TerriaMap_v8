@@ -25,6 +25,9 @@
               }],
               "styles":"aree_idonee:CTR_DBT",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{areactrkm2}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
               "id": "ctr"
             },
             {
@@ -38,6 +41,9 @@
               }],
               "styles":"aree_idonee:CN_Copernicus",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{areacnkm2}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
               "id": "cn"
             }
           ]
@@ -60,6 +66,9 @@
               }],
               "styles":"aree_idonee:clc_131_aree_estrattive",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{areakmq131}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
               "id": "estrattive"
             },
             {
@@ -73,6 +82,9 @@
               }],
               "styles":"aree_idonee:clc_132_discariche",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{areakmq132}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
               "id": "discariche"
             },
             {
@@ -86,6 +98,9 @@
               }],
               "styles":"aree_idonee:clc_121_aree_industriali",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{areakmq121}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
               "id": "industriali"
             },
             {
@@ -99,6 +114,9 @@
               }],
               "styles":"aree_idonee:clc_2_totale",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{areakmq2}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
               "id": "agricole"
             },           
             {
@@ -112,6 +130,9 @@
               }],
               "styles":"aree_idonee:clc_2_netta",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{area2netta}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
               "id": "agricole_nette"
             },
             {
@@ -125,6 +146,9 @@
               }],
               "styles":"aree_idonee:clc_211_totale",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{areakmq211}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
               "id": "seminativi_tot"
             },
             {
@@ -138,7 +162,10 @@
               }],
               "styles":"aree_idonee:clc_211_netta",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
-              "id": "seminativi_netti"
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{area211net}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
+              "id": "seminativi_netti",
             },
             {
               "type": "wms",
@@ -151,6 +178,9 @@
               }],
               "styles":"aree_idonee:clc_211_netta_lcc",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Estensione area (kmq) <b>{{a211nelcc}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
               "id": "seminativi_netti_lcc"
             },
           ]

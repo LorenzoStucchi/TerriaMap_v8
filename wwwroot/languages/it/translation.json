@@ -1279,7 +1279,7 @@
     "done": "Fatto",
     "resultsLabel": "Ricerca Risultati",
     "searchCatalogue": "Cerca il catalogo",
-    "placeholder": "Cerca posizioni",
+    "placeholder": "Cerca località",
     "viewMore": "Visualizza più risultati {{name}}",
     "viewLess": "Visualizza meno risultati {{name}}",
     "search": "Cerca '{{searchText}}' nel catalogo dei dati",

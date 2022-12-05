@@ -87,9 +87,20 @@
         <br>
         <!-- <p align="justify"; style="font-size: 24px;"><strong>Feedback</strong>  
         <p align="justify">Per segnalazioni tecniche legate alle funzionalità dell'atlante potete <a href="mailto:utenti-atlanteeolico@rse-web.it">inviarci una mail</a>.</p>-->
-        <a class="navbar-brand" href="http://dbeta.rse-web.it/form_feedback_terria.phtml?language=IT" target="_blank">
+		
+		
+        <!-- mil <a class="navbar-brand" href="http://dbeta.rse-web.it/form_feedback_terria.phtml?language=IT" target="_blank">
           <img alt="Brand" src="help/img/feedback.png">
-        </a>
+        </a>-->
+		
+		
+		<a class="navbar-brand" href='javascript: apri_Pagina()'>
+          <img alt="Brand" src="help/img/feedback.png">
+		</a>
+
+		
+		
+		
       <br>  
       </div>
     </div>
@@ -117,5 +128,30 @@
     <script src="help/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+	
+	
+<script type="text/javascript">	
+
+	var Window_feedback;
+	function apri_Pagina(origine) {
+		var iMyWidth;
+		var iMyHeight;
+		//half the screen width minus half the new window width (plus 5 pixel borders).
+		iMyWidth = (window.screen.width / 2) - (475 + 10);
+		//half the screen height minus half the new window height (plus title and status bars).
+		iMyHeight = (window.screen.height / 2) - (250 + 50);
+		if(Window_feedback) {
+			window.Window_feedback.close();
+	}
+	var sito_web = window.location.href;
+
+	Window_feedback= window.open("http://dbeta.rse-web.it/form_feedback_terria.phtml"+ "?language=IT" + "&sito_web=" + sito_web,"", "left=320,width=980,height=630,top=150"); 
+
+	
+		
+}
+</script>		
+	
+	
   </body>
 </html>

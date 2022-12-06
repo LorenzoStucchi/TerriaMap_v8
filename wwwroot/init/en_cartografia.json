@@ -87,6 +87,19 @@
             }],
             "styles":"new_atlante_integrato:bati_2018",
             "id": "bati2018"
+          },
+          {
+            "type": "wms",
+            "name": "Land use capacity",
+            "description": "<p style=\"text-align:justify\">Regional land use capacity maps made available by the regions of Basilicata, Emilia-Romagna, Friuli-Venezia Giulia, Lazio, Lombardy, Piedmont, Sardinia, Tuscany and Veneto.​</br> The regions for which the data is not present have not made the land use capacity map available or have not defined it.</br> In this layer, the regional land use capacity maps have been standardized for obtain a single classification in the 8 classes defined below. ​</br>The land use capacity provides indications on the potential of the soil to host and favor the growth of cultivated and wild plants. The estimation methodology envisages classification on the basis of production potential and only considers permanent physical-chemical parameters of the soil, without taking into account economic-strategic considerations or characteristics or qualities that can be modified with specific interventions.</p>Soils are classified into:<ul><li><p style=\"text-align:justify\">Class I - Little or no restrictions on use. Wide range of crop choices and land uses.</p></li><li><p style=\"text-align:justify\">Class II - Moderate limitations that partially reduce productivity or require some conservative practices.</p></li><li><p style=\"text-align:justify\">Class III - Heavy limitations that reduce crop choices, productivity and/or require special conservation practices.</p></li><li><p style=\"text-align:justify\">Class IV - Very evident limitations which restrict the choice of crops and require very careful management to contain the degradation.</p></li><li><p style=\"text-align:justify\">Class V - Limitations that are difficult to eliminate and strongly restrict agricultural uses. Pasture and forest are possible uses together with naturalistic conservation.</p></li><li><p style=\"text-align:justify\">Class VI - Severe limitations that make soils generally unsuitable for cultivation and limit their use to grazing, forestation, woodland or naturalistic and landscape conservation.</p></li><li><p style=\"text-align:justify\">Class VII - Very severe limitations that make the soils unsuitable for production activities and that restrict their use to natural forest, naturalistic and landscape conservation.</p></li><li><p style=\"text-align:justify\">Class VIII - Limitations that totally preclude the productive use of the land, restricting the uses to the recreational and touristic function, to the naturalistic conservation, to the water reserve and to the protection of the landscape.</p></li></ul><p style=\"text-align:justify\">The first four classes in  fact indicate soils suitable for cultivation and other uses, class V indicates soils that can be used for agricultural purposes only under certain conditions, while the last classes indicate soils unsuitable for cultivation. </br> Based on regional decisions, high capacity soils can be considered as a territorial limitation to the exploitation and development of RES.​ \n</p>",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
+            "layers": "new_atlante_integrato:lcc_merge",
+            "metadataUrls":[{
+              "title":"link metadato",
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=262"
+            }],
+            "styles":"new_atlante_integrato:lcc_merge",
+            "id": "lcc"
           }
       ]
     }

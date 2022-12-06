@@ -32,7 +32,7 @@
             {
               "type": "wms",
               "name": "Onshore annual mean  wind speed at 100 m a.s.l. (m/s)",
-              "description": "Mappa della velocità media annua del vento onshore alla quota di 100 metri s.l.t. espressa in m/s.<br>\n\n Fonte: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
+              "description": "Map of the onshore annual mean  wind speed at an altitude of 100 meters a.s.l. expressed in m/s.<br>\n\n Fonte: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Wind Atlas (WINDATLAS)</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>Mean wind speed <b>{{classe}}</b></p>"
@@ -46,11 +46,11 @@
             },
             {
               "type": "wms",
-              "name": "Producibilita' specifica del vento offshore a 100 m s.l.m.(MWh/MW)",
-              "description": "Mappa della producibilita' specifica del vento offshore alla quota di 100 metri s.l.m. espressa in MWh/MW.\n\n Fonte: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
+              "name": "Offshore specific annual wind energy production at 100 m a.s.l.(MWh/MW)", 
+              "description": "Map of the offshore annual wind energy production at 100 mters a.s.l. expressed in MWh/MW.\n\n Source: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Wind Atlas (WINDATLAS)</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Producibilita' specifica del vento <b>{{classe}}</b></p>"
+                "template": "<p>Specific wind energy production<b>{{classe}}</b></p>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -61,11 +61,11 @@
             },
             {
               "type": "wms",
-              "name": "Producibilita' specifica del vento onshore a 100 m s.l.t.(MWh/MW) ",
-              "description": "Mappa della producibilita' specifica annua del vento onshore alla quota di 100 metri s.l.t. espressa in (MWh/MW).\n\n Fonte: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Atlante Eolico (ATLAEOLICO)</a>",
+              "name": "Onshore specific annual wind energy production at 100 m a.s.l.(MWh/MW)",
+              "description": "Map of the onshore annual wind energy production at 100 mters a.s.l. expressed in MWh/MW.\n\n Source: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Wind Atlas (WINDATLAS)</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Producibilita' specifica del vento <b>{{classe}}</b></p>"
+                "template": "<p>Specific wind energy production <b>{{classe}}</b></p>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -77,14 +77,14 @@
             {
               "id": "dati_eol",
               "type": "group",
-              "name": "Dati storici",
-              "description": "Questa raccolta comprende informazioni sulle risorse energetiche rinnovabili disponibili sul territorio, fondamentale per una caratterizzazione di dettaglio del territorio in esame e per analisi del potenziale di sviluppo di un sistema energetico nel territorio. Questi dati possono costituire validi input a modelli per la pianificazione energetica del territorio. \n\n <div></div>",
+              "name": "Historical data",
+              "description": "This collection includes information on the renewable energy resources available in the territory, which is essential for a detailed characterization of the area in question and for analyzing the development potential of an energy system in the area. These data can be valid inputs to models for the energy planning of the territory. \n\n <div></div>",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Stazioni anemometriche",
-                  "description": "Stazioni anemometriche installate dal 2000 al 2014 e non più attive. \n\n Download dati al sito: </br><a href=\"https://atlanteeolico.rse-web.it/download_terria_dati-IT.php\" target=\"_blank\">Atlante Eolico - Stazioni anemometriche </a>",
+                  "name": "Anemometric stations",
+                  "description": "Anemometric stations installed from 2000 to 2014 and no longer active.\n\n Site to download data: </br><a href=\"https://atlanteeolico.rse-web.it/download_terria_dati-IT.php\" target=\"_blank\">Wind Atlas- Anemometric stations </a>",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -100,14 +100,14 @@
         {
           "id": "idroel",
           "type": "group",
-          "name": "Idroelettrica",
-          "description": "Questa raccolta comprende informazioni sulla risorsa idroelettrica. <div><a title=\"JJ Harrison (https://www.jjharrison.com.au/), CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Water_Dolphin.jpg\"><img width=\"640\" alt=\"Water Dolphin\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Water_Dolphin.jpg/512px-Water_Dolphin.jpg\"></a></div>",
+          "name": "Hydroelectric",
+          "description": "This collection includes information about the hydroelectric resource. <div><a title=\"JJ Harrison (https://www.jjharrison.com.au/), CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Water_Dolphin.jpg\"><img width=\"640\" alt=\"Water Dolphin\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Water_Dolphin.jpg/512px-Water_Dolphin.jpg\"></a></div>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Potenziale idroelettrico massimo (GWh/anno)",
-              "description": "Le mappe del massimo potenziale idroelettrico illustrano la <b> massima energia lorda ricavabile da sfruttamento idroenergetico (GWh/anno) </b> in ogni sottobacino considerato nel territorio italiano. \n\n Il calcolo tiene conto della distribuzione spaziale della precipitazione media annua, dei coefficienti di deflusso, del rilievo topografico (DEM) e del deflusso minimo vitale (DMV) pari al 10% della portata naturale.</br><b>È importante sottolineare che il calcolo non tiene conto degli attuali usi dell’acqua (idroelettrico, irriguo, potabili, ecc.)</b> e quindi il valore complessivo della producibilità idroelettrica massima italiana risulta di circa 190 000 GWh/anno. \n\n Questo valore puramente teorico implicherebbe di poter convertire in energia elettrica tutto il potenziale idrico disponibile, ipotesi non realistica dal punto di vista sia tecnico che ambientale. Un valore plausibile del reale sfruttamento può essere considerato all’incirca il 25% della producibilità idroelettrica massima, percentuale che potrebbe essere raggiunta ed eventualmente superata con la realizzazione di impianti di generazione distribuita (mini-idroelettrico).</br></br>\n\n Per il calcolo del potenziale massimo vengono considerate due componenti:</br><ul><li>la producibilità propria di bacino;</li><li>la producibilità derivante dalle portate che proviene da monte, con salto Hmonte-Hvalle.</li></ul></br><img src=\"images/idro_pot_.png\"></br><b>Le due componenti di calcolo del potenziale idroelettrico massimo</b></br></p> \n\n\n Per approfondire la tematica relativa alla risorsa idroelettrica di uno specifico bacino fluviale si può ricorrere a dei tool sviluppati in RdS: <a href=\"https://www.rse-web.it/prodotti/valutazione-del-potenziale-idroelettrico-residuo-nelle-aste-fluviali-da-utilizzarsi-ai-fini-della-pianificazione-127/\" target=\"_blank\"> VAPIDRO-ASTE</a> permette di calcolare automaticamente la rete fluviale dell'area di interesse. L'utente sceglie un'asta fluviale in cui vuole calcolare la potenziale producibilità idroelettrica lungo i diversi tratti fluviali.\n \n\n Per approfondire gli aspetti di fattibilità tecnico economica il software <a href=\"https://www.rse-web.it/prodotti/software-per-valutare-la-fattibilita-tecnico-economica-di-impianti-mini-idroelettrici-ad-acqua-fluente-129/\" target=\"_blank\"> SMART Mini-Idro</a> permette di analizzare diverse proposte progettuali individuando quella più conveniente.\n </br>",
+              "name": "Maximum hydroelectric potential (GWh/year)",
+              "description": "The maps of the maximum hydroelectric potential show the <b> maximum gross energy obtainable from hydroenergy exploitation (GWh/year) </b> in each sub-basin considered in the Italian territory.\n\n The calculation considers the spatial distribution of the average annual precipitation, the flow coefficients, the topographic relief (DEM) and the minimum vital flow (DMV) equal to 10% of the natural flow.</br><b>It is important to underline that the calculation does not take into account the current uses of water (hydroelectric, irrigation, potable, etc.)</b> and therefore the total value of the maximum Italian hydroelectric producibility is approximately 190,000 GWh/year. \n\n This purely theoretical value would imply being able to convert all the available water potential into electrical energy, an unrealistic hypothesis from both a technical and an environmental point of view. A plausible value of the actual exploitation can be considered approximately 25% of the maximum hydroelectric producibility, a percentage that could be reached and possibly exceeded with the construction of distributed generation plants (mini-hydroelectric).</br></br>\n\n Two components are considered for the calculation of the maximum potential:</br><ul><li>the basin's own production capacity;</li><li>the producibility deriving from the flow rates that come from upstream, with jump from upstream height to downstream height.</li></ul></br><img src=\"images/idro_pot_.png\"></br><b>The two components for calculating the maximum hydroelectric potential</b></br></p> \n\n\n To explore the issue relating to the hydroelectric resource of a specific river basin, you can use the tools developed in RdS: <a href=\"https://www.rse-web.it/prodotti/valutazione-del-potenziale-idroelettrico-residuo-nelle-aste-fluviali-da-utilizzarsi-ai-fini-della-pianificazione-127/\" target=\"_blank\"> VAPIDRO-ASTE</a> allows you to automatically calculate the river network of the area of ​​interest. The user chooses a river branch in which he wants to calculate the potential hydroelectric producibility along the different river stretches.\n \n\n To deepen the aspects of technical and economic feasibility, the software <a href=\"https://www.rse-web.it/prodotti/software-per-valutare-la-fattibilita-tecnico-economica-di-impianti-mini-idroelettrici-ad-acqua-fluente-129/\" target=\"_blank\"> SMART Mini-Idro</a> allows you to analyze different project proposals by identifying the most convenient one.\n </br>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:bacini_view",
               "styles":"bacini",
@@ -374,18 +374,18 @@
             {
               "id": "dati",
               "type": "group",
-              "name": "Dati storici",
-              "description": "Questa raccolta comprende dati storici di pluviometri ed idrometri nonchè delle curve di durata di alcuni bacini idrografici. ",
+              "name": "Historical data",
+              "description": "This collection includes historical data from rain gauges and hydrometers as well as the duration curves of some hydrographic basins. ",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Dati idrometrici",
-                  "description": "Mappa delle stazioni di misura: è possibile visualizzare la posizione delle stazioni e <i>scaricarne i dati storici</i>.\n\n Misure idrometriche della banca dati IDROSTAZ derivanti dai dati storici pubblicati negli annali del Servizio Idrografico. \n Nota: il servizio ha cessato di raccogliere dati dal 1998 quando il servizio è stato trasferito alle regioni. <br> Per maggiori approfondimenti: \n\n <a href=\"https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/acque-interne-e-marino-costiere-1/progetti-conclusi/progetto-annali/inquadramento-storico-del-monitoraggio-idro-meteografico-e-delle-relative-competenze\">  Ispra ambiente </a>\n\n\n",
+                  "name": "Hydrometric data",
+                  "description": "Map of measuring stations: it is possible to view the position of the stations and <i>download their historical data</i>.\n\n Hydrometric measurements of the IDROSTAZ database deriving from historical data published in the annals of the Hydrographic Service. \n Note: The service has stopped collecting data since 1998 when the service was moved to regions. <br> For further details: \n\n <a href=\"https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/acque-interne-e-marino-costiere-1/progetti-conclusi/progetto-annali/inquadramento-storico-del-monitoraggio-idro-meteografico-e-delle-relative-competenze\">  Ispra ambiente </a>\n\n\n",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "atlante_integrato:v_idrometri",
                   "featureInfoTemplate": {
-                    "template": "<br><p>Idrometro selezionato <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"https://dbeta.rse-web.it/download/export_idroNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
+                    "template": "<br><p>Selected hydrometer <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"https://dbeta.rse-web.it/download/export_idroNAI.php?input_codstaz={{codice_stazione}}\">download station data (.xlsx format) </a></button></p>"
                   },
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -395,12 +395,12 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Dati pluviometrici",
-                  "description": "Mappa delle stazioni di misura: è possibile visualizzare la posizione delle stazioni e <i>scaricarne i dati storici</i>.\n\n Misure pluviometriche della banca dati IDROSTAZ derivanti dai dati storici pubblicati negli annali del Servizio Idrografico. </p> \n Nota: il servizio ha cessato di raccogliere dati dal 1998 quando il servizio è stato trasferito alle regioni. <br> Per maggiori approfondimenti: \n\n <a href=\"https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/acque-interne-e-marino-costiere-1/progetti-conclusi/progetto-annali/inquadramento-storico-del-monitoraggio-idro-meteografico-e-delle-relative-competenze\">  Ispra ambiente </a>\n\n\n",
+                  "name": "Rainfall data",
+                  "description": "Map of measuring stations: it is possible to view the position of the stations and <i>download their historical data</i>.\n\n Rainfall measurements from the IDROSTAZ database deriving from historical data published in the annals of the Hydrographic Service. </p> \n Note: The service has stopped collecting data since 1998 when the service was moved to the regions. <br> For further details: \n\n <a href=\"https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/acque-interne-e-marino-costiere-1/progetti-conclusi/progetto-annali/inquadramento-storico-del-monitoraggio-idro-meteografico-e-delle-relative-competenze\">  Ispra ambiente </a>\n\n\n",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "atlante_integrato:v_pluviometri",
                   "featureInfoTemplate": {
-                    "template": "<br><p>Pluviometro selezionato <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://dbeta.rse-web.it/download/export_pluvioNAI.php?input_codstaz={{codice_stazione}}\">scarica i dati della stazione (formato .xlsx) </a></button></p>"
+                    "template": "<br><p>Selected rain gauge <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://dbeta.rse-web.it/download/export_pluvioNAI.php?input_codstaz={{codice_stazione}}\">download station data (.xlsx format) </a></button></p>"
                   },
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -410,8 +410,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Curva di durata portate",
-                  "description": "Curve di durata per la valutazione della disponibilità idrica prevedibile alla sezione di chiusura di un prefissato bacino idrografico. Sono disponibili le elaborazioni nelle seguenti zone: Abruzzo-Marche, Adamello e Orobie e Alpi Graie e Pennine.</p>\n\n Informazioni aggiuntive:  <a href=\"https://www.rse-web.it/prodotti/software-per-valutare-la-fattibilita-tecnico-economica-di-impianti-mini-idroelettrici-ad-acqua-fluente-129/\" target=\"_blank\">Software SMART Mini-Idro</a>",
+                  "name": "Flow duration curve",
+                  "description": "Duration curves for the assessment of foreseeable water availability at the closure section of a predetermined hydrographic basin. Processing is available in the following areas: Abruzzo-Marche, Adamello and Orobie and Graian and Pennine Alps.</p>\n\n Additional information:  <a href=\"https://www.rse-web.it/prodotti/software-per-valutare-la-fattibilita-tecnico-economica-di-impianti-mini-idroelettrici-ad-acqua-fluente-129/\" target=\"_blank\">Software SMART Mini-Idro</a>",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "atlante_integrato:v_stazioni",
                   "styles":"Stazioni_Mini_Idro_IT",
@@ -420,7 +420,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=132"
                   }],
                   "featureInfoTemplate": {
-                    "template": "<br><p>Nome stazione di misura <b>{{nome}}</b></p><p>Corso d'acqua <b>{{fiume}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://dbeta.rse-web.it/download/curve_portataNAI.php?nome={{codice}}&language=IT\">visualizza la curva di durata </a></button></p>"
+                    "template": "<br><p>Measurement station name <b>{{nome}}</b></p><p>River <b>{{fiume}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://dbeta.rse-web.it/download/curve_portataNAI.php?nome={{codice}}&language=IT\">displays the duration curve </a></button></p>"
                   },
                   "id": "mHydStaz"
                 }
@@ -432,13 +432,13 @@
           "id": "sunny",
           "type": "group",
           "name": "Solare",
-          "description": "Questa raccolta comprende informazioni sulla risorsa solare. Per ulteriori approfondimenti si rimanda al dedicato atlante solare \n <a href=\"http://sunrise.rse-web.it/\" target=\"_blank\"> SunRISE </a> <div><img src=\"/public/img/shutterstock_1117990592_cut.jpg\" style=\"width:640px;height:427px;\"></div>",
+          "description": "This collection includes information about the solar resource. For further information, see the dedicated solar atlas \n <a href=\"http://sunrise.rse-web.it/\" target=\"_blank\"> SunRISE </a> <div><img src=\"/public/img/shutterstock_1117990592_cut.jpg\" style=\"width:640px;height:427px;\"></div>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Valore medio della somma annuale di radiazione globale (kWh/m\u00b2)",
-              "description": "Mappa della radiazione globale media riferita al periodo 2005-2015 ed espressa in kWh/m<sup>2</sup>\n\n La mappa è realizzata impiegando i dati dell'archivio RADSAF dell'irradianza globale al suolo stimata sul territorio italiano, attraverso una metodologia sviluppata da RSE. La metodologia si basa sull'elaborazione delle immagini riprese dal satellite geostazionario MSG (Meteosat Second Generation) posto a 36000 km di altezza sopra il Golfo di Guinea che riprende interamente il territorio italiano. La risoluzione spaziale delle immagini è di circa 3-5 km, quella temporale di 15 minuti. Un algoritmo denominato SAFNWC, sviluppato congiuntamente da diversi istituti meteorologici europei, permette il riconoscimento automatico della copertura nuvolosa e della sua tipologia a partire dalle immagini satellitari acquisite ogni 15 minuti da una stazione di ricezione a terra di cui RSE è dotata.</p>\n Informazioni sul layer RISORSA SOLARE </br><a href=\"http://sunrise.rse-web.it\" target=\"_blank\">Atlante Solare (sunRise)</a>. ",
+              "name": "Average value of the annual sum of global radiation (kWh/m\u00b2)",
+              "description": "Map of the average global radiation referring to the period 2005-2015 and expressed in kWh/m<sup>2</sup>\n\n The map was created using data from the RADSAF archive of global ground irradiance estimated on the Italian territory, using a methodology developed by RSE. The methodology is based on the processing of images taken by the MSG (Meteosat Second Generation) geostationary satellite placed at an altitude of 36,000 km above the Gulf of Guinea which entirely covers the Italian territory. The spatial resolution of the images is about 3-5 km, the temporal resolution of 15 minutes. An algorithm called SAFNWC, jointly developed by various European meteorological institutes, allows automatic recognition of cloud cover and its type starting from the satellite images acquired every 15 minutes by a ground receiving station with which RSE is equipped.</p>\n Information about the SOLAR RESOURCE layer </br><a href=\"http://sunrise.rse-web.it\" target=\"_blank\">Sun Atlas (sunRise)</a>. ",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "solare_10anni",
               "metadataUrls":[{
@@ -452,21 +452,21 @@
         {
           "id": "seaside",
           "type": "group",
-          "name": "Marina",
-          "description": "Questa raccolta comprende informazioni riguardo all'energia marina. <div><a title=\"© Friedrich Haag / Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:002_2017_11_14_Wind.jpg\"><img width=\"640\" alt=\"002 2017 11 14 Wind\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/002_2017_11_14_Wind.jpg/512px-002_2017_11_14_Wind.jpg\"></a></div>",
+          "name": "Marine",
+          "description": "This collection includes information about marine energy. <div><a title=\"© Friedrich Haag / Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:002_2017_11_14_Wind.jpg\"><img width=\"640\" alt=\"002 2017 11 14 Wind\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/002_2017_11_14_Wind.jpg/512px-002_2017_11_14_Wind.jpg\"></a></div>",
           "isOpen": false,
           "members": [
             {  
               "id": "pot_moto",
               "type": "group",
-              "name": "Potenziale offshore del moto ondoso",
-              "description": "Questa raccolta comprende le informazioni sul potenziale del moto ondoso offshore.",
+              "name": "Offshore wave potential",
+              "description": "This collection includes information on offshore wave potential.",
               "isOpen": false,
               "members": [
                 {
                 "type": "wms",
-                "name": "Moto ondoso offshore",
-                "description": "Mappa della densità media di potenza delle onde (kW/m) in punti predefiniti. \n\n  Nelle informazioni associate a ciascun punto sono riportati oltre all' energia media delle onde (kW/m), anche profondità (m) e distanza dalla costa (km) per le quali sono verificate le condizioni di moto ondoso offshore. \n Per approfondimenti: \n\n - Besio, G., Mentaschi, L. and Mazzino, A., 2016. Wave energy resource assessment in the Mediterranean Sea on the basis of a 35-year hindcast. Energy, 94, pp.50-63. https://doi.org/10.1016/j.energy.2015.10.044 \n\n - Lira-Loarca, A., Ferrari, F., Mazzino, A. and Besio, G., 2021. Future wind and wave energy resources and exploitability in the Mediterranean Sea by 2100. Applied Energy, Elsevier vol.302, https://doi.org/10.1016/j.apenergy.2021.117492 \n\n - Rapporto RSE RdS prot. 20010732",
+                "name": "Offshore wave motion",
+                "description": "Map of average wave power density (kW/m) at predefined points. \n\n  Nelle informazioni associate a ciascun punto sono riportati oltre all'energia media delle onde (kW/m), anche profondità (m) e distanza dalla costa (km) per le quali sono verificate le condizioni di moto ondoso offshore. \n Per approfondimenti: \n\n - Besio, G., Mentaschi, L. and Mazzino, A., 2016. Wave energy resource assessment in the Mediterranean Sea on the basis of a 35-year hindcast. Energy, 94, pp.50-63. https://doi.org/10.1016/j.energy.2015.10.044 \n\n - Lira-Loarca, A., Ferrari, F., Mazzino, A. and Besio, G., 2021. Future wind and wave energy resources and exploitability in the Mediterranean Sea by 2100. Applied Energy, Elsevier vol.302, https://doi.org/10.1016/j.apenergy.2021.117492 \n\n - Rapporto RSE RdS prot. 20010732",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226"

@@ -87,6 +87,19 @@
             }],
             "styles":"new_atlante_integrato:bati_2018",
             "id": "bati2018"
+          },
+          {
+            "type": "wms",
+            "name": "Capacità di uso dei suoli",
+            "description": "Mappe di capacità di uso del suolo regionali messe a disposizione dalle regioni Basilicata, Emilia-Romagna, Friuli-Venezia Giulia, Lazio, Lombardia, Piemonte, Sardegna, Toscana e Veneto.​</br> Le regioni per le quali non è presente il dato non hanno messo a disposizione la mappa di capacità di uso dei suoli o non l'hanno definita.</br> In questo strato le mappe di capacità di uso del suolo regionali sono state uniformate per ottenere un'unica classificazione nelle 8 classi definite di seguito. </p>La capacità di uso del suolo fornisce indicazioni sulla potenzialità del suolo ad ospitare e favorire l’accrescimento di piante coltivate e spontanee. La metodologia di stima prevede la classificazione in base alla potenzialità produttiva e considera esclusivamente parametri fisici chimici permanenti del suolo, senza tenere conto di considerazioni di carattere economico-strategico o di caratteri o di qualità che possono essere modificati con interventi specifici. </p>I suoli vengono classificati in: </br> • Classe I - Limitazioni all’uso scarse o nulle. Ampia possibilità di scelte colturali e usi del suolo. ​</br> • Classe II - Limitazioni moderate che riducono parzialmente la produttività o richiedono alcune pratiche conservative. ​</br> • Classe III - Evidenti limitazioni che riducono le scelte colturali, la produttività e/o richiedono speciali pratiche conservative. ​</br> • Classe IV -  Limitazioni molto evidenti che restringono la scelta delle colture e richiedono una gestione molto attenta per contenere la degradazione. </br> • Classe V - Limitazioni difficili da eliminare che restringono fortemente gli usi agrari. Pascolo e bosco sono usi possibili insieme alla conservazione naturalistica. ​</br> • Classe VI - Limitazioni severe che rendono i suoli generalmente non adatti alla coltivazione e limitano il loro uso al pascolo, alla forestazione, al bosco o alla conservazione naturalistica e paesaggistica. ​</br> • Classe VII - Limitazioni molto severe che rendono i suoli non adatti alle attività produttive e che restringono l’uso al bosco naturaliforme, alla conservazione naturalistica e paesaggistica.</br> • Classe VIII - Limitazioni che precludono totalmente l’uso produttivo dei suoli, restringendo gli utilizzi alla funzione ricreativa e turistica, alla conservazione naturalistica, alla riserva idrica e alla tutela del paesaggio. </p> Le prime quattro classi indicano, di fatto, suoli adatti alla coltivazione e ad altri usi, la classe V indica suoli utilizzabili per scopi agrari solo in determinate condizioni, mentre le ultime classi indicano suoli non adatti alla coltivazione. </br> In base a decisioni regionali, i suoli a capacità elevata possono essere considerate come una limitazione territoriale allo sfruttamento e allo sviluppo delle FER.​ \n",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
+            "layers": "new_atlante_integrato:lcc_merge",
+            "metadataUrls":[{
+              "title":"link metadato",
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=262"
+            }],
+            "styles":"new_atlante_integrato:lcc_merge",
+            "id": "lcc"
           }
       ]
     }

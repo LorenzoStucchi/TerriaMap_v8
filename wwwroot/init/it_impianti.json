@@ -128,7 +128,7 @@
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "initialMessage": {
                     "title": "Visualizzazione strato:",
-                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo averl aggiunto lo strato informativo alla mappa.",
+                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "pot_prov_mini",
                     "confirmation": true,
                     "confirmText": "Ho capito"
@@ -362,7 +362,7 @@
                   "styles":"new_atlante_integrato:id_imp_reg_pot_mini",
                   "initialMessage": {
                     "title": "Visualizzazione strato:",
-                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo averl aggiunto lo strato informativo alla mappa.",
+                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "pot_mini_idro",
                     "confirmation": true,
                     "confirmText": "Ho capito"
@@ -540,7 +540,7 @@
                   "styles":"id_imp_prov_potenza_installata_mini",
                   "initialMessage": {
                     "title": "Visualizzazione strato:",
-                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo averl aggiunto lo strato informativo alla mappa.",
+                    "content": "Dati disponibili per l'anno 2015.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2015 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "pot_prov_mini_idro",
                     "confirmation": true,
                     "confirmText": "Ho capito"
@@ -1258,7 +1258,7 @@
             "id": "esistente_acc",
             "type": "group",
             "name": "Pompaggio esistente",
-            "description": "Questa raccolta comprende le caratteristiche degli impianti di pompaggio idroelettrico presentri nel territorio.\n\n <div><img src=\"/public/img/shutterstock_133800974.jpg\" style=\"width:640px;height:427px;\"></div>",
+            "description": "Questa raccolta comprende le caratteristiche degli impianti di pompaggio idroelettrico presenti nel territorio.\n\n <div><img src=\"/public/img/shutterstock_133800974.jpg\" style=\"width:640px;height:427px;\"></div>",
             "isOpen": false,
             "members": [
               {
@@ -1308,7 +1308,7 @@
                 "description": "Mappa a livello comunale della capacità di accumulo (MWh) potenziale. Il potenziale, espresso in capacità di accumulo, si riferisce a nuovi impianti di pompaggio, economicamente realizzabili con tempo di ritorno dell’investimento minore di 15 anni.\n\n Il potenziale calcolato riguarda le seguenti tipologie di impianto:\n\n - pompaggio tradizionale, ossia tra invasi esistenti e invasi nuovi; \n\n  -	pompaggio marino, ossia dove viene sfruttato il mare come serbatoio inferiore; \n\n - pompaggio sotterraneo, ossia con uno degli invasi costruito in caverna;\n\n - pompaggio tra laghi esistenti.\n\n <br> Informazioni aggiuntive: Rapporti RSE RdS prot. 11000299, 12000959, 16002842, 17000266. Valutazioni anno 2015.\n ",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "featureInfoTemplate": {
-                  "template": "<p>Comune {{comune}}; <br> <p>Pompaggio tradizionale, capacità di accumulo (MWh) {{acc_var_45}}; <br> <p>Pompaggio marino, capacità di accumulo (MWh) {{acc_var_39}}; <br> <p>Pompaggio sotterraneo, capacità di accumulo (MWh) {{acc_var_41}}; <br> <p>Pompaggio tra laghi esistenti, capacità di accumulo (MWh {{acc_var_43}}; <br> <p>Capacità di accumulo totale (MWh) {{acc_sum_ac}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=45\">link al metadato</a></p>"
+                  "template": "<p>Comune {{comune}}; <br> <p>Pompaggio tradizionale, capacità di accumulo (MWh) {{acc_var_45}}; <br> <p>Pompaggio marino, capacità di accumulo (MWh) {{acc_var_39}}; <br> <p>Pompaggio sotterraneo, capacità di accumulo (MWh) {{acc_var_41}}; <br> <p>Pompaggio tra laghi esistenti, capacità di accumulo (MWh) {{acc_var_43}}; <br> <p>Capacità di accumulo totale (MWh) {{acc_sum_ac}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=45\">link al metadato</a></p>"
                 },
                 "metadataUrls":[{
                   "title":"link metadato",

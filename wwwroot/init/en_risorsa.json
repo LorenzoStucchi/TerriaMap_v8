@@ -17,7 +17,7 @@
             {
               "type": "wms",
               "name": "Offshore annual mean wind speed at 100 m a.s.l. (m/s)",
-              "description": "<p align=\"justify\">Map of the offshore annual mean  wind speed at an altitude of 100 meters a.s.l. expressed in m/s.\n\n </br>Source: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Wind Atlas (WINDATLAS)</a></p>",
+              "description": "<p align=\"justify\">Map of the offshore annual mean  wind speed at an altitude of 100 meters a.s.l. expressed in m/s.\n\n </br></br>Source: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Wind Atlas (WINDATLAS)</a></p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>Mean wind speed <b>{{classe}}</b></p>"
@@ -32,7 +32,7 @@
             {
               "type": "wms",
               "name": "Onshore annual mean  wind speed at 100 m a.s.l. (m/s)",
-              "description": "Map of the onshore annual mean  wind speed at an altitude of 100 meters a.s.l. expressed in m/s.<br>\n\n Fonte: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Wind Atlas (WINDATLAS)</a>",
+              "description": "Map of the onshore annual mean  wind speed at an altitude of 100 meters a.s.l. expressed in m/s.<br>\n\n Source: </br><a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\">Wind Atlas (WINDATLAS)</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>Mean wind speed <b>{{classe}}</b></p>"
@@ -78,7 +78,7 @@
               "id": "dati_eol",
               "type": "group",
               "name": "Historical data",
-              "description": "This collection includes information on the renewable energy resources available in the territory, which is essential for a detailed characterization of the area in question and for analyzing the development potential of an energy system in the area. These data can be valid inputs to models for the energy planning of the territory. \n\n <div></div>",
+              "description": "<p align=\"justify\">This collection includes information on the renewable energy resources available in the territory, which is essential for a detailed characterization of the area in question and for analyzing the development potential of an energy system in the area. These data can be valid inputs to models for the energy planning of the territory.</p>\n\n <div></div>",
               "isOpen": false,
               "members": [
                 {
@@ -431,7 +431,7 @@
         {
           "id": "sunny",
           "type": "group",
-          "name": "Solare",
+          "name": "Solar",
           "description": "This collection includes information about the solar resource. For further information, see the dedicated solar atlas \n <a href=\"http://sunrise.rse-web.it/\" target=\"_blank\"> SunRISE </a> <div><img src=\"/public/img/shutterstock_1117990592_cut.jpg\" style=\"width:640px;height:427px;\"></div>",
           "isOpen": false,
           "members": [
@@ -466,7 +466,7 @@
                 {
                 "type": "wms",
                 "name": "Offshore wave motion",
-                "description": "Map of average wave power density (kW/m) at predefined points. \n\n  Nelle informazioni associate a ciascun punto sono riportati oltre all'energia media delle onde (kW/m), anche profondità (m) e distanza dalla costa (km) per le quali sono verificate le condizioni di moto ondoso offshore. \n Per approfondimenti: \n\n - Besio, G., Mentaschi, L. and Mazzino, A., 2016. Wave energy resource assessment in the Mediterranean Sea on the basis of a 35-year hindcast. Energy, 94, pp.50-63. https://doi.org/10.1016/j.energy.2015.10.044 \n\n - Lira-Loarca, A., Ferrari, F., Mazzino, A. and Besio, G., 2021. Future wind and wave energy resources and exploitability in the Mediterranean Sea by 2100. Applied Energy, Elsevier vol.302, https://doi.org/10.1016/j.apenergy.2021.117492 \n\n - Rapporto RSE RdS prot. 20010732",
+                "description": "Map of average wave power density (kW/m) at predefined points. \n\n  In the information associated with each point are reported in addition to the average wave energy (kW/m), also the depth (m) and distance from the coast (km) for which the offshore wave motion conditions are verified. \n For further information: \n\n - Besio, G., Mentaschi, L. and Mazzino, A., 2016. Wave energy resource assessment in the Mediterranean Sea on the basis of a 35-year hindcast. Energy, 94, pp.50-63. https://doi.org/10.1016/j.energy.2015.10.044 \n\n - Lira-Loarca, A., Ferrari, F., Mazzino, A. and Besio, G., 2021. Future wind and wave energy resources and exploitability in the Mediterranean Sea by 2100. Applied Energy, Elsevier vol.302, https://doi.org/10.1016/j.apenergy.2021.117492 \n\n - Rapporto RSE RdS prot. 20010732",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226"
@@ -474,7 +474,7 @@
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "styles":"new_atlante_integrato:ma_points",
                 "featureInfoTemplate": {
-                  "template": "<p>Profondità (m) {{depth__m_}}</p><p>Distanza (km) {{distance_t}}</p><p>Energia media delle onde (kW/m) {{energia}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226\">link al metadato </a> </p>"
+                  "template": "<p>Depth (m) {{depth__m_}}</p><p>Distance (km) {{distance_t}}</p><p>Average wave energy (kW/m) {{energia}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226\">metadata link </a> </p>"
                  },
                 "layers": "new_atlante_integrato:v_ma_points",
                 "id": "onde_risorsa"
@@ -482,14 +482,14 @@
                 {  
                   "id": "disp",
                   "type": "group",
-                  "name": "Potenziale offshore dei dispositivi",
-                  "description": "Questa raccolta comprende informazioni riguardanti simulazioni effettuate sul potenziale offshore del moto ondoso di alcuni dispositivi.",
+                  "name": "Offshore potential of devices",
+                  "description": "This collection includes information regarding simulations performed on the offshore wave potential of some devices.",
                   "isOpen": false,
                   "members": [
                   {
                     "type": "wms",
                     "name": "AquaBuOY - Capacity Factor",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: AquaBuOY \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-), il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: AquaBuOY \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE report RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -497,7 +497,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Device <b>{{dispositivo}}</b></p><p>Scale factor {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Annual energy produced (kWh) {{aeo}}</p><p>Nominal capacity of the device {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">metadata link </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -508,7 +508,7 @@
                   {
                     "type": "wms",
                     "name": "CycWEC - Capacity Factor",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: CycWEC \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: CycWEC \n\n This map describes the characteristics of each device for the analyzed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -516,7 +516,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Device <b>{{dispositivo}}</b></p><p>Scale factor {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Annual energy produced (kWh) {{aeo}}</p><p>Nominal capacity of the device {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">metadata link </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -527,7 +527,7 @@
                   {
                     "type": "wms",
                     "name": "Drakoo - Capacity Factor",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Drakoo \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Drakoo \n\n This map describes the characteristics of each device for the analyzed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -535,7 +535,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Device <b>{{dispositivo}}</b></p><p>Scale factor {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Annual energy produced (kWh) {{aeo}}</p><p>Nominal capacity of the device {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">metadata link </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -546,7 +546,7 @@
                   {
                     "type": "wms",
                     "name": "Pelamis - Capacity Factor",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Pelamis \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Pelamis \n\n This map describes the characteristics of each device for the analyzed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -554,7 +554,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Device <b>{{dispositivo}}</b></p><p>Scale factor {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Annual energy produced (kWh) {{aeo}}</p><p>Nominal capacity of the device {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">metadata link </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -565,7 +565,7 @@
                   {
                     "type": "wms",
                     "name": "Seabased - Capacity Factor",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Seabased \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Seabased \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -573,7 +573,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Device <b>{{dispositivo}}</b></p><p>Scale factor {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Annual energy produced (kWh) {{aeo}}</p><p>Nominal capacity of the device {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">metadata link </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -584,7 +584,7 @@
                   {
                     "type": "wms",
                     "name": "Symphony - Capacity Factor",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Symphony \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Symphony \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -592,7 +592,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Device <b>{{dispositivo}}</b></p><p>Scale factor {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Annual energy produced (kWh) {{aeo}}</p><p>Nominal capacity of the device {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">metadata link </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -603,7 +603,7 @@
                   {
                     "type": "wms",
                     "name": "Wavebob - Capacity Factor",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavebob \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Wavebob \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -611,7 +611,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Device <b>{{dispositivo}}</b></p><p>Scale factor {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Annual energy produced (kWh) {{aeo}}</p><p>Nominal capacity of the device {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">metadata link </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -622,7 +622,7 @@
                   {
                     "type": "wms",
                     "name": "Wavedragon - Capacity Factor",
-                    "description": "Potenziale offshore del moto ondoso di alcuni dispositivi: Wavedragon \n\n Questa mappa descrive le caratteristiche di ciascun dispositivo per i punti analizzati al largo delle coste italiane. Si riportano: il miglior fattore di scala (-),il capacity factor (-), energia annuale prodotta (kWh), capacità nominale del dispositivo (kW).\n\n Per approfondimenti si veda rapporto RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Wavedragon \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -630,7 +630,7 @@
                     }],
                     "layers": "new_atlante_integrato:v_dispositivi",
                     "featureInfoTemplate": {
-                      "template": "<p>Dispositivo <b>{{dispositivo}}</b></p><p>Fattore di scala {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Energia annuale prodotta (kWh) {{aeo}}</p><p>Capacità nominale del dispositivo {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">link al metadato </a> </p>"
+                      "template": "<p>Device <b>{{dispositivo}}</b></p><p>Scale factor {{scale}}</p><p>Capacity Factor {{cf}}</p><p>Annual energy produced (kWh) {{aeo}}</p><p>Nominal capacity of the device {{maxp}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228\">metadata link </a> </p>"
                      },
                     "styles":"new_atlante_integrato:onde_CF",
                     "parameters": {
@@ -645,14 +645,14 @@
             {  
               "id": "pot_shoreline",
               "type": "group",
-              "name": "Potenziale shoreline del moto ondoso",
-              "description": "Questa raccolta comprende informazioni sui moli esistenti potenzialmente idonei allo sfruttamento del moto ondoso per la produzione di energia elettrica.",
+              "name": "Potential wave motion shoreline",
+              "description": "This collection includes information on existing piers potentially suitable for exploiting wave motion for the production of electricity.",
               "isOpen": false,
               "members": [
               {
                 "type": "wms",
-                "name": "Moli sfruttabili per moto ondoso",
-                "description": "Mappa dei moli esistenti potenzialmente idonei allo sfruttamento del moto ondoso per la produzione di energia elettrica.</p>",
+                "name": "Piers exploitable for wave motion",
+                "description": "Map of existing piers potentially suitable for exploiting wave motion for the production of electricity.</p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"metadata link",
@@ -666,14 +666,14 @@
             {  
               "id": "monitor",
               "type": "group",
-              "name": "Campagne di misura",
-              "description": "Questa raccolta comprende le misure effettuate in punti di monitoraggio",
+              "name": "Measurement campaigns",
+              "description": "This collection includes measurements made at monitoring points",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Campagne di misura ondametriche - Civitavecchia",
-                  "description": "Misure del moto ondoso e dei flussi di corrente realizzate nei periodi: 9 feb 2017-12 mar 2017, 12 mar 2017 - 08 giu 2017 e 10 ott 2017 - 20 dic 2017, nello specchio di mare antistante il porto di Civitavecchia a circa 40 m di profondit&#224;: altezza d'onda, correnti, velocità e direzione, periodo di picco, potenza disponibile. \n\n Informazioni aggiuntive: </br></br>Documento RSE RdS prot. 17002141</a>.",
+                  "name": "Wave measurement campaigns - Civitavecchia",
+                  "description": "Measurements of wave motion and current flows carried out in the periods: 9th February 2017 - 12th March 2017, 12th March 2017 - 08th June 2017 and 10th October 2017 - 20th December 2017, in the stretch of sea in front of the port of Civitavecchia at about 40 m depth: wave height, currents, speed and direction, peak period, available power. \n\n Additional information: </br></br>RSE RdS document prot. 17002141</a>.",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:ma_misure_civitavecchia_punto",
                   "metadataUrls":[{
@@ -684,8 +684,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Campagne di misura boa MOBI - Canale di Sicilia",
-                  "description": "MOBI - Stazione di misura offshore su boa galleggiante",
+                  "name": "MOBI buoy measurement campaigns - Strait of Sicily",
+                  "description": "MOBI - Offshore measuring station on floating buoy",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:boa_mobi",
                   "metadataUrls":[{
@@ -698,8 +698,8 @@
             },
             {
               "type": "wms",
-              "name": "Flusso di potenza delle correnti (W/m\u00b2)",
-              "description": "Mappa del flusso di potenza specifico delle correnti marine dei mari italiani a scala sinottica (Rapporto RSE RdS prot. 12000352 del 31/03/2012). La risoluzione spaziale dei risultati ottenuti è di fatto legata alla risoluzione temporale dei valori correntometrici utilizzati per l'elaborazione. Si fa riferimento ai risultati numerici disponibili presso http://marine.copernicus.eu, con valori correntometrici giornalieri relativi al periodo 2004-2010, con risoluzione orizzontale di circa 7 km e disposti su 71 livelli verticali. Solo i siti sufficientemente vicini alla costa (distanti al massimo 10 km) e a profondità abbastanza modeste (minori di 50 m) sono considerati praticabili. Il flusso di potenza specifico rappresenta la potenza fornita dalla corrente per unità di sezione utile della turbina, nel punto lungo la verticale, in cui tale flusso presenta il suo massimo valore. La mappa risultante fornisce delle indicazioni di massima (data l'approssimazione legata alla risoluzione temporale delle medie della velocità) per studi a meso e micro-scala, al fine dello sfruttamento di energia da correnti marine nelle acque italiane.</p> \n\n Informazioni sul layer RISORSA MARINO <a href=\"http://marenergy.rse-web.it\" target=\"_blank\">MARENERGY</a>",
+              "name": "Power flow of currents (W/m\u00b2)",
+              "description": "<p align=\"justify\">Map of the specific power flow of marine currents in Italian seas on a synoptic scale (RSE Report RdS prot. 12000352 of 03/31/2012). The spatial resolution of the results obtained is in fact linked to the temporal resolution of the current values ​​used for processing. Reference is made to the numerical results available at http://marine.copernicus.eu, with daily current values ​​relating to the period 2004-2010, with a horizontal resolution of approximately 7 km and arranged on 71 vertical levels. Only sites close enough to the coast (maximum 10 km away) and at fairly modest depths (less than 50 m) are considered feasible. The specific power flow represents the power supplied by the current per unit of useful section of the turbine, at the point along the vertical line, where this flow has its maximum value. The resulting map provides general indications (given the approximation linked to the temporal resolution of the speed averages) for meso- and micro-scale studies, for the purpose of exploiting energy from marine currents in Italian waters.</p> \n\n Information about the MARINE RESOURCE layer <a href=\"http://marenergy.rse-web.it\" target=\"_blank\">MARENERGY</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "correnti",
               "metadataUrls":[{
@@ -713,14 +713,14 @@
         {
           "id": "geotermia",
           "type": "group",
-          "name": "Geotermica",
-          "description": "Questa raccolta comprende informazioni sulla risorsa geotermica. \n\n <a title=\"Virtual-Pano, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Hveravellir_thermal_energy.jpg\"><img width=\"640\" alt=\"Hveravellir thermal energy\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hveravellir_thermal_energy.jpg/512px-Hveravellir_thermal_energy.jpg\"></a>",
+          "name": "Geothermal",
+          "description": "This collection includes information about the geothermal resource. \n\n <a title=\"Virtual-Pano, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Hveravellir_thermal_energy.jpg\"><img width=\"640\" alt=\"Hveravellir thermal energy\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hveravellir_thermal_energy.jpg/512px-Hveravellir_thermal_energy.jpg\"></a>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Temperatura alla profondità di 1000 m (°C)",
-              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 1000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "name": "Temperature at 1000 m depth (°C)",
+              "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 1000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:mappa_T_1000_mt_clip3857",
               "metadataUrls":[{
@@ -731,8 +731,8 @@
             },
             {
               "type": "wms",
-              "name": "Temperatura alla profondità di 2000 m (°C)",
-              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "name": "Temperature at 2000 m depth (°C)",
+              "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 2000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
               "metadataUrls":[{
@@ -743,8 +743,8 @@
             },
             {
               "type": "wms",
-              "name": "Temperatura alla profondità di 3000 m (°C)",
-              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 3000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "name": "Temperature at 3000 m depth (°C)",
+              "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 3000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
               "metadataUrls":[{
@@ -755,8 +755,8 @@
             },
             {
               "type": "wms",
-              "name": "Flusso di calore (mW/m\u00b2)",
-              "description": "Mappa del flusso di calore superficiale espressa in mW/m<sup>2</sup> elaborata da RSE S.p.A. utilizzando i dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "name": "Heat flow (mW/m\u00b2)",
+              "description": "Superficial heat flux map expressed in mW/m<sup>2</sup> prepared by RSE S.p.A. using the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:Flusso_calore_clip3857",
               "metadataUrls":[{
@@ -767,8 +767,8 @@
             },
             {
               "type": "wms",
-              "name": "Quota della sommità del potenziale serbatoio (m s.l.m.)",
-              "description": "La mappa riporta la quota della sommità, in metri slm, del tetto del potenziale serbatoio carbonatico. Il complesso carbonatico, essendo caratterizzato da una significativa permeabilità, da notevoli spessori e da una elevata estensione areale, costituisce il principale serbatoio dei campi geotermici italiani. La mappa è stata elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "name": "Potential reservoir top level (m asl)",
+              "description": "The map shows the top level, in meters asl, of the roof of the potential carbonate tank. The carbonate complex, being characterized by a significant permeability, by considerable thicknesses and by a high area extension, is the main reservoir of Italian geothermal fields. The map was elaborated by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Economic Development - DGS-UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -779,8 +779,8 @@
             },
             {
               "type": "wms",
-              "name": "Zonazione geotermica",
-              "description": "La zonazione geotermica permette di supportare l'individuazione a scala comunale delle aree nelle quali sussistono incrementi rilevanti delle temperature nel sottosuolo a profondità inferiori rispetto alla media che generano le condizioni teoriche necessarie per attingere calore, supportando l'individuazione di un possibile serbatoio di fluido geotermico industrialmente utilizzabile. \n Questa mappa riporta per ciascun comune le seguenti informazioni:\n - la temperatura (°C) minima, media e massima a 1.000, 2.000 e 3.000 metri di profondità (campi T1000, T2000 e T3000);\n - Il flusso di calore (mW/m2) minimo, medio e massimo (campi Flow);\n - la profondità (metri) minima, media e massima del tetto delle rocce potenzialmente idonee a contenere un sistema geotermico (tetto serbatoio carbonatico ove mappato) (campi Carbo).\n\n Nella mappa visualizzata viene mostrata a titolo di esempio la distribuzione del parametro di temperatura media a 1.000 m di profondità, ma selezionando l’opportuna legenda è possibile visualizzare la distribuzione degli altri parametri presenti.\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+              "name": "Geothermal zoning",
+              "description": "Geothermal zoning supports the identification on a municipal scale of areas in which there are significant increases in subsoil temperatures at lower depths than the average which generate the theoretical conditions necessary to draw heat, supporting the identification of a possible geothermal fluid reservoir industrially usable.  \n This map shows the following information for each municipality:\n - the minimum, average and maximum temperature (°C) at 1,000, 2,000 and 3,000 meters of depth (fields: T1000, T2000 and T3000);\n - The minimum, average and maximum heat flow (mW/m2) (fields: Flow) ;\n - the minimum, average and maximum depth (meters) of the roof of rocks potentially suitable for containing a geothermal system (carbonate reservoir roof where mapped) (fields: Carbo).\n\n NThe map displayed shows, by way of example, the distribution of the average temperature parameter at a depth of 1,000 m, but by selecting the appropriate legend it is possible to view the distribution of the other parameters present.\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "atlante_integrato:v_comuni_valori_mappe",
               "metadataUrls":[{
@@ -792,8 +792,8 @@
             },
             {
               "type": "wms",
-              "name": "Profondità delle aree a temperatura omogenea di 120° C (metri)",
-              "description": "Mappa delle profondità relative alla temperatura di 120° C. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
+              "name": "Depth of areas with homogeneous temperature of 120° C (meters)",
+              "description": "Depth maps related to the temperature of 120° C. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -805,15 +805,15 @@
             },
             {
               "type": "wms",
-              "name": "Potenziale geotermico producibile (MWh/anno)",
-              "description": "Mappa del potenziale geotermico a livello comunale: per le aree del territorio italiano che presentano una temperatura maggiore o uguale a 120°C è riportata la stima del potenziale geotermoelettrico espresso come energia termica ricavabile all'anno (MWh/anno). Tale stima è stata eseguita utilizzando il metodo del volume.</br> - Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
+              "name": "Producible geothermal potential (MWh/year)",
+              "description": "<p align=\"justify\">Geothermal map potential at municipal level: for the areas of the Italian territory that have a temperature greater than or equal to 120°C, the estimate of the geothermal potential expressed as thermal energy obtainable per year (MWh/year) is shown. Tthis estimate was made using the volume method. - Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG  (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=225"
               }],
               "featureInfoTemplate": {
-                "template": "<p>Potenziale geotermico (MWh/anno) <b>{{pot_sum}} </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=225\">link al metadato </a> </p>"
+                "template": "<p>Geothermal potential (MWh/year) <b>{{pot_sum}} </b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=225\">mtadata link </a> </p>"
               },
               "layers": "new_atlante_integrato:comuni_potenziale_120c",
               "styles":"new_atlante_integrato:potenziale_120c",

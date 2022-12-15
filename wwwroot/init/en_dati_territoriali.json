@@ -4,7 +4,7 @@
       "id": "territory",
       "type": "group",
       "name": "Territorial data",
-      "description":"<p align=\"justify\">This collection includes information of various kinds complementary to those specifically of energy. In particular, it contains information on the resident population (at different levels of spatial aggregation, over the years), on risk assessment aspects (seismic risk) as well as information on environmental constraints, particularly useful for analyzing potential territorial limitations to the exploitation and development of RES. These data can be valid inputs to models for the energy planning of the territory.\n\n\n <a title=\"Tesla Delacroix, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Isel_near_Clarah%C3%BCtte.jpg\"><img width=\"640\" alt=\"Isel near Clarahütte\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Isel_near_Clarah%C3%BCtte.jpg/512px-Isel_near_Clarah%C3%BCtte.jpg\"></a></p>",
+      "description":"<p align=\"justify\">This collection includes information of various kinds complementary to those specifically of energy. In particular, it contains information on the resident population (at different levels of spatial aggregation, over the years), on risk assessment aspects (seismic risk) as well as information on environmental constraints, particularly useful for analyzing potential territorial limitations to the exploitation and development of RES. These data can be valid inputs to models for the energy planning of the territory.\n </p><a title=\"Tesla Delacroix, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Isel_near_Clarah%C3%BCtte.jpg\"><img width=\"640\" alt=\"Isel near Clarahütte\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Isel_near_Clarah%C3%BCtte.jpg/512px-Isel_near_Clarah%C3%BCtte.jpg\"></a>",
       "isOpen": false,
       "members": [
         {
@@ -139,7 +139,7 @@
             {
               "type": "wms",
               "name": "Resident population at provincial level",
-              "description": "<p align=\"justify\">Map of the resident population at the provincial level which is calculated on 31 December of each year and disseminated on 1 January of the following year. <br><br>RSE elaborations on data from the National Institute of Statistics - ISTAT</p>",
+              "description": "<p align=\"justify\">Map of the resident population at the provincial level which is calculated on 31st December of each year and disseminated on 1st January of the following year. <br><br>RSE elaborations on data from the National Institute of Statistics - ISTAT</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
@@ -158,7 +158,7 @@
             {
               "type": "wms",
               "name": "Resident population at municipal level",
-              "description": "<p align=\"justify\">Map of the resident population at the municipal level which is calculated on 31 December of each year and disseminated on 1 January of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
+              "description": "<p align=\"justify\">Map of the resident population at the municipal level which is calculated on 31st December of each year and disseminated on 1st January of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"

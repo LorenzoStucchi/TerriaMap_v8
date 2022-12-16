@@ -3,46 +3,46 @@
     {
       "id": "available_areas",
       "type": "group",
-      "name": "Aree idonee",
-      "description":"Il raggiungimento degli sfidanti obiettivi per lo sviluppo delle FER al 2030 è fortemente dipendente dall’occupazione del suolo e degli usi competitivi dello stesso. Mentre la disponibilità di risorsa, seppure con rilevanti differenze nord-sud, risulta più omogeneamente distribuita e comunque sfruttabile sull’intero territorio nazionale, la disponibilità di aree atte ad ospitare le installazioni, invece, appare come elemento discriminante delle diverse realtà territoriali e in grado di evidenziare anche potenziali limiti allo sviluppo stesso. La potenza aggiuntiva fotovoltaica al 2030 viene, quindi, calcolata anche sulla base delle superfici disponibili per alcune tipologie di aree “eleggibili” (ovvero da considerarsi potenzialmente sfruttabili) per le installazioni su tetto e a terra. </br> </p> Questa raccolta comprende informazioni a scala comunale riguardanti la percentuale di area disponibile a nuove installazioni fotovoltaiche a terra e su tetto rispetto alla superficie comunale per ciascuna tipologia di area. Tali dati possono costituire validi input ad analisi di ripartizione tra Regioni e Province Autonome degli obiettivi FER nazionali al 2030. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+      "name": "Suitable areas",
+      "description":"<p style=\"text-align:justify\">The achievement of the challenging objectives for the development of RES by 2030 is highly dependent on land occupation and competitive uses of the same. While the availability of resources, even if with significant north-south differences, is more homogeneously distributed and in any case exploitable throughout the national territory, the availability of areas suitable for hosting installations, on the other hand, appears as a discriminating element of the different territorial realities and capable to also highlight potential limits to development itself. The additional photovoltaic power by 2030 is therefore also calculated on the basis of the surfaces available for certain types of \"eligible\" areas (i.e. to be considered potentially exploitable) for installations on roofs and on the ground. </br> </p><p style=\"text-align:justify\">This collection includes municipal-scale information regarding the percentage of area available for new ground-based and rooftop photovoltaic installations compared to the municipal area for each area type. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
       "isOpen": false,
       "members": [
         {
           "id": "tetto",
           "type": "group",
-          "name": "Aree disponibili per il fotovoltaico su tetto",
-          "description": "Questa raccolta comprende le stime a scala comunale della percentuale di area disponibile a nuove installazioni fotovoltaiche su tetto ottenute rispetto alla superficie comunale ottenute a partire da dati regionali o dati del programma Copernicus. </br> </p> Il dettaglio sui dati utilizzati per la stima è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+          "name": "Areas available for rooftop photovoltaics",
+          "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of area available for new rooftop photovoltaic installations obtained with respect  to the municipal area obtained from regional data or Copernicus program data. </br> </p> Details of the data used for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Edificato derivante da CTR o DBT",
-              "description": "Percentuale di area edificata rispetto alla superficie comunale derivata dalle Carte Tecniche Regionali o dai Database Topografici Regionali.",
+              "name": "Built resulting from CTR or DBT",
+              "description": "<p style=\"text-align:justify\">Percentage of built-up area with respect to the municipal area derived from the Regional Technical Papers or from the Regional Topographic Databases.</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
-                "title":"link metadato",
+                "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
               "styles":"aree_idonee:pCTR",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
-                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p><p>Percentuale area [%] <b>{{p_ctr}}</b></p><p>Estensione area [kmq] <b>{{areactrkm2}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'></b><a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a>"
+                "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p><p>Area percentage [%] <b>{{p_ctr}}</b></p><p>Area extension [kmq] <b>{{areactrkm2}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'></b><a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a>"
               },
               "id": "ctr"
             },
             {
               "type": "wms",
-              "name": "Edificato derivante da dati Copernicus",
-              "description": "Percentuale di area edificata rispetto alla superficie comunale derivata dalla Carta Nazionale di Uso dei Suoli (risoluzione spaziale 20 m) elaborata da ISPRA e prodotta nell'ambito del programma Copernicus.",
+              "name": "Built resulting from Copernicus data",
+              "description": "<p style=\"text-align:justify\">Percentage of built-up area with respect to the municipal area derived from the National Land Use Map (spatial resolution 20 m) elaborated by ISPRA and produced within the Copernicus programme.</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
-                "title":"link metadato",
+                "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
               "styles":"aree_idonee:pCN",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
-                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></b></p><p>Percentuale area [%] <b>{{p_cn}}</b></p><p>Estensione area [kmq] <b>{{areacnkm2}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+                "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></b></p><p>Area percentage [%] <b>{{p_cn}}</b></p><p>Area extension [kmq] <b>{{areacnkm2}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "cn"
             }
@@ -51,103 +51,103 @@
         {
           "id": "terra",
           "type": "group",
-          "name": "Aree disponibili per il fotovoltaico a terra",
-          "description": "Questa raccolta comprende le stime a scala comunale della percentuale di area disponibile a nuove installazioni fotovoltaiche a terra rispetto alla superficie comunale ottenute a partire dalla mappa di copertura del suolo Corine Land Cover del 2018 e da dati territoriali relativi ai vincoli ambientali e paesaggistici aventi copertura omogenea su tutto il territorio nazionale.  </br> </p> Il dettaglio sui dati utilizzati per la stima è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+          "name": "Available reas for ground-based photovoltaic",
+          "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of available area for new ground-mounted photovoltaic installations compared to the municipal area obtained from the 2018 Corine Land Cover map and from spatial data relating to environmental and landscape constraints with homogeneous coverage throughout the national territory.  </br> </p> Details of used data  for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Aree estrattive",
-              "description": "Percentuale di area estrattiva (classe Corine Land Cover 131) rispetto alla superficie comunale.",
+              "name": "Mining areas",
+              "description": "Percentage of extractive area (Corine Land Cover class 131) with respect to the municipal area.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
-                "title":"link metadato",
+                "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
               "styles":"aree_idonee:p131",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
-                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></b></p><p>Percentuale area [%] <b>{{p_131}}</b></p><p>Estensione area [kmq] <b>{{areakmq131}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+                "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></b></p><p>Area percentage [%] <b>{{p_131}}</b></p><p>Area extension [kmq] <b>{{areakmq131}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "estrattive"
             },
             {
               "type": "wms",
-              "name": "Discariche",
-              "description": "Percentuale di area adibita a discarica (classe Corine Land Cover 132) rispetto alla superficie comunale.",
+              "name": "Landfills",
+              "description": "Percentage of area used as landfill (Corine Land Cover class 132) compared to the municipal area.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
-                "title":"link metadato",
+                "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
               "styles":"aree_idonee:p132",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
-                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></b></p><p>Percentuale area [%] <b>{{p_132}}</b></p><p>Estensione area [kmq] <b>{{areakmq132}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+                "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></b></p><p>Area percentage [%] <b>{{p_132}}</b></p><p>Area extension [kmq] <b>{{areakmq132}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "discariche"
             },
             {
               "type": "wms",
-              "name": "Aree industriali, commerciali e dei servizi pubblici e privati",
-              "description": "Percentuale di area industriale, commerciale e dei servizi pubblici e privati (classe Corine Land Cover 121) rispetto alla superficie comunale.",
+              "name": "Industrial, commercial and public and private service areas",
+              "description": "Percentage of industrial, commercial and public and private services area (Corine Land Cover 121 class) compared to the municipal area.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
-                "title":"link metadato",
+                "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
               "styles":"aree_idonee:p121",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
-                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></p><p>Percentuale area [%] <b>{{p_121}}</b></p><p>Estensione area [kmq] <b>{{areakmq121}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+                "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_121}}</b></p><p>Area extension [kmq] <b>{{areakmq121}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "industriali"
             },
             {
               "type": "wms",
-              "name": "Superfici agricole utilizzate",
-              "description": "Percentuale di superfici agricole utilizzate (classe Corine Land Cover 2, escluse le risaie - classe 213) rispetto alla superficie comunale.",
+              "name": "Utilized agricultural land",
+              "description": "Percentage of utilized agricultural land (Corine Land Cover class 2, excluding rice paddies - class 213) compared to the municipal area.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
-                "title":"link metadato",
+                "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
               "styles":"aree_idonee:p2tot",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
-                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></p><p>Percentuale area [%] <b>{{p_2tot}}</b></p><p>Estensione area [kmq] <b>{{areakmq2}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+                "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_2tot}}</b></p><p>Area extension [kmq] <b>{{areakmq2}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "agricole"
             },           
             {
               "type": "wms",
-              "name": "Superfici agricole utilizzate al netto dei vincoli",
-              "description": "Percentuale di superfici agricole utilizzate (classe Corine Land Cover 2, escluse le risaie - classe 213) al netto dei vincoli ambientali e paesaggistici rispetto alla superficie comunale. Il dettaglio sui dati utilizzati per la stima e le relative fonti è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "name": "Agricultural surfaces used net of constraints",
+              "description": "<p style=\"text-align:justify\">Percentage of utilized agricultural land (Corine Land Cover 2 class, excluding rice paddies - class 213) net of environmental and landscape constraints with respect to the municipal area. Details on used data for the estimate and the related sources are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
-                "title":"link metadato",
+                "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
               "styles":"aree_idonee:p2netta",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
-                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></b></p><p>Percentuale area [%] <b>{{p_2netta}}</b></p><p>Estensione area [kmq] <b>{{area2netta}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+                "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></b></p><p>Area percentage [%] <b>{{p_2netta}}</b></p><p>Area extension [kmq] <b>{{area2netta}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "agricole_nette"
             },
             {
               "type": "wms",
-              "name": "Seminativi in aree non irrigue al netto dei vincoli",
-              "description": "Percentuale di superfici agricole utilizzate (classe Corine Land Cover 211) al netto dei vincoli ambientali e paesaggistici rispetto alla superficie comunale. Il dettaglio sui dati utilizzati per la stima e le relative fonti è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "name": "Arable land in non-irrigated areas net of constraints",
+              "description": "<p style=\"text-align:justify\">Percentage of agricultural land used (Corine Land Cover class 211) net of environmental and landscape constraints with respect to the municipal area. Details on used data for the estimate and the related sources are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
-                "title":"link metadato",
+                "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
               "styles":"aree_idonee:p211netta",
               "layers": "aree_idonee:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
-                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></p><p>Percentuale area [%] <b>{{p_211netta}}</b></p><p>Estensione area [kmq] <b>{{area211net}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+                "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_211netta}}</b></p><p>Area extension [kmq] <b>{{area211net}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "seminativi_netti"
             },

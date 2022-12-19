@@ -150,7 +150,7 @@
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_211netta}}</b></p><p>Area extension [kmq] <b>{{area211net}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "seminativi_netti"
-            },
+            }
           ]
         }
       ]

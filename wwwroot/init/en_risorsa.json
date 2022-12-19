@@ -3,8 +3,8 @@
     {
       "id": "risorsa",
       "type": "group",
-      "name": "Resourse",
-      "description": "<p align=\"justify\">This collection includes information on the renewable energy resources available in the area, which is essential for a detailed characterization of the area in question and for analyzing the development potential of an energy system in the area. These data can be valid inputs to models for the energy planning of the territory. \n\n <div><img src=\"/images/1920-piccolo-lago-di-alta-montagna-con-trasparente.jpg\" style=\"width:640px;height:427px;\"</div> <a href=\"https://it.vecteezy.com/foto-gratuito\">Stock photo by Vecteezy</a></p>",
+      "name": "Resource",
+      "description": "<p align=\"justify\">This collection includes information on the renewable energy resources available in the area, which is essential for a detailed characterization of the study area and for analyzing the development potential of an energy system in the area. These data can be valid inputs to models for the energy planning of the territory. \n\n <div><img src=\"/images/1920-piccolo-lago-di-alta-montagna-con-trasparente.jpg\" style=\"width:640px;height:427px;\"</div> <a href=\"https://it.vecteezy.com/foto-gratuito\">Stock photo by Vecteezy</a></p>",
       "isOpen": false,
       "members": [
         {
@@ -396,7 +396,7 @@
                 {
                   "type": "wms",
                   "name": "Rainfall data",
-                  "description": "Map of measuring stations: it is possible to view the position of the stations and <i>download their historical data</i>.\n\n Rainfall measurements from the IDROSTAZ database deriving from historical data published in the annals of the Hydrographic Service. </p> \n Note: The service has stopped collecting data since 1998 when the service was moved to the regions. <br> For further details: \n\n <a href=\"https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/acque-interne-e-marino-costiere-1/progetti-conclusi/progetto-annali/inquadramento-storico-del-monitoraggio-idro-meteografico-e-delle-relative-competenze\">  Ispra ambiente </a>\n\n\n",
+                  "description": "Map of measuring stations: it is possible to view the position of the stations and <i>download their historical data</i>.\n\n Rainfall measurements from the IDROSTAZ database deriving from historical data published in the annals of the Hydrographic Service. </p> \n Note: The service has stopped collecting data since 1998 when it was moved to the regions. <br> For further details: \n\n <a href=\"https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/acque-interne-e-marino-costiere-1/progetti-conclusi/progetto-annali/inquadramento-storico-del-monitoraggio-idro-meteografico-e-delle-relative-competenze\">  Ispra ambiente </a>\n\n\n",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "atlante_integrato:v_pluviometri",
                   "featureInfoTemplate": {
@@ -438,7 +438,7 @@
             {
               "type": "wms",
               "name": "Average value of the annual sum of global radiation (kWh/m\u00b2)",
-              "description": "Map of the average global radiation referring to the period 2005-2015 and expressed in kWh/m<sup>2</sup>\n\n The map was created using data from the RADSAF archive of global ground irradiance estimated on the Italian territory, using a methodology developed by RSE. The methodology is based on the processing of images taken by the MSG (Meteosat Second Generation) geostationary satellite placed at an altitude of 36,000 km above the Gulf of Guinea which entirely covers the Italian territory. The spatial resolution of the images is about 3-5 km, the temporal resolution of 15 minutes. An algorithm called SAFNWC, jointly developed by various European meteorological institutes, allows automatic recognition of cloud cover and its type starting from the satellite images acquired every 15 minutes by a ground receiving station with which RSE is equipped.</p>\n Information about the SOLAR RESOURCE layer </br><a href=\"http://sunrise.rse-web.it\" target=\"_blank\">Sun Atlas (sunRise)</a>. ",
+              "description": "Map of the average global radiation referring to the period 2005-2015 and expressed in kWh/m<sup>2</sup>\n\n The map was created using data from the RADSAF archive of global ground irradiance estimated on the Italian territory, using a methodology developed by RSE. The methodology is based on the processing of images taken by the MSG (Meteosat Second Generation) geostationary satellite placed at an altitude of 36,000 km above the Gulf of Guinea which entirely covers the Italian territory. The spatial resolution of the images is about 3-5 km, the temporal resolution of 15 minutes. An algorithm called SAFNWC, jointly developed by various European meteorological institutes, allows automatic recognition of cloud cover and its type starting from the satellite images acquired every 15 minutes by a ground receiving station with which RSE is equipped.</p>\n Information about the SOLAR RESOURCE layer </br><a href=\"http://sunrise.rse-web.it\" target=\"_blank\">Solar Atlas (sunRise)</a>. ",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "solare_10anni",
               "metadataUrls":[{
@@ -466,7 +466,7 @@
                 {
                 "type": "wms",
                 "name": "Offshore wave motion",
-                "description": "Map of average wave power density (kW/m) at predefined points. \n\n  In the information associated with each point are reported in addition to the average wave energy (kW/m), also the depth (m) and distance from the coast (km) for which the offshore wave motion conditions are verified. \n For further information: \n\n - Besio, G., Mentaschi, L. and Mazzino, A., 2016. Wave energy resource assessment in the Mediterranean Sea on the basis of a 35-year hindcast. Energy, 94, pp.50-63. https://doi.org/10.1016/j.energy.2015.10.044 \n\n - Lira-Loarca, A., Ferrari, F., Mazzino, A. and Besio, G., 2021. Future wind and wave energy resources and exploitability in the Mediterranean Sea by 2100. Applied Energy, Elsevier vol.302, https://doi.org/10.1016/j.apenergy.2021.117492 \n\n - Rapporto RSE RdS prot. 20010732",
+                "description": "Map of average wave power density (kW/m) at predefined points. \n\n  Within the information associated with each point are reported in addition to the average wave energy (kW/m), also the depth (m) and distance from the coast (km) for which the offshore wave motion conditions are verified. \n For further information: \n\n - Besio, G., Mentaschi, L. and Mazzino, A., 2016. Wave energy resource assessment in the Mediterranean Sea on the basis of a 35-year hindcast. Energy, 94, pp.50-63. https://doi.org/10.1016/j.energy.2015.10.044 \n\n - Lira-Loarca, A., Ferrari, F., Mazzino, A. and Besio, G., 2021. Future wind and wave energy resources and exploitability in the Mediterranean Sea by 2100. Applied Energy, Elsevier vol.302, https://doi.org/10.1016/j.apenergy.2021.117492 \n\n - Rapporto RSE RdS prot. 20010732",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226"
@@ -489,7 +489,7 @@
                   {
                     "type": "wms",
                     "name": "AquaBuOY - Capacity Factor",
-                    "description": "Offshore wave potential of some devices: AquaBuOY \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE report RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: AquaBuOY \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE report RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -508,7 +508,7 @@
                   {
                     "type": "wms",
                     "name": "CycWEC - Capacity Factor",
-                    "description": "Offshore wave potential of some devices: CycWEC \n\n This map describes the characteristics of each device for the analyzed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: CycWEC \n\n This map describes the characteristics of each device for the analysed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -527,7 +527,7 @@
                   {
                     "type": "wms",
                     "name": "Drakoo - Capacity Factor",
-                    "description": "Offshore wave potential of some devices: Drakoo \n\n This map describes the characteristics of each device for the analyzed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Drakoo \n\n This map describes the characteristics of each device for the analysed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -546,7 +546,7 @@
                   {
                     "type": "wms",
                     "name": "Pelamis - Capacity Factor",
-                    "description": "Offshore wave potential of some devices: Pelamis \n\n This map describes the characteristics of each device for the analyzed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Pelamis \n\n This map describes the characteristics of each device for the analysed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -565,7 +565,7 @@
                   {
                     "type": "wms",
                     "name": "Seabased - Capacity Factor",
-                    "description": "Offshore wave potential of some devices: Seabased \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Seabased \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -584,7 +584,7 @@
                   {
                     "type": "wms",
                     "name": "Symphony - Capacity Factor",
-                    "description": "Offshore wave potential of some devices: Symphony \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Symphony \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -603,7 +603,7 @@
                   {
                     "type": "wms",
                     "name": "Wavebob - Capacity Factor",
-                    "description": "Offshore wave potential of some devices: Wavebob \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Wavebob \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -622,7 +622,7 @@
                   {
                     "type": "wms",
                     "name": "Wavedragon - Capacity Factor",
-                    "description": "Offshore wave potential of some devices: Wavedragon \n\n This map describes the characteristics of each device for the points analyzed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
+                    "description": "Offshore wave potential of some devices: Wavedragon \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732",
                     "url": "https://gis2.rse-web.it/geoserver/wms",
                     "metadataUrls":[{
                       "title":"metadata link",
@@ -646,13 +646,13 @@
               "id": "pot_shoreline",
               "type": "group",
               "name": "Potential wave motion shoreline",
-              "description": "This collection includes information on existing piers potentially suitable for exploiting wave motion for the production of electricity.",
+              "description": "This collection includes information on existing piers potentially suitable for wave motion exploitation for electricity production.",
               "isOpen": false,
               "members": [
               {
                 "type": "wms",
                 "name": "Piers exploitable for wave motion",
-                "description": "Map of existing piers potentially suitable for exploiting wave motion for the production of electricity.</p>",
+                "description": "Map of existing piers potentially suitable for wave motion exploitation for electricity production.</p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"metadata link",
@@ -806,7 +806,7 @@
             {
               "type": "wms",
               "name": "Producible geothermal potential (MWh/year)",
-              "description": "<p align=\"justify\">Geothermal map potential at municipal level: for the areas of the Italian territory that have a temperature greater than or equal to 120°C, the estimate of the geothermal potential expressed as thermal energy obtainable per year (MWh/year) is shown. Tthis estimate was made using the volume method. - Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG  (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
+              "description": "<p align=\"justify\">Geothermal map potential at municipal level: for the areas of the Italian territory that have a temperature greater than or equal to 120°C, the estimate of the geothermal potential expressed as thermal energy obtainable per year (MWh/year) is shown. This estimate was made using the volume method. - Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG  (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",

@@ -4,7 +4,7 @@
       "id": "territory",
       "type": "group",
       "name": "Territorial data",
-      "description":"<p align=\"justify\">This collection includes information of various kinds complementary to those specifically of energy. In particular, it contains information on the resident population (at different levels of spatial aggregation, over the years), on risk assessment aspects (seismic risk) as well as information on environmental constraints, particularly useful for analyzing potential territorial limitations to the exploitation and development of RES. These data can be valid inputs to models for the energy planning of the territory.\n </p><a title=\"Tesla Delacroix, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Isel_near_Clarah%C3%BCtte.jpg\"><img width=\"640\" alt=\"Isel near Clarahütte\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Isel_near_Clarah%C3%BCtte.jpg/512px-Isel_near_Clarah%C3%BCtte.jpg\"></a>",
+      "description":"<p align=\"justify\">This collection includes information of various kinds complementary to those specifically related to energy. In particular, it contains information on the resident population (at different levels of spatial aggregation, over the years), on risk assessment aspects (seismic risk) as well as information on environmental constraints, particularly useful for analyzing potential territorial limitations to the exploitation and development of RES. These data can be valid inputs to models for the energy planning of the territory.\n </p><a title=\"Tesla Delacroix, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Isel_near_Clarah%C3%BCtte.jpg\"><img width=\"640\" alt=\"Isel near Clarahütte\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Isel_near_Clarah%C3%BCtte.jpg/512px-Isel_near_Clarah%C3%BCtte.jpg\"></a>",
       "isOpen": false,
       "members": [
         {
@@ -41,7 +41,7 @@
             {
               "type": "wms",
               "name": "Special Protection Areas (ZPS)",
-              "description": "<p align=\"justify\">Map of the Special Protection Areas present on the Italian territory updated in January 2017. The Special Protection Areas (ZPS), in Italy, pursuant to art. 1 paragraph 5 of Law No. 157/1992 are protection zones chosen along the bird migration routes, aimed at the maintenance and arrangement of suitable habitats for the conservation and management of migratory wild bird populations. The associated table contains a series of information among which code, denomination, surface, perimeter and Region to which each zone belongs.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
+              "description": "<p align=\"justify\">Map of the Special Protection Areas present on the Italian territory updated in January 2017. The Special Protection Areas (ZPS), in Italy, in accordance with art. 1 paragraph 5 of Law No. 157/1992 are protection zones chosen along the bird migration routes, aimed at the maintenance and arrangement of suitable habitats for the conservation and management of migratory wild bird populations. The associated table contains a series of information among which code, denomination, surface, perimeter and Region to which each zone belongs.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -77,7 +77,7 @@
             {
               "type": "wms",
               "name": "Important Bird Areas (IBA)",
-              "description": "<p align=\"justify\">Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n LThe IBAs are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
+              "description": "<p align=\"justify\">Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n which are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -98,7 +98,7 @@
             {
               "type": "wms",
               "name": "Seismic classification of Italian municipalities in 2021",
-              "description": "Seismic classification of Italian municipalities updated in April 2021. Fonte: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\"><br>Protezione civile</p></a>",
+              "description": "Seismic classification of Italian municipalities updated in April 2021. Source: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\"><br>Civil Protection</p></a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -120,10 +120,10 @@
             {
               "type": "wms",
               "name": "Resident population at regional level",
-              "description": "Map of the resident population at regional level which is calculated on December 31st of each year and disseminated on January 1st of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
+              "description": "Map of the resident population at regional level which is calculated on December 31st of each year and shared on January 1st of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -139,10 +139,10 @@
             {
               "type": "wms",
               "name": "Resident population at provincial level",
-              "description": "<p align=\"justify\">Map of the resident population at the provincial level which is calculated on 31st December of each year and disseminated on 1st January of the following year. <br><br>RSE elaborations on data from the National Institute of Statistics - ISTAT</p>",
+              "description": "<p align=\"justify\">Map of the resident population at the provincial level which is calculated on 31st December of each year and shared on 1st January of the following year. <br><br>RSE elaborations on data from the National Institute of Statistics - ISTAT</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -158,10 +158,10 @@
             {
               "type": "wms",
               "name": "Resident population at municipal level",
-              "description": "<p align=\"justify\">Map of the resident population at the municipal level which is calculated on 31st December of each year and disseminated on 1st January of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
+              "description": "<p align=\"justify\">Map of the resident population at the municipal level which is calculated on 31st December of each year and shared on 1st January of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
               },
               "metadataUrls":[{
                 "title":"metadata link",

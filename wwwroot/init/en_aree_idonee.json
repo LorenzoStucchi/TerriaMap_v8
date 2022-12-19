@@ -4,20 +4,20 @@
       "id": "available_areas",
       "type": "group",
       "name": "Suitable areas",
-      "description":"<p style=\"text-align:justify\">The achievement of the challenging objectives for the development of RES by 2030 is highly dependent on land occupation and competitive uses of the same. While the availability of resources, even if with significant north-south differences, is more homogeneously distributed and in any case exploitable throughout the national territory, the availability of areas suitable for hosting installations, on the other hand, appears as a discriminating element of the different territorial realities and capable to also highlight potential limits to development itself. The additional photovoltaic power by 2030 is therefore also calculated on the basis of the surfaces available for certain types of \"eligible\" areas (i.e. to be considered potentially exploitable) for installations on roofs and on the ground. </br> </p><p style=\"text-align:justify\">This collection includes municipal-scale information regarding the percentage of area available for new ground-based and rooftop photovoltaic installations compared to the municipal area for each area type. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
+      "description":"<p style=\"text-align:justify\">The achievement of the challenging objectives for the development of RES by 2030 is highly dependent on land occupation and competitive uses of the same. While the availability of resources, even if with significant north-south differences, is more homogeneously distributed and in any case exploitable throughout the national territory, the availability of areas suitable for hosting installations, on the other hand, appears as a discriminating element of the different territorial realities and capable to also highlight potential limits to development itself. The additional photovoltaic power by 2030 is therefore also calculated on the basis of the surfaces available for certain types of \"eligible\" areas (i.e. to be considered potentially exploitable) for installations on roofs and on the ground. </br> </p><p style=\"text-align:justify\">This collection includes municipal-scale information regarding the percentage of area available for new ground-based and rooftop photovoltaic installations compared to the municipal area for each land use category. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>",
       "isOpen": false,
       "members": [
         {
           "id": "tetto",
           "type": "group",
           "name": "Areas available for rooftop photovoltaics",
-          "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of area available for new rooftop photovoltaic installations obtained with respect  to the municipal area obtained from regional data or Copernicus program data. </br> </p> Details of the data used for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
+          "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of area available for new rooftop photovoltaic installations obtained with respect to the municipal area obtained from regional data or Copernicus program data. </br> </p> Details of the data used for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
               "name": "Built resulting from CTR or DBT",
-              "description": "<p style=\"text-align:justify\">Percentage of built-up area with respect to the municipal area derived from the Regional Technical Papers or from the Regional Topographic Databases.</p>",
+              "description": "<p style=\"text-align:justify\">Percentage of built-up area with respect to the municipal area derived from Regional Technical Charts or from Regional Topographic Databases.</p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -52,7 +52,7 @@
           "id": "terra",
           "type": "group",
           "name": "Available reas for ground-based photovoltaic",
-          "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of available area for new ground-mounted photovoltaic installations compared to the municipal area obtained from the 2018 Corine Land Cover map and from spatial data relating to environmental and landscape constraints with homogeneous coverage throughout the national territory.  </br> </p> Details of used data  for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
+          "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of available area for new ground-mounted photovoltaic installations compared to the municipal area obtained from the 2018 Corine Land Cover map and from spatial data relating to environmental and landscape constraints with homogeneous coverage throughout the national territory.  </br> </p> Details of used data for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
           "isOpen": false,
           "members": [
             {
@@ -122,7 +122,7 @@
             {
               "type": "wms",
               "name": "Agricultural surfaces used net of constraints",
-              "description": "<p style=\"text-align:justify\">Percentage of utilized agricultural land (Corine Land Cover 2 class, excluding rice paddies - class 213) net of environmental and landscape constraints with respect to the municipal area. Details on used data for the estimate and the related sources are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
+              "description": "<p style=\"text-align:justify\">Percentage of utilized agricultural land (Corine Land Cover 2 class, excluding rice paddies - class 213) net of environmental and landscape constraints with respect to the municipal area. Details on data used for the estimate and the related sources are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -138,7 +138,7 @@
             {
               "type": "wms",
               "name": "Arable land in non-irrigated areas net of constraints",
-              "description": "<p style=\"text-align:justify\">Percentage of agricultural land used (Corine Land Cover class 211) net of environmental and landscape constraints with respect to the municipal area. Details on used data for the estimate and the related sources are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
+              "description": "<p style=\"text-align:justify\">Percentage of agricultural land used (Corine Land Cover class 211) net of environmental and landscape constraints with respect to the municipal area. Details on data used for the estimate and the related sources are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -150,7 +150,7 @@
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_211netta}}</b></p><p>Area extension [kmq] <b>{{area211net}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "seminativi_netti"
-            },
+            }
           ]
         }
       ]

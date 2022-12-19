@@ -36,7 +36,7 @@
         {
           "type": "wms",
           "name": "AT network - OSM",
-          "description": "Routes of high voltage power lines for the national territory provided by <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a>.",
+          "description": "Track of high voltage power lines for the national territory provided by <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a>.",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "metadataUrls":[{
             "title":"link metadato",

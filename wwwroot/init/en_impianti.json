@@ -4,7 +4,7 @@
       "id": "plants",
       "type": "group",
       "name": "Plants",
-      "description": "E This collection includes information on energy production plants (RES and NO-RES) at different levels of spatial aggregation over the years, useful for a characterization of the current state of the energy system and for the analysis of its potential developments. This data can include valuable inputs to models for spatial energy planning. \n\n <div><img src=\"/images/1920-conduttura-della-pompa-dell-acqua.jpg\" style=\"width:640px;height:427px;\"></div><a href=\"https://it.vecteezy.com/foto-gratuito\">Stock photo by Vecteezy</a>",
+      "description": "This collection includes information on energy production plants (RES and NO-RES) at different levels of spatial aggregation over the years, useful for a characterization of the current state of the energy system and for the analysis of its potential developments. This data can include valuable inputs to models for spatial energy planning. \n\n <div><img src=\"/images/1920-conduttura-della-pompa-dell-acqua.jpg\" style=\"width:640px;height:427px;\"></div><a href=\"https://it.vecteezy.com/foto-gratuito\">Stock photo by Vecteezy</a>",
       "isOpen": false,
       "members": [
         {
@@ -42,7 +42,7 @@
                 {
                   "type": "wms",
                   "name": "Wind - Regional power of mini wind plants (MW)",
-                  "description": "Map of wind power relating only to mini wind plants installed at regional level, expressed in MW. (reference year, 2015).<br>RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n ",
+                  "description": "Map of wind power relating only to mini wind plants installed at regional level, expressed in MW (reference year, 2015).<br>RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"eo_imp_reg_potenza_mini",
@@ -88,7 +88,7 @@
                   "description": "Map of wind production at regional level, expressed in GWh, over the years.<br>RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Regional production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metada link </a> </p>"
+                    "template": "<p>Regional production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"eo_imp_reg_produzione",
@@ -147,7 +147,7 @@
                 {
                   "type": "wms",
                   "name": "Wind - Number of provincial plants",
-                  "description": "Map of the number of wind farms at provincial level, referring to the year 2019 <br> Research elaboration on the Energy System - RSE S.p.A. starting from GSE and ISTAT data.",
+                  "description": "Map of the number of wind farms at provincial level, referring to the year 2019 <br> RSE elaborations starting from GSE and ISTAT data.",
                   "featureInfoTemplate": {
                     "template": "<p>Number of provincial plants<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
@@ -192,7 +192,7 @@
                 {
                   "type": "wms",
                   "name": "Wind - Municipal power (MW)",
-                  "description": "Map of wind power at municipal level expressed in MW (reference year 2019).<br> Processing of RSE starting from GSE data, The Wind Power, from Sentinel-2 satellite images and ISTAT (administrative boundaries).",
+                  "description": "Map of wind power at municipal level expressed in MW (reference year 2019).<br> RSE elaborations starting from GSE data, The Wind Power, from Sentinel-2 satellite images and ISTAT (administrative boundaries).",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Municipal power (MW): <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
@@ -218,7 +218,7 @@
                 {
                   "type": "wms",
                   "name": "Wind - Number of municipal plants",
-                  "description": "Map of the number of wind farms at municipal level (reference year 2019).<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).",
+                  "description": "Map of wind farms number at municipal level (reference year 2019).<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).",
                   "featureInfoTemplate": {
                     "template": "<p>Number of municipal plants <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
@@ -243,10 +243,10 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Wind - Number of municipal wind turbines generator",
-                  "description": "Map of the number of wind turbines generator with power exceeding 200 kW at the municipal level (reference year 2019).<br> Processing of RSE starting from GSE data, The Wind Power, from Sentinel-2 satellite images and ISTAT (administrative boundaries).",
+                  "name": "Wind - Number of municipal wind turbines generators",
+                  "description": "Map of the number of wind turbines generators with power exceeding 200 kW at the municipal level (reference year 2019).<br> RSE elaborations starting from GSE data, The Wind Power, from Sentinel-2 satellite images and ISTAT (administrative boundaries).",
                   "featureInfoTemplate": {
-                    "template": "<p>Number of wind turbines generator <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+                    "template": "<p>Number of wind turbines generators <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
@@ -270,7 +270,7 @@
                 {
                   "type": "wms",
                   "name": "Wind - Wind turbines generator",
-                  "description": "Map of wind turbines generator present on the national territory with power exceeding 200 kW (reference year 2019), deriving from an RSE elaboration starting from GSE data, The Wind Power and Sentinel-2 satellite images. A power class is associated with each wind turbine generator.",
+                  "description": "Map of wind turbines generators present on the national territory with power exceeding 200 kW (reference year 2019), deriving from an RSE elaboration starting from GSE data, The Wind Power and Sentinel-2 satellite images. A power class is associated with each wind turbine generator.",
                   "featureInfoTemplate": {
                     "template": "<p>Power class <b>{{classe_pot}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=229\">metadata link </a> </p>"
                   },
@@ -431,11 +431,11 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Hydro - Regional production from run-of-the-river plants (GWh)",
-                  "description": "Map of production from run-of-river plants at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n ",
+                  "name": "Hydro - Regional production from flowing water plants (GWh)",
+                  "description": "Map of production from flowing water plants at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Regional production from run-of-river plants (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+                    "template": "<p>Regional production from flowing water plants (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -454,7 +454,7 @@
                   "description": "Map of hydroelectric production net of pumped storage at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries). \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                    "template": "<p>Regional production excluding pumping (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">Metadata link </a> </p>"
+                    "template": "<p>Regional production excluding pumping (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -1055,7 +1055,7 @@
                 {
                   "type": "wms",
                   "name": "Biomass - Regional electricity production from solid biomass other than waste (GWh)",
-                  "description": "Map of production from solid biomass plants other than waste, at regional level, expressed in GWh, over the years.<br> RSE processing starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n ",
+                  "description": "Map of production from solid biomass plants other than waste, at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production from solid biomass (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
@@ -1074,7 +1074,7 @@
                 {
                   "type": "wms",
                   "name": "Biomass - Regional electricity production from regional biodegradable RU (GWh)",
-                  "description": "Map of production from biodegradable municipal waste plants, at regional level, expressed in GWh, over the years.<br> RSE processing starting from GSE, TERNA and ISTAT data (administrative boundaries). For further information see metadata.</p> \n\n ",
+                  "description": "Map of production from biodegradable municipal waste plants, at regional level, expressed in GWh, over the years.<br> RSE processing elaborations from GSE, TERNA and ISTAT data (administrative boundaries). For further information see metadata.</p> \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production from biodegradable RU (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
@@ -1268,7 +1268,7 @@
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "new_atlante_integrato:po_esistenti_comunali",
                 "featureInfoTemplate": {
-                  "template": "<p>Comune {{comune}}; <br> <p>Potenza pompaggio (MW) {{pot_po_mw}}; <br> <p>Potenza turbinaggio (MW) {{pot_tur_mw}}; <br> <p>Capacità di accumulo (MWh) {{cap_acc_mwh}}; <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=222\">metadata link</a></p>"
+                  "template": "<p>Municipality {{comune}}; <br> <p>Pumping power (MW) {{pot_po_mw}}; <br> <p>Turbine power (MW) {{pot_tur_mw}}; <br> <p>Storage capacity (MWh) {{cap_acc_mwh}}; <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=222\">metadata link</a></p>"
                 },
                 "styles":"new_atlante_integrato:id_pompaggio_comunale",
                 "metadataUrls":[{
@@ -1308,7 +1308,7 @@
                 "description": "<p style=\"text-align:justify\">Municipal level map of potential storage capacity (MWh). The potential, expressed in storage capacity, refers to new pumping plants, economically feasible with a payback period of less than 15 years.</p>The calculated potential concerns the following types of plants:<ul><li><p style=\"text-align:justify\">traditional pumping, i.e. between existing reservoirs and new reservoirs;</p></li><li><p style=\"text-align:justify\">marine pumping, i.e. where the sea is exploited as a lower reservoir;</p></li><li><p style=\"text-align:justify\">underground pumping, i.e. with one of the reservoirs built in cave</p></li><li><p style=\"text-align:justify\">pumping between existing lakes.</p></li></ul><p style=\"text-align:justify\">Additional information: Reports RSE RdS prot. 11000299, 12000959, 16002842, 17000266. Evaluations year 2015.​ \n</p> ",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "featureInfoTemplate": {
-                  "template": "<p>Municipal {{comune}}; <br> <p>Traditional pumping, storage capacity (MWh) {{acc_var_45}}; <br> <p>Marine pumped storage capacity (MWh) {{acc_var_39}}; <br> <p>Underground pumping, storage capacity (MWh) {{acc_var_41}}; <br> <p>Pumping between existing lakes, storage capacity (MWh) {{acc_var_43}}; <br> <p>Total storage capacity (MWh) {{acc_sum_ac}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=45\">metadata link</a></p>"
+                  "template": "<p>Municipality {{comune}}; <br> <p>Traditional pumping, storage capacity (MWh) {{acc_var_45}}; <br> <p>Marine pumped storage capacity (MWh) {{acc_var_39}}; <br> <p>Underground pumping, storage capacity (MWh) {{acc_var_41}}; <br> <p>Pumping between existing lakes, storage capacity (MWh) {{acc_var_43}}; <br> <p>Total storage capacity (MWh) {{acc_sum_ac}}; <br> <p> <br><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=45\">metadata link</a></p>"
                 },
                 "metadataUrls":[{
                   "title":"metadata link",

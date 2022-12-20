@@ -61,8 +61,8 @@
 
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
-      "",
-      "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+      "<a target=\"_blank\" href=\"http://www.rse-web.it\"><img src=\"images/logo_rse.png\" style=\"display: block; margin-left: auto; margin-right: auto;  margin-top: 10px; width: 50%;\" /></a>",
+      "<p style=\"display: block; text-align: center; color: white; font-size: 20px; margin-top: 10px; margin-left: auto; margin-right: auto;\"><b>Integrated Atlas for the National Energy System and Renewable Sources</b></p>",
       ""
     ],
     // Shown when things go wrong.
@@ -70,7 +70,7 @@
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
-    "feedbackUrl": "feedback",
+    //"feedbackUrl": "feedback",
 
     // Default mobile viewer mode when loading the map for the first time on mobile platforms.
     // Options are: "3DTerrain", "3DSmooth", "2D"
@@ -79,14 +79,14 @@
     // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
     "experimentalFeatures": true,
     // To enable welcome message when map first loads
-    // "showWelcomeMessage": true,
+     "showWelcomeMessage": true,
     // To override the welcome message video displayed on the welcome message
     // By default, the Getting Started to Terria video is displayed
-    // "welcomeMessageVideo": {
-    //     "videoTitle": "Getting started with the map",
-    //     "videoUrl": "https://www.youtube-nocookie.com/embed/NTtSM70rIvI", // use an embedded video link
-    //     "placeholderImage": "https://img.youtube.com/vi/NTtSM70rIvI/maxresdefault.jpg"
-    // },
+    "welcomeMessageVideo": {
+      "videoTitle": "Getting started with the map",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/4dK270N22Zg", // use an embedded video link video RSE
+      "placeholderImage": "https://img.youtube.com/vi/4dK270N22Zg/maxresdefault.jpg"
+  },
 
     // True to display in-app guides.
     // "showInAppGuides": false,
@@ -150,52 +150,52 @@
                 "title": "translate#stepbystepguide.gettingstarted.step8.title"
               }
             ]
-          }
+          },
           // -- Uncomment to enable the following trainer guides --
-          // {
-          //   "title": "stepbystepguide.satelliteimagery.title",
-          //   "footnote": "stepbystepguide.satelliteimagery.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step1.title",
-          //       "markdownDescription": "stepbystepguide.satelliteimagery.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step2.title",
-          //       "markdownDescription": "stepbystepguide.satelliteimagery.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step3.title",
-          //     "markdownDescription": "stepbystepguide.satelliteimagery.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step4.title",
-          //       "markdownDescription": "stepbystepguide.satelliteimagery.step4.markdownDescription"
-          //     }
-          //   ]
-          // },
-          // {
-          //   "title": "stepbystepguide.comparetimeseries.title",
-          //   "footnote": "stepbystepguide.comparetimeseries.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step1.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step2.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step3.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step4.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step4.markdownDescription"
-          //     }
-          //   ]
-          // }
+           {
+             "title": "stepbystepguide.satelliteimagery.title",
+             "footnote": "stepbystepguide.satelliteimagery.footnote",
+             "steps": [
+               {
+                 "title": "stepbystepguide.satelliteimagery.step1.title",
+                 "markdownDescription": "stepbystepguide.satelliteimagery.step1.markdownDescription"
+               },
+               {
+                 "title": "stepbystepguide.satelliteimagery.step2.title",
+                 "markdownDescription": "stepbystepguide.satelliteimagery.step2.markdownDescription"
+               },
+               {
+                 "title": "stepbystepguide.satelliteimagery.step3.title",
+               "markdownDescription": "stepbystepguide.satelliteimagery.step3.markdownDescription"
+               },
+               {
+                 "title": "stepbystepguide.satelliteimagery.step4.title",
+                 "markdownDescription": "stepbystepguide.satelliteimagery.step4.markdownDescription"
+               }
+             ]
+           },
+           {
+             "title": "stepbystepguide.comparetimeseries.title",
+             "footnote": "stepbystepguide.comparetimeseries.footnote",
+             "steps": [
+               {
+                 "title": "stepbystepguide.comparetimeseries.step1.title",
+                 "markdownDescription": "stepbystepguide.comparetimeseries.step1.markdownDescription"
+               },
+               {
+                 "title": "stepbystepguide.comparetimeseries.step2.title",
+                 "markdownDescription": "stepbystepguide.comparetimeseries.step2.markdownDescription"
+               },
+               {
+                 "title": "stepbystepguide.comparetimeseries.step3.title",
+                 "markdownDescription": "stepbystepguide.comparetimeseries.step3.markdownDescription"
+               },
+               {
+                 "title": "stepbystepguide.comparetimeseries.step4.title",
+                 "markdownDescription": "stepbystepguide.comparetimeseries.step4.markdownDescription"
+               }
+             ]
+           }
         ]
       },
       {
@@ -203,14 +203,14 @@
         "itemName": "storymigration",
         "markdownText": "## Share & Story Migration\n\n### Guide on updating share links, including stories\n\nIf you've received a warning telling you that a share link was based off an older version of TerriaJS, you'll want to do a few things to recreate them in the latest version of Terria!\n\n#### Creators\n\n1. Identify the share URL which causes a notification of share preservation effort when loading them into Terria. e.g. you may know where they are embedded, or come across them accidentally\n2. Open them in the newer (v8) based map application \n3. Check that everything is sharing as you expect, tweak the layers to fit if some are missing or not behaving correctly.\n4. Update the share link by clicking the Share/Print button and copy the new link\n5. If distribution of share link is known, update the url in your web page (if embedded), or send the new link to users \n\n#### Consumers\n1. Load the share URL\n2. If it doesn't quite look right, notify the provider so they can follow the above steps to recreate it in the latest version of Terria",
         "title": "Share & Story migration"
-      }
+      },
       // For maps with satellite imagery, also see `showInAppGuides`
-      // {
-      //     "itemName": "satelliteimagery",
-      //     "title": "Satellite Imagery",
-      //     "paneMode": "slider",
-      //     "icon": "satellite"
-      // }
+       {
+           "itemName": "satelliteimagery",
+           "title": "Satellite Imagery",
+           "paneMode": "slider",
+           "icon": "satellite"
+       }
     ],
     "helpContentTerms": [
       {

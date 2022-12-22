@@ -33,16 +33,12 @@ import "./global.scss";
 
 export default function UserInterface(props) {
   const { t } = useTranslation(); //GOF x traduzione link about.html/about-en.html
-
+  
   return (
     <StandardUserInterface {...props} version={version}>
       <MenuLeft>
         {/* <MenuItem caption="About" href="about.html" key="about-link" /> */}
-        <MenuItem
-          caption="About"
-          href={t("varie.aboutlink")}
-          key="about-link"
-        />
+        <MenuItem caption="About" href={t("varie.aboutlink")} key="about-link" />
         <AnalisiAvanzate viewState={props.viewState} />
       </MenuLeft>
       <ExperimentalMenu>

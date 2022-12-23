@@ -1623,5 +1623,8 @@
     "atlanteIntegrato": "Atlante Integrato.",
     "possibileConsultare": "E' inoltre possibile consultare e scaricare i dati relativi al sistema energetico nazionale presenti nel",
     "geoDbEta": "GeoDB ETA."
+  },
+  "varie": {
+    "aboutlink": "about.html"
   }
 }

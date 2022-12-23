@@ -32,6 +32,9 @@
     "exploreMapDataButton": {
       "content": "## Explore map data\n\nBrowse the catalogue of available data and add it to the map here. You can add multiple datasets at any one time, and you’ll see them listed down below in the Workbench."
     },
+    "menuBarToolsButton": {
+      "content": "## Browse advanced analysis tools\n\nExplore the analysis tools developed to support territorial energy planning."
+    },
     "sidePanelUploadButton": {
       "content": "## Upload Data\n\nYou can upload your own data to the map to view it with other data sets. Upload a file or link to an existing online data set or data service. Supported data formats include CSV, GeoJSON, KML, GPX and CZML."
     },
@@ -1551,6 +1554,9 @@
     "additionalTools": "Additional tools",
     "additionalToolsTitle": "Open additional tools"
   },
+  "varie": {
+    "aboutlink": "about_en.html"
+  },
   "itemSearchTool": {
     "toolLoadError": "Error loading search tool.",
     "title": "Search {{itemName}}",
@@ -1606,6 +1612,7 @@
     "ulterioriApprofondimenti": "For further information about energy planning support, you can consult the",
     "atlanteIntegrato": "Integrated Atlas.",
     "possibileConsultare": "It is also possible to consult and download a variety of data on the national energy system available in the",
+    
     "geoDbEta": "GeoDB ETA."
   }
 }

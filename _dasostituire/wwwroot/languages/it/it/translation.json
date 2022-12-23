@@ -447,5 +447,8 @@
   },
   "dataCatalog": {
     "groupRemove": "rimuovi questo gruppo"
+  },
+  "varie": {
+    "aboutlink": "about_en.html"
   }
 }

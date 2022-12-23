@@ -58,6 +58,9 @@
     "btnTitle": "Ricevi aiuto",
     "btnText": "Guida"
   },
+  "varie": {
+    "aboutlink": "about.html"
+  },
   "feedback": {
     "send": "Invia",
     "commentQuestion": "Commento o domanda",

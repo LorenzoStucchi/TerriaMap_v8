@@ -112,6 +112,9 @@
     "term": "source dataset",
     "content": "The dataset you added to your workbench that allows for difference calculations"
   },
+  "varie": {
+    "aboutlink": "about_en.html"
+  },
   "helpContentTerm8": {
     "term": "preview style",
     "content": "The way the dataset appears in the preview window. We recommend true colour to search for cloud-free images"

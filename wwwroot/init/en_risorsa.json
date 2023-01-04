@@ -131,17 +131,17 @@
               }],
               "id": "pot_bac"
             },
-            /* Bigbang  {
+            /* Bigbang */ {
               "id": "Bbang",
               "type": "group",
               "name": "dati BIGBANG",
-              "description": "Questa raccolta comprende parte dei dati risultanti dal modello idrologico BIGBANG.",
+              "description": "This collection includes part of the data resulting from the BIGBANG hydrological model.",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Piovosità media anni 2011-2019",
-                  "description": "Dati elaborati BIGBANG - Piovosità media TP_2011-2019 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average rainfall years 2011-2019",
+                  "description": "BIGBANG data processed - Average rainfall TP_2011-2019 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_2011-2019",
@@ -157,8 +157,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Piovosità media anni 2001-2010",
-                  "description": "Dati elaborati BIGBANG - Piovosità media TP_2001-2010 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average rainfall years 2001-2010",
+                  "description": "BIGBANG data processed - Average rainfall TP_2001-2010 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_2001-2010",
@@ -174,8 +174,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Piovosità media anni 1991-2000",
-                  "description": "Dati elaborati BIGBANG - Piovosità media TP_1991-2000 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average rainfall years 1991-2000",
+                  "description": "BIGBANG data processed - Average rainfall TP_1991-2000 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1991-2000",
@@ -191,8 +191,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Piovosità media anni 1981-1990",
-                  "description": "Dati elaborati BIGBANG - Piovosità media TP_1981-1990 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average rainfall years 1981-1990",
+                  "description": "BIGBANG data processed - Average rainfall TP_1981-1990 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1981-1990",
@@ -208,8 +208,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Piovosità media anni 1971-1980",
-                  "description": "Dati elaborati BIGBANG - Piovosità media TP_1971-1980 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average rainfall for the years 1971-1980",
+                  "description": "BIGBANG data processed - Average rainfall TP_1971-1980 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1971-1980",
@@ -225,8 +225,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Piovosità media anni 1961-1970",
-                  "description": "Dati elaborati BIGBANG - Piovosità media TP_1961-1970 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average rainfall for the years 1961-1970",
+                  "description": "BIGBANG data processed - Average rainfall TP_1961-1970 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1961-1970",
@@ -242,8 +242,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Piovosità media anni 1951-1960",
-                  "description": "Dati elaborati BIGBANG - Piovosità media TP_1951-1960 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average rainfall for the years 1951-1960",
+                  "description": "BIGBANG data processed - Average rainfall TP_1951-1960 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1951-1960",
@@ -259,8 +259,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Ruscellamento medio anni 2011-2019",
-                  "description": "Dati elaborati BIGBANG - Ruscellamento medio RF_2011-2019 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average runoff for the years 2011-2019",
+                  "description": "BIGBANG data processed - Average runoff RF_2011-2019 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_2011-2019",
                   "id": "bbRF_2011",
@@ -275,8 +275,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Ruscellamento medio anni 2001-2010",
-                  "description": "Dati elaborati BIGBANG - Ruscellamento medio RF_2001-2010 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average runoff years 2001-2010",
+                  "description": "BIGBANG data processed - Average runoff RF_2001-2010 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_2001-2010",
                   "id": "bbRF_2001",
@@ -291,8 +291,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Ruscellamento medio anni 1991-2000",
-                  "description": "Dati elaborati BIGBANG - Ruscellamento medio RF_1991-2000 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average runoff years 1991-2000",
+                  "description": "BIGBANG data processed - Average runoff RF_1991-2000 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1991-2000",
                   "id": "bbRF_1991",
@@ -307,8 +307,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Ruscellamento medio anni 1981-1990",
-                  "description": "Dati elaborati BIGBANG - Ruscellamento medio RF_1981-1990 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average runoff years 1981-1990",
+                  "description": "BIGBANG data processed - Average runoff RF_1981-1990 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1981-1990",
                   "id": "bbRF_1981",
@@ -323,8 +323,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Ruscellamento medio anni 1971-1980",
-                  "description": "Dati elaborati BIGBANG - Ruscellamento medio RF_1971-1980 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average runoff years 1971-1980",
+                  "description": "BIGBANG data processed - Average runoff RF_1971-1980 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1971-1980",
                   "id": "bbRF_1971",
@@ -339,8 +339,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Ruscellamento medio anni 1961-1970",
-                  "description": "Dati elaborati BIGBANG - Ruscellamento medio RF_1961-1970 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average runoff years 1961-1970",
+                  "description": "BIGBANG data processed - Average runoff RF_1961-1970 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1961-1970",
                   "id": "bbRF_1961",
@@ -355,8 +355,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Ruscellamento medio anni 1951-1960",
-                  "description": "Dati elaborati BIGBANG - Ruscellamento medio RF_1951-1960 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average runoff years 1951-1960",
+                  "description": "BIGBANG data processed - Average runoff RF_1951-1960 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1951-1960",
                   "id": "bbRF_1951",
@@ -370,7 +370,7 @@
                   }]
                 }                
               ]
-            },*/
+            },
             {
               "id": "dati",
               "type": "group",

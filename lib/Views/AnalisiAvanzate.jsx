@@ -38,7 +38,7 @@ function AnalisiAvanzate(props) {
       {/* titolo della pagina */}
       <div className={classNames(PanelStyles.header)}>
         <label className={PanelStyles.heading}>
-          <h1> Naviga tra i tools di approfondimento </h1>
+          <h1> {t("analisiAvanzate.h1navigaTraITool")} </h1>
         </label>
       </div>
 

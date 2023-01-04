@@ -134,14 +134,14 @@
             /* Bigbang */ {
               "id": "Bbang",
               "type": "group",
-              "name": "dati BIGBANG",
+              "name": "BIGBANG 4.0 data",
               "description": "This collection includes part of the data resulting from the BIGBANG hydrological model.",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Average rainfall years 2011-2019",
-                  "description": "BIGBANG data processed - Average rainfall TP_2011-2019 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average monthly rainfall years 2011-2019",
+                  "description": "BIGBANG processed data - Average monthly rainfall TP_2011-2019 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_2011-2019",
@@ -157,8 +157,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Average rainfall years 2001-2010",
-                  "description": "BIGBANG data processed - Average rainfall TP_2001-2010 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average monthly rainfall years 2001-2010",
+                  "description": "BIGBANG processed data - Average monthly rainfall TP_2001-2010 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_2001-2010",
@@ -167,15 +167,15 @@
                     "Root Group/stime energetiche/bbTP_2001"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }],
                   "id": "bbTP_2001"
                 },
                 {
                   "type": "wms",
-                  "name": "Average rainfall years 1991-2000",
-                  "description": "BIGBANG data processed - Average rainfall TP_1991-2000 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average monthly rainfall years 1991-2000",
+                  "description": "BIGBANG processed data - Average monthly rainfall TP_1991-2000 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1991-2000",
@@ -184,15 +184,15 @@
                     "Root Group/stime energetiche/bbTP_1991"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }],
                   "id": "bbTP_1991"
                 },
                 {
                   "type": "wms",
-                  "name": "Average rainfall years 1981-1990",
-                  "description": "BIGBANG data processed - Average rainfall TP_1981-1990 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average monthly rainfall years 1981-1990",
+                  "description": "BIGBANG processed data - Average monthly rainfall TP_1981-1990 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1981-1990",
@@ -201,15 +201,15 @@
                     "Root Group/stime energetiche/bbTP_1981"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }],
                   "id": "bbTP_1981"
                 },
                 {
                   "type": "wms",
-                  "name": "Average rainfall for the years 1971-1980",
-                  "description": "BIGBANG data processed - Average rainfall TP_1971-1980 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average monthly rainfall years 1971-1980",
+                  "description": "BIGBANG processed data - Average monthly rainfall TP_1971-1980 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1971-1980",
@@ -218,15 +218,15 @@
                     "Root Group/stime energetiche/bbTP_1971"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }],
                   "id": "bbTP_1971"
                 },
                 {
                   "type": "wms",
-                  "name": "Average rainfall for the years 1961-1970",
-                  "description": "BIGBANG data processed - Average rainfall TP_1961-1970 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average monthly rainfall years 1961-1970",
+                  "description": "BIGBANG processed data - Average monthly rainfall TP_1961-1970 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1961-1970",
@@ -235,15 +235,15 @@
                     "Root Group/stime energetiche/bbTP_1971"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }],
                   "id": "bbTP_1961"
                 },
                 {
                   "type": "wms",
-                  "name": "Average rainfall for the years 1951-1960",
-                  "description": "BIGBANG data processed - Average rainfall TP_1951-1960 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average monthly rainfall years 1951-1960",
+                  "description": "BIGBANG processed data - Average monthly rainfall TP_1951-1960 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1951-1960",
@@ -252,15 +252,15 @@
                     "Root Group/stime energetiche/bbTP_1951"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }],
                   "id": "bbTP_1951"
                 },
                 {
                   "type": "wms",
-                  "name": "Average runoff for the years 2011-2019",
-                  "description": "BIGBANG data processed - Average runoff RF_2011-2019 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average monthly runoff years 2011-2019",
+                  "description": "BIGBANG processed data - Average monthly runoff RF_2011-2019 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_2011-2019",
                   "id": "bbRF_2011",
@@ -275,8 +275,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Average runoff years 2001-2010",
-                  "description": "BIGBANG data processed - Average runoff RF_2001-2010 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average monthly runoff years 2001-2010",
+                  "description": "BIGBANG processed data - Average monthly runoff RF_2001-2010 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_2001-2010",
                   "id": "bbRF_2001",
@@ -285,14 +285,14 @@
                       "Root Group/stime energetiche/bbRF_2001"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }]
                 },
                 {
                   "type": "wms",
-                  "name": "Average runoff years 1991-2000",
-                  "description": "BIGBANG data processed - Average runoff RF_1991-2000 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average monthly runoff years 1991-2000",
+                  "description": "BIGBANG processed data - Average monthly runoff RF_1991-2000 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1991-2000",
                   "id": "bbRF_1991",
@@ -301,14 +301,14 @@
                       "Root Group/stime energetiche/bbRF_1991"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }]
                 },
                 {
                   "type": "wms",
-                  "name": "Average runoff years 1981-1990",
-                  "description": "BIGBANG data processed - Average runoff RF_1981-1990 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average monthly runoff years 1981-1990",
+                  "description": "BIGBANG processed data - Average monthly runoff RF_1981-1990 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1981-1990",
                   "id": "bbRF_1981",
@@ -317,14 +317,14 @@
                       "Root Group/stime energetiche/bbRF_1981"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }]
                 },
                 {
                   "type": "wms",
-                  "name": "Average runoff years 1971-1980",
-                  "description": "BIGBANG data processed - Average runoff RF_1971-1980 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average monthly runoff years 1971-1980",
+                  "description": "BIGBANG processed data - Average monthly runoff RF_1971-1980 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1971-1980",
                   "id": "bbRF_1971",
@@ -333,14 +333,14 @@
                       "Root Group/stime energetiche/bbRF_1971"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }]
                 },
                 {
                   "type": "wms",
-                  "name": "Average runoff years 1961-1970",
-                  "description": "BIGBANG data processed - Average runoff RF_1961-1970 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average monthly runoff years 1961-1970",
+                  "description": "BIGBANG processed data - Average monthly runoff RF_1961-1970 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1961-1970",
                   "id": "bbRF_1961",
@@ -349,14 +349,14 @@
                       "Root Group/stime energetiche/bbRF_1961"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }]
                 },
                 {
                   "type": "wms",
-                  "name": "Average runoff years 1951-1960",
-                  "description": "BIGBANG data processed - Average runoff RF_1951-1960 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model :  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average monthly runoff years 1951-1960",
+                  "description": "BIGBANG processed data - Average monthly runoff RF_1951-1960 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG model:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_1951-1960",
                   "id": "bbRF_1951",
@@ -365,8 +365,8 @@
                       "Root Group/stime energetiche/bbRF_1951"
                   ],
                   "metadataUrls":[{
-                    "title":"metadata link DA MODIFICARE",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=146&anno=2019"
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
                   }]
                 }                
               ]

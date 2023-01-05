@@ -1,2 +1,26 @@
-{
+{  "analisiAvanzate": {
+  "h1navigaTraITool": " Navigate among the supplementary tools ",
+  "h2ModuloDiCalcolo": " CALCULATION MODULE ",
+  "selezionaprovincia": "select a province",
+  "infoValutazioneTecnicoEconomica": "this tool allows to perform a preliminary technical-economical evaluation of a hypothetical wind farm located in a pre-selected point on the map, simulating energy performances and average cost of energy produced by the plant.",
+  "approfondisci": "Read more",
+  "perAccedere": "To access",
+  "cliccaQui": "click here",
+  "downloadSerieStorica": " DOWNLOAD THE HISTORICAL WIND SPEED SERIES ",
+  "infoSerieStorica": "This tool allows you to download the thirty-year hourly historical series (1990-2019) of wind speed (m/s), on the onshore and offshore domains of the national territory.",
+  "infoseriestorica_bis": "Thanks to the collaboration with the University of Cagliari a case study of multi-energy integration was created in the province of Sulcis Iglesiente.",
+  "scopricasostudio": "Discover the case study",
+  "h2DownloadMappaVento": " WIND MAP DOWNLOAD ",
+  "infoShapefile": "This tool allows you to download in shapefile format (.shp) the grid containing the parameters of the Wind Atlas of Italy (speed, producibility, shape parameter of the Weibull distribution and distance from the primary cabins) on the onshore and offshore domains of the national territory.",
+  "approfondisciEdownload": "Read more and download",
+  "link": "LINK",
+  "ulterioriApprofondimenti": "For further information about energy planning support, you can consult the",
+  "atlanteIntegrato": "Integrated Atlas.",
+  "possibileConsultare": "It is also possible to consult and download a variety of data on the national energy system available in the",
+  "acqua_per_energia": "Water for energy, energy for water. National energy and water flows on a national scale.",
+  "geoportale": "The Energy and Territory Geoportal is a container of territorial information concerning the distribution of the various renewable energy sources and their relationships with the territory. It constitutes the access point to the Integrated Atlas, to the main thematic atlases and to other interactive contents linked to insights into aspects of the energy system of particular relevance.",
+  "GeoportaleEnergiaeTerritorio": "Energy and Environment Geoportal",
+  "totem_descrizione": "provides an energy characterization of the territory and allows to estimate, visualize and save data on a provincial scale regarding: energy demand, renewable resource, territorial constraints and water storage potential from pumping.",
+  "geoDbEta": "GeoDB ETA."
+}
 }

@@ -45,148 +45,162 @@ function AnalisiAvanzate(props) {
       {/* totem */}
       <div className={classNames(PanelStyles.section, Styles.section)}>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            {/*<div class="row">
-            <div class="col-sm-6">*/}
-            <h2> TOTEM </h2>
-            <a target="_blank" href="https://totem.rse-web.it">
-              <img
-                className={Styles.image}
-                src={require("../../wwwroot/images/logo_totem_TrW_new.png")}
-                /*src={require("../../wwwroot/images/totem3_v3.png")}*/
-                alt="totem"
-              />
-            </a>
-            {/*</div>
-            <div class="col-sm-6">*/}
-            <p>
-              {" "}
-              TOTEM (<i>Territory Overview Tool for Energy Modelling</i>):{" "}
-              fornisce una caratterizzazione energetica del territorio e
-              permette di stimare, visualizzare e salvare dati a scala
-              provinciale riguardanti: domanda energetica, risorsa rinnovabile,
-              vincoli territoriali e potenziale di accumulo idrico da pompaggi.{" "}
-              Per accedere{" "}
-              <a className={Styles.link} href={totem_link}>
-                seleziona una provincia
-              </a>
-              .
-              {/* Permette la definizione ed il salvataggio di dati territoriali
+          <table>
+            <tr>
+              <td colspan="2">
+                <h2> TOTEM </h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a target="_blank" href="https://totem.rse-web.it">
+                  <img
+                    className={Styles.image}
+                    src={require("../../wwwroot/images/logo_totem_TrW_new.png")}
+                    /*src={require("../../wwwroot/images/totem3_v3.png")}*/
+                    alt="totem"
+                  />
+                </a>
+              </td>
+              <td>
+                <p align="justify">
+                  {" "}
+                  TOTEM (<i>
+                    Territory Overview Tool for Energy Modelling
+                  </i>): {t("analisiAvanzate.totem_descrizione")}{" "}
+                  {t("analisiAvanzate.perAccedere")}{" "}
+                  <a className={Styles.link} href={totem_link}>
+                    {t("analisiAvanzate.selezionaprovincia")}
+                  </a>
+                  .
+                  {/* Permette la definizione ed il salvataggio di dati territoriali
               necessari a software di analisi multienergetiche. Prima di
               attivare il tool è necessario selezionare, a partire dal link qui
               di seguito, il <i>territorio provinciale e l'anno </i> in cui se
               vuole effettuare l'analisi.  href="http://rakino.ricerca.lan"*/}{" "}
-            </p>
-          </li>
+                </p>
+              </td>
+            </tr>
+          </table>
         </ul>
       </div>
       {/* caso multi energy*/}
       <div className={classNames(PanelStyles.section, Styles.section)}>
         <ul>
-          <li class="list-group-item">
-            <h2> Sulcis - Iglesiente </h2>
-            <a
-              target="_blank"
-              href="https://geoportale.rse-web.it/#/geostory/131"
-            >
-              {" "}
-              {/* href="http://gis2.rse-web.it:8080/mapstore/#/geostory/131 */}
-              <img
-                className={Styles.image}
-                src={require("../../wwwroot/images/location_Wtr.png")}
-                alt="multienergy"
-              />
-            </a>
-            <p>
-              {" "}
-              Grazie alla collaborazione con l'Università di Cagliari è stato
-              realizzato un caso studio di integrazione multienergetica nella
-              provincia del Sulcis Iglesiente.
-            </p>
-            <p>
-              {" "}
-              Scopri il caso studio:
-              <a
-                target="_blank"
-                className={Styles.link}
-                href="https://geoportale.rse-web.it/#/geostory/131"
-              >
-                {" "}
-                Sulcis Iglesiente
-              </a>
-            </p>
-          </li>
+          <table>
+            <tr>
+              <td colspan="2">
+                <h2> Sulcis - Iglesiente </h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  target="_blank"
+                  href="https://geoportale.rse-web.it/#/geostory/131"
+                >
+                  {" "}
+                  {/* href="http://gis2.rse-web.it:8080/mapstore/#/geostory/131 */}
+                  <img
+                    className={Styles.image}
+                    src={require("../../wwwroot/images/location_Wtr.png")}
+                    alt="multienergy"
+                  />
+                </a>
+              </td>
+              <td>
+                <p align="justify">
+                  {" "}
+                  {t("analisiAvanzate.infoseriestorica_bis")}
+                </p>
+                <p>
+                  {" "}
+                  {t("analisiAvanzate.scopricasostudio")}:
+                  <a
+                    target="_blank"
+                    className={Styles.link}
+                    href="https://geoportale.rse-web.it/#/geostory/131"
+                  >
+                    {" "}
+                    Sulcis Iglesiente
+                  </a>
+                </p>
+              </td>
+            </tr>
+          </table>
         </ul>
       </div>
 
       {/* collegamento a WEN*/}
       <div className={classNames(PanelStyles.section, Styles.section)}>
         <ul>
-          <li class="list-group-item">
-            <h2>Water-Energy Nexus</h2>
-            <a
-              target="_blank"
-              // href="http://atlanteintegrato.rse-web.it/sankey.php"
-              //href="https://atlanteintegrato.rse-web.it/sankey_it.php"
-              href="https://dbeta.rse-web.it/sankey/sankey_it.php"
-            >
-              <img
-                className={Styles.image}
-                src={require("../../wwwroot/images/water-Energy.png")}
-                alt="WEN"
-              />
-            </a>
-            <p>
-              L'acqua per l'energia, l'energia per l'acqua. Flussi energetici e
-              idrici nazionali a scala nazionale.
-            </p>
-            <a
-              target="_blank"
-              //href="http://atlanteintegrato.rse-web.it/sankey.php"
-              //href="https://atlanteintegrato.rse-web.it/sankey_it.php"
-              href="https://dbeta.rse-web.it/sankey/sankey_it.php"
-              className={Styles.link}
-            >
-              WEN - Water Energy Nexus
-            </a>
-          </li>
+          <table>
+            <tr>
+              <td colspan="2">
+                <h2>Water-Energy Nexus</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  target="_blank"
+                  href="https://dbeta.rse-web.it/sankey/sankey_it.php"
+                >
+                  <img
+                    className={Styles.image}
+                    src={require("../../wwwroot/images/water-Energy.png")}
+                    alt="WEN"
+                  />
+                </a>
+              </td>
+              <td valign="top">
+                <p align="justify">{t("analisiAvanzate.acqua_per_energia")}</p>
+                <a
+                  target="_blank"
+                  href="https://dbeta.rse-web.it/sankey/sankey_it.php"
+                  className={Styles.link}
+                >
+                  WEN - Water Energy Nexus
+                </a>
+              </td>
+            </tr>
+          </table>
         </ul>
       </div>
 
       {/* collegamento a mapstore */}
       <div className={classNames(PanelStyles.section, Styles.section)}>
         <ul>
-          <li class="list-group-item">
-            <h2>Geoportale Energia e Territorio</h2>
-            <a target="_blank" href="https://geoportale.rse-web.it/#/">
-              <img
-                className={Styles.image}
-                src={require("../../wwwroot/images/geo_ET_TrGG.png")}
-                alt="geoportale"
-              />
-            </a>
-            <p>
-              {/* Nel portale sono presenti tutti i siti di approfondimento
-              geografico del gruppo AmbienteRisorseTerritorio. Vi sono anche
-              mappe dedicate a tematismi di interesse e storymaps. */}
-              Il Geoportale Energia e Territorio è un contenitore di
-              informazioni territoriali aventi per oggetto la distribuzione
-              delle diverse fonti energetiche rinnovabili e le loro relazioni
-              con il territorio. Esso costituisce il punto di accesso
-              all'Atlante Integrato, ai principali atlanti tematici e ad altri
-              contenuti interattivi legati ad approfondimenti su aspetti del
-              sistema energetico di particolare rilevanza.
-            </p>
-            <a
-              target="_blank"
-              href="https://geoportale.rse-web.it/#/"
-              className={Styles.link}
-            >
-              {" "}
-              {/* href="http://gis2.rse-web.it/mapstore"*/}
-              Geoportale Energia e Territorio
-            </a>
-          </li>
+          <table>
+            <tr>
+              <td colspan="2">
+                <h2>{t("analisiAvanzate.GeoportaleEnergiaeTerritorio")}</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a target="_blank" href="https://geoportale.rse-web.it/#/">
+                  <img
+                    className={Styles.image}
+                    src={require("../../wwwroot/images/geo_ET_TrGG.png")}
+                    alt="geoportale"
+                  />
+                </a>
+              </td>
+              <td>
+                <p align="justify">{t("analisiAvanzate.geoportale")}</p>
+                <a
+                  target="_blank"
+                  href="https://geoportale.rse-web.it/#/"
+                  className={Styles.link}
+                >
+                  {" "}
+                  {/* href="http://gis2.rse-web.it/mapstore"*/}
+                  {t("analisiAvanzate.GeoportaleEnergiaeTerritorio")}
+                </a>
+              </td>
+            </tr>
+          </table>
         </ul>
       </div>
     </MenuPanel>

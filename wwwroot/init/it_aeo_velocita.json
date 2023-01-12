@@ -20,7 +20,7 @@
               "description": "Velocità media annua del vento onshore alla quota di 50 m s.l.t. espressa in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La velocita' del vento è pari a <b>{{vento_50}}</b> m/s </p><br><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Quota,Velocità,Producibilità,Forma Weibull' preview-x-label='Quota m s.l.t.' preview-y-label='Quota,velocità,producibilità,forma Weibull' title='Aeolian valore'>Quota,velocità,producibilità,forma Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>La velocita' del vento è pari a <b>{{vento_50}}</b> m/s </p><br><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Quota,Velocità,Producibilità, Weibull' preview-x-label='Quota m s.l.t.' preview-y-label='Quota,velocità,producibilità, Weibull' title='Grafico'>Quota,velocità,producibilità,Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"link metadato",

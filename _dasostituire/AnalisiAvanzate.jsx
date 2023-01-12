@@ -83,8 +83,7 @@ function AnalisiAvanzate(props) {
                 {t("analisiAvanzate.perAccedere")}{" "}
                 <a className={Styles.link} href={modCalc_link}>
                   {t("analisiAvanzate.cliccaQui")}
-                </a>
-                .
+                </a>.
               </td>
             </tr>
           </table>
@@ -100,7 +99,7 @@ function AnalisiAvanzate(props) {
               </td>
             </tr>
             <tr>
-              <td tyle="vertical-align:top">
+              <td style="vertical-align:top">
                 <img
                   width="50%"
                   height="80%"

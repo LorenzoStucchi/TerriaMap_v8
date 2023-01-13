@@ -21,7 +21,7 @@
               "description": "Specific onshore producibility at 50 m above sea level expressed in MWh/MW. <br> A Riva Calzoni ATB 500.54 wind turbine with a hub height of 54 m and a nominal power of 500 kW has been used to calculate the producibility. ",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_50}}</b> MWh/MW </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The specific wind energy production is <b>{{prod_50}}</b> MWh/MW </p><br><chart column-units='a.s.l.,m/s,MWh/MW,' column-names='Altitude,energy production, speed, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Specific onshore energy production, Average annual onshore wind speed, Weibull' title='Chart: '>Altitude, Specific onshore energy production, Average annual onshore wind speed, Weibull\n50,{{prod_50}}, {{vento_50}},{{weib_50}}\n75,{{prod_75}},{{vento_75}},{{weib_75}}\n100,{{prod_100}},{{vento_100}},{{weib_100}}\n125,{{prod_125}},{{vento_125}},0\n150,{{prod_150}},{{vento_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -37,7 +37,7 @@
               "description": "Specific onshore energy production at 75 m above sea level expressed in MWh/MW. <br> A Leitwind LTW90-950 wind turbine with a hub height of 90 m and a nominal power of 950 kW has been used to calculate the producibility.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_75}}</b> MWh/MW </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The specific wind energy production is <b>{{prod_75}}</b> MWh/MW </p><br><chart column-units='a.s.l.,m/s,MWh/MW,' column-names='Altitude,energy production, speed, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Specific onshore energy production, Average annual onshore wind speed, Weibull' title='Chart: '>Altitude, Specific onshore energy production, Average annual onshore wind speed, Weibull\n50,{{prod_50}}, {{vento_50}},{{weib_50}}\n75,{{prod_75}},{{vento_75}},{{weib_75}}\n100,{{prod_100}},{{vento_100}},{{weib_100}}\n125,{{prod_125}},{{vento_125}},0\n150,{{prod_150}},{{vento_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -53,7 +53,7 @@
               "description": "Specific onshore energy production at 100 m above sea level expressed in MWh/MW. <br> A Vestas V117 3450 wind turbine with a hub height of 117 m and a nominal power of 3450 kW has been used to calculate the energy production.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_100}}</b> MWh/MW </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The specific wind energy production is <b>{{prod_100}}</b> MWh/MW </p><br><chart column-units='a.s.l.,m/s,MWh/MW,' column-names='Altitude,energy production, speed, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Specific onshore energy production, Average annual onshore wind speed, Weibull' title='Chart: '>Altitude, Specific onshore energy production, Average annual onshore wind speed, Weibull\n50,{{prod_50}}, {{vento_50}},{{weib_50}}\n75,{{prod_75}},{{vento_75}},{{weib_75}}\n100,{{prod_100}},{{vento_100}},{{weib_100}}\n125,{{prod_125}},{{vento_125}},0\n150,{{prod_150}},{{vento_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -79,7 +79,7 @@
               "description": "Specific offshore energy production at 100 m a.s.l. expressed in MWh/MW. <br> An NREL_Reference wind turbine with hub height of 155 m and nominal power of 6 MW has been used to calculate the energy production.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_100}}</b> MWh/MW </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The specific wind energy production is <b>{{prod_100}}</b> MWh/MW </p><br><chart column-units='a.s.l.,m/s,MWh/MW,' column-names='Altitude,energy production, speed, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Specific offshore energy production, Average annual offshore wind speed, Weibull' title='Chart: '>Altitude, Specific offshore energy production, Average annual offshore wind speed, Weibull\n50,{{prod_50}}, {{vento_50}},{{weib_50}}\n75,{{prod_75}},{{vento_75}},{{weib_75}}\n100,{{prod_100}},{{vento_100}},{{weib_100}}\n125,{{prod_125}},{{vento_125}},0\n150,{{prod_150}},{{vento_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -95,7 +95,7 @@
               "description": "Specific offshore energy production at 125 m a.s.l. expressed in MWh/MW. <br> An IEA_10MW_RTW wind turbine with hub height of 198 m and nominal power of 10 MW has been used to calculate the energy production.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_125}}</b> MWh/MW </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The specific wind energy production is <b>{{prod_125}}</b> MWh/MW </p><br><chart column-units='a.s.l.,m/s,MWh/MW,' column-names='Altitude,energy production, speed, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Specific offshore energy production, Average annual offshore wind speed, Weibull' title='Chart: '>Altitude, Specific offshore energy production, Average annual offshore wind speed, Weibull\n50,{{prod_50}}, {{vento_50}},{{weib_50}}\n75,{{prod_75}},{{vento_75}},{{weib_75}}\n100,{{prod_100}},{{vento_100}},{{weib_100}}\n125,{{prod_125}},{{vento_125}},0\n150,{{prod_150}},{{vento_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -111,7 +111,7 @@
               "description": "Specific offshore energy production at 150 m a.s.l. expressed in MWh/MW. <br> An IEA_15MW_RTW wind turbine with hub height of 240 m and nominal power of 15 MW has been used to calculate the energy production.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_150}}</b> MWh/MW </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The specific wind energy production is <b>{{prod_150}}</b> MWh/MW </p><br><chart column-units='a.s.l.,m/s,MWh/MW,' column-names='Altitude,energy production, speed, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Specific offshore energy production, Average annual offshore wind speed, Weibull' title='Chart: '>Altitude, Specific offshore energy production, Average annual offshore wind speed, Weibull\n50,{{prod_50}}, {{vento_50}},{{weib_50}}\n75,{{prod_75}},{{vento_75}},{{weib_75}}\n100,{{prod_100}},{{vento_100}},{{weib_100}}\n125,{{prod_125}},{{vento_125}},0\n150,{{prod_150}},{{vento_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",

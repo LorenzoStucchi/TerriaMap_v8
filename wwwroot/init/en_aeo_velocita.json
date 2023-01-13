@@ -20,7 +20,7 @@
               "description": "Average annual onshore wind speed at an altitude of 50 m a.s.l. expressed in m/s",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><br><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><br><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull' title='Chart: '>Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -38,7 +38,7 @@
               "description": "Average annual onshore wind speed at an altitude of 75 m a.s.l. expressed in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull' title='Chart: '>Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -54,7 +54,7 @@
               "description": "Average annual onshore wind speed at an altitude of 100 m a.s.l. expressed in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull' title='Chart: '>Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -70,7 +70,7 @@
               "description": "Average annual onshore wind speed at an altitude of 125 m a.s.l. expressed in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_125}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_125}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull' title='Chart: '>Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -86,7 +86,7 @@
               "description": "Average annual onshore wind speed at an altitude of 150 m a.s.l. expressed in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_150}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_150}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull' title='Chart: '>Altitude, Average annual onshore wind speed, Specific onshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -111,7 +111,7 @@
               "description": "Average annual offshore wind speed at an altitude of 50 m a.s.l. expressed in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull' title='Chart: '>Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -127,7 +127,7 @@
               "description": "Average annual offshore wind speed at an altitude of 75 m a.s.l. expressed in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull' title='Chart: '>Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -143,7 +143,7 @@
               "description": "Average annual offshore wind speed at an altitude of 100 m a.s.l. expressed in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull' title='Chart: '>Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -159,7 +159,7 @@
               "description": "Average annual offshore wind speed at an altitude of 125 m a.s.l. expressed in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_125}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_125}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull' title='Chart: '>Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -175,7 +175,7 @@
               "description": "Average annual offshore wind speed at an altitude of 150 m a.s.l. expressed in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_150}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, speed, energy production, Weibull' title='Chart'>Altitude, speed, energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>The wind speed is equal to <b>{{vento_150}}</b> m/s </p><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Altitude, speed, energy production, Weibull' preview-x-label='Altitude m a.s.l' preview-y-label='Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull' title='Chart: '>Altitude, Average annual offshore wind speed, Specific offshore energy production, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
               },
               "metadataUrls":[{
                 "title":"metadata link",

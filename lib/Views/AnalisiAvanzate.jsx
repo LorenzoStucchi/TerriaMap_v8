@@ -97,7 +97,7 @@ function AnalisiAvanzate(props) {
               <td>
                 <a
                   target="_blank"
-                  href="https://geoportale.rse-web.it/#/geostory/131"
+                  href={t("analisiAvanzate.link_geostoria_sulcis")}
                 >
                   {" "}
                   {/* href="http://gis2.rse-web.it:8080/mapstore/#/geostory/131 */}
@@ -119,7 +119,7 @@ function AnalisiAvanzate(props) {
                   <a
                     target="_blank"
                     className={Styles.link}
-                    href="https://geoportale.rse-web.it/#/geostory/131"
+                    href={t("analisiAvanzate.link_geostoria_sulcis")}
                   >
                     {" "}
                     Sulcis Iglesiente
@@ -142,10 +142,7 @@ function AnalisiAvanzate(props) {
             </tr>
             <tr>
               <td>
-                <a
-                  target="_blank"
-                  href="https://dbeta.rse-web.it/sankey/sankey_it.php"
-                >
+                <a target="_blank" href={t("analisiAvanzate.link_sankey")}>
                   <img
                     className={Styles.image}
                     src={require("../../wwwroot/images/water-Energy.png")}
@@ -157,7 +154,7 @@ function AnalisiAvanzate(props) {
                 <p align="justify">{t("analisiAvanzate.acqua_per_energia")}</p>
                 <a
                   target="_blank"
-                  href="https://dbeta.rse-web.it/sankey/sankey_it.php"
+                  href={t("analisiAvanzate.link_sankey")}
                   className={Styles.link}
                 >
                   WEN - Water Energy Nexus

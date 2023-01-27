@@ -1629,6 +1629,8 @@
     "totem_descrizione": "fornisce una caratterizzazione energetica del territorio e permette di stimare, visualizzare e salvare dati a scala provinciale riguardanti: domanda energetica, risorsa rinnovabile, vincoli territoriali e potenziale di accumulo idrico da pompaggi.",
     "ulterioriApprofondimenti": "Per ulteriori approfondimenti in materia di supporto alla pianificazione energetica è possibile consultare l'",
     "atlanteIntegrato": "Atlante Integrato.",
+    "link_geostoria_sulcis": "https://geoportale.rse-web.it/#/geostory/131",
+    "link_sankey": "https://dbeta.rse-web.it/sankey/sankey_it.php",
     "possibileConsultare": "E' inoltre possibile consultare e scaricare i dati relativi al sistema energetico nazionale presenti nel",
     "geoDbEta": "GeoDB ETA."
   },

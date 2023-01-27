@@ -14,6 +14,8 @@
   "infoShapefile": "This tool allows you to download in shapefile format (.shp) the grid containing the parameters of the Wind Atlas of Italy (speed, producibility, shape parameter of the Weibull distribution and distance from the primary cabins) on the onshore and offshore domains of the national territory.",
   "approfondisciEdownload": "Read more and download",
   "link": "LINK",
+  "link_geostoria_sulcis": "https://geoportale.rse-web.it/#/geostory/shared/257",
+  "link_sankey": "https://dbeta.rse-web.it/sankey/sankey_en.php",
   "ulterioriApprofondimenti": "For further information about energy planning support, you can consult the",
   "atlanteIntegrato": "Integrated Atlas.",
   "possibileConsultare": "It is also possible to consult and download a variety of data on the national energy system available in the",

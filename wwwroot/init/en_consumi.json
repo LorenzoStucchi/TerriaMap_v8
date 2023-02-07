@@ -13,7 +13,7 @@
           "description": "Map of the regional distribution of electricity consumption (GWh), over the years.\n\n RSE elaborations starting from TERNA and ISTAT data (administrative boundaries).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -35,7 +35,7 @@
           "description": "Map of the regional distribution of electricity consumption in the industrial sector (GWh), over the years.\n\n RSE elaborations starting from TERNA and ISTAT data (administrative boundaries).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -54,7 +54,7 @@
           "description": "Map of the regional distribution of electricity consumption in the agricultural sector (GWh), over the years. \n\n RSE elaborations starting from TERNA and ISTAT data (administrative boundaries).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -74,7 +74,7 @@
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "layers": "new_atlante_integrato:v_regioni_t",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -92,7 +92,7 @@
           "description": "Map of the regional distribution of electricity consumption in the domestic sector (GWh), over the years. \n\n RSE elaborations starting from TERNA and ISTAT data (administrative boundaries).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -111,7 +111,7 @@
           "description": "Map of the regional distribution of regional FS electricity consumption (GWh), over the years. \n\n RSE elaborations starting from TERNA and ISTAT data (administrative boundaries).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumptions (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -130,7 +130,7 @@
           "description": "Map of the provincial distribution of electricity consumption in the agricultural sector (GWh), over the years.\n\n RSE elaborations starting from TERNA and ISTAT data (administrative boundaries).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -157,7 +157,7 @@
           ],
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -177,7 +177,7 @@
           "description": "Map of the provincial distribution of electricity consumption in the tertiary sector (GWh), over the years.\n\n RSE elaborations starting from TERNA and ISTAT data (administrative boundaries).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -197,7 +197,7 @@
           "description": "Map of the provincial distribution of electricity consumption in the domestic sector (GWh), over the years.<br> \n\n RSE elaborations starting from TERNA and ISTAT data (administrative boundaries).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",
@@ -216,7 +216,7 @@
           "description": "Map of the distribution of total electricity consumption at provincial level, excluding FS consumption (GWh), over the years.<br> \n\n RSE elaborations starting from TERNA and ISTAT data (administrative boundaries).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
+            "template": "<p>Recorded consumption (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"metadata link",

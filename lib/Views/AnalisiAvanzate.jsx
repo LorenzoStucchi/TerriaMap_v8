@@ -23,11 +23,15 @@ function AnalisiAvanzate(props) {
   var modCalc_link = "/#en_modcalc";
   var dati_storici_prova = "/#it_dati_storici_prova";
   var analisi = "Advanced Analysis";
+  var mod_calc_help =
+    "https://atlanteeolico.rse-web.it/help/help-terria-calcolo-EN.html";
   if (userLang === "it-IT" || userLang === "it") {
     totem_link = "/#it_dati_storici"; //inserire il path che punta al tool codice di calcolo
     modCalc_link = "/#it_modcalc";
     analisi = "Strumenti Aggiuntivi";
     dati_storici_prova = "/#it_dati_storici_prova";
+    mod_calc_help =
+      "https://atlanteeolico.rse-web.it/help/help-terria-calcolo-IT.html";
   }
 
   return (
@@ -73,7 +77,7 @@ function AnalisiAvanzate(props) {
                 <a
                   target="_blank"
                   //href="http://atlanteintegrato.rse-web.it/sankey.php"
-                  href="https://atlanteeolico.rse-web.it/help/help-terria-calcolo-IT.html"
+                  href={mod_calc_help}
                   className={Styles.link}
                 >
                   {t("analisiAvanzate.approfondisci")}

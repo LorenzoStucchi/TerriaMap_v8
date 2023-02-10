@@ -143,3 +143,4 @@ module.exports = terria.start({
         console.error(e.stack);
     }
 });
+

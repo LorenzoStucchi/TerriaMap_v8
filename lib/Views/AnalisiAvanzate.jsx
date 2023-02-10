@@ -25,6 +25,8 @@ function AnalisiAvanzate(props) {
   var analisi = "Advanced Analysis";
   var mod_calc_help =
     "https://atlanteeolico.rse-web.it/help/help-terria-calcolo-EN.html";
+  var griglia_download =
+    "https://atlanteeolico.rse-web.it/download_terria_griglia-EN.php";
   if (userLang === "it-IT" || userLang === "it") {
     totem_link = "/#it_dati_storici"; //inserire il path che punta al tool codice di calcolo
     modCalc_link = "/#it_modcalc";
@@ -32,6 +34,8 @@ function AnalisiAvanzate(props) {
     dati_storici_prova = "/#it_dati_storici_prova";
     mod_calc_help =
       "https://atlanteeolico.rse-web.it/help/help-terria-calcolo-IT.html";
+    griglia_download =
+      "https://atlanteeolico.rse-web.it/download_terria_griglia-IT.php";
   }
 
   return (
@@ -157,7 +161,7 @@ function AnalisiAvanzate(props) {
                   target="_blank"
                   //href="http://atlanteintegrato.rse-web.it/sankey.php"
                   //href="https://atlanteeolico.rse-web.it/download_griglia-IT.php"
-                  href="https://atlanteeolico.rse-web.it/download_terria_griglia-IT.php"
+                  href={griglia_download}
                   className={Styles.link}
                 >
                   {t("analisiAvanzate.approfondisciEdownload")}

@@ -21,7 +21,7 @@
               "description": "Producibilità specifica onshore a 50 m s.l.t. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore Riva Calzoni ATB 500.54 con altezza di mozzo pari a 54 m e potenza nominale pari a 500 kW. ",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La producibilità specifica del vento è pari a <b>{{prod_50}}</b> MWh/MW </p><br><br><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Quota,Producibilità, Velocità, Weibull' preview-x-label='Quota m s.l.t.' preview-y-label='Quota, Producibilità Specifica Onshore, Velocità Media Annua del Vento Onshore, Weibull' title='Grafico: '>Quota, Producibilità Specifica Onshore, Velocità Media Annua del Vento Onshore, Weibull'\n50,{{prod_50}}, {{vento_50}},{{weib_50}}\n75,{{prod_75}},{{vento_75}},{{weib_75}}\n100,{{prod_100}},{{vento_100}},{{weib_100}}\n125,{{prod_125}},{{vento_125}},0\n150,{{prod_150}},{{vento_150}},0\n</chart>"
+                "template": "<p>La producibilità specifica del vento è pari a <b>{{prod_50}}</b> MWh/MW </p><br><br><chart column-units='m/s,m s.l.t.' column-names='Quota,Producibilità' preview-x-label='Quota m s.l.t.' preview-y-label='Producibilità Specifica Onshore, Quota' title='Grafico: '>Quota, Producibilità Specifica Onshore'\n{{prod_50}},50\n{{prod_75}},75\n{{prod_100}},100\n</chart>"
               },
               "metadataUrls":[{
                 "title":"link metadato",

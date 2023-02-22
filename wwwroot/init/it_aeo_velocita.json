@@ -22,7 +22,7 @@
               "description": "Velocità media annua del vento onshore alla quota di 50 m s.l.t. espressa in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La velocità del vento è pari a <b>{{vento_50}}</b> m/s </p><br><chart column-units='m s.l.t.,m/s,MWh/MW,' column-names='Quota,Velocità,Producibilità, Weibull' preview-y-label='Quota, Velocità Media Annua del Vento Onshore, Producibilità Specifica Onshore, Weibull' title='Grafico: '>Quota,Velocità Media Annua del Vento Onshore, Producibilità Specifica Onshore, Weibull\n50,{{vento_50}},{{prod_50}},{{weib_50}}\n75,{{vento_75}},{{prod_75}},{{weib_75}}\n100,{{vento_100}},{{prod_100}},{{weib_100}}\n125,{{vento_125}},{{prod_125}},0\n150,{{vento_150}},{{prod_150}},0\n</chart>"
+                "template": "<p>La velocità del vento è pari a <b>{{vento_50}}</b> m/s </p><br><chart column-units='m/s, m s.l.t.' column-names='Velocità,Quota' preview-y-label='Velocità Media Annua del Vento Onshore, Quota' title='Grafico: '>Quota, Velocità Media Annua del Vento Onshore\n{{vento_50}}, 50\n{{vento_75}},75\n{{vento_100}},100\n{{vento_125}},125\n{{vento_150}},150\n</chart>"
               },
               "metadataUrls":[{
                 "title":"link metadato",

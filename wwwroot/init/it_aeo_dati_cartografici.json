@@ -88,7 +88,7 @@
               "title":"link metadato",
               "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=205"
             }],
-            "layers": "new_atlante_integrato:bati_2018",
+            "layers": "new_atlante_integrato:bati_2018_aeolian",
             "styles":"new_atlante_integrato:bati_2018",
             "id": "bati2018"
           },

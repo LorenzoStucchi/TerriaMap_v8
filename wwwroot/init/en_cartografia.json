@@ -80,7 +80,7 @@
             "name": "Bathymetry (m)",
             "description": "Bathymetry reclassified from data from the European Marine Observation and Data Network (EMODnet) DTM for European sea regions (2018) https://www.emodnet-bathymetry.eu/metadata-data.\n",
             "url": "https://gis2.rse-web.it/geoserver/wms",
-            "layers": "new_atlante_integrato:bati_2018",
+            "layers": "new_atlante_integrato:bati_2018_aeolian",
             "metadataUrls":[{
               "title":"metadata link",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=205"

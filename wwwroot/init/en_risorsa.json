@@ -134,17 +134,34 @@
             /* Bigbang */ {
               "id": "Bbang",
               "type": "group",
-              "name": "BIGBANG 4.0 data",
-              "description": "This collection includes part of the data processed and aggregated resulting from the BIGBANG 4.0 hydrological model developed by ISPRA (https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html)",
+              "name": "BIGBANG 6.0 data",
+              "description": "This collection includes part of the data processed and aggregated resulting from the BIGBANG 6.0 hydrological model developed by ISPRA (https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html)",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Average monthly rainfall years 2011-2019",
-                  "description": "Average monthly rainfall years 2011-2019 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Average monthly rainfall year 2021",
+                  "description": "Average monthly rainfall year 2021 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
-                  "layers": "new_atlante_integrato:TP_2011-2019",
+                  "layers": "new_atlante_integrato:TP_2021_v6",
+                  "styles":"stile_TP",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_2011"
+                  ],
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
+                  }],
+                  "id": "bbTP_2021"
+                },
+                {
+                  "type": "wms",
+                  "name": "Average monthly rainfall years 2011-2020",
+                  "description": "Average monthly rainfall years 2011-2019 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "dataCustodian": "text",
+                  "layers": "new_atlante_integrato:TP_2011-2020_v6",
                   "styles":"stile_TP",
                   "shareKeys": [
                     "Root Group/stime energetiche/bbTP_2011"
@@ -158,10 +175,10 @@
                 {
                   "type": "wms",
                   "name": "Average monthly rainfall years 2001-2010",
-                  "description": "Average monthly rainfall years 2001-2010 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "description": "Average monthly rainfall years 2001-2010 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
-                  "layers": "new_atlante_integrato:TP_2001-2010",
+                  "layers": "new_atlante_integrato:TP_2001-2010_v6",
                   "styles":"stile_TP",
                   "shareKeys": [
                     "Root Group/stime energetiche/bbTP_2001"
@@ -175,10 +192,10 @@
                 {
                   "type": "wms",
                   "name": "Average monthly rainfall years 1991-2000",
-                  "description": "Average monthly rainfall years 1991-2000 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "description": "Average monthly rainfall years 1991-2000 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
-                  "layers": "new_atlante_integrato:TP_1991-2000",
+                  "layers": "new_atlante_integrato:TP_1991-2000_v6",
                   "styles":"stile_TP",
                   "shareKeys": [
                     "Root Group/stime energetiche/bbTP_1991"
@@ -192,10 +209,10 @@
                 {
                   "type": "wms",
                   "name": "Average monthly rainfall years 1981-1990",
-                  "description": "Average monthly rainfall years 1981-1990 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "description": "Average monthly rainfall years 1981-1990 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
-                  "layers": "new_atlante_integrato:TP_1981-1990",
+                  "layers": "new_atlante_integrato:TP_1981-1990_v6",
                   "styles":"stile_TP",
                   "shareKeys": [
                     "Root Group/stime energetiche/bbTP_1981"
@@ -209,10 +226,10 @@
                 {
                   "type": "wms",
                   "name": "Average monthly rainfall years 1971-1980",
-                  "description": "Average monthly rainfall years 1971-1980 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "description": "Average monthly rainfall years 1971-1980 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
-                  "layers": "new_atlante_integrato:TP_1971-1980",
+                  "layers": "new_atlante_integrato:TP_1971-1980_v6",
                   "styles":"stile_TP",
                   "shareKeys": [
                     "Root Group/stime energetiche/bbTP_1971"
@@ -226,10 +243,10 @@
                 {
                   "type": "wms",
                   "name": "Average monthly rainfall years 1961-1970",
-                  "description": "Average monthly rainfall years 1961-1970 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "description": "Average monthly rainfall years 1961-1970 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
-                  "layers": "new_atlante_integrato:TP_1961-1970",
+                  "layers": "new_atlante_integrato:TP_1961-1970_v6",
                   "styles":"stile_TP",
                   "shareKeys": [
                     "Root Group/stime energetiche/bbTP_1971"
@@ -243,10 +260,10 @@
                 {
                   "type": "wms",
                   "name": "Average monthly rainfall years 1951-1960",
-                  "description": "Average monthly rainfall years 1951-1960 - Data reprocessed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "description": "Average monthly rainfall years 1951-1960 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
-                  "layers": "new_atlante_integrato:TP_1951-1960",
+                  "layers": "new_atlante_integrato:TP_1951-1960_v6",
                   "styles":"stile_TP",
                   "shareKeys": [
                     "Root Group/stime energetiche/bbTP_1951"
@@ -259,10 +276,26 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Average monthly runoff years 2011-2019",
-                  "description": "Average monthly runoff years 2011-2019 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "name": "Average monthly runoff year 2021",
+                  "description": "Average monthly runoff year 2021 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "layers": "new_atlante_integrato:RF_2011-2019",
+                  "layers": "new_atlante_integrato:RF_2021_v6",
+                  "id": "bbRF_2021",
+                  "styles":"stile_RF",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_2011"
+                  ],
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=253"
+                  }]
+                },
+                {
+                  "type": "wms",
+                  "name": "Average monthly runoff years 2011-2020",
+                  "description": "Average monthly runoff years 2011-2020 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "new_atlante_integrato:RF_2011-2020_v6",
                   "id": "bbRF_2011",
                   "styles":"stile_RF",
                   "shareKeys": [
@@ -276,9 +309,9 @@
                 {
                   "type": "wms",
                   "name": "Average monthly runoff years 2001-2010",
-                  "description": "Average monthly runoff years 2001-2010 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "description": "Average monthly runoff years 2001-2010 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "layers": "new_atlante_integrato:RF_2001-2010",
+                  "layers": "new_atlante_integrato:RF_2001-2010_v6",
                   "id": "bbRF_2001",
                   "styles":"stile_RF",
                   "shareKeys": [
@@ -292,9 +325,9 @@
                 {
                   "type": "wms",
                   "name": "Average monthly runoff years 1991-2000",
-                  "description": "Average monthly runoff years 1991-2000 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "description": "Average monthly runoff years 1991-2000 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "layers": "new_atlante_integrato:RF_1991-2000",
+                  "layers": "new_atlante_integrato:RF_1991-2000_v6",
                   "id": "bbRF_1991",
                   "styles":"stile_RF",
                   "shareKeys": [
@@ -308,9 +341,9 @@
                 {
                   "type": "wms",
                   "name": "Average monthly runoff years 1981-1990",
-                  "description": "Average monthly runoff years 1981-1990 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "description": "Average monthly runoff years 1981-1990 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "layers": "new_atlante_integrato:RF_1981-1990",
+                  "layers": "new_atlante_integrato:RF_1981-1990_v6",
                   "id": "bbRF_1981",
                   "styles":"stile_RF",
                   "shareKeys": [
@@ -324,9 +357,9 @@
                 {
                   "type": "wms",
                   "name": "Average monthly runoff years 1971-1980",
-                  "description": "Average monthly runoff years 1971-1980 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "description": "Average monthly runoff years 1971-1980 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "layers": "new_atlante_integrato:RF_1971-1980",
+                  "layers": "new_atlante_integrato:RF_1971-1980_v6",
                   "id": "bbRF_1971",
                   "styles":"stile_RF",
                   "shareKeys": [
@@ -340,9 +373,9 @@
                 {
                   "type": "wms",
                   "name": "Average monthly runoff years 1961-1970",
-                  "description": "Average monthly runoff years 1961-1970 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "description": "Average monthly runoff years 1961-1970 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "layers": "new_atlante_integrato:RF_1961-1970",
+                  "layers": "new_atlante_integrato:RF_1961-1970_v6",
                   "id": "bbRF_1961",
                   "styles":"stile_RF",
                   "shareKeys": [
@@ -356,9 +389,9 @@
                 {
                   "type": "wms",
                   "name": "Average monthly runoff years 1951-1960",
-                  "description": "Average monthly runoff years 1951-1960 - Data processed and aggregated to present some themes obtainable from the results of the BIGBANG 4.0 model developed by ISPRA:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html ",
+                  "description": "Average monthly runoff years 1951-1960 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
-                  "layers": "new_atlante_integrato:RF_1951-1960",
+                  "layers": "new_atlante_integrato:RF_1951-1960_v6",
                   "id": "bbRF_1951",
                   "styles":"stile_RF",
                   "shareKeys": [

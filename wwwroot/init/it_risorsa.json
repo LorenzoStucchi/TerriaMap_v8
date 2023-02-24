@@ -135,13 +135,13 @@
               "id": "Bbang",
               "type": "group",
               "name": "Dati BIGBANG 6.0",
-              "description": "Questa raccolta comprende parte dei dati rielaborati e aggregati risultanti dal modello idrologico BIGBANG 6.0. sviluppato da ISPRA (https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html)",
+              "description": "Questa raccolta comprende parte dei dati rielaborati e aggregati risultanti dal modello idrologico BIGBANG 6.0. (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile (https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html). </br> I dati originali possono essere scaricati al seguente indirizzo: https://groupware.sinanet.isprambiente.it/bigbang-data/library/bigbang_60/ascii_grid",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Precipitazioni mensili medie anno 2021",
-                  "description": "Precipitazioni mensili medie anno 2021 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG 6.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Precipitazioni mensili anno 2021",
+                  "description": "Precipitazioni mensili anno 2021 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG 6.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_2021_v6",
@@ -276,8 +276,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Ruscellamento mensile medio anno 2021",
-                  "description": "Ruscellamento mensile medio anno 2021 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG 6.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Ruscellamento mensile anno 2021",
+                  "description": "Ruscellamento mensile anno 2021 - Dati rielaborati ed aggregati per presentare alcuni tematismi ricavabili dai risultati del modello BIGBANG 6.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_2021_v6",
                   "id": "bbRF_2021",

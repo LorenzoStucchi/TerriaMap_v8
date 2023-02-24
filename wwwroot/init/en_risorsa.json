@@ -135,13 +135,13 @@
               "id": "Bbang",
               "type": "group",
               "name": "BIGBANG 6.0 data",
-              "description": "This collection includes part of the data processed and aggregated resulting from the BIGBANG 6.0 hydrological model developed by ISPRA (https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html)",
+              "description": "This collection includes part of the data processed and aggregated resulting from the BIGBANG 6.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) hydrological model developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis (https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html). </br> Original data can be downloaded at the following link: https://groupware.sinanet.isprambiente.it/bigbang-data/library/bigbang_60/ascii_grid",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Average monthly rainfall year 2021",
-                  "description": "Average monthly rainfall year 2021 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Monthly rainfall year 2021",
+                  "description": "Monthly rainfall year 2021 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_2021_v6",
@@ -276,8 +276,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Average monthly runoff year 2021",
-                  "description": "Average monthly runoff year 2021 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+                  "name": "Monthly runoff year 2021",
+                  "description": "Monthly runoff year 2021 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:RF_2021_v6",
                   "id": "bbRF_2021",

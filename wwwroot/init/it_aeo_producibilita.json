@@ -34,7 +34,7 @@
             {
               "type": "wms",
               "name": "Producibilità specifica onshore a 75 m s.l.t.",
-              "description": "Producibilità specifica onshore a 75 m s.l.t. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore Leitwind LTW90-950 con altezza di mozzo pari a 90 m e potenza nominale pari a 950 kW.",
+              "description": "Producibilità specifica onshore a 75 m s.l.t. espressa in MWh/MW. <br> Per il calcolo della producibilità sono stati utilizzati i seguenti aerogeneratori: Leitwind LTW [potenza nominale: 2 MW], Enercon E92 [potenza nominale: 2.3 MW], Vestas V90 [potenza nominale: 2MW] e Vestas V110 [potenza nominale: 2MW]. In particolare, per l'altezza di 75 metri si registra come più performante (cioè caratterizzato da un maggior numero di ore equivalenti) V110 nella maggior parte del territorio nazionale, fatta eccezione per alcune aree, comunque meno ventose come la pianura padana, dove LTW è caratterizzato da performance leggermente migliori.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La producibilità' specifica del vento è pari a <b>{{prod_75}}</b> MWh/MW </p><br><chart column-units='MWh/MW, Quota m s.l.t.' column-names='Quota,Producibilità' preview-x-label='Producibilità Specifica Onshore (MWh/MW)' preview-y-label='Quota m s.l.t.' title='Grafico: '>Quota, Producibilità Specifica Onshore'\n{{prod_50}},50\n{{prod_75}},75\n{{prod_100}},100\n</chart>"
@@ -50,7 +50,7 @@
             {
               "type": "wms",
               "name": "Producibilità specifica onshore a 100 m s.l.t.",
-              "description": "Producibilità specifica onshore a 100 m s.l.t. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore Vestas V117 3450 con altezza di mozzo pari a 117 m e potenza nominale pari a 3450 kW.",
+              "description": "Producibilità specifica onshore a 100 m s.l.t. espressa in MWh/MW. <br> Per il calcolo della producibilità sono stati utilizzati i seguenti aerogeneratori: Nordex N131 [potenza nominale: 3.6 MW], Nordex N117 [potenza nominale: 3.6 MW], Enercon E115 [potenza nominale: 3 MW], Vestas V117 [potenza nominale: 3.4 MW] e Vestas V136 [potenza nominale: 3.4MW]. In particolare, per l'altezza di 100 metri si registra come più performante (cioè caratterizzato da un maggior numero di ore equivalenti) V136 nella maggior parte del territorio nazionale, fatta eccezione per i territori sub-alpini e pianeggianti del nord Italia, comunque meno ventosi, dove N131 è caratterizzato da performance leggermente migliori.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La producibilità specifica del vento è pari a <b>{{prod_100}}</b> MWh/MW </p><br><chart column-units='MWh/MW, Quota m s.l.t.' column-names='Quota,Producibilità' preview-x-label='Producibilità Specifica Onshore (MWh/MW)' preview-y-label='Quota m s.l.t.' title='Grafico: '>Quota, Producibilità Specifica Onshore'\n{{prod_50}},50\n{{prod_75}},75\n{{prod_100}},100\n</chart>"

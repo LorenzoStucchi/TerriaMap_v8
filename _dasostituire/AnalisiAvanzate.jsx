@@ -154,7 +154,7 @@ function AnalisiAvanzate(props) {
                   target="_blank"
                   //href="http://atlanteintegrato.rse-web.it/sankey.php"
                   //href="https://atlanteeolico.rse-web.it/download_griglia-IT.php"
-                  href="https://atlanteeolico.rse-web.it/download_terria_griglia-IT.php"
+                  href="https://dbeta.rse-web.it/atlanteeolico/download_terria_griglia-IT.php"
                   className={Styles.link}
                 >
                   {t("analisiAvanzate.approfondisciEdownload")}
@@ -170,7 +170,7 @@ function AnalisiAvanzate(props) {
           <a
             target="_blank"
             // href="http://atlanteintegrato.rse-web.it/sankey.php"
-            href="https://atlanteeolico.rse-web.it/download_griglia-IT.php"
+            href="https://dbeta.rse-web.it/atlanteeolico/download_griglia-IT.php"
           >
             <img
               className={Styles.image}

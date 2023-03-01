@@ -84,7 +84,7 @@
                 {
                   "type": "wms",
                   "name": "Anemometric stations",
-                  "description": "Anemometric stations installed from 2000 to 2014 and no longer active.\n\n Site to download data: </br><a href=\"https://atlanteeolico.rse-web.it/download_terria_dati-IT.php\" target=\"_blank\">Wind Atlas- Anemometric stations </a>",
+                  "description": "Anemometric stations installed from 2000 to 2014 and no longer active.\n\n Site to download data: </br><a href=\"html/download_terria_dati-EN.html\" target=\"_blank\">Wind Atlas- Anemometric stations </a>",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"metadata link",

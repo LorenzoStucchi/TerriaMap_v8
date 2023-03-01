@@ -1,0 +1,236 @@
+<?php
+header("Content-type: text/html; charset=$defCharset");
+include("C:\\ms4w\\apps\\dbeta\\configurazione_dbeta.php");
+//include("C:\\ms4w\\apps\\biomasse\\password_protect.php");
+
+
+
+	$var_id = $_GET['var_id'];
+	$cod_ammin = $_GET['cod_ammin'];
+	$lingua = $_GET['lingua'];
+	$limite = $_GET['limite'];
+
+	//echo "che var id".$var_id."<br>";
+	//echo "che cod ammin".$cod_ammin."<br>";
+	//echo "lingua".$lingua."<br>";
+	//echo "limite".$limite."<br>";
+	
+
+
+?>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<html lang="en">
+<head>
+	<style>
+		body {
+		background-color: #3F4854;
+		}
+	</style>
+
+<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.8.3.min.js'></script>
+<?php
+	
+	$array_date= array();
+	$array_valori= array();
+	$titolo_grafico = "";
+	$denominazione_regione = "";
+	
+	
+	$dbconn = pg_connect($parametri_connessione) or die('Could not connect: ' . pg_last_error());
+	
+
+	//DESCRIZIONE var_id
+	if ($lingua == 'IT'){
+		$sql_descr_dati = "SELECT descrizione_it from variabili where id = ". $var_id . ";";
+	} else {
+		$sql_descr_dati = "SELECT descrizione_en from variabili where id = ". $var_id . ";";
+	}
+	$result_descr_dati = pg_query($sql_descr_dati) or die('Query failed: ' . pg_last_error());
+	$num_result_descr_dati = count(pg_fetch_all($result_descr_dati));
+	//echo "num_result_descr_dati"  .  $num_result_descr_dati;
+	for ($index_descr_dati = 0; $index_descr_dati <= $num_result_descr_dati -1; $index_descr_dati++) {
+		pg_fetch_row($result_descr_dati, $index_descr_dati);
+		$titolo_grafico = pg_fetch_result($result_descr_dati, $index_descr_dati, 0);
+	}
+	
+	
+	//DENOMINAZIONE e DATI LIMITE AMMINISTRATIVO = reg
+	if ($limite == "reg"){ 
+		$sql_den_reg = "SELECT den_reg from limiti_amministrativi.regioni where cod_reg = " . $cod_ammin . ";";
+		$result_den_reg = pg_query($sql_den_reg) or die('Query failed: ' . pg_last_error());
+		$num_result_den_reg = count(pg_fetch_all($result_den_reg));
+		//echo "num_result_descr_dati"  .  $num_result_descr_dati;
+		for ($index_den_reg = 0; $index_den_reg <= $num_result_den_reg -1; $index_den_reg++) {
+			pg_fetch_row($result_den_reg, $index_den_reg);
+			$denominazione_limite_ammin = pg_fetch_result($result_den_reg, $index_den_reg, 0);
+		}
+	
+		/*QUERY Dati REGIONI*/
+		$sql_elenco_dati_reg = "SELECT data, valore from dati_amministrativi.var_regione where var_id = ". $var_id . " and cod_reg = " . $cod_ammin . "ORDER BY data ASC;";
+		$result_elenco_dati_reg = pg_query($sql_elenco_dati_reg) or die('Query failed: ' . pg_last_error());
+		$num_result_elenco_date = count(pg_fetch_all($result_elenco_dati_reg));
+		//echo "$num_result_elenco_date".$num_result_elenco_date."<br>";
+		for ($index_elenco_dati_reg = 0; $index_elenco_dati_reg <= $num_result_elenco_date -1; $index_elenco_dati_reg++) {
+			pg_fetch_row($result_elenco_dati_reg, $index_elenco_dati_reg);
+			//echo "che valore: ".pg_fetch_result($result_elenco_dati_reg, $index_elenco_dati_reg, 1)."<br>";
+			$array_date[$index_elenco_dati_reg] = floatval(pg_fetch_result($result_elenco_dati_reg, $index_elenco_dati_reg, 0));
+			$array_valori[$index_elenco_dati_reg] = pg_fetch_result($result_elenco_dati_reg, $index_elenco_dati_reg, 1);
+		}
+	}
+
+
+	//DENOMINAZIONE e DATI LIMITE AMMINISTRATIVO = prov
+	if ($limite == "prov"){ 
+		$sql_den_prov = "SELECT den_prov from limiti_amministrativi.province where cod_prov = " . $cod_ammin . ";";
+		$result_den_prov = pg_query($sql_den_prov) or die('Query failed: ' . pg_last_error());
+		$num_result_den_prov = count(pg_fetch_all($result_den_prov));
+		//echo "num_result_descr_dati"  .  $num_result_descr_dati;
+		for ($index_den_prov = 0; $index_den_prov <= $num_result_den_prov -1; $index_den_prov++) {
+			pg_fetch_row($result_den_prov, $index_den_prov);
+			$denominazione_limite_ammin = pg_fetch_result($result_den_prov, $index_den_prov, 0);
+		}
+	
+		/*QUERY Dati Province*/
+		$sql_elenco_dati_prov = "SELECT data, valore from dati_amministrativi.var_provincia where var_id = ". $var_id . " and cod_prov = " . $cod_ammin . "ORDER BY data ASC;";
+		$result_elenco_dati_prov = pg_query($sql_elenco_dati_prov) or die('Query failed: ' . pg_last_error());
+		$num_result_elenco_date_prov = count(pg_fetch_all($result_elenco_dati_prov));
+		//echo "$num_result_elenco_date_prov".$num_result_elenco_date_prov."<br>";
+		for ($index_elenco_dati_prov = 0; $index_elenco_dati_prov <= $num_result_elenco_date_prov -1; $index_elenco_dati_prov++) {
+			pg_fetch_row($result_elenco_dati_prov, $index_elenco_dati_prov);
+			//echo "che valore: ".pg_fetch_result($result_elenco_dati_prov, $index_elenco_dati_prov, 1)."<br>";
+			$array_date[$index_elenco_dati_prov] = floatval(pg_fetch_result($result_elenco_dati_prov, $index_elenco_dati_prov, 0));
+			$array_valori[$index_elenco_dati_prov] = pg_fetch_result($result_elenco_dati_prov, $index_elenco_dati_prov, 1);
+		}
+	}
+	
+	
+	if ($limite == "reg"){ 
+		if ($lingua == "IT") {
+			$tipol_limite = "Regione: ";
+		} else {
+			$tipol_limite = "Region: ";
+		}	
+	} else {
+		if ($lingua == "IT") {
+			$tipol_limite = "Provincia: ";
+		} else {
+			$tipol_limite = "Province: ";
+		}	
+	}
+
+?>
+
+
+<style>
+div.ext1 {
+  height:400px;
+  width: 500px;
+  background-color: powderblue;
+}
+</style>
+
+
+<script>
+  
+ 	// Access the array elements
+	var passedArray = <?php echo json_encode($array_valori_prod_prov); ?>;
+	var passedArray_valori = <?php echo json_encode($array_valori); ?>;
+	
+	var passedArray_date =  <?php echo json_encode($array_date); ?>;
+	
+	var che_provincia_js = <?php echo json_encode($che_provincia); ?>;
+	var titolo_grafico_js = <?php echo json_encode($titolo_grafico); ?>;
+	var denominazione_limite_ammin_js =  <?php echo json_encode($denominazione_limite_ammin); ?>;
+	var tipol_limite_js =  <?php echo json_encode($tipol_limite); ?>;
+	var titolo_grafico_completo_js = <?php echo json_encode("prova\r\nandata a capo"); ?>;
+	
+	//alert("in javascript" + che_provincia_js);
+      
+// Display the array elements
+/* 	for(var i = 0; i < passedArray.length; i++){
+		document.write(passedArray[i]);
+		alert("elemento in array   :  " + passedArray[i]);
+	}  */
+</script>
+
+
+
+
+</head>
+
+<body>
+
+				<table width = '100%' border = "0">
+					<tr> <td width="6%"></td> <td width="90%"></td> <td width="4%"></td> </tr>
+					<tr> <td></td> <td></td> <td></td> </tr>
+					<tr> <td></td> <td></td> <td></td> </tr>
+					<tr><td></td><td></td><td></td></tr>
+					<!--<tr style="background-color:#3F4854"><td></td><td style="text-align:center"><font color='#FFFFFF'><?php echo $titolo_grafico ?></font></td><td></td></tr>
+					<tr> <td></td> <td style="text-align:center"><font color='#FFFFFF'> Regione <?php echo $denominazione_regione ?></font></td> <td></td> </tr>-->
+					<tr> <td></td> <td></td> <td></td> </tr>
+					<tr> <td></td> <td><div class = 'ext1' id='myDiv'></td> <td></td> </tr>
+                </table>
+
+					
+<script>
+
+
+
+//var x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+var x = passedArray_date;
+var titolo_grafico_x = "";
+
+var y_2 = [28.8, 28.5, 37, 56.8, 69.7, 79.7, 78.5, 77.8, 74.1, 62.6, 45.3, 39.9];
+var y = passedArray_valori;
+
+var trace1 = {
+
+  type: "scatter",
+
+  mode: "lines",
+
+  x: x,
+
+  y: y,
+
+  line: {color: '#519AC2'},
+  gridcolor: {color: '#FFFFFF'},
+  
+  marker: {         // marker is an object, valid marker keys: #scatter-marker
+                color: 'rgb(02, 32, 02)' // more about "marker.color": #scatter-marker-color
+            }
+
+};
+
+//var data = [{x: x,y: y,type: 'scatter'}];
+
+	var data = [trace1];
+
+
+var layout = {
+title: titolo_grafico_js + "<br> " + tipol_limite_js + denominazione_limite_ammin_js,
+titlefont : {size: 12, color: '#FFFFFF'},
+plot_bgcolor: "#646B75",
+paper_bgcolor: "#646B75",
+  xaxis: {tickmode: "linear", tick0: 0, zeroline: true, showline: true, zerolinecolor : '#FFFFFF', linecolor: '#FFFFFF',  gridcolor:'#B6C2C2', gridwidth: 0.10, dtick: 1,  tickfont: {color: '#FFFFFF'}, title: {text: titolo_grafico_x, font: {size: 12, color: '#FFFFFF'}}},
+  
+  yaxis: {zeroline: true, showline: true, zerolinecolor : '#FFFFFF', linecolor: '#FFFFFF', gridcolor:'#B6C2C2', gridwidth: 0.10, tickfont: {color: '#FFFFFF'}, title: {text: titolo_grafico_js, font: {size: 10, color: '#FFFFFF'}}}
+
+}
+
+
+ 
+
+Plotly.newPlot('myDiv', data, layout, {displayModeBar: true});
+
+
+
+</script>
+</body>
+
+</html>

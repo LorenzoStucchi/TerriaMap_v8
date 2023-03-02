@@ -23,8 +23,7 @@ function AnalisiAvanzate(props) {
   var modCalc_link = "/#en_modcalc";
   var dati_storici_prova = "/#it_dati_storici_prova";
   var analisi = "Advanced Analysis";
-  var mod_calc_help =
-    "https://dbeta.rse-web.it/atlanteeolico/help/help-terria-calcolo-EN.html";
+  var mod_calc_help = "html/help/help-terria-calcolo-EN.html";
   var griglia_download =
     "https://dbeta.rse-web.it/atlanteeolico/download_terria_griglia-EN.php";
   if (userLang === "it-IT" || userLang === "it") {
@@ -32,8 +31,7 @@ function AnalisiAvanzate(props) {
     modCalc_link = "/#it_modcalc";
     analisi = "Strumenti Aggiuntivi";
     dati_storici_prova = "/#it_dati_storici_prova";
-    mod_calc_help =
-      "https://dbeta.rse-web.it/atlanteeolico/help/help-terria-calcolo-IT.html";
+    mod_calc_help = "html/help/help-terria-calcolo-IT.html";
     griglia_download =
       "https://dbeta.rse-web.it/atlanteeolico/download_terria_griglia-IT.php";
   }

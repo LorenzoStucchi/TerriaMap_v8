@@ -1560,10 +1560,8 @@
     "searchBtnText": "Cerca una posizione",
     "welcomeMessageOnMobile": "Sei interessato alla scoperta e all'esplorazione dei dati?",
     "welcomeMessage": "Sei interessato alla scoperta e all'esplorazione dei dati?<br/>Immergiti subito e inizia o controlla le seguenti opzioni della guida.",
-    "msgCookies1": "Questo sito utilizza cookies per il corretto funzionamento e per il miglioramento dei servizi inclusi.",
-    "msgCookies2": "Se acconsenti all'uso dei cookie continua la navigazione del sito.",
-    "msgCookies3": "Se non vuoi ricevere cookie dal sito, chiudi la presente pagina. ",
-    "msgCookies4": "Se vuoi saperne di più clicca quì"
+    "msgCookies1": "Questo sito utilizza solamente cookie tecnici per garantirne il corretto funzionamento.",
+    "msgCookies4": "Per avere informazioni sulla cookie policy di RSE clicca qui"
   },
   "helpPanel": {
     "dismissText": "Capito, grazie!",

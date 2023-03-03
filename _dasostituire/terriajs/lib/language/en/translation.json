@@ -353,10 +353,8 @@
     "exploreDataBtnText": "Explore map data",
     "searchBtnText": "Search for a location",
     "dismissText": "Close message and don't show me this again",
-    "msgCookies1": "This site uses cookies for the correct functioning and for the improvement of the included services. ",
-    "msgCookies2": "If you consent to the use of cookies, continue browsing the site.",
-    "msgCookies3": "If you do not want to receive cookies from the site, close this page. ",
-    "msgCookies4": "If you want to know more click here"
+    "msgCookies1": "This site only uses technical cookies to guarantee its correct functioning. ",
+    "msgCookies4": "If you want information about RSE cookie policy click here"
 
   },
   "story": {

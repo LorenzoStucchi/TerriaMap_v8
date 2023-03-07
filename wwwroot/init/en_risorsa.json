@@ -26,8 +26,9 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=237"
               }],
-              "layers": "aeolian:eo_speed100_offshore",
-              "id": "aeol_100"
+              "layers": "aeolian:griglia_dati_23022023_ai",
+              "id": "aeol_100",
+              "styles":"aeolian:speed100_offshore"
             },
             {
               "type": "wms",
@@ -41,8 +42,9 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=232"
               }],
-              "layers": "aeolian:eo_speed100_onshore",
-              "id": "aeol_100_on"
+              "layers": "aeolian:griglia_dati_23022023_ai",
+              "id": "aeol_100_on",
+              "styles":"aeolian:speed100_onshore"
             },
             {
               "type": "wms",
@@ -56,8 +58,9 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=243"
               }],
-              "layers": "aeolian:eo_prod100_offshore",
-              "id": "aeol_100_prod"
+              "layers": "aeolian:griglia_dati_23022023_ai",
+              "id": "aeol_100_prod",
+              "styles":"aeolian:prod100_offshore"
             },
             {
               "type": "wms",
@@ -71,8 +74,10 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=242"
               }],
-              "layers": "aeolian:eo_prod100_onshore",
-              "id": "aeol_100_prod_on"
+              "layers": "aeolian:griglia_dati_23022023_ai",
+              "id": "aeol_100_prod_on",
+              "styles":"aeolian:prod100_onshore"
+              
             },
             {
               "id": "dati_eol",

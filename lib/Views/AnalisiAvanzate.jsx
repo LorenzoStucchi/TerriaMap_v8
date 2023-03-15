@@ -22,7 +22,7 @@ function AnalisiAvanzate(props) {
   var totem_link = "/#en_dati_storici"; //puntare al json che carica il tool con il codice di calcolo
   var modCalc_link = "/#en_modcalc";
   var dati_storici_prova = "/#it_dati_storici_prova";
-  var analisi = "Advanced Analysis";
+  var analisi = "Additional tools";
   var mod_calc_help = "html/help/help-terria-calcolo-EN.html";
   var griglia_download = "html/download_terria_griglia-EN.html";
   if (userLang === "it-IT" || userLang === "it") {

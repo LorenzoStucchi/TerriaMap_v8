@@ -1251,7 +1251,8 @@
           "id": "accumulo",
           "type": "group",
           "name": "Sistemi di accumulo",
-          "description": "Questa raccolta comprende le caratteristiche dei potenziali impianti di pompaggio idroelettrico esistenti ed installabili nel territorio.\n\n <div><img src=\"/public/img/shutterstock_374347087.jpg\" style=\"width:640px;height:427px;\"></div>",
+          /*"description": "Questa raccolta comprende le caratteristiche dei potenziali impianti di pompaggio idroelettrico esistenti ed installabili nel territorio.\n\n <div><img src=\"/public/img/shutterstock_374347087.jpg\" style=\"width:640px;height:427px;\"></div>",*/
+          "description": "Questa raccolta comprende le caratteristiche dei potenziali impianti di pompaggio idroelettrico presenti nel territorio.\n\n <div><img src=\"/public/img/shutterstock_374347087.jpg\" style=\"width:640px;height:427px;\"></div>",
           "isOpen": false,
           "members": [
             {
@@ -1279,7 +1280,7 @@
               }
             ]
             },
-            {
+            /*{
               "id": "potenz_acc",
               "type": "group",
               "name": "Pompaggio potenziale",
@@ -1335,7 +1336,7 @@
                 "id": "po_com_potenz"
               }
               ]
-            }
+            }*/
           ]
         }
       ]

@@ -552,8 +552,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Idroelettrici - Produzione provinciale (GWh)",
-                  "description": "Mappa della produzione idroelettrica a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). \n\n ",
+                  "name": "Idroelettrici - Produzione provinciale al netto del pompaggio (GWh)",
+                  "description": "Mappa della produzione idroelettrica al netto del pompaggio a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati TERNA, GSE e ISTAT (confini amministrativi). \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"

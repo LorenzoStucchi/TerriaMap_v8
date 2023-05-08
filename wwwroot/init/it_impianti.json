@@ -24,7 +24,7 @@
                 {
                   "type": "wms",
                   "name": "Eolici - Potenza regionale (MW)",
-                  "description": " Mappa della potenza eolica installata a livello regionale, espressa in MW, negli anni.<br>Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": " Mappa della potenza eolica installata a livello regionale, espressa in MW, negli anni.<br>Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "styles":"eo_imp_reg_potenza",
                   "layers": "new_atlante_integrato:v_regioni_t",
@@ -85,7 +85,7 @@
                 {
                   "type": "wms",
                   "name": "Eolici - Produzione regionale (GWh)",
-                  "description": "Mappa della produzione eolica a livello regionale, espressa in GWh, negli anni.<br>Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa della produzione eolica a livello regionale, espressa in GWh, negli anni.<br>Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione regionale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -102,7 +102,7 @@
                 {
                   "type": "wms",
                   "name": "Eolici - Potenza provinciale (MW)",
-                  "description": "Mappa della potenza eolica installata a livello provinciale, espressa in MW, negli anni. Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n  ",
+                  "description": "Mappa della potenza eolica installata a livello provinciale, espressa in MW, negli anni. Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n  ",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
                   },
@@ -173,7 +173,7 @@
                 {
                   "type": "wms",
                   "name": "Eolici - Produzione provinciale (GWh)",
-                  "description": "Mappa  della produzione eolica a livello provinciale espressa in GWh, negli anni.                 <br>Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa  della produzione eolica a livello provinciale espressa in GWh, negli anni.                 <br>Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
                   },
@@ -330,7 +330,7 @@
                 {
                   "type": "wms",
                   "name": "Idroelettrici - Potenza regionale (MW)",
-                  "description": "Mappa della potenza idroelettrica installata a livello regionale, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa della potenza idroelettrica installata a livello regionale, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -394,7 +394,7 @@
                 {
                   "type": "wms",
                   "name": "Idroelettrici - Produzione regionale (GWh)",
-                  "description": "Mappa della produzione idroelettrica a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n  ",
+                  "description": "Mappa della produzione idroelettrica a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n  ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione regionale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -413,7 +413,7 @@
                 {
                   "type": "wms",
                   "name": "Idroelettrici - Produzione regionale da impianti a bacino (GWh)",
-                  "description": "Mappa della produzione da impianti a bacino a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). \n\n ",
+                  "description": "Mappa della produzione da impianti a bacino a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi). \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione regionale da impianti a bacino (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -432,7 +432,7 @@
                 {
                   "type": "wms",
                   "name": "Idroelettrici - Produzione regionale da impianti ad acqua fluente (GWh)",
-                  "description": "Mappa della produzione da impianti ad acqua fluente a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa della produzione da impianti ad acqua fluente a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione regionale da impianti ad acqua fluente (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -451,7 +451,7 @@
                 {
                   "type": "wms",
                   "name": "Idroelettrici - Produzione regionale al netto del pompaggio (GWh)",
-                  "description": "Mappa della produzione idroelettrica al netto del pompaggio a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). \n\n ",
+                  "description": "Mappa della produzione idroelettrica al netto del pompaggio a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi). \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione regionale al netto del pompaggio (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -470,7 +470,7 @@
                 {
                   "type": "wms",
                   "name": "Idroelettrici - Produzione regionale da pompaggio (GWh)",
-                  "description": "Mappa della produzione idroelettrica da pompaggio a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa della produzione idroelettrica da pompaggio a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione regionale da pompaggio (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -489,7 +489,7 @@
                 {
                   "type": "wms",
                   "name": "Idroelettrici - Produzione regionale da serbatoio al netto del pompaggio (GWh)",
-                  "description": "Mappa della produzione idroelettrica da impianti a serbatoio (al netto del pompaggio), espressa in GWh, negli anni. <br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa della produzione idroelettrica da impianti a serbatoio (al netto del pompaggio), espressa in GWh, negli anni. <br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione regionale da serbatoio al netto del pompaggio (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -508,7 +508,7 @@
                 {
                   "type": "wms",
                   "name": "Idroelettrici - Potenza complessiva provinciale (MW)",
-                  "description": "Mappa della potenza idroelettrica installata a livello provinciale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa della potenza idroelettrica installata a livello provinciale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -553,7 +553,7 @@
                 {
                   "type": "wms",
                   "name": "Idroelettrici - Produzione provinciale al netto del pompaggio (GWh)",
-                  "description": "Mappa della produzione idroelettrica al netto del pompaggio a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati TERNA, GSE e ISTAT (confini amministrativi). \n\n ",
+                  "description": "Mappa della produzione idroelettrica al netto del pompaggio a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi). \n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -756,7 +756,7 @@
                 {
                   "type": "wms",
                   "name": "Geotermoelettrici - Potenza regionale (MW)",
-                  "description": "Mappa della potenza geotermoelettrica installata a livello regionale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi)\n\n ",
+                  "description": "Mappa della potenza geotermoelettrica installata a livello regionale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi)\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -794,7 +794,7 @@
                 {
                   "type": "wms",
                   "name": "Geotermoelettrici - Produzione regionale (GWh)",
-                  "description": "Mappa della produzione geotermoelettrica a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa della produzione geotermoelettrica a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione regionale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -813,7 +813,7 @@
                 {
                   "type": "wms",
                   "name": "Geotermoelettrici - Potenza provinciale (MW)",
-                  "description": "Mappa della potenza geotermoelettrica a livello provinciale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa della potenza geotermoelettrica a livello provinciale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -858,7 +858,7 @@
                 {
                   "type": "wms",
                   "name": "Geotermoelettrici - Produzione provinciale (GWh)",
-                  "description": "Mappa della produzione geotermoelettrica a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
+                  "description": "Mappa della produzione geotermoelettrica a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"

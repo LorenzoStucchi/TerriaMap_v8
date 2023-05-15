@@ -4,13 +4,20 @@
       "id": "available_areas",
       "type": "group",
       "name": "Suitable areas",
-      "description":"<p style=\"text-align:justify\">The achievement of the challenging objectives for the development of RES by 2030 is highly dependent on land occupation and competitive uses of the same. While the availability of photovoltaic resource, even if with significant north-south differences, is more homogeneously distributed and in any case exploitable throughout the national territory, the availability of areas suitable for hosting installations, on the other hand, appears as a discriminating element of the different territorial realities and capable to also highlight potential limits to development itself. The additional photovoltaic power by 2030 is therefore also calculated on the basis of the surfaces available for certain types of \"eligible\" areas (i.e. to be considered potentially exploitable) for installations on roofs and on the ground. </br> </p><p style=\"text-align:justify\">This collection includes municipal-scale information regarding the percentage of area available for new ground-based and rooftop photovoltaic installations compared to the municipal area for each land use category. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>",
+      "description":"Inserire testo",
       "isOpen": false,
       "members": [
         {
+          "id": "Fotovoltaico",
+          "type": "group",
+          "name": "Solar",
+          "description": "<p style=\"text-align:justify\">The achievement of the challenging objectives for the development of RES by 2030 is highly dependent on land occupation and competitive uses of the same. While the availability of photovoltaic resource, even if with significant north-south differences, is more homogeneously distributed and in any case exploitable throughout the national territory, the availability of areas suitable for hosting installations, on the other hand, appears as a discriminating element of the different territorial realities and capable to also highlight potential limits to development itself. The additional photovoltaic power by 2030 is therefore also calculated on the basis of the surfaces available for certain types of \"eligible\" areas (i.e. to be considered potentially exploitable) for installations on roofs and on the ground. </br> </p><p style=\"text-align:justify\">This collection includes municipal-scale information regarding the percentage of area available for new ground-based and rooftop photovoltaic installations compared to the municipal area for each land use category. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>",
+          "isOpen": true,
+          "members": [
+        {
           "id": "tetto",
           "type": "group",
-          "name": "Areas available for rooftop photovoltaics",
+          "name": "Areas available for rooftop photovoltaic installations",
           "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of area available for new rooftop photovoltaic installations obtained with respect to the municipal area obtained from regional data or Copernicus program data. </br> </p> Details of the data used for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>",
           "isOpen": false,
           "members": [
@@ -51,7 +58,7 @@
         {
           "id": "terra",
           "type": "group",
-          "name": "Available reas for ground-based photovoltaic",
+          "name": "Available reas for ground-based photovoltaic installations",
           "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of available area for new ground-mounted photovoltaic installations compared to the municipal area obtained from the 2018 Corine Land Cover map and from spatial data relating to environmental and landscape constraints with homogeneous coverage throughout the national territory.  </br> </p> Details of used data for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
           "isOpen": false,
           "members": [
@@ -154,6 +161,99 @@
           ]
         }
       ]
+    },
+    {
+      "id": "Eolico",
+      "type": "group",
+      "name": "Wind",
+      "description": "This collection includes maps of suitable areas for new onshore and offshore wind power installations.",
+      "isOpen": true,
+      "members": [
+        {
+          "id": "Onshore",
+          "type": "group",
+          "name": "Areas available for onshore wind power installations",
+          "description": "This collection includes maps of suitable areas for new onshore wind power installations.",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "wms",
+              "name": "Inserire dati",
+              "description": "Inserire descrizione.",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"aree_idonee:p131",
+              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></b></p><p>Percentuale area [%] <b>{{p_131}}</b></p><p>Estensione area [kmq] <b>{{areakmq131}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+              },
+              "id": "estrattive"
+            }
+          ]
+        },
+        {
+          "id": "Offshore",
+          "type": "group",
+          "name": "Areas available for offshore wind power installations",
+          "description": "This collection includes maps of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges obtained from  Mediterranean Sea bathymetry map provided by the European Marine Observation and Data Network (EMODnet) and from wind energy production maps deriving form the new anemological database provided by RSE and available from the <a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a>",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "wms",
+              "name": "Areas available for offshore wind power installations in the section 0-50 km from coastline",
+              "description": "Map of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges in the section 0-50 km from coastline.",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=268"
+              }],
+              "styles":"new_atlante_integrato:class_eolico_aree_idonee",
+              "layers": "new_atlante_integrato:eolico_offshore_0_50km",
+              "featureInfoTemplate": {
+                "template": "<p>Bathymetry range [m] <b>{{range_bat}}</b></p></p><p>Wind energy production range [MWh/MW] <b>{{range_prod}}</b></p>"
+              },
+              "id": "off_0_50"
+            },
+            {
+              "type": "wms",
+              "name": "Areas available for offshore wind power installations in the section 50-100 km from coastline",
+              "description": "Map of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges in the section 50-100 km from coastline.",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=269"
+              }],
+              "styles":"new_atlante_integrato:class_eolico_aree_idonee",
+              "layers": "new_atlante_integrato:eolico_offshore_50_100km",
+              "featureInfoTemplate": {
+                "template": "<p>Bathymetry range [m] <b>{{range_bat}}</b></p></p><p>Wind energy production range [MWh/MW] <b>{{range_prod}}</b></p>"
+              },
+              "id": "off_50_100"
+            },
+            {
+              "type": "wms",
+              "name": "Areas available for offshore wind power installations beyond 100 km from coastline",
+              "description": "Map of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges in the section beyon 100 km from coastline.",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=270"
+              }],
+              "styles":"new_atlante_integrato:class_eolico_aree_idonee",
+              "layers": "new_atlante_integrato:eolico_offshore_oltre100km",
+              "featureInfoTemplate": {
+                "template": "<p>Bathymetry range [m] <b>{{range_bat}}</b></p></p><p>Wind energy production range [MWh/MW] <b>{{range_prod}}</b></p>"
+              },
+              "id": "off_oltre100"
+            }
+          ]
+        }
+      ]
     }
   ]
+}
+]
 }

@@ -4,9 +4,16 @@
       "id": "available_areas",
       "type": "group",
       "name": "Aree idonee",
-      "description":"Il raggiungimento degli sfidanti obiettivi per lo sviluppo delle FER al 2030 è fortemente dipendente dall’occupazione del suolo e degli usi competitivi dello stesso. Mentre la disponibilità di risorsa fotovoltaica, seppure con rilevanti differenze nord-sud, risulta più omogeneamente distribuita e comunque sfruttabile sull’intero territorio nazionale, la disponibilità di aree atte ad ospitare le installazioni, invece, appare come elemento discriminante delle diverse realtà territoriali e in grado di evidenziare anche potenziali limiti allo sviluppo stesso. La potenza aggiuntiva fotovoltaica al 2030 viene, quindi, calcolata anche sulla base delle superfici disponibili per alcune tipologie di aree “eleggibili” (ovvero da considerarsi potenzialmente sfruttabili) per le installazioni su tetto e a terra. </br> </p> Questa raccolta comprende informazioni a scala comunale riguardanti la percentuale di area disponibile a nuove installazioni fotovoltaiche a terra e su tetto rispetto alla superficie comunale per ciascuna tipologia di area. Tali dati possono costituire validi input ad analisi di ripartizione tra Regioni e Province Autonome degli obiettivi FER nazionali al 2030. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+      "description":"Inserire testo",
       "isOpen": false,
       "members": [
+        {
+          "id": "Fotovoltaico",
+          "type": "group",
+          "name": "Fotovoltaico",
+          "description": "Il raggiungimento degli sfidanti obiettivi per lo sviluppo delle FER al 2030 è fortemente dipendente dall’occupazione del suolo e degli usi competitivi dello stesso. Mentre la disponibilità di risorsa fotovoltaica, seppure con rilevanti differenze nord-sud, risulta più omogeneamente distribuita e comunque sfruttabile sull’intero territorio nazionale, la disponibilità di aree atte ad ospitare le installazioni, invece, appare come elemento discriminante delle diverse realtà territoriali e in grado di evidenziare anche potenziali limiti allo sviluppo stesso. La potenza aggiuntiva fotovoltaica al 2030 viene, quindi, calcolata anche sulla base delle superfici disponibili per alcune tipologie di aree “eleggibili” (ovvero da considerarsi potenzialmente sfruttabili) per le installazioni su tetto e a terra. </br> </p> Questa raccolta comprende informazioni a scala comunale riguardanti la percentuale di area disponibile a nuove installazioni fotovoltaiche a terra e su tetto rispetto alla superficie comunale per ciascuna tipologia di area. Tali dati possono costituire validi input ad analisi di ripartizione tra Regioni e Province Autonome degli obiettivi FER nazionali al 2030. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+          "isOpen": true,
+          "members": [
         {
           "id": "tetto",
           "type": "group",
@@ -150,7 +157,100 @@
                 "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></p><p>Percentuale area [%] <b>{{p_211netta}}</b></p><p>Estensione area [kmq] <b>{{area211net}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
               },
               "id": "seminativi_netti"
+            }
+           ]
+          }
+        ]
+       },
+       {
+          "id": "Eolico",
+          "type": "group",
+          "name": "Eolico",
+          "description": "Questa raccolta comprende informazioni sull'estensione delle aree idonee per nuove installazioni eoliche onshore e offshore.",
+          "isOpen": true,
+          "members": [
+            {
+              "id": "Onshore",
+              "type": "group",
+              "name": "Aree disponibili per l'eolico onshore",
+              "description": "Questa raccolta comprende le mappe delle aree idonee per nuove installazioni eoliche offshore",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Inserire dati",
+                  "description": "Inserire descrizione.",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+                  }],
+                  "styles":"aree_idonee:p131",
+                  "layers": "aree_idonee:comuni_2022_aree_idonee",
+                  "featureInfoTemplate": {
+                    "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></b></p><p>Percentuale area [%] <b>{{p_131}}</b></p><p>Estensione area [kmq] <b>{{areakmq131}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+                  },
+                  "id": "estrattive"
+                }
+              ]
             },
+            {
+              "id": "Offshore",
+              "type": "group",
+              "name": "Aree disponibili per l'eolico offshore",
+              "description": "Questa raccolta comprende le mappe delle aree idonee per nuove installazioni eoliche offshore per fascia batimetrica e range di producibilità ottenute a partire dalla mappa di batimetria del Mar Mediterraneo generata e rilasciata da European Marine Observation and Data Network (EMODnet) e dalle mappe di velocità media di producibilità specifica annua teorica derivanti dalla nuova banca dati anemologica italiana prodotta da RSE e consultabili dall'<a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Atlante Eolico Italiano AEOLIAN.</a>",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Aree disponibili per l'eolico offshore nella fascia 0-50 km dalla costa",
+                  "description": "Mappa delle aree idonee per nuove installazioni eoliche offshore classificata per fascia batimetrica e range di producibilità nella fascia 0-50 km dalla costa.",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=268"
+                  }],
+                  "styles":"new_atlante_integrato:class_eolico_aree_idonee",
+                  "layers": "new_atlante_integrato:eolico_offshore_0_50km",
+                  "featureInfoTemplate": {
+                    "template": "<p>Range di batimetria [m] <b>{{range_bat}}</b></p></p><p>Range di producibilità [MWh/MW] <b>{{range_prod}}</b></p>"
+                  },
+                  "id": "off_0_50"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree disponibili per l'eolico offshore nella fascia 50-100 km dalla costa",
+                  "description": "Mappa delle aree idonee per nuove installazioni eoliche offshore classificata per fascia batimetrica e range di producibilità nella fascia 50-100 km dalla costa.",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=269"
+                  }],
+                  "styles":"new_atlante_integrato:class_eolico_aree_idonee",
+                  "layers": "new_atlante_integrato:eolico_offshore_50_100km",
+                  "featureInfoTemplate": {
+                    "template": "<p>Range di batimetria [m] <b>{{range_bat}}</b></p></p><p>Range di producibilità [MWh/MW] <b>{{range_prod}}</b></p>"
+                  },
+                  "id": "off_50_100"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree disponibili per l'eolico offshore nella fascia oltre 100 km dalla costa",
+                  "description": "Mappa delle aree idonee per nuove installazioni eoliche offshore classificata per fascia batimetrica e range di producibilità nella fascia oltre 100 km dalla costa.",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=270"
+                  }],
+                  "styles":"new_atlante_integrato:class_eolico_aree_idonee",
+                  "layers": "new_atlante_integrato:eolico_offshore_oltre100km",
+                  "featureInfoTemplate": {
+                    "template": "<p>Range di batimetria [m] <b>{{range_bat}}</b></p></p><p>Range di producibilità [MWh/MW] <b>{{range_prod}}</b></p>"
+                  },
+                  "id": "off_oltre100"
+                }
+              ]
+            }
           ]
         }
       ]

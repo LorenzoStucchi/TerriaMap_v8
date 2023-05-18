@@ -15,11 +15,11 @@ function AnalisiAvanzate(props) {
   // to select language config.json depending on the browser language
   var userLang = navigator.language || navigator.userLanguage;
   var totem_link = "/#en_totemweb";
-  var analisi = "Advanced Analysis";
-  if (userLang === "it-IT" || userLang === "it") {
-    totem_link = "/#it_totemweb";
-    analisi = "Analisi Avanzate";
-  }
+  var analisi = "Additional tools";
+  //if (userLang === "it-IT" || userLang === "it") {
+  //  totem_link = "/#it_totemweb";
+  //  analisi = "Analisi Avanzate";
+  //}
 
   return (
     <MenuPanel

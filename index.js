@@ -65,9 +65,9 @@ if (process.env.NODE_ENV !== "production" && module.hot) {
 var userLang = navigator.language || navigator.userLanguage;
 //console.log("The language is: " + userLang);
 var language_config = 'config.json';
-if (userLang === "it-IT" || userLang === "it") {
-  language_config= 'config_it.json';
-}
+//if (userLang === "it-IT" || userLang === "it") {
+ // language_config= 'config_it.json';
+//}
 
 module.exports = terria.start({
     // If you don't want the user to be able to control catalog loading via the URL, remove the applicationUrl property below

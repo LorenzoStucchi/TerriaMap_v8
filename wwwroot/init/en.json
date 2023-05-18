@@ -3,9 +3,9 @@
     "confreg"
   ],
   "homeCamera": {
-    "north": 48,
+    "north": 60,
     "east": 19,
-    "south": 35,
+    "south": 33,
     "west": 6
   },
   "baseMaps": {

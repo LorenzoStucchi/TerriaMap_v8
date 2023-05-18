@@ -8,7 +8,7 @@
       "members": [
           {
             "type": "wms",
-            "name": "Confini regionali",
+            "name": "CIAO MILENA",
             "description": "Limiti amministrativi regionali selezionabili in differenti anni. Fonte dati ISTAT.",
             "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {

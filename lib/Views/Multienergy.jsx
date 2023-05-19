@@ -41,45 +41,7 @@ function Multienergy(props) {
       smallScreen={props.smallScreen}
       viewState={props.viewState}
       btnTitle="Multienergy case study"
-    >
-      <div className={classNames(PanelStyles.header)}>
-        <label className={PanelStyles.heading}>Multienergy case study</label>
-      </div>
-
-      <p>testo che spiega dove stai per essere reindirizzato</p>
-
-      <p>
-        <a className={Styles.link} href={totem_link}>
-          Apri la selezione della provincia per TOTEMWEB in TerriaMap
-        </a>
-      </p>
-
-      <div className={classNames(PanelStyles.section, Styles.section)}>
-        <a target="_blank" href="http://atlanteintegrato.rse-web.it/">
-          <img
-            className={Styles.image}
-            src={require("../../wwwroot/images/multienergy.jpg")}
-            alt="multienergy"
-          />
-        </a>
-
-        <a
-          target="_blank"
-          className={Styles.link}
-          href="http://atlanteintegrato.rse-web.it/"
-        >
-          vai ai risultati del caso studio
-        </a>
-
-        <p>vai ai risultati del caso studio Sulcis Iglesiente</p>
-      </div>
-
-      <div className={classNames(PanelStyles.section, Styles.section)}>
-        <p>prova bottone</p>
-      </div>
-
-      <button onClick={getVar1}>var1</button>
-    </MenuPanel>
+    ></MenuPanel>
   );
 }
 

@@ -329,8 +329,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Idroelettrici - Potenza regionale (MW)",
-                  "description": "Mappa della potenza idroelettrica installata a livello regionale, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
+                  "name": "Idroelettrici - Potenza regionale al netto del pompaggio (MW)",
+                  "description": "Mappa della potenza idroelettrica installata a livello regionale al netto del pompaggio, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -344,7 +344,33 @@
                   "parameters": {
                     "cql_filter": "var_id=95"
                   },
-                  "id": "95"
+                  "id": "95",
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili per gli anni dal 2015 al 2020.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
+                    "key": "var_95",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  }
+              },
+                {
+                  "type": "wms",
+                  "name": "Idroelettrici - Potenza regionale comprensiva del pompaggio (MW)",
+                  "description": "Mappa della potenza idroelettrica totale comprensiva del pompaggio installata a livello regionale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=276&anno=2019"
+                  }],
+                  "layers": "new_atlante_integrato:v_regioni_t",
+                  "styles":"new_atlante_integrato:id_imp_reg_pot_tot",
+                  "parameters": {
+                    "cql_filter": "var_id=276"
+                  },
+                  "id": "276"
                 },
                 {
                   "type": "wms",
@@ -507,8 +533,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Idroelettrici - Potenza complessiva provinciale (MW)",
-                  "description": "Mappa della potenza idroelettrica installata a livello provinciale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
+                  "name": "Idroelettrici - Potenza provinciale al netto del pompaggio (MW)",
+                  "description": "Mappa della potenza idroelettrica installata a livello provinciale al netto del pompaggio, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
                     "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
@@ -568,6 +594,63 @@
                     "cql_filter": "var_id=77"
                   },
                   "id": "77"
+                },
+                {
+                  "type": "wms",
+                  "name": "Idroelettrici - Produzione provinciale da pompaggio (GWh)",
+                  "description": "Mappa della produzione idroelettrica da pompaggio a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi). \n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=279&anno=2019"
+                  }],
+                  "layers": "new_atlante_integrato:v_province_t",
+                  "styles":"id_prod_reg_pomp",
+                  "parameters": {
+                    "cql_filter": "var_id=279"
+                  },
+                  "id": "279"
+                },
+                {
+                  "type": "wms",
+                  "name": "Idroelettrici - Produzione provinciale totale comprensiva del pompaggio (GWh)",
+                  "description": "Mappa della produzione idroelettrica totale comprensiva del pompaggio a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi). \n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=278&anno=2019"
+                  }],
+                  "layers": "new_atlante_integrato:v_province_t",
+                  "styles":"id_produzione_lorda_tot_prov_gwh", // id_imp_prov_produzione",
+                  "parameters": {
+                    "cql_filter": "var_id=278"
+                  },
+                  "id": "278"
+                },
+                {
+                  "type": "wms",
+                  "name": "Idroelettrici - Potenza provinciale totale comprensiva del pompaggio (MW)",
+                  "description": "Mappa della potenza idroelettrica totale comprensiva del pompaggio a livello provinciale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi). \n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=277&anno=2019"
+                  }],
+                  "layers": "new_atlante_integrato:v_province_t",
+                  "styles":"new_atlante_integrato:id_imp_prov_potenza_installata",
+                  "parameters": {
+                    "cql_filter": "var_id=277"
+                  },
+                  "id": "277"
                 }
               ]
             },
@@ -1242,7 +1325,83 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=207"
                   }],
                   "id": "imp_termoel"             
-                }                
+                },
+                {
+                  "type": "wms",
+                  "name": "Termoelettrico - Potenza fossile regionale (MW)",
+                  "description": "Mappa della potenza termoelettrica fossile installata a livello regionale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA ed ISTAT (confini amministrativi).\n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=271&anno=2019"
+                  }],
+                  "layers": "new_atlante_integrato:v_regioni_t",
+                  "styles":"pot_termo_fossile_reg",
+                  "parameters": {
+                    "cql_filter": "var_id=271"
+                  },
+                  "id": "271"
+                },
+                {
+                  "type": "wms",
+                  "name": "Termoelettrico - Produzione fossile regionale (GWh)",
+                  "description": "Mappa della produzione termoelettrica fossile installata a livello regionale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA ed ISTAT (confini amministrativi).\n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Produzione regionale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=272&anno=2019"
+                  }],
+                  "layers": "new_atlante_integrato:v_regioni_t",
+                  "styles":"prod_reg_termo_fossile",
+                  "parameters": {
+                    "cql_filter": "var_id=272"
+                  },
+                  "id": "272"
+                },
+                {
+                  "type": "wms",
+                  "name": "Termoelettrico - Potenza fossile provinciale (MW)",
+                  "description": "Mappa della potenza termoelettrica fossile a livello provinciale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=273&anno=2019"
+                  }],
+                  "layers": "new_atlante_integrato:v_province_t",
+                  "styles":"pot_termo_fossile_prov",
+                  "parameters": {
+                    "cql_filter": "var_id=273"
+                  },
+                  "id": "273"
+                },
+                {
+                  "type": "wms",
+                  "name": "Termoelettrico - Produzione fossile provinciale (GWh)",
+                  "description": "Mappa della produzione termoelettrica fossile a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Produzione provinciale (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=274&anno=2019"
+                  }],
+                  "layers": "new_atlante_integrato:v_province_t",
+                  "styles":"prod_prov_termo_fossile",
+                  "parameters": {
+                    "cql_filter": "var_id=274"
+                  },
+                  "id": "274"
+                }
               ]
             }
           ]

@@ -7,13 +7,13 @@
       /*        <div><img src=\"/images/vecteezy_electric-measuring-power-meter-for-energy-cost-at-home-and-office_3115062.jpg\" style=\"width:400px;height:300px;\"></div><a href=\"https://it.vecteezy.com/foto-gratuito\">Foto d’archivio di Vecteezy</a>", */
       "isOpen": false,
       "members": [
-        {
+/*         {
           "type": "wms",
           "name": "Consumi elettrici totali a livello regionale (GWh)",
           "description": "Mappa della distribuzione regionale dei consumi elettrici (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
-            "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p><a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"aai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>" 
+            "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
           },
           "metadataUrls":[{
             "title":"link metadato",
@@ -27,7 +27,29 @@
             {"layerName":"consumi_reg"}
           ],
           "styles":"consumi_reg",
-          "id": "consumi_reg"
+          "id": "102"
+        }, */
+        {
+          "type": "wms",
+          "name": "Consumi elettrici totali a livello regionale esclusi i consumi FS (GWh)",
+          "description": "Mappa della distribuzione regionale dei consumi elettrici esclusi i consumi FS (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
+          "url": "https://gis2.rse-web.it/geoserver/wms",
+          "featureInfoTemplate": {
+            "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+          },
+          "metadataUrls":[{
+            "title":"link metadato",
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=275&anno=2019"
+          }],
+          "layers": "new_atlante_integrato:v_regioni_t",
+          "parameters": {
+            "cql_filter": "var_id=275"
+          },
+          "availableStyles": [
+            {"layerName":"consumi_reg"}
+          ],
+          "styles":"consumi_reg",
+          "id": "275"
         },
         {
           "type": "wms",
@@ -46,7 +68,8 @@
             "cql_filter": "var_id=99"
           },
           "availableStyles":[{"layerName":"t2_industriale_gwh"}],
-          "styles":"t2_industriale_gwh"
+          "styles":"t2_industriale_gwh",
+          "id": "99"
         },
         {
           "type": "wms",
@@ -65,7 +88,8 @@
             "cql_filter": "var_id=98"
           },
           "availableStyles":[{"layerName":"t1_agricolo_gwh"}],
-          "styles":"t1_agricolo_gwh"
+          "styles":"t1_agricolo_gwh",
+          "id": "98"
         },
         {
           "type": "wms",
@@ -84,7 +108,8 @@
             "cql_filter": "var_id=100"
           },
           "availableStyles":[{"layerName":"t38_terziario_gwh"}],
-          "styles":"t38_terziario_gwh"
+          "styles":"t38_terziario_gwh",
+          "id": "100"
         },
         {
           "type": "wms",
@@ -103,7 +128,8 @@
             "cql_filter": "var_id=101"
           },
           "availableStyles":[{"layerName":"t50_domestico_gwh"}],
-          "styles":"t50_domestico_gwh"
+          "styles":"t50_domestico_gwh",
+          "id": "101"
         },
         {
           "type": "wms",
@@ -122,7 +148,8 @@
             "cql_filter": "var_id=209"
           },
           "availableStyles":[{"layerName":"consumi_fs_reg_gwh"}],
-          "styles":"consumi_fs_reg_gwh"
+          "styles":"consumi_fs_reg_gwh",
+          "id": "209"
         },
         {
           "type": "wms",

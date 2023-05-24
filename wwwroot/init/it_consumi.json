@@ -31,7 +31,7 @@
         }, */
         {
           "type": "wms",
-          "name": "Consumi elettrici totali a livello regionale esclusi i consumi FS (GWh)",
+          "name": "Consumi elettrici - Totali regionali esclusi i consumi FS (GWh)",
           "description": "Mappa della distribuzione regionale dei consumi elettrici esclusi i consumi FS (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
@@ -53,7 +53,7 @@
         },
         {
           "type": "wms",
-          "name": "Consumi elettrici del comparto industriale regionale (GWh)",
+          "name": "Consumi elettrici - Comparto industriale regionale (GWh)",
           "description": "Mappa della distribuzione regionale dei consumi elettrici del comparto industriale (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
@@ -73,7 +73,7 @@
         },
         {
           "type": "wms",
-          "name": "Consumi elettrici del comparto agricolo regionale (GWh)",
+          "name": "Consumi elettrici - Comparto agricolo regionale (GWh)",
           "description": "Mappa della distribuzione regionale dei consumi elettrici del comparto agricolo (GWh), negli anni. \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
@@ -93,7 +93,7 @@
         },
         {
           "type": "wms",
-          "name": "Consumi elettrici del comparto terziario regionale (GWh)",
+          "name": "Consumi elettrici - Comparto terziario regionale (GWh)",
           "description": "Mappa della distribuzione regionale dei consumi elettrici del comparto terziario (GWh), negli anni. \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "layers": "new_atlante_integrato:v_regioni_t",
@@ -113,7 +113,7 @@
         },
         {
           "type": "wms",
-          "name": "Consumi elettrici del comparto domestico regionale (GWh)",
+          "name": "Consumi elettrici - Comparto domestico regionale (GWh)",
           "description": "Mappa della distribuzione regionale dei consumi elettrici del comparto domestico (GWh), negli anni. \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
@@ -133,7 +133,7 @@
         },
         {
           "type": "wms",
-          "name": "Consumi elettrici FS regionali (GWh)",
+          "name": "Consumi elettrici - Consumi FS regionali (GWh)",
           "description": "Mappa della distribuzione regionale dei consumi elettrici FS regionali (GWh), negli anni. \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
@@ -153,7 +153,27 @@
         },
         {
           "type": "wms",
-          "name": "Consumi elettrici del comparto agricolo provinciale (GWh)",
+          "id":"cons_84",
+          "name": "Consumi elettrici - Totale provinciale esclusi i consumi FS (GWh)",
+          "description": "Mappa della distribuzione dei consumi elettrici totali a livello provinciale esclusi consumi FS (GWh), negli anni.<br> \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
+          "url": "https://gis2.rse-web.it/geoserver/wms",
+          "featureInfoTemplate": {
+            "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+          },
+          "metadataUrls":[{
+            "title":"link metadato",
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=84&anno=2019"
+          }],
+          "layers": "new_atlante_integrato:v_province_t",
+          "parameters": {
+            "cql_filter": "var_id=84"
+          },
+          "availableStyles":[{"layerName":"cons_el_tot_prov_no_FS"}],
+          "styles":"cons_el_tot_prov_no_FS"
+        },
+        {
+          "type": "wms",
+          "name": "Consumi elettrici - Comparto agricolo provinciale (GWh)",
           "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto agricolo (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
@@ -174,7 +194,7 @@
         { 
           "id":"cons_81",
           "type": "wms",
-          "name": "Consumi elettrici del comparto industriale provinciale (GWh)",
+          "name": "Consumi elettrici - Comparto industriale provinciale (GWh)",
           "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto industriale (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "info": [
             {
@@ -200,7 +220,7 @@
         {
           "id":"cons_82",
           "type": "wms",
-          "name": "Consumi elettrici del comparto terziario provinciale (GWh)",
+          "name": "Consumi elettrici - Comparto terziario provinciale (GWh)",
           "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto terziario (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
@@ -220,7 +240,7 @@
         {
           "id":"cons_83",
           "type": "wms",
-          "name": "Consumi elettrici del comparto domestico provinciale (GWh)",
+          "name": "Consumi elettrici - Comparto domestico provinciale (GWh)",
           "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto domestico (GWh), negli anni.<br> \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
           "url": "https://gis2.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
@@ -236,25 +256,6 @@
           },
           "availableStyles":[{"layerName":"cons_el_comparto_dom_prov"}],
           "styles":"cons_el_comparto_dom_prov"
-        },
-        {
-          "type": "wms",
-          "name": "Consumi elettrici totali a livello provinciale esclusi consumi FS (GWh)",
-          "description": "Mappa della distribuzione dei consumi elettrici totali a livello provinciale esclusi consumi FS (GWh), negli anni.<br> \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
-          "url": "https://gis2.rse-web.it/geoserver/wms",
-          "featureInfoTemplate": {
-            "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
-          },
-          "metadataUrls":[{
-            "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=84&anno=2019"
-          }],
-          "layers": "new_atlante_integrato:v_province_t",
-          "parameters": {
-            "cql_filter": "var_id=84"
-          },
-          "availableStyles":[{"layerName":"cons_el_tot_prov_no_FS"}],
-          "styles":"cons_el_tot_prov_no_FS"
         }
       ]
     }

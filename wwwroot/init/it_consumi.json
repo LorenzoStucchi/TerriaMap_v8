@@ -149,6 +149,13 @@
           },
           "availableStyles":[{"layerName":"consumi_fs_reg_gwh"}],
           "styles":"consumi_fs_reg_gwh",
+          "initialMessage": {
+            "title": "Visualizzazione strato:",
+            "content": "Dati disponibili dal 2015 al 2020.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto lo strato informativo alla mappa.",
+            "key": "209",
+            "confirmation": true,
+            "confirmText": "Ho capito"
+          },
           "id": "209"
         },
         {

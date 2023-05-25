@@ -443,6 +443,13 @@
                       "parameters": {
                         "cql_filter": "var_id=76"
                       },
+                      "initialMessage": {
+                        "title": "Visualizzazione strato:",
+                        "content": "Dati disponibili per gli anni dal 2015 al 2020.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
+                        "key": "76",
+                        "confirmation": true,
+                        "confirmText": "Ho capito"
+                      },
                       "id": "76"
                     },
                     {
@@ -633,7 +640,7 @@
                         "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=278&anno=2019"
                       }],
                       "layers": "new_atlante_integrato:v_province_t",
-                      "styles":"id_produzione_lorda_tot_prov_gwh", // id_imp_prov_produzione",
+                      "styles":"id_prov_prod_lorda", // id_imp_prov_produzione",id_produzione_lorda_tot_prov_gwh
                       "parameters": {
                         "cql_filter": "var_id=278"
                       },
@@ -932,13 +939,13 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=74&anno=2019"
                   }],
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "var_id=74",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  },
+                  }, */
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"ge_imp_prov_potenza_installata",
                   "parameters": {
@@ -1095,13 +1102,6 @@
                   "styles":"bi_num_imp_reg",
                   "parameters": {
                     "cql_filter": "var_id=201"
-                  },
-                  "initialMessage": {
-                    "title": "Visualizzazione strato:",
-                    "content": "Dati disponibili per gli anni 2015 - 2019 .<br>Per visualizzare questo layer occorre selezionare nella barra laterale un'annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
-                    "key": "201",
-                    "confirmation": true,
-                    "confirmText": "Ho capito"
                   },
                   "id": "201"
                 },

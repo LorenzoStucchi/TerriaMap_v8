@@ -61,7 +61,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=99&anno=2019"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=99&anno=2021"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
           "parameters": {

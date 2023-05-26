@@ -136,7 +136,7 @@
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"eo_mini_potenza_mw",
                   "metadataUrls":[{
-                    "title":"link metadato",
+                    "title":"metadata link",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=85"
                   }],
                   "parameters": {
@@ -371,7 +371,7 @@
                         "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
                       "metadataUrls":[{
-                        "title":"link metadato",
+                        "title":"metadata link",
                         "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=276&anno=2021"
                       }],
                       "layers": "new_atlante_integrato:v_regioni_t",
@@ -1334,10 +1334,86 @@
               "description": "This collection includes data relating to the thermoelectric plants present on the national territory.\n\n <div><img src=\"/public/img/shutterstock_142892392.jpg\" style=\"width:640px;height:427px;\"></div>",
               "isOpen": false,
               "members": [
+                 {
+                  "type": "wms",
+                  "name": "Thermoelectric - Regional fossil power (MW)",
+                  "description": "Map of installed fossil thermoelectric power at regional level, expressed in MW, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries)\n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=271&anno=2021"
+                  }],
+                  "layers": "new_atlante_integrato:v_regioni_t",
+                  "styles":"pot_termo_fossile_reg",
+                  "parameters": {
+                    "cql_filter": "var_id=271"
+                  },
+                  "id": "271"
+                },
                 {
                   "type": "wms",
-                  "name": "Thermoelectric plants",
-                  "description": "Map of the distribution of thermoelectric plants in operation by 2020 with associated data on: installed capacity, main fuel and conversion technology.\n\n Elaborazioni RSE a partire dal Global Power Plant Database",
+                  "name": "Thermoelectric - Regional fossil production (GWh)",
+                  "description": "Map of installed fossil thermoelectric production at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries)\n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Regional production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=272&anno=2021"
+                  }],
+                  "layers": "new_atlante_integrato:v_regioni_t",
+                  "styles":"prod_reg_termo_fossile",
+                  "parameters": {
+                    "cql_filter": "var_id=272"
+                  },
+                  "id": "272"
+                },
+                {
+                  "type": "wms",
+                  "name": "Thermoelectric - Provincial fossil power (MW)",
+                  "description": "Map of installed fossil thermoelectric power at provincial level, expressed in MW, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries)\n\n ",
+                   "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Provincial fossil power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=273&anno=2021"
+                  }],
+                  "layers": "new_atlante_integrato:v_province_t",
+                  "styles":"pot_termo_fossile_prov",
+                  "parameters": {
+                    "cql_filter": "var_id=273"
+                  },
+                  "id": "273"
+                },
+                {
+                  "type": "wms",
+                  "name": "Thermoelectric - Provincial fossil production (GWh)",
+                  "description": "Map of installed fossil thermoelectric production at provincial level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries)\n\n ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                    "template": "<p>Provincial production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=274&anno=2021"
+                  }],
+                  "layers": "new_atlante_integrato:v_province_t",
+                  "styles":"prod_prov_termo_fossile",
+                  "parameters": {
+                    "cql_filter": "var_id=274"
+                  },
+                  "id": "274"
+                },
+                {
+                  "type": "wms",
+                  "name": "Thermoelectric - Plants",
+                  "description": "Map of the distribution of thermoelectric plants in operation by 2020 with associated data on: installed capacity, main fuel and conversion technology.\n\n RSE elaborations from the Global Power Plant Database",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "layers": "new_atlante_integrato:v_imp_termoel",
                   "metadataUrls":[{
@@ -1345,7 +1421,8 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=207"
                   }],
                   "id": "imp_termoel"             
-                }                
+                }
+                
               ]
             }
           ]
@@ -1354,7 +1431,8 @@
           "id": "accumulo",
           "type": "group",
           "name": "Storage systems",
-          "description": "This collection includes the characteristics of potential existing hydroelectric pumping plants that can be installed in the area.\n\n <div><img src=\"/public/img/shutterstock_374347087.jpg\" style=\"width:640px;height:427px;\"></div>",
+          //"description": "This collection includes the characteristics of potential existing hydroelectric pumping plants that can be installed in the area.\n\n <div><img src=\"/public/img/shutterstock_374347087.jpg\" style=\"width:640px;height:427px;\"></div>",
+          "description": "This collection includes the characteristics of potential hydroelectric pumping plants in the area.\n\n <div><img src=\"/public/img/shutterstock_374347087.jpg\" style=\"width:640px;height:427px;\"></div>",
           "isOpen": false,
           "members": [
             {
@@ -1381,8 +1459,8 @@
                 "id": "po_com_esist"
               }
             ]
-            },
-            {
+            }
+/*             {
               "id": "potenz_acc",
               "type": "group",
               "name": "Potential pumping",
@@ -1439,7 +1517,7 @@
               }
               ]
             }
-          ]
+ */          ]
         }
       ]
     }

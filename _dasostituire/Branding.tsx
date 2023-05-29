@@ -36,7 +36,7 @@ export default observer(
     return (
       <div
         css={`
-          display: block;
+          display: flex;
           justify-content: space-between;
 
           box-sizing: border-box;

@@ -6,21 +6,21 @@
   "catalog": [
     {
       "type": "group",
-      "name": "Greece",
+      "name": "UK",
       "description": "This collection includes basic cartographic data at different level of territorial aggregation and general themes, useful for providing an initial characterization of the territory. \n\n <a title=\"Waterloo1883, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"><img width=\"640\" alt=\"Mapa físico de localización Huánuco\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png/512px-Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"></a> ",
       "isOpen": false,
       "members": [
         {
-          "id": "greece_adminboundaries",
+          "id": "uk_adminboundaries",
           "type": "group",
           "name": "Administrative boundaries",
-          "description": "Greek administrative boundaries......",
+          "description": "administrative boundaries......",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Greece - Administrative limits",
-              "description": "Greek administrative boundaries ......",
+              "name": "UK - Administrative limits",
+              "description": "Regional boundaries selectable in different years. ISTAT data source.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                "template": "<p>Comune <b>{{comune}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">metadata link </a> </p>"
@@ -29,13 +29,13 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno=2021"
               }],
-              "layers": "marinewind:Greece",
-              "id": "greece_confreg"
+              "layers": "marinewind:United Kingdom",
+              "id": "uk_confreg"
             }
           ]
         },
         {
-          "id": "greece_marinecartography",
+          "id": "uk_marinecartography",
           "type": "group",
           "name": "Marine cartography",
           "description": "This collection includes information on the main territorial boundaries in the marine area.\n\n <a title=\"Ximonic (Simo Räsänen), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Coconut_trees_in_Boa_Vista,_Cape_Verde,_December_2010.jpg\"><img width=\"640\" alt=\"Coconut trees in Boa Vista, Cape Verde, December 2010\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg/512px-Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg\"></a>",
@@ -43,73 +43,73 @@
           "members": [
             {
               "type": "wms",
-              "name": "Greece - Internal waters limit DATO MANCANTE",
+              "name": "UK - Internal waters limit",
               "description": "SERVIZIO MANCANTE - MANCA DATO - Greek internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
-              "layers": "marinewind:greece_internal_waters",
+              "layers": "marinewind:uk_internal_waters",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
               }],
               //"styles":"new_atlante_integrato:acque_interne",
-              "id": "greece_int_waters"
+              "id": "uk_int_waters"
             },
             {
                 "type": "wms",
-                "name": "Greece - 12 nautical miles line from coast",
+                "name": "UK - 12 nautical miles line from coast",
                 "description": "12 nautical miles line from Greek coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "layers": "marinewind:greece_12nml",
+                "layers": "marinewind:uk_12nml",
                 "metadataUrls":[{
                   "title":"link metadato",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=265"
                 }],
                 //"styles":"new_atlante_integrato:linea_12mn",
-                "id": "greece_line_12nm"
+                "id": "uk_line_12nm"
               },
               {
                 "type": "wms",
-                "name": "Greece - 24 nautical miles line from coast",
+                "name": "UK - 24 nautical miles line from coast",
                 "description": "24 nautical miles line from Greek coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "layers": "marinewind:greece_24nml",
+                "layers": "marinewind:uk_24nml",
                 "metadataUrls":[{
                   "title":"link metadato",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
                 }],
                 //"styles":"new_atlante_integrato:linea_24mn",
-                "id": "greece_line_24nm"
+                "id": "uk_line_24nm"
               },
               {
                 "type": "wms",
-                "name": "Greece - Exclusive Economic Zone",
+                "name": "UK - Exclusive Economic Zone",
                 "description": " Greek Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"link metadato",
                   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
                 }],
-                "layers": "marinewind:greece_eez",
+                "layers": "marinewind:uk_eez",
                 //"styles":"aeolian:linea_blu_2",
-                "id": "greece_eez"
+                "id": "uk_eez"
               },
               {
                 "type": "wms",
-                "name": "Greece - Maritime Spatial Planning DATO MANCANTE ",
+                "name": "UK - Maritime Spatial Planning DATO MANCANTE",
                 "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"link metadato",
                   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
                 }],
-                "layers": "marinewind:greece_eez",
+                "layers": "marinewind:uk_eez",
                 //"styles":"aeolian:linea_blu_2",
-                "id": "greece_mar_spat_planning"
+                "id": "uk_mar_spat_planning"
               }
-             ]
+            ]
           },
           {
-            "id": "greeceNewinstallations",
+            "id": "ukNewinstallations",
             "type": "group",
             "name": "New installations",
             "description": "New installations queasta raccolta comprende i......",
@@ -118,21 +118,21 @@
               
               {
                 "type": "wms",
-                "name": "DATO MANCANTE Greece - New installations",
-                "description": "Greece new installations. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
+                "name": "UK - New installations DATO MANCANTE",
+                "description": "uk new installations. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+                "url": "https://ows.emodnet-bathymetry.eu/wms/inspire_quad",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 "metadataUrls":[{
                   "title":"link metadato",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
                 }],
-                "styles":"new_atlante_integrato:linea_24mn",
-                "id": "greece_new_inst"
+                //"styles":"new_atlante_integrato:linea_24mn",
+                "id": "uk_new_inst"
               }
             ]
           },
           {
-            "id": "greece_protectedareas",
+            "id": "uk_protectedareas",
             "type": "group",
             "name": "Protected Areas",
             "description": "This collection includes information on the environmental constraints present in the area.",
@@ -140,15 +140,15 @@
             "members": [
               {
                 "type": "wms",
-                "name": "DATO MANCANTE Greece - Important Bird Areas (IBA)",
-                "description": "<p align=\"justify\">SERVIZIO MANCANTE .... DATO MANCANTE Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n which are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
+                "name": "UK - Important Bird Areas (IBA) DATO MANCANTE ",
+                "description": "<p align=\"justify\">SERVIO MANCANTE .... DATO MANCANTE Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n which are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 }],
-                "layers": "greece_iba",
-                "id": "greece_iba"
+                "layers": "uk_iba",
+                "id": "uk_iba"
               }
             ]
           }

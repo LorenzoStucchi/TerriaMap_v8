@@ -1,6 +1,10 @@
 {
   "workbench": [
-    "confreg"
+    "italy_confreg",
+    "greece_confreg",
+    "portugal_confreg",
+    "spain_confreg",
+    "uk_confreg"
   ],
   "homeCamera": {
     "north": 60,

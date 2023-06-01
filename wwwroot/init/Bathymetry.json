@@ -21,12 +21,12 @@
               "type": "wms",
               "name": "EUROPEAN BATHYMETRY",
               "description": "European bathymetry .....",
-              "url": "http://ows.emodnet-bathymetry.eu/ows?service=WMS&version=1.3.0&layer=emodnet:mean_2018",
+              "url": "https://ows.emodnet-bathymetry.eu/wms/inspire_quad",
               //"url": "https://geo-service.maris.nl/emodnet_bathymetry/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
               "featureInfoTemplate": {
                "template": "<p>Comune <b>{{comune}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">metadata link </a> </p>"
               },
-              "layers": "spain_iba",
+              "layers": "emodnet:mean_multicolour",
               "id": "eu_bath"
             }
           ]

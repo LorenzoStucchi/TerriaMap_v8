@@ -4,15 +4,15 @@
       "id": "available_areas",
       "type": "group",
       "name": "Suitable areas",
-      "description":"Inserire testo",
+      "description":"The achievement of the challenging objectives for the development of RES by 2030 is highly dependent on land and sea occupation and competitive uses of the same. While the availability of photovoltaic and wind resource, even if with significant north-south differences, is more homogeneously distributed and anyway exploitable throughout the national territory, the availability of areas suitable for hosting installations, on the other hand, appears as a discriminating element of the different territorial realities and capable to also highlight potential limits to development itself. </br> The photovoltaic and wind additional power by 2030 is therefore calculated also on the basis of the surfaces available for certain types of \"eligible\" areas (meaning to be considered potentially exploitable) for photovoltaic installations on roofs and on the ground and wind power installations onshore and offshore.",
       "isOpen": false,
       "members": [
         {
           "id": "Fotovoltaico",
           "type": "group",
           "name": "Solar",
-          "description": "<p style=\"text-align:justify\">The achievement of the challenging objectives for the development of RES by 2030 is highly dependent on land occupation and competitive uses of the same. While the availability of photovoltaic resource, even if with significant north-south differences, is more homogeneously distributed and in any case exploitable throughout the national territory, the availability of areas suitable for hosting installations, on the other hand, appears as a discriminating element of the different territorial realities and capable to also highlight potential limits to development itself. The additional photovoltaic power by 2030 is therefore also calculated on the basis of the surfaces available for certain types of \"eligible\" areas (i.e. to be considered potentially exploitable) for installations on roofs and on the ground. </br> </p><p style=\"text-align:justify\">This collection includes municipal-scale information regarding the percentage of area available for new ground-based and rooftop photovoltaic installations compared to the municipal area for each land use category. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>",
-          "isOpen": true,
+          "description": "This collection includes municipal-scale information regarding the percentage of area available for new ground-based and rooftop photovoltaic installations compared to the municipal area for each land use category. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>",
+          "isOpen": false,
           "members": [
         {
           "id": "tetto",
@@ -30,8 +30,8 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
-              "styles":"aree_idonee:pCTR",
-              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "styles":"new_atlante_integrato:pCTR",
+              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p><p>Area percentage [%] <b>{{p_ctr}}</b></p><p>Area extension [kmq] <b>{{areactrkm2}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'></b><a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a>"
               },
@@ -46,8 +46,8 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
-              "styles":"aree_idonee:pCN",
-              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "styles":"new_atlante_integrato:pCN",
+              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></b></p><p>Area percentage [%] <b>{{p_cn}}</b></p><p>Area extension [kmq] <b>{{areacnkm2}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
@@ -58,7 +58,7 @@
         {
           "id": "terra",
           "type": "group",
-          "name": "Available reas for ground-based photovoltaic installations",
+          "name": "Available areas for ground-based photovoltaic installations",
           "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of available area for new ground-mounted photovoltaic installations compared to the municipal area obtained from the 2018 Corine Land Cover map and from spatial data relating to environmental and landscape constraints with homogeneous coverage throughout the national territory.  </br> </p> Details of used data for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
           "isOpen": false,
           "members": [
@@ -71,8 +71,8 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
-              "styles":"aree_idonee:p131",
-              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "styles":"new_atlante_integrato:p131",
+              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></b></p><p>Area percentage [%] <b>{{p_131}}</b></p><p>Area extension [kmq] <b>{{areakmq131}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
@@ -87,8 +87,8 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
-              "styles":"aree_idonee:p132",
-              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "styles":"new_atlante_integrato:p132",
+              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></b></p><p>Area percentage [%] <b>{{p_132}}</b></p><p>Area extension [kmq] <b>{{areakmq132}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
@@ -103,8 +103,8 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
-              "styles":"aree_idonee:p121",
-              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "styles":"new_atlante_integrato:p121",
+              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_121}}</b></p><p>Area extension [kmq] <b>{{areakmq121}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
@@ -119,8 +119,8 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
-              "styles":"aree_idonee:p2tot",
-              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "styles":"new_atlante_integrato:p2tot",
+              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_2tot}}</b></p><p>Area extension [kmq] <b>{{areakmq2}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
@@ -135,8 +135,8 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
-              "styles":"aree_idonee:p2netta",
-              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "styles":"new_atlante_integrato:p2netta",
+              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></b></p><p>Area percentage [%] <b>{{p_2netta}}</b></p><p>Area extension [kmq] <b>{{area2netta}}</b></p><p>Municipal extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
@@ -151,8 +151,8 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
               }],
-              "styles":"aree_idonee:p211netta",
-              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "styles":"new_atlante_integrato:p211netta",
+              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
               "featureInfoTemplate": {
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_211netta}}</b></p><p>Area extension [kmq] <b>{{area211net}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
@@ -166,31 +166,31 @@
       "id": "Eolico",
       "type": "group",
       "name": "Wind",
-      "description": "This collection includes maps of suitable areas for new onshore and offshore wind power installations.",
-      "isOpen": true,
+      "description": "This collection includes maps of suitable areas for new onshore and offshore wind power installations. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
+      "isOpen": false,
       "members": [
         {
           "id": "Onshore",
           "type": "group",
           "name": "Areas available for onshore wind power installations",
-          "description": "This collection includes maps of suitable areas for new onshore wind power installations.",
+          "description": "This collection includes the map of suitable areas for new onshore wind power installations, obtained from areas with wind energy production at 100 m higher than 2250 MWh/MW and excluding urban areas and areas subject to environmental and cultural constrains. </br> The wind energy production map derives from the new anemological database provided by RSE and available from the <a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Inserire dati",
-              "description": "Inserire descrizione.",
+              "name": "Areas available for onshore wind power installations by wind energy production range",
+              "description": "This collection includes the map of suitable areas for new onshore wind power installations by wind energy production ranges.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=280"
               }],
-              "styles":"aree_idonee:p131",
-              "layers": "aree_idonee:comuni_2022_aree_idonee",
+              "styles":"new_atlante_integrato:class_aree_idonee_eolico_onshore",
+              "layers": "new_atlante_integrato:eolico_onshore",
               "featureInfoTemplate": {
-                "template": "<p>Comune <b>{{comune}}</b></p></p><p>Provincia <b>{{den_uts}}</b></p></p><p>Regione <b>{{den_reg}}</b></p></b></p><p>Percentuale area [%] <b>{{p_131}}</b></p><p>Estensione area [kmq] <b>{{areakmq131}}</b></p><p>Estensione comune [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">link al metadato </a> </p>"
+                "template": "<<p> Regione <b>{{den_reg}}</b></p></b></p><p>Range di producibilità [MWh/MW] <b>{{clas_prod2}}</b></p><a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=280\">link al metadato </a> </p>"
               },
-              "id": "estrattive"
+              "id": "eo_onshore"
             }
           ]
         },
@@ -198,7 +198,7 @@
           "id": "Offshore",
           "type": "group",
           "name": "Areas available for offshore wind power installations",
-          "description": "This collection includes maps of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges obtained from  Mediterranean Sea bathymetry map provided by the European Marine Observation and Data Network (EMODnet) and from wind energy production maps deriving form the new anemological database provided by RSE and available from the <a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a>",
+          "description": "This collection includes maps of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges obtained from  Mediterranean Sea bathymetry map provided by the European Marine Observation and Data Network (EMODnet) and from wind energy production maps deriving from the new anemological database provided by RSE and available from the <a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
           "isOpen": false,
           "members": [
             {

@@ -91,8 +91,8 @@
           {
             "id": "Marine Cartography",
             "type": "group",
-            "name": "Cartografia marina",
-            "description": "Questa raccolta comprende informazioni sulla batimetria e i principali limiti territoriali nell'area marina.",
+            "name": "Marine Cartography",
+            "description": "This collection includes information on bathymetry and main territorial limits within marine areas.",
             "isOpen": true,
             "members": [
               {

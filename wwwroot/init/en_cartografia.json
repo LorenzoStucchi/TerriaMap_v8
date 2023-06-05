@@ -93,7 +93,7 @@
             "type": "group",
             "name": "Marine Cartography",
             "description": "This collection includes information on bathymetry and main territorial limits within marine areas.",
-            "isOpen": true,
+            "isOpen": false,
             "members": [
               {
                 "type": "wms",

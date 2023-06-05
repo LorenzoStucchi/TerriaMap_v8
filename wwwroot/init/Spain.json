@@ -44,7 +44,7 @@
             {
               "type": "wms",
               "name": "Spain - Internal waters limit",
-              "description": "SERVIZIO MANCANTE - MANCA DATO - Greek internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+              "description": "Spain internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "marinewind:spain_internal_waters",
               "metadataUrls":[{
@@ -57,7 +57,7 @@
             {
                 "type": "wms",
                 "name": "spain - 12 nautical miles line from coast",
-                "description": "12 nautical miles line from Greek coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+                "description": "12 nautical miles line from Spain coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:spain_12nml",
                 "metadataUrls":[{
@@ -70,7 +70,7 @@
               {
                 "type": "wms",
                 "name": "Spain - 24 nautical miles line from coast",
-                "description": "24 nautical miles line from Greek coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+                "description": "24 nautical miles line from Spain coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:spain_24nml",
                 "metadataUrls":[{

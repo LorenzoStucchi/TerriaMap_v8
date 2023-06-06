@@ -198,7 +198,7 @@
               "id": "Offshore",
               "type": "group",
               "name": "Aree disponibili per l'eolico offshore",
-              "description": "Questa raccolta comprende le mappe delle aree idonee per nuove installazioni eoliche offshore per fascia batimetrica e range di producibilità ottenute a partire dalla mappa di batimetria del Mar Mediterraneo generata e rilasciata da European Marine Observation and Data Network (EMODnet) e dalle mappe di producibilità specifica annua teorica derivanti dalla nuova banca dati anemologica italiana prodotta da RSE e consultabili dall'<a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Atlante Eolico Italiano AEOLIAN.</a></p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "description": "Questa raccolta comprende le mappe delle aree idonee per nuove installazioni eoliche offshore per fascia batimetrica e range di producibilità ottenute a partire dalla mappa di batimetria del Mar Mediterraneo generata e rilasciata da European Marine Observation and Data Network (EMODnet) e dalle mappe di producibilità specifica annua teorica a un'altezza di 150 m derivanti dalla nuova banca dati anemologica italiana prodotta da RSE e consultabili dall'<a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Atlante Eolico Italiano AEOLIAN.</a></p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
               "isOpen": false,
               "members": [
                 {

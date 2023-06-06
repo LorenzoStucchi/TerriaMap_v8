@@ -198,7 +198,7 @@
           "id": "Offshore",
           "type": "group",
           "name": "Areas available for offshore wind power installations",
-          "description": "This collection includes maps of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges obtained from  Mediterranean Sea bathymetry map provided by the European Marine Observation and Data Network (EMODnet) and from wind energy production maps deriving from the new anemological database provided by RSE and available from the <a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
+          "description": "This collection includes maps of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges obtained from  Mediterranean Sea bathymetry map provided by the European Marine Observation and Data Network (EMODnet) and from wind energy production maps at 150 m height deriving from the new anemological database provided by RSE and available from the <a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
           "isOpen": false,
           "members": [
             {

@@ -21,7 +21,7 @@
               "description": "Producibilità specifica onshore a 50 m s.l.t. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore Riva Calzoni ATB 500.54 con diametro del rotore pari a 54 m e potenza nominale pari a 500 kW. ",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La producibilità specifica del vento è pari a <b>{{prod_50}}</b> MWh/MW </p><br><br><chart column-units='MWh/MW, Quota m s.l.t.' column-names='Producibilità, Quota' preview-x-label='Producibilità Specifica Onshore (MWh/MW)' preview-y-label='Quota m s.l.t.' title='Grafico: '>Quota, Producibilità Specifica Onshore '\n{{prod_50}},50\n{{prod_75}},75\n{{prod_100}},100\n</chart>"
+                "template": "<p>La producibilità specifica del vento è pari a <b>{{prod_50}}</b> MWh/MW </p><br><br><chart column-units='MWh/MW, Quota m s.l.t.' column-names='Producibilità, Quota' preview-x-label='Producibilità Specifica Onshore (MWh/MW)' preview-y-label='Quota m s.l.t.' title='Grafico: '>Quota, Producibilità Specifica Onshore '\n {{prod_50}},50\n{{prod_75}},75\n{{prod_100}},100\n</chart>"
               },
               "metadataUrls":[{
                 "title":"link metadato",

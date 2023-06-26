@@ -7,14 +7,14 @@
     {
       "type": "group",
       "name": "UK",
-      "description": "This collection includes basic cartographic data at different level of territorial aggregation and general themes, useful for providing an initial characterization of the territory. \n\n <a title=\"Waterloo1883, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"><img width=\"640\" alt=\"Mapa físico de localización Huánuco\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png/512px-Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"></a> ",
+      "description": "This collection includes information on countries main administrative limits.\n\n",
       "isOpen": false,
       "members": [
         {
           "id": "uk_adminboundaries",
           "type": "group",
           "name": "Administrative boundaries",
-          "description": "administrative boundaries......",
+          "description": "UK administrative limits (NUTS2 level) of the last available year (2021). Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
           "isOpen": false,
           "members": [
             {
@@ -38,7 +38,7 @@
           "id": "uk_marinecartography",
           "type": "group",
           "name": "Marine cartography",
-          "description": "This collection includes information on the main territorial boundaries in the marine area.\n\n <a title=\"Ximonic (Simo Räsänen), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Coconut_trees_in_Boa_Vista,_Cape_Verde,_December_2010.jpg\"><img width=\"640\" alt=\"Coconut trees in Boa Vista, Cape Verde, December 2010\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg/512px-Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg\"></a>",
+          "description": "This collection includes information on the main territorial boundaries in the marine area.\n\n",
           "isOpen": false,
           "members": [
             {
@@ -140,15 +140,15 @@
             "members": [
               {
                 "type": "wms",
-                "name": "UK - Important Bird Areas (IBA) DATO MANCANTE ",
-                "description": "<p align=\"justify\">SERVIO MANCANTE .... DATO MANCANTE Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n which are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
+                "name": "UK - UNESCO",
+                "description": "<p align=\"justify\">UK UNESCO.</p><p align=\"justify\">Data provided by Flanders Marine Institute https://www.marineregions.org/.</p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 }],
-                "layers": "uk_iba",
-                "id": "uk_iba"
+                "layers": "uk_unesco",
+                "id": "uk_unesco"
               }
             ]
           }

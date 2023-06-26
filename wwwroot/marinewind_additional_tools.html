@@ -1,0 +1,106 @@
+<html>
+<head>
+  <title>MARINEWIND</title>
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+  <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+  <script type="text/javascript" src="credenziali.js"></script>
+</head>
+<body>
+  <style>
+    input { border: 1px solid black; }
+	
+	div.banner_wm {
+		background-color: #3F4854;
+	}
+.bordi-arrotondati {
+    border-radius: 20px; /*ie >9*/
+    -moz-border-radius: 20px; /*firefox*/
+    -webkit-border-radius: 20px; /*chrome, safari*/
+    background:#FFFFFF;
+    width:50%;
+    padding:8px;
+	border: 2px solid #CACACA;
+	margin: auto;
+}
+
+  </style>
+  
+  
+	<div  class="banner_wm"> 
+		<table  id='table_banner_clypea' style='width: ' + (schermo_w - 17) + 'px' width='100%' align='center'>
+			<tr padding-top: 0px; padding-bottom: 0px;>
+				<td width='10%'></td>
+				<td  align='center' width='30%'><img src=images/marinewind.png alt='Puntare ad immagine su server dopo pubblicazione' height='93' width='166'/></td>
+				<td width='10%'></td>
+			</tr>
+		</table>
+	</div>
+
+<div  id='divisorio'> <table  id='table_divisorio' style='width: ' + (schermo_w - 17) + 'px' width='100%' align='center'>
+<tr padding-top: 0px; padding-bottom: 0px;><td></td></tr>
+<tr padding-top: 0px; padding-bottom: 0px;><td></td></tr>
+<tr padding-top: 0px; padding-bottom: 0px;><td></td></tr>
+<tr padding-top: 0px; padding-bottom: 0px;>
+		<td style="text-align: justify; border-top: 2px solid  gray;" ></td>
+</tr>
+</table>
+</div>
+
+  <div style="width:500px; margin-left:auto; margin-right:auto; text-align:center"><h2>WebGIS MARINEWIND</h2></div>
+  <div style="width:500px; margin-left:auto; margin-right:auto; text-align:center">
+   
+  <br />
+   </div>
+   
+   
+   
+   <div class="bordi-arrotondati" style="height: overflow: auto; color:#313334;">
+		</br>
+		<table width="100%" border="0px solid black" align = "center">
+			<tr><td width="2%"><td width="3%"></td><td width="20%"></td><td width="37%"></td><td width="32%"></td><td width="6%"></td></tr> 
+			<tr bgcolor="#CACACA"><td></td><td></td><td></td><td></td><td></td><td></td></tr> 
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr> 
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr> 
+			<tr><td></td><td></td><td>INSERT TEXT HERE </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></td><td></td><td></td><td></td></tr> 
+			<tr><td></td><td></td><td></td><td></td><td></td></tr>
+		</table>
+		</br>
+		</br>
+		
+	</div>
+	
+<script type="text/javascript">
+
+function function_login() {
+	login_utente = document.getElementById("username").value;
+	pw_utente = document.getElementById("password").value;
+	var credenziali_ut = false
+	var credenziali_pw = false
+	
+	if (login_utente == utente) {
+		credenziali_ut = true;
+	} else {
+		credenziali_ut = false;
+	}
+	
+	if (pw_utente == pw) {
+		credenziali_pw = true;
+	} else {
+		credenziali_pw = false;
+	}
+	
+	if (credenziali_pw == true && credenziali_ut == true){
+		window.open("https://marinewind.rse-web.it", "_self");
+	} else {
+		alert("Try again");
+	}	
+
+	
+};
+</script>
+
+</body>
+</html>
+
+
+

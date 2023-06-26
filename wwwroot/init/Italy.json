@@ -7,23 +7,23 @@
     {
       "type": "group",
       "name": "Italy",
-      "description": "This collection includes basic cartographic data at different level of territorial aggregation and general themes, useful for providing an initial characterization of the territory. \n\n <a title=\"Waterloo1883, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"><img width=\"640\" alt=\"Mapa físico de localización Huánuco\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png/512px-Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"></a> ",
+      "description": "This collection includes information on countries main administrative limits.\n\n",
       "isOpen": false,
       "members": [
         {
           "id": "italy_adminboundaries",
           "type": "group",
           "name": "Administrative boundaries",
-          "description": "administrative boundaries......",
+          "description": "Italian administrative limits (NUTS2 level) of the last available year (2021). Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
               "name": "Italy - Administrative limits",
-              "description": "Regional boundaries selectable in different years. ISTAT data source.",
+              "description": "Italian regional boundaries ......",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-               "template": "<p>Comune <b>{{comune}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">metadata link </a> </p>"
+               "template": "<p>Regional boundary: <b>{{nuts_name}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">metadata link </a> </p>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -38,7 +38,7 @@
           "id": "italy_marinecartography",
           "type": "group",
           "name": "Marine cartography",
-          "description": "This collection includes information on the main territorial boundaries in the marine area.\n\n <a title=\"Ximonic (Simo Räsänen), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Coconut_trees_in_Boa_Vista,_Cape_Verde,_December_2010.jpg\"><img width=\"640\" alt=\"Coconut trees in Boa Vista, Cape Verde, December 2010\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg/512px-Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg\"></a>",
+          "description": "This collection includes information on the main territorial boundaries in the marine area.\n\n",
           "isOpen": false,
           "members": [
             {
@@ -197,7 +197,19 @@
                 }],
                 "layers": "euap",
                 "id": "italy_euap"
-              }
+              },
+              {
+                "type": "wms",
+                "name": "Italy - UNESCO",
+                "description": "<p align=\"justify\">Italy UNESCO.</p><p align=\"justify\">Data provided by Flanders Marine Institute https://www.marineregions.org/.</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                }],
+                "layers": "aree_idonee:Unesco2012_poligoni",
+                "id": "italy_unesco"
+              }            
             ]
           }
       ]

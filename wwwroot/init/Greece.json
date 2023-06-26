@@ -7,14 +7,14 @@
     {
       "type": "group",
       "name": "Greece",
-      "description": "This collection includes basic cartographic data at different level of territorial aggregation and general themes, useful for providing an initial characterization of the territory. \n\n <a title=\"Waterloo1883, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"><img width=\"640\" alt=\"Mapa físico de localización Huánuco\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png/512px-Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"></a> ",
+      "description": "This collection includes information on countries main administrative limits.\n\n",
       "isOpen": false,
       "members": [
         {
           "id": "greece_adminboundaries",
           "type": "group",
           "name": "Administrative boundaries",
-          "description": "Greek administrative boundaries......",
+          "description": "Greek administrative limits (NUTS2 level) of the last available year (2021). Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
           "isOpen": false,
           "members": [
             {
@@ -38,7 +38,7 @@
           "id": "greece_marinecartography",
           "type": "group",
           "name": "Marine cartography",
-          "description": "This collection includes information on the main territorial boundaries in the marine area.\n\n <a title=\"Ximonic (Simo Räsänen), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Coconut_trees_in_Boa_Vista,_Cape_Verde,_December_2010.jpg\"><img width=\"640\" alt=\"Coconut trees in Boa Vista, Cape Verde, December 2010\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg/512px-Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg\"></a>",
+          "description": "This collection includes information on the main territorial boundaries in the marine area.\n\n",
           "isOpen": false,
           "members": [
             {

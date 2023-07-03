@@ -84,7 +84,7 @@
                 "type": "wms",
                 "name": "Spain - Exclusive Economic Zone",
                 "description": "Spanish Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "http://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"

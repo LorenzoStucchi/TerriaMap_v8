@@ -7,28 +7,28 @@
     {
       "type": "group",
       "name": "Spain",
-      "description": "This collection includes information on countries main administrative limits.\n\n",
+      "description": "This collection includes information on Spain main cartographic data.\n\n",
       "isOpen": false,
       "members": [
         {
           "id": "spain_adminboundaries",
           "type": "group",
           "name": "Administrative boundaries",
-          "description": "Spanish administrative limits (NUTS2 level) of the last available year (2021). Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
+          "description": "This collection includes information on Spain main administrative limits.",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
               "name": "Spain - Administrative limits",
-              "description": "Regional boundaries selectable in different years. ISTAT data source.",
+              "description": "Spain administrative limits (NUTS2 level) of the last available year (2021). Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-               "template": "<p>Comune <b>{{comune}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">metadata link </a> </p>"
+               "template": "<p>Region: <b>{{nuts_name}}</b></p><p style='display: block; text-align: center;'></p>"
               },
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno=2021"
-              }],
+              //"metadataUrls":[{
+              //  "title":"metadata link",
+              //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno=2021"
+              //}],
               "layers": "marinewind:Spain",
               "id": "spain_confreg"
             }
@@ -48,7 +48,7 @@
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "marinewind:spain_internal_waters",
               "metadataUrls":[{
-                "title":"link metadato",
+                "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
               }],
               //"styles":"new_atlante_integrato:acque_interne",
@@ -61,7 +61,7 @@
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:spain_12nml",
                 "metadataUrls":[{
-                  "title":"link metadato",
+                  "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=265"
                 }],
                 //"styles":"new_atlante_integrato:linea_12mn",
@@ -74,7 +74,7 @@
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:spain_24nml",
                 "metadataUrls":[{
-                  "title":"link metadato",
+                  "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
                 }],
                 //"styles":"new_atlante_integrato:linea_24mn",
@@ -86,7 +86,7 @@
                 "description": "Spanish Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
-                  "title":"link metadato",
+                  "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
                 }],
                 "layers": "marinewind:spain_eez",
@@ -99,7 +99,7 @@
                 "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
-                  "title":"link metadato",
+                  "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
                 }],
                 "layers": "marinewind:spain_eez",
@@ -123,7 +123,7 @@
                 "url": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 "metadataUrls":[{
-                  "title":"link metadato",
+                  "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
                 }],
                 "styles":"new_atlante_integrato:linea_24mn",

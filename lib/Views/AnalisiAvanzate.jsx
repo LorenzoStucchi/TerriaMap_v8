@@ -118,9 +118,9 @@ function AnalisiAvanzate(props) {
                 {" "}
                 <p align="justify">{t("analisiAvanzate.infoSerieStorica")}</p>
                 <br></br>
-                {t("analisiAvanzate.perAccedere")}{" "}
+                {/*t("analisiAvanzate.perAccedere")*/}{" "}
                 <a className={Styles.link} href={totem_link}>
-                  {t("analisiAvanzate.cliccaQui")}
+                  {/*t("analisiAvanzate.cliccaQui")*/}
                 </a>
                 .
                 {/* Permette la definizione ed il salvataggio di dati territoriali

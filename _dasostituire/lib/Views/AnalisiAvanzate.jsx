@@ -23,13 +23,15 @@ function AnalisiAvanzate(props) {
   var modCalc_link = "/#en_modcalc";
   var dati_storici_prova = "/#it_dati_storici_prova";
   var analisi = "Additional tools";
-  var mod_calc_help = "https://atlanteeolico.rse-web.it/help/help-terria-calcolo-EN.html";
+  var mod_calc_help = "html/help/help-terria-calcolo-EN.html";
+  var griglia_download = "html/download_terria_griglia-EN.html";
   if (userLang === "it-IT" || userLang === "it") {
     totem_link = "/#it_dati_storici"; //inserire il path che punta al tool codice di calcolo
     modCalc_link = "/#it_modcalc";
     analisi = "Strumenti Aggiuntivi";
     dati_storici_prova = "/#it_dati_storici_prova";
-    mod_calc_help = "https://atlanteeolico.rse-web.it/help/help-terria-calcolo-IT.html";
+    mod_calc_help = "html/help/help-terria-calcolo-IT.html";
+    griglia_download = "html/download_terria_griglia-IT.html";
   }
 
   return (
@@ -85,7 +87,8 @@ function AnalisiAvanzate(props) {
                 {t("analisiAvanzate.perAccedere")}{" "}
                 <a className={Styles.link} href={modCalc_link}>
                   {t("analisiAvanzate.cliccaQui")}
-                </a>.
+                </a>
+                .
               </td>
             </tr>
           </table>
@@ -101,7 +104,7 @@ function AnalisiAvanzate(props) {
               </td>
             </tr>
             <tr>
-              <td style="vertical-align:top">
+              <td tyle="vertical-align:top">
                 <img
                   width="50%"
                   height="80%"
@@ -154,7 +157,7 @@ function AnalisiAvanzate(props) {
                   target="_blank"
                   //href="http://atlanteintegrato.rse-web.it/sankey.php"
                   //href="https://atlanteeolico.rse-web.it/download_griglia-IT.php"
-                  href="https://dbeta.rse-web.it/atlanteeolico/download_terria_griglia-IT.php"
+                  href={griglia_download}
                   className={Styles.link}
                 >
                   {t("analisiAvanzate.approfondisciEdownload")}
@@ -170,7 +173,7 @@ function AnalisiAvanzate(props) {
           <a
             target="_blank"
             // href="http://atlanteintegrato.rse-web.it/sankey.php"
-            href="https://dbeta.rse-web.it/atlanteeolico/download_griglia-IT.php"
+            href="https://atlanteeolico.rse-web.it/download_griglia-IT.php"
           >
             <img
               className={Styles.image}

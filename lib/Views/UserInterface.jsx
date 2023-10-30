@@ -32,6 +32,8 @@ import "./global.scss";
 // }
 
 export default function UserInterface(props) {
+  console.log("UserInterface");
+  console.log(props);
   const { t } = useTranslation(); //GOF x traduzione link about.html/about-en.html
 
   return (

@@ -4,7 +4,6 @@ import * as d3 from "d3";
 import { AxisContainer, Axis } from "./WindRoseChart.style";
 import { ChartPropTypes, ChartDefaultProps, DataType } from "../Types";
 import { string } from "prop-types";
-// import { useResponsive } from "./hooks";
 
 export function Chart(props: ChartPropTypes) {
   const {
@@ -12,15 +11,10 @@ export function Chart(props: ChartPropTypes) {
     height: propHeight,
     chartData: data,
     columns,
-    // responsive,
     legendGap
   } = props;
   const containerRef = React.useRef<SVGSVGElement>(null);
   const axisContainerRef = React.useRef<HTMLDivElement>(null);
-  // const containerSize = useResponsive(axisContainerRef, {
-  //   width: propWidth,
-  //   height: propHeight,
-  // });
   const containerSize = {
     width: propWidth,
     height: propHeight
@@ -30,15 +24,7 @@ export function Chart(props: ChartPropTypes) {
     width: propWidth,
     height: propHeight
   });
-  // React.useEffect(() => {
-  //   const { width, height } = containerSize;
-  //   if (responsive) {
-  //     const rect = Math.min(width, height);
-  //     setSize({ width: rect, height: rect });
-  //   } else {
-  //     setSize({ width: propWidth, height: propHeight });
-  //   }
-  // }, [responsive, axisContainerRef, containerSize.width]);
+
   React.useEffect(() => {
     const { current } = containerRef;
     if (current === null) return;
@@ -56,15 +42,6 @@ export function Chart(props: ChartPropTypes) {
 
     const angle = d3.scaleLinear().range([0, 2 * Math.PI]);
     const radius = d3.scaleLinear().range([innerRadius, outerRadius]);
-    const radius2 = d3.scaleLinear().range([innerRadius, outerRadius]);
-
-    // const axisscale = d3.axisLeft.scale(radius.copy().range([-innerRadius, -(outerRadius + 10)]))
-
-    // .call(
-    //   d3
-    //     .axisLeft()
-    //     .ticks(0)    //<-- x elininare il tick 0 GD
-    //     .scale(radius.copy().range([-innerRadius, -(outerRadius + 10)]))
 
     const x = d3
       .scaleBand()
@@ -78,30 +55,17 @@ export function Chart(props: ChartPropTypes) {
       .scaleLinear() // you can try scaleRadial but it scales differently
       .range([innerRadius, outerRadius]);
 
-    const z = d3
-      .scaleOrdinal()
-      // .range([
-      //   "#8e44ad",
-      //   "#4242f4",
-      //   "#42c5f4",
-      //   "#42f4ce",
-      //   "#42f456",
-      //   "#adf442",
-      //   "#f4e242",
-      //   "#f4a142",
-      //   "#f44242",
-      // ]);
-      .range([
-        "#8e44ad",
-        "#4242f4",
-        "#42c5f4",
-        // "#42f4ce",
-        "#42f456",
-        // "#adf442",
-        "#f4e242",
-        "#f4a142",
-        "#f44242"
-      ]);
+    const z = d3.scaleOrdinal().range([
+      "#8e44ad",
+      "#4242f4",
+      "#42c5f4",
+      // "#42f4ce",
+      "#42f456",
+      // "#adf442",
+      "#f4e242",
+      "#f4a142",
+      "#f44242"
+    ]);
     x.domain(data.map(d => String(d.angle)));
     // xGroup.domain(columns.map((d) => d));
     y.domain([
@@ -120,13 +84,10 @@ export function Chart(props: ChartPropTypes) {
     const stackGen: d3.Stack<any, DataType, string> = d3
       .stack()
       .keys(columns.slice(1));
-    // const arcVal: d3.Arc<SVGPathElement, d3.DefaultArcObject> = d3 // d3.DefaultArcObject
     const arcVal: d3.Arc<SVGPathElement, d3.DefaultArcObject> = d3 // d3.DefaultArcObject
       .arc()
       .innerRadius((d: any) => Number(y(d[0])))
       .outerRadius((d: any) => Number(y(d[1])))
-      // .innerRadius((d) => Number(y(d[0])))
-      // .outerRadius((d) => Number(y(d[1])))
       // @ts-ignore
       .startAngle(d => Number(x(d.data.angle)))
       // .startAngle((d) => x(String(d.startAngle)) || 0)
@@ -187,24 +148,6 @@ export function Chart(props: ChartPropTypes) {
       .text(d => d.angle)
       .style("fill", "white")
       .style("font-size", 14);
-    // g.selectAll(".axis")
-    //   .data(d3.range(angle.domain()[1]))
-    //   .enter()
-    //   .append("g")
-    //   .attr("class", "axis")
-    //   .attr("transform", (d) => `rotate(${(angle(d) * 180) / Math.PI})`)
-    //   .call(
-    //     d3
-    //       // @ts-ignore
-    //       .axisLeft()
-    //       .ticks(0)    //<-- x elininare il tick 0 GD
-    //       .scale(radius.copy().range([-innerRadius, -(outerRadius + 10)]))
-    //       // .scale(radius2.toString())
-    //       //const radius = d3.scaleLinear().range([innerRadius, outerRadius]);
-    //       // .scale(radius),
-    //       // .scale(radius.copy().range([-20, -(174.16666666666669 + 10)])),
-    //       // .scale(radius.copy().range([-20, -(174.16666666666669 + 10)])),
-    //   );
     const yAxis = g.append("g").attr("text-anchor", "middle");
     const yTick = yAxis
       .selectAll("g")
@@ -233,10 +176,6 @@ export function Chart(props: ChartPropTypes) {
       .append("g")
       .attr(
         "transform",
-        // (d, i) =>
-        //   `translate(${outerRadius + 45 + legendGap / 2},${
-        //     -outerRadius + 40 + (i - (columns.length - 1) / 2) * 20
-        //   })`,
         (d, i) =>
           `translate(${outerRadius + 35 + legendGap / 2},${-outerRadius +
             -20 +

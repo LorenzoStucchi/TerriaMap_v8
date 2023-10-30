@@ -2,13 +2,11 @@ import React, { useState, useEffect } from "react";
 import Rosavento from "./Rosavento";
 import { data as datadefault } from "./data_zero";
 
-// const RosaventoContainer = ({ idpunto = 1, livello = 1 }) => {
-// const RosaventoContainer = (props: { catalogItem: any; feature: { _data: { id: any; properties: { id_cella: any; }; }; }; }) => {
 const RosaventoContainer = (props: any) => {
-  console.log("RosaventoContainer");
-  console.log(props.catalogItem);
-  console.log(props.feature._data);
-  console.log(props.feature._data.id, props.feature._data.properties.id_cella);
+  // console.log("RosaventoContainer");
+  // console.log(props.catalogItem);
+  // console.log(props.feature._data);
+  // console.log(props.feature._data.id, props.feature._data.properties.id_cella);
   // console.log(props.feature._data.properties.quota, props.feature._data.properties.vento_50)
 
   let numidRosa = Number(props.feature._data.properties.id_cella);
@@ -52,12 +50,7 @@ const RosaventoContainer = (props: any) => {
     numlevel = 5;
     renderOK = true;
   }
-  console.log(
-    "idpunto level nomeCatalogItem",
-    numidRosa,
-    numlevel,
-    catalogItemName
-  );
+  // console.log("idpunto level nomeCatalogItem", numidRosa, numlevel, catalogItemName);
 
   const [datirosa, setdatiRosa] = useState(datadefault);
   const [miakey, setmiakey] = useState(1);
@@ -92,8 +85,6 @@ const RosaventoContainer = (props: any) => {
   }
 
   useEffect(() => {
-    // const numidRosa: number = Number(idRosa)
-    // const numlevel: number = Number(level)
     getRosa(numidRosa, 1, 861273, numlevel) //id valido tra 1-861273
       .then(data => {
         // console.log('resolved:', numidRosa, numlevel, data.chartData[2]);
@@ -104,8 +95,8 @@ const RosaventoContainer = (props: any) => {
       })
       .catch(err => {
         seterrore(true);
-        console.log("err:", err);
-        console.log("errore:", errore.valueOf());
+        // console.log("err:", err);
+        // console.log("errore:", errore.valueOf());
       });
     // console.log('FineuseEffect',idRosa, datirosa.chartData[0])
   }, [numidRosa, numlevel]);
@@ -131,16 +122,6 @@ const RosaventoContainer = (props: any) => {
   }
 
   return renderOutput(renderOK);
-  // <div >
-  //   <h3>miakey:{miakey}</h3>
-  //   {/* <button onClick={LeggiSuccessivo}>LeggiSuccessivo</button>
-  //   <button onClick={setdatidefault}>setdatidefault</button>
-  //   <button onClick={stampadatirosa}>stampadatirosa</button> */}
-  //   <h1>Wind Rose Chart - punto {idRosa} - level {level}</h1>
-  //   {errore.valueOf() && <h4>errore: punto o livello non corretto</h4>}
-
-  //   <Rosavento key={miakey} datirosa={datirosa}/>
-  // </div>
 };
 
 export default RosaventoContainer;

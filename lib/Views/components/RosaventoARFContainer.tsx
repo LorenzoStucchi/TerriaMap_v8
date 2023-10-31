@@ -72,8 +72,9 @@ const RosaventoContainer = (props: any) => {
       throw new Error("livello non valido!");
     }
     // const response = await fetch(`http://localhost:3002/rosa/${idR}?lev=${level}`)
+    // const response = await fetch(`http://kawau.ricerca.lan:5001/rosa/${idR}?lev=${level}`);
     const response = await fetch(
-      `http://kawau.ricerca.lan:5001/rosa/${idR}?lev=${level}`
+      `https://aeolian-api.rse-web.it/rosa/${idR}?lev=${level}`
     );
     if (response.status !== 200) {
       // Lo status nella response dice se l'endpoint esiste davvero.

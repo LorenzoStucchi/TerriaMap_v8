@@ -18,6 +18,24 @@
           "members": [
             {
               "type": "wms",
+              "name": "Velocità media annua del vento onshore a 10 m s.l.t. ",
+              "description": "Velocità media annua del vento onshore alla quota di 10 m s.l.t. espressa in m/s.",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>La velocità del vento è pari a <b>{{vento_10}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=230"
+              }],
+              
+              "layers":"aeolian:griglia_dati_20240221",
+              "id": "eo_speed10_onshore",
+              "styles":"aeolian:speed10_onshore"
+                          
+            },
+            {
+              "type": "wms",
               "name": "Velocità media annua del vento onshore a 50 m s.l.t. ",
               "description": "Velocità media annua del vento onshore alla quota di 50 m s.l.t. espressa in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
@@ -29,7 +47,7 @@
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=230"
               }],
               
-              "layers":"aeolian:griglia_dati_23022023",
+              "layers":"aeolian:griglia_dati_20240221",
               "id": "eo_speed50_onshore",
               "styles":"aeolian:speed50_onshore"
                           
@@ -46,7 +64,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=231"
               }],
-              "layers": "aeolian:griglia_dati_23022023",
+              "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed75_onshore",
               "styles":"aeolian:speed75_onshore"
             },
@@ -62,7 +80,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=232"
               }],
-              "layers": "aeolian:griglia_dati_23022023",
+              "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed100_onshore",
               "styles":"aeolian:speed100_onshore"
             },
@@ -78,7 +96,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=233"
               }],
-              "layers": "aeolian:griglia_dati_23022023",
+              "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed125_onshore",
               "styles":"aeolian:speed125_onshore"
             },
@@ -94,7 +112,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=234"
               }],
-              "layers": "aeolian:griglia_dati_23022023",
+              "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed150_onshore",
               "styles":"aeolian:speed150_onshore"
             }
@@ -104,9 +122,25 @@
           "id": "speed_offshore",
           "type": "group",
           "name": "Velocità Offshore",
-          "description": "Questa raccolta comprende le mappe di velocità media del vento offshore (m/s) alle altezze di 50, 75, 100, 125 e 150 m s.l.m.",
+          "description": "Questa raccolta comprende le mappe di velocità media del vento offshore (m/s) alle altezze di 10, 50, 75, 100, 125 e 150 m s.l.m.",
           "isOpen": false,
           "members": [
+            {
+              "type": "wms",
+              "name": "Velocità media annua del vento offshore a 10 m s.l.m. ",
+              "description": "Velocità media annua del vento offshore alla quota di 10 m s.l.m. espressa in m/s.",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>La velocità del vento è pari a <b>{{vento_10}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=235"
+              }],
+              "layers": "aeolian:griglia_dati_20240221",
+              "id": "eo_speed10_offshore",
+              "styles":"aeolian:speed10_offshore"
+            },
             {
               "type": "wms",
               "name": "Velocità media annua del vento offshore a 50 m s.l.m. ",
@@ -119,7 +153,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=235"
               }],
-              "layers": "aeolian:griglia_dati_23022023",
+              "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed50_offshore",
               "styles":"aeolian:speed50_offshore"
             },
@@ -135,7 +169,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=236"
               }],
-              "layers": "aeolian:griglia_dati_23022023",
+              "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed75_offshore",
               "styles":"aeolian:speed75_offshore"
             },
@@ -151,7 +185,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=237"
               }],
-              "layers": "aeolian:griglia_dati_23022023",
+              "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed100_offshore",
               "styles":"aeolian:speed100_offshore"
             },
@@ -167,7 +201,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=238"
               }],
-              "layers": "aeolian:griglia_dati_23022023",
+              "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed125_offshore",
               "styles":"aeolian:speed125_offshore"
             },
@@ -183,7 +217,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=239"
               }],
-              "layers": "aeolian:griglia_dati_23022023",
+              "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed150_offshore",
               "styles":"aeolian:speed150_offshore"
             }

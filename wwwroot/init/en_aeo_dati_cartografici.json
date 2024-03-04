@@ -11,13 +11,13 @@
             "type": "wms",
             "name": "Regional boundaries",
             "description": "Regional administrative limits selectable in different years. ISTAT data source.",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
-              "template": "<p>Region <b>{{den_reg}}</b> , view year {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=108&anno={{anno}}\">metadata link </a> </p>"
+              "template": "<p>Region <b>{{den_reg}}</b> , view year {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=108&anno={{anno}}\">metadata link </a> </p>"
             },
             "metadataUrls":[{
               "title":"metadata link",
-              "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=108&anno=2022"
+              "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=108&anno=2022"
             }],
             "layers": "new_atlante_integrato:v_regioni_terria",
             "id": "confreg"
@@ -26,13 +26,13 @@
             "type": "wms",
             "name": "Provincial boundaries",
             "description": "Provincial administrative limits selectable in different years. ISTAT data source.",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
-              "template": "<p>Province <b>{{den_uts}}</b> , view year {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno={{anno}}\">metadata link </a> </p>"
+              "template": "<p>Province <b>{{den_uts}}</b> , view year {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno={{anno}}\">metadata link </a> </p>"
             },
             "metadataUrls":[{
               "title":"metadata link",
-              "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno=2022"
+              "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno=2022"
             }],
             //fatto nuova vista e nuovo servizio identici a v_province_terria. Nel nuovo servizio è stato associato un solo stile, perchè le province in atlante integrato ne hanno associati due visto che vengono usate anche per totem.
             "layers": "new_atlante_integrato:v_province_terria_aeolian",
@@ -42,13 +42,13 @@
             "type": "wms",
             "name": "Municipal boundaries",
             "description": "Municipal administrative limits selectable in different years. ISTAT data source.",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
-             "template": "<p>Municipal <b>{{comune}}</b> , view year {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">metadata link </a> </p>"
+             "template": "<p>Municipal <b>{{comune}}</b> , view year {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"https://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">metadata link </a> </p>"
             },
             "metadataUrls":[{
               "title":"metadata link",
-              "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=110&anno=2022"
+              "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=110&anno=2022"
             }],
             "layers": "new_atlante_integrato:v_comuni_terria",
             "id": "confcom"
@@ -58,10 +58,10 @@
 //            "type": "wms",
 //            "name": "Centri abitati",
 //            "description": "Centri abitati. \n\n Località italiane definite dal censimento ISTAT 2011",
-//            "url": "http://gis2.rse-web.it/geoserver/wms",
+//            "url": "https://gis2.rse-web.it/geoserver/wms",
 //            "metadataUrls":[{
 //              "title":"metadata link",
-//              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=151"
+//              "url":"https://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=151"
 //            }],
 //            "layers": "dati_condivisi:localita_11_3857"
 //          },
@@ -80,13 +80,13 @@
             "type": "wms",
             "name": "Bathymetry",
             "description": " Data relating to the average depth of the seabed. \n<br>RSE elaborations of 2018 with reclassification in 5 classes with increasing depth, starting from the data of the European Marine Observation and Data Network (EMODnet):\n https://www.emodnet-bathymetry.eu/metadata-data ",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             //"featureInfoTemplate": {
-            //  "template": "<p>Provincia <b>{{den_uts}}</b> , visualizzazione anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno={{anno}}\">link al metadato </a> </p>"
+            //  "template": "<p>Provincia <b>{{den_uts}}</b> , visualizzazione anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno={{anno}}\">link al metadato </a> </p>"
             //},
             "metadataUrls":[{
               "title":"metadata link",
-              "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=205"
+              "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=205"
             }],
             "layers": "new_atlante_integrato:bati_2018_aeolian",
             "styles":"new_atlante_integrato:bati_2018",
@@ -96,9 +96,9 @@
             "type": "wms",
             "name": "Exclusive Economic Zone",
             "description": " Exclusive economic zone of Italy. \n<br>Data distributed by Flanders Marine Institute https://www.marineregions.org/.",
-            "url": "http://gis2.rse-web.it/geoserver/wms",
+            "url": "https://gis2.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
-              "template": "<p>Province <b>{{den_uts}}</b> , view year {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno={{anno}}\">metadata link </a> </p>"
+              "template": "<p>Province <b>{{den_uts}}</b> , view year {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno={{anno}}\">metadata link </a> </p>"
             },
             "metadataUrls":[{
               "title":"metadata link",

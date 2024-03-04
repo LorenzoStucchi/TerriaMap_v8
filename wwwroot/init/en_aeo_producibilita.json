@@ -19,13 +19,13 @@
               "type": "wms",
               "name": "Specific onshore energy production at 50 m a.g.l.",
               "description": "Specific onshore producibility at 50 m above ground level expressed in MWh/MW. <br> A Riva Calzoni ATB 500.54 wind turbine with a rotor diameter of 54 m and a nominal power of 500 kW has been used to calculate the producibility. ",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_50}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The specific wind energy production is <b>{{prod_50}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=240"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=240"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_prod50_onshore",
@@ -35,13 +35,13 @@
               "type": "wms",
               "name": "Specific onshore energy production at 75 m a.g.l.",
               "description": "Specific onshore energy production at 75 m above ground level expressed in MWh/MW. <br> The map shows for each cell the maximum energy production value among those obtained using the following wind turbines: Leitwind LTW [nominal power: 2 MW], Enercon E92 [nominal power: 2.3 MW], Vestas V90 [nominal power: 2MW] e Vestas V110 [nominal power: 2MW].",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_75}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The specific wind energy production is <b>{{prod_75}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=241"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=241"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_prod75_onshore",
@@ -51,13 +51,13 @@
               "type": "wms",
               "name": "Specific onshore energy production at 100 m a.g.l.",
               "description": "Specific onshore energy production at 75 m above ground level expressed in MWh/MW. <br> The map shows for each cell the maximum energy production value among those obtained using the following wind turbines: Nordex N131 [nominal power: 3.6 MW], Nordex N117 [nominal power: 3.6 MW], Enercon E115 [nominal power: 3 MW], Vestas V117 [nominal power: 3.4 MW] e Vestas V136 [nominal power: 3.4MW].",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The specific wind energy production is <b>{{prod_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=242"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=242"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_prod100_onshore",
@@ -77,13 +77,13 @@
               "type": "wms",
               "name": "Specific offshore energy production at 100 m a.s.l.",
               "description": "Specific offshore energy production at 100 m a.s.l. expressed in MWh/MW. <br> An NREL_Reference wind turbine with a rotor diameter of 155 m and nominal power of 6 MW has been used to calculate the energy production.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The specific wind energy production is <b>{{prod_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=243"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=243"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_prod100_offshore",
@@ -93,13 +93,13 @@
               "type": "wms",
               "name": "Specific offshore energy production at 125 m a.s.l.",
               "description": "Specific offshore energy production at 125 m a.s.l. expressed in MWh/MW. <br> An IEA_10MW_RTW wind turbine with a rotor diameter of 198 m and nominal power of 10 MW has been used to calculate the energy production.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_125}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The specific wind energy production is <b>{{prod_125}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aaeolian_metadati.php?var_id=244"
+                "url":"https://dbeta.rse-web.it/aaeolian_metadati.php?var_id=244"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_prod125_offshore",
@@ -109,13 +109,13 @@
               "type": "wms",
               "name": "Specific offshore energy production at 150 m a.s.l.",
               "description": "Specific offshore energy production at 150 m a.s.l. expressed in MWh/MW. <br> An IEA_15MW_RTW wind turbine with a rotor diameter of 240 m and nominal power of 15 MW has been used to calculate the energy production.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The specific wind energy production is <b>{{prod_150}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The specific wind energy production is <b>{{prod_150}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=245"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=245"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_prod150_offshore",

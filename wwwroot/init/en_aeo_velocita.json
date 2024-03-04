@@ -18,13 +18,13 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 10 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 10 m a.g.l. expressed in m/s",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_10}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_10}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=230"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=230"
               }],
               
               "layers":"aeolian:griglia_dati_20240221",
@@ -36,13 +36,13 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 50 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 50 m a.g.l. expressed in m/s",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=230"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=230"
               }],
               
               "layers":"aeolian:griglia_dati_20240221",
@@ -54,13 +54,13 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 75 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 75 m a.g.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=231"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=231"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed75_onshore",
@@ -70,13 +70,13 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 100 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 100 m a.g.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=232"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=232"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed100_onshore",
@@ -86,13 +86,13 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 125 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 125 m a.g.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_125}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_125}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=233"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=233"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed125_onshore",
@@ -102,13 +102,13 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 150 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 150 m a.g.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_150}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_150}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=234"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=234"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed150_onshore",
@@ -127,13 +127,13 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 10 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 10 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_10}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_10}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=235"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=235"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed10_offshore",
@@ -143,13 +143,13 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 50 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 50 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=235"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=235"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed50_offshore",
@@ -159,13 +159,13 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 75 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 75 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=236"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=236"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed75_offshore",
@@ -175,13 +175,13 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 100 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 100 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
+                "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=237"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=237"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed100_offshore",
@@ -191,13 +191,13 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 125 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 125 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_125}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=238"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=238"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed125_offshore",
@@ -207,13 +207,13 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 150 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 150 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_150}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=239"
+                "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=239"
               }],
               "layers": "aeolian:griglia_dati_20240221",
               "id": "eo_speed150_offshore",

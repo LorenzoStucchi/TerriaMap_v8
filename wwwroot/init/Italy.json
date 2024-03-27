@@ -95,7 +95,7 @@
               },
               {
                 "type": "wms",
-                "name": "Italy - Maritime Spatial Planning DATO MANCANTE ",
+                "name": "Italy - Maritime Spatial Planning   WORK IN PROGRESS ",
                 "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
@@ -111,15 +111,15 @@
           {
             "id": "ItalyNewinstallations",
             "type": "group",
-            "name": "New installations",
-            "description": "New installations queasta raccolta comprende i......",
+            "name": "Floating Offshore Wind  FOW projects",
+            "description": "Floating Offshore Wind  FOW projects description .....",
             "isOpen": false,
             "members": [
               
               {
                 "type": "wms",
-                "name": "DATO MANCANTE Italy - New installations",
-                "description": "Italy new installations. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+                "name": "WORK IN PROGRESS Italy - Floating Offshore Wind  FOW projects",
+                "description": "Italy Floating Offshore Wind  FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 "metadataUrls":[{
@@ -209,9 +209,35 @@
                 }],
                 "layers": "aree_idonee:Unesco2012_poligoni",
                 "id": "italy_unesco"
-              }            
+              }
+              
             ]
-          }
+          },
+          {
+            "id": "italy_workshop",
+            "type": "group",
+            "name": "Italy Labs",
+            "description": "Workshops Information",
+            "isOpen": false,
+            "members": [
+              {
+                "type": "wms",
+                "name": "1st Co-creation workshop",
+                "description": "<p align=\"justify\">ITALY WORKSHOPS.</p><p align=\"justify\">Workshops in Italy</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "featureInfoTemplate": {
+                  "template": "<p>WP1 First round of co-creation workshops – Bari (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Bari&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                },
+    
+                "metadataUrls":[{
+                  "title":"metaddddddata link",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                }],
+                "layers": "marinewind:workshop_italy",
+                "id": "1st_workshop_bari"
+              }
+            ]
+          }           
       ]
     }
   ]

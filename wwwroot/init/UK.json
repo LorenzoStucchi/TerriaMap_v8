@@ -95,7 +95,7 @@
               },
               {
                 "type": "wms",
-                "name": "UK - Maritime Spatial Planning DATO MANCANTE",
+                "name": "UK - Maritime Spatial Planning WORK IN PROGRESS",
                 "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
@@ -111,15 +111,15 @@
           {
             "id": "ukNewinstallations",
             "type": "group",
-            "name": "New installations",
-            "description": "New installations queasta raccolta comprende i......",
+            "name": "Floating Offshore Wind  FOW projects",
+            "description": "Floating Offshore Wind  FOW projects description ....",
             "isOpen": false,
             "members": [
               
               {
                 "type": "wms",
-                "name": "UK - New installations DATO MANCANTE",
-                "description": "uk new installations. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+                "name": "UK - Floating Offshore Wind FOW projects WORK IN PROGRESS",
+                "description": "UK Floating Offshore Wind FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://ows.emodnet-bathymetry.eu/wms/inspire_quad",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 "metadataUrls":[{
@@ -128,6 +128,19 @@
                 }],
                 //"styles":"new_atlante_integrato:linea_24mn",
                 "id": "uk_new_inst"
+              },
+              {
+                "type": "wms",
+                "name": "UK - Floating Offshore Wind Farms",
+                "description": " UK Floating Offshore Wind Farms. \n<br>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "metadataUrls":[{
+                  "title":"metadata link"
+                  //"url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
+                }],
+                "layers": "marinewind:floating offshore wind farms UK",
+                //"styles":"aeolian:linea_blu_2",
+                "id": "uk_floating_offshore_wind_farms"
               }
             ]
           },
@@ -151,7 +164,33 @@
                 "id": "uk_unesco"
               }
             ]
+          },
+          {
+            "id": "uk_workshop",
+            "type": "group",
+            "name": "UK Labs",
+            "description": "Workshops Information",
+            "isOpen": false,
+            "members": [
+              {
+                "type": "wms",
+                "name": "1st Co-creation workshop",
+                "description": "<p align=\"justify\">UK WORKSHOPS.</p><p align=\"justify\">Workshops in UK</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "featureInfoTemplate": {
+                  "template": "<p>WP1 First round of co-creation workshops – Aberdeen (UK)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Aberdeen&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                },
+    
+                "metadataUrls":[{
+                  "title":"metaddddddata link",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                }],
+                "layers": "marinewind:workshop_aberdeen",
+                "id": "1st_workshop_aberdeen"
+              }
+            ]
           }
+
       ]
     }
   ]

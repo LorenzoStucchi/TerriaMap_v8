@@ -43,8 +43,8 @@
           "members": [
             {
               "type": "wms",
-              "name": "Greece - Internal waters limit DATO MANCANTE",
-              "description": "SERVIZIO MANCANTE - MANCA DATO - Greek internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+              "name": "Greece - Internal waters limit  WORK IN PROGRESS",
+              "description": "WORK IN PROGRESS - Greek internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "marinewind:greece_internal_waters",
               "metadataUrls":[{
@@ -95,7 +95,7 @@
               },
               {
                 "type": "wms",
-                "name": "Greece - Maritime Spatial Planning DATO MANCANTE ",
+                "name": "Greece - Maritime Spatial Planning  WORK IN PROGRESS",
                 "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
@@ -111,15 +111,15 @@
           {
             "id": "greeceNewinstallations",
             "type": "group",
-            "name": "New installations",
-            "description": "New installations queasta raccolta comprende i......",
+            "name": "Floating Offshore Wind  FOW projects",
+            "description": "Floating Offshore Wind  FOW projects description ....",
             "isOpen": false,
             "members": [
               
               {
                 "type": "wms",
-                "name": "DATO MANCANTE Greece - New installations",
-                "description": "Greece new installations. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+                "name": "WORK IN PROGRESS Greece - Floating Offshore Wind  FOW projects",
+                "description": "Greece Floating Offshore Wind  FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 "metadataUrls":[{
@@ -140,8 +140,8 @@
             "members": [
               {
                 "type": "wms",
-                "name": "DATO MANCANTE Greece - Important Bird Areas (IBA)",
-                "description": "<p align=\"justify\">SERVIZIO MANCANTE .... DATO MANCANTE Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n which are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
+                "name": "WORK IN PROGRESS  Greece - Important Bird Areas (IBA)",
+                "description": "<p align=\"justify\">WORK IN PROGRESS Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n which are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"metadata link",
@@ -149,6 +149,31 @@
                 }],
                 "layers": "greece_iba",
                 "id": "greece_iba"
+              }
+            ]
+          },
+          {
+            "id": "greece_workshop",
+            "type": "group",
+            "name": "Greece Labs",
+            "description": "Workshops Information",
+            "isOpen": false,
+            "members": [
+              {
+                "type": "wms",
+                "name": "1st Co-creation workshop",
+                "description": "<p align=\"justify\">Greece WORKSHOPS.</p><p align=\"justify\">Workshops in Greece</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "featureInfoTemplate": {
+                  "template": "<p>WP1 First round of co-creation workshops – Athens (Greece)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Athens&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                },
+    
+                "metadataUrls":[{
+                  "title":"metaddddddata link",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                }],
+                "layers": "marinewind:workshop_athens",
+                "id": "1st_workshop_athens"
               }
             ]
           }

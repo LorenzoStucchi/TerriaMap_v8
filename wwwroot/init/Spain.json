@@ -95,7 +95,7 @@
               },
               {
                 "type": "wms",
-                "name": "Spain - Maritime Spatial Planning DATO MANCANTE",
+                "name": "Spain - Maritime Spatial Planning  WORK IN PROGRESS",
                 "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
@@ -111,23 +111,22 @@
           {
             "id": "spainNewinstallations",
             "type": "group",
-            "name": "New installations",
-            "description": "New installations queasta raccolta comprende i......",
+            "name": "Floating Offshore Wind  FOW projects",
+            "description": "Floating Offshore Wind  FOW projects description ......",
             "isOpen": false,
             "members": [
-              
+ 
               {
                 "type": "wms",
-                "name": "Spain - New installations DATO MANCANTE",
-                "description": "Spain new installations. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
-                //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
+                "name": "Spain - High Potential Offshore Wind  Zones",
+                "description": "<p align=\"justify\">Map of High Potential Offshore Wind  Zones. Description .... WORK IN PROGRESS",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 }],
-                "styles":"new_atlante_integrato:linea_24mn",
-                "id": "spain_new_inst"
+                "layers": "marinewind:spain_high_potential_offshore_wind_zones",
+                "id": "spain_high_potential_offshore_zind_zones"
               }
             ]
           },
@@ -151,7 +150,33 @@
                 "id": "spain_unesco"
               }
             ]
+          },
+          {
+            "id": "spain_workshop",
+            "type": "group",
+            "name": "Spain Labs",
+            "description": "Workshops Information",
+            "isOpen": false,
+            "members": [
+              {
+                "type": "wms",
+                "name": "1st Co-creation workshop",
+                "description": "<p align=\"justify\">Spain WORKSHOPS.</p><p align=\"justify\">Workshops in Spain</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "featureInfoTemplate": {
+                  "template": "<p>WP1 First round of co-creation workshops – Empordà (Spain)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Empordà&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                },
+    
+                "metadataUrls":[{
+                  "title":"metaddddddata link",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                }],
+                "layers": "marinewind:workshop_spain",
+                "id": "workshop1"
+              }
+            ]
           }
+
       ]
     }
   ]

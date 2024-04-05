@@ -846,8 +846,8 @@
               "members": [
                 {
                   "type": "wms",
-                  "name": "Depth of areas with homogeneous temperature of 70° C (m)",
-                  "description": "Depth map of areas where a temperature of 70 °C is found, considering a maximum depth of 5000 m. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p> ",
+                  "name": "Depth of areas with homogeneous temperature of 70° C - Analysis up to 5000 m",
+                  "description": "Depth map of areas where a temperature of 70 °C is found, considering a maximum depth of 5000 m*.<br> <i>* For Sardinia region, the maximum depth of investigation is 2000 m. <br> </i> Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p> ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -871,8 +871,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Depth of areas with homogeneous temperature of 120° C (m)",
-                  "description": "Depth map of areas where a temperature of 120 °C is found, considering a maximum depth of 5000 m. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p> ",
+                  "name": "Depth of areas with homogeneous temperature of 120° C - Analysis up to 5000 m",
+                  "description": "Depth map of areas where a temperature of 120 °C is found, considering a maximum depth of 5000 m*.<br> <i>* For Sardinia region, the maximum depth of investigation is 2000 m. <br> </i> Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p> ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -883,8 +883,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Depth of areas with homogeneous temperature of 140° C (metri)",
-                  "description": "Depth map of areas where a temperature of 140 °C is found, considering a maximum depth of 5000 m. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p> ",
+                  "name": "Depth of areas with homogeneous temperature of 140° C - Analysis up to 5000 m",
+                  "description": "Depth map of areas where a temperature of 140 °C is found, considering a maximum depth of 5000 m*.<br> <i>* For Sardinia region, the maximum depth of investigation is 2000 m. <br> </i> Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p> ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",

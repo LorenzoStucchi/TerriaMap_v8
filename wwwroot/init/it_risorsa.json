@@ -845,8 +845,8 @@
               "members": [
                 {
                   "type": "wms",
-                  "name": "Profondità delle aree a temperatura omogenea di 70° C (m)",
-                  "description": "Mappa della profondità delle aree in cui si riscontra una temperatura pari a 70 °C, considerando una profondità massima di 5000 m. Mappa elaborata da RSE S.p.A. partendo dai dati presenti nell'Inventario delle Risorse Geotermiche Nazionali (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) e nell'archivio del progetto VIGOR (http://www.vigor-geotermia.it/). </p> ",
+                  "name": "Profondità delle aree a temperatura omogenea di 70° C - analisi fino a 5000 m",
+                  "description": "Mappa della profondità delle aree in cui si riscontra una temperatura pari a 70 °C, considerando una profondità massima di 5000 m*.<br> <i>*Per la regione Sardegna la profondità massima di indagine è pari a 2000 m.</i> <br> Mappa elaborata da RSE S.p.A. partendo dai dati presenti nell'Inventario delle Risorse Geotermiche Nazionali (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) e nell'archivio del progetto VIGOR (http://www.vigor-geotermia.it/). </p> ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -870,8 +870,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Profondità delle aree a temperatura omogenea di 120° C (m)",
-                  "description": "Mappa della profondità delle aree in cui si riscontra una temperatura pari a 120 °C, considerando una profondità massima di 5000 m. Mappa elaborata da RSE S.p.A. partendo dai dati presenti nell'Inventario delle Risorse Geotermiche Nazionali (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) e nell'archivio del progetto VIGOR (http://www.vigor-geotermia.it/). </p> ",
+                  "name": "Profondità delle aree a temperatura omogenea di 120° C - analisi fino a 5000 m",
+                  "description": "Mappa della profondità delle aree in cui si riscontra una temperatura pari a 120 °C, considerando una profondità massima di 5000 m*.<br> <i>*Per la regione Sardegna la profondità massima di indagine è pari a 2000 m.</i> <br> Mappa elaborata da RSE S.p.A. partendo dai dati presenti nell'Inventario delle Risorse Geotermiche Nazionali (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) e nell'archivio del progetto VIGOR (http://www.vigor-geotermia.it/). </p> ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",
@@ -882,8 +882,8 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Profondità delle aree a temperatura omogenea di 140° C (metri)",
-                  "description": "Mappa della profondità delle aree in cui si riscontra una temperatura pari a 140 °C, considerando una profondità massima di 5000 m. Mappa elaborata da RSE S.p.A. partendo dai dati presenti nell'Inventario delle Risorse Geotermiche Nazionali (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) e nell'archivio del progetto VIGOR (http://www.vigor-geotermia.it/). </p> ",
+                  "name": "Profondità delle aree a temperatura omogenea di 140° C - analisi fino a 5000 m",
+                  "description": "Mappa della profondità delle aree in cui si riscontra una temperatura pari a 140 °C, considerando una profondità massima di 5000 m*.<br> <i>*Per la regione Sardegna la profondità massima di indagine è pari a 2000 m.</i> <br> Mappa elaborata da RSE S.p.A. partendo dai dati presenti nell'Inventario delle Risorse Geotermiche Nazionali (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) e nell'archivio del progetto VIGOR (http://www.vigor-geotermia.it/). </p> ",
                   "url": "https://gis2.rse-web.it/geoserver/wms",
                   "metadataUrls":[{
                     "title":"link metadato",

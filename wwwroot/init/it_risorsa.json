@@ -756,42 +756,6 @@
           "members": [
             {
               "type": "wms",
-              "name": "Temperatura alla profondità di 1000 m (°C)",
-              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 1000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:mappa_T_1000_mt_clip3857",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=142"
-              }],
-              "id": "T_1000"
-            },
-            {
-              "type": "wms",
-              "name": "Temperatura alla profondità di 2000 m (°C)",
-              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
-              }],
-              "id": "T_2000"
-            },
-            {
-              "type": "wms",
-              "name": "Temperatura alla profondità di 3000 m (°C)",
-              "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 3000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
-              }],
-              "id": "T_3000"
-            },
-            {
-              "type": "wms",
               "name": "Flusso di calore (mW/m\u00b2)",
               "description": "Mappa del flusso di calore superficiale espressa in mW/m<sup>2</sup> elaborata da RSE S.p.A. utilizzando i dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
@@ -828,17 +792,107 @@
               "styles":"zon_geo_t1000_mean"
             },
             {
-              "type": "wms",
-              "name": "Profondità delle aree a temperatura omogenea di 120° C (metri)",
-              "description": "Mappa delle profondità relative alla temperatura di 120° C. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=224"
-              }],
-              "layers": "new_atlante_integrato:mappa_profondita_120C_fino_3000m",
-              "styles":"new_atlante_integrato:mappa_profond_120C",
-              "id": "aree_geot_120"
+              "id": "p_omogenee",
+              "type": "group",
+              "name": "Temperature a Profondità omogenee",
+              "description": "Questa raccolta comprende informazioni sulle temperature a profondità omogenea. \n\n",
+              "isOpen": false,
+              "members": [
+              {
+                "type": "wms",
+                "name": "Temperatura alla profondità di 1000 m (°C)",
+                "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 1000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "layers": "atlante_integrato:mappa_T_1000_mt_clip3857",
+                "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=142"
+                }],
+                "id": "T_1000"
+              },
+              {
+                "type": "wms",
+                "name": "Temperatura alla profondità di 2000 m (°C)",
+                "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
+                "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
+                }],
+                "id": "T_2000"
+              },
+              {
+                "type": "wms",
+                "name": "Temperatura alla profondità di 3000 m (°C)",
+                "description": "Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 3000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Informazioni aggiuntive: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geotermia -- Stoccaggio Gas</a>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
+                "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
+                }],
+                "id": "T_3000"
+              }
+              ]
+            },
+            {
+              "id": "t_omogenee",
+              "type": "group",
+              "name": "Profondità a Temperature omogenee",
+              "description": "Questa raccolta comprende informazioni sulle profondità a temperatura omogenea. \n\n",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Profondità delle aree a temperatura omogenea di 70° C (m)",
+                  "description": "Mappa della profondità delle aree in cui si riscontra una temperatura pari a 70 °C, considerando una profondità massima di 5000 m. Mappa elaborata da RSE S.p.A. partendo dai dati presenti nell'Inventario delle Risorse Geotermiche Nazionali (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) e nell'archivio del progetto VIGOR (http://www.vigor-geotermia.it/). </p> ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=282"
+                  }],
+                  "layers": "new_atlante_integrato:AE_mappa_T70",
+                  "id": "aree_geot_70_5000"
+                },
+                {
+                  "type": "wms",
+                  "name": "Profondità delle aree a temperatura omogenea di 120° C (metri)",
+                  "description": "Mappa delle profondità relative alla temperatura di 120° C. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=224"
+                  }],
+                  "layers": "new_atlante_integrato:mappa_profondita_120C_fino_3000m",
+                  "styles":"new_atlante_integrato:mappa_profond_120C",
+                  "id": "aree_geot_120"
+                },
+                {
+                  "type": "wms",
+                  "name": "Profondità delle aree a temperatura omogenea di 120° C (m)",
+                  "description": "Mappa della profondità delle aree in cui si riscontra una temperatura pari a 120 °C, considerando una profondità massima di 5000 m. Mappa elaborata da RSE S.p.A. partendo dai dati presenti nell'Inventario delle Risorse Geotermiche Nazionali (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) e nell'archivio del progetto VIGOR (http://www.vigor-geotermia.it/). </p> ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=283"
+                  }],
+                  "layers": "new_atlante_integrato:AE_mappa_T120_5000",
+                  "id": "aree_geot_120_5000"
+                },
+                {
+                  "type": "wms",
+                  "name": "Profondità delle aree a temperatura omogenea di 140° C (metri)",
+                  "description": "Mappa della profondità delle aree in cui si riscontra una temperatura pari a 140 °C, considerando una profondità massima di 5000 m. Mappa elaborata da RSE S.p.A. partendo dai dati presenti nell'Inventario delle Risorse Geotermiche Nazionali (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) e nell'archivio del progetto VIGOR (http://www.vigor-geotermia.it/). </p> ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=284"
+                  }],
+                  "layers": "new_atlante_integrato:AE_mappa_T140_5000",
+                  "id": "aree_geot_140_5000"
+                }
+              ]
             },
             {
               "type": "wms",
@@ -855,6 +909,30 @@
               "layers": "new_atlante_integrato:comuni_potenziale_120c",
               "styles":"new_atlante_integrato:potenziale_120c",
               "id": "Potenziale_Geoter"
+            },
+            {
+              "type": "wms",
+              "name": "Conducibilità termica 0-70m (W/m/K) - punti",
+              "description": "Conducibilità termica media del terreno, riferita ai primi 70 m di profondità, in condizioni dry (assenza di falda). È stata calcolata come media pesata dei valori di conducibilità termica delle litologie presenti nel sottosuolo in corrispondenza del sito indicato, in base agli spessori di ogni livello stratigrafico. Il valore di conducibilità termica assegnato a ogni litologia è stato desunto da dati di letteratura. La stratigrafia a cui si fa riferimento è disponibile nell'Archivio nazionale delle indagini nel sottosuolo - ISPRA. Elaborazione dei dati ad opera di RSE S.p.A. - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=285"
+              }],
+              "layers": "new_atlante_integrato:be_lambda_puntuale_na",
+              "id": "conducibilit_pti"
+            },
+            {
+              "type": "wms",
+              "name": "Conducibilità termica 0-70m (W/m/K) - aree ",
+              "description": "Conducibilità termica media del terreno, riferita ai primi 70 m di profondità, in condizioni dry (assenza di falda). È stata calcolata interpolando i valori puntuali di conducibilità termica media nei primi 70 m di sottosuolo. Elaborazione dei dati ad opera di RSE S.p.A. </p> ",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=286"
+              }],
+              "layers": "new_atlante_integrato:BE_lambda_areale_NA",
+              "id": "conducibilit_aree"
             }
           ]
         }

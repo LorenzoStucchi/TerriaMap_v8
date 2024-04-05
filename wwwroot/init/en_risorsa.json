@@ -757,42 +757,6 @@
           "members": [
             {
               "type": "wms",
-              "name": "Temperature at 1000 m depth (°C)",
-              "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 1000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:mappa_T_1000_mt_clip3857",
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=142"
-              }],
-              "id": "T_1000"
-            },
-            {
-              "type": "wms",
-              "name": "Temperature at 2000 m depth (°C)",
-              "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 2000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
-              }],
-              "id": "T_2000"
-            },
-            {
-              "type": "wms",
-              "name": "Temperature at 3000 m depth (°C)",
-              "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 3000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
-              "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
-              }],
-              "id": "T_3000"
-            },
-            {
-              "type": "wms",
               "name": "Heat flow (mW/m\u00b2)",
               "description": "Superficial heat flux map expressed in mW/m<sup>2</sup> prepared by RSE S.p.A. using the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
               "url": "https://gis2.rse-web.it/geoserver/wms",
@@ -829,18 +793,109 @@
               "styles":"zon_geo_t1000_mean"
             },
             {
-              "type": "wms",
-              "name": "Depth of areas with homogeneous temperature of 120° C (meters)",
-              "description": "Depth maps related to the temperature of 120° C. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=224"
-              }],
-              "layers": "new_atlante_integrato:mappa_profondita_120C_fino_3000m",
-              "styles":"new_atlante_integrato:mappa_profond_120C",
-              "id": "aree_geot_120"
+              "id": "p_omogenee",
+              "type": "group",
+              "name": "temperature at homogeneous depth",
+              "description": "This collection includes information about the temperature at homogeneous depth. \n\n",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Temperature at 1000 m depth (°C)",
+                  "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 1000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "atlante_integrato:mappa_T_1000_mt_clip3857",
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=142"
+                  }],
+                  "id": "T_1000"
+                },
+                {
+                  "type": "wms",
+                  "name": "Temperature at 2000 m depth (°C)",
+                  "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 2000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
+                  }],
+                  "id": "T_2000"
+                },
+                {
+                  "type": "wms",
+                  "name": "Temperature at 3000 m depth (°C)",
+                  "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 3000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a>",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
+                  }],
+                  "id": "T_3000"
+                }
+              ]
             },
+            {
+              "id": "t_omogenee",
+              "type": "group",
+              "name": "depth at homogeneous temperatures",
+              "description": "This collection includes information about the depth at homogeneous temperatures. \n\n",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Depth of areas with homogeneous temperature of 70° C (m)",
+                  "description": "Depth map of areas where a temperature of 70 °C is found, considering a maximum depth of 5000 m. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p> ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=282"
+                  }],
+                  "layers": "new_atlante_integrato:AE_mappa_T70",
+                  "id": "aree_geot_70_5000"
+                },
+                {
+                  "type": "wms",
+                  "name": "Depth of areas with homogeneous temperature of 120° C (meters)",
+                  "description": "Depth maps related to the temperature of 120° C. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=224"
+                  }],
+                  "layers": "new_atlante_integrato:mappa_profondita_120C_fino_3000m",
+                  "styles":"new_atlante_integrato:mappa_profond_120C",
+                  "id": "aree_geot_120"
+                },
+                {
+                  "type": "wms",
+                  "name": "Depth of areas with homogeneous temperature of 120° C (m)",
+                  "description": "Depth map of areas where a temperature of 120 °C is found, considering a maximum depth of 5000 m. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p> ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=283"
+                  }],
+                  "layers": "new_atlante_integrato:AE_mappa_T120_5000",
+                  "id": "aree_geot_120_5000"
+                },
+                {
+                  "type": "wms",
+                  "name": "Depth of areas with homogeneous temperature of 140° C (metri)",
+                  "description": "Depth map of areas where a temperature of 140 °C is found, considering a maximum depth of 5000 m. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p> ",
+                  "url": "https://gis2.rse-web.it/geoserver/wms",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=284"
+                  }],
+                  "layers": "new_atlante_integrato:AE_mappa_T140_5000",
+                  "id": "aree_geot_140_5000"
+                }
+              ]
+            },
+
             {
               "type": "wms",
               "name": "Producible geothermal potential (MWh/year)",
@@ -856,6 +911,30 @@
               "layers": "new_atlante_integrato:comuni_potenziale_120c",
               "styles":"new_atlante_integrato:potenziale_120c",
               "id": "Potenziale_Geoter"
+            },
+            {
+              "type": "wms",
+              "name": "Thermal conductivity 0-70m (W/m/K) - points",
+              "description": "Average thermal conductivity of the soil, referring to the first 70 m of depth, in dry conditions (absence of water table). It was calculated as a weighted average of the thermal conductivity values of the lithologies present in the subsoil at the indicated site, based on the thicknesses of each stratigraphic level. The thermal conductivity value assigned to each lithology was taken from literature data. The stratigraphy referred to is available in the National Archive of Subsoil Investigations - ISPRA. Data processing by RSE S.p.A. - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=285"
+              }],
+              "layers": "new_atlante_integrato:be_lambda_puntuale_na",
+              "id": "conducibilit_pti"
+            },
+            {
+              "type": "wms",
+              "name": "Thermal conductivity 0-70m (W/m/K) - areas ",
+              "description": "Average thermal conductivity of the soil, referring to the first 70 m of depth, in dry conditions (absence of water table). It was calculated by interpolating the specific values of average thermal conductivity in the first 70 m of subsoil. Data processing by RSE S.p.A. </p> ",
+              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=286"
+              }],
+              "layers": "new_atlante_integrato:BE_lambda_areale_NA",
+              "id": "conducibilit_aree"
             }
           ]
         }

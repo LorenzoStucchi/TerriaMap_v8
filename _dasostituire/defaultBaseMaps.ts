@@ -105,7 +105,8 @@ export function defaultBaseMaps(terria: Terria): any[] {
       type: "open-street-map",
       url: "https://basemaps.cartocdn.com/light_all/",
       attribution:
-        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto/'>CARTO</a>",
+        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'> CARTO </a>, <a href='https://www.rse-web.it/cookie/'>  |  RSE Cookies</a> , <a href='https://www.rse-web.it/privacy/'>  |  RSE Privacy</a>",
+        /* "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto/'>CARTO</a>", */
       subdomains: ["a", "b", "c", "d"],
       opacity: 1.0
     },
@@ -119,7 +120,7 @@ export function defaultBaseMaps(terria: Terria): any[] {
       type: "open-street-map",
       url: "https://basemaps.cartocdn.com/dark_all/",
       attribution:
-        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto/'>CARTO</a>",
+      "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'> CARTO </a>, <a href='https://www.rse-web.it/cookie/'>  |  RSE Cookies</a> , <a href='https://www.rse-web.it/privacy/'>  |  RSE Privacy</a>",
       subdomains: ["a", "b", "c", "d"],
       opacity: 1.0
     },

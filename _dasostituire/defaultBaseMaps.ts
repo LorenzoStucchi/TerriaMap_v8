@@ -85,7 +85,7 @@ export function defaultBaseMaps(terria: Terria): any[] {
   //   image: "build/TerriaJS/images/natural-earth.png"
   // });
 
-  // baseMaps.push({
+  //commento baseMaps.push({
   //   item: {
   //     id: "basemap-black-marble",
   //     name: "NASA Black Marble",

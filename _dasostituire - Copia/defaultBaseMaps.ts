@@ -15,29 +15,29 @@ export function defaultBaseMaps(terria: Terria): any[] {
         mapStyle: "AerialWithLabelsOnDemand",
         opacity: 1.0
       },
-      image: "images/basemaps/bing-aerial-label.png"
+      image: "build/TerriaJS/images/bing-aerial-labels.png"
     });
 
-    //baseMaps.push({
-    // item: {
-      //  id: "basemap-bing-aerial",
-       // name: "Bing Maps Aerial",
-       // type: "bing-maps",
-      // mapStyle: "Aerial",
-       // opacity: 1.0
-   //   },
-    //  image: "build/TerriaJS/images/bing-aerial.png"
-   // });
-   // baseMaps.push({
-    //  item: {
-     //   id: "basemap-bing-roads",
-     //   name: "Bing Maps Roads",
-     //   type: "bing-maps",
-     //   mapStyle: "RoadOnDemand",
-     //   opacity: 1.0
-     // },
-     // image: "build/TerriaJS/images/bing-maps-roads.png"
-   // });
+    baseMaps.push({
+      item: {
+        id: "basemap-bing-aerial",
+        name: "Bing Maps Aerial",
+        type: "bing-maps",
+        mapStyle: "Aerial",
+        opacity: 1.0
+      },
+      image: "build/TerriaJS/images/bing-aerial.png"
+    });
+    baseMaps.push({
+      item: {
+        id: "basemap-bing-roads",
+        name: "Bing Maps Roads",
+        type: "bing-maps",
+        mapStyle: "RoadOnDemand",
+        opacity: 1.0
+      },
+      image: "build/TerriaJS/images/bing-maps-roads.png"
+    });
   } else if (terria.configParameters.useCesiumIonBingImagery === true) {
     baseMaps.push({
       item: {
@@ -47,7 +47,7 @@ export function defaultBaseMaps(terria: Terria): any[] {
         ionAssetId: 3,
         opacity: 1.0
       },
-      image: "images/basemaps/bing-aerial-label.png"
+      image: "build/TerriaJS/images/bing-aerial-labels.png"
     });
 
     baseMaps.push({
@@ -105,8 +105,7 @@ export function defaultBaseMaps(terria: Terria): any[] {
       type: "open-street-map",
       url: "https://basemaps.cartocdn.com/light_all/",
       attribution:
-        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'> CARTO </a>, <a href='https://www.rse-web.it/cookie/'>  |  RSE Cookies</a> , <a href='https://www.rse-web.it/privacy/'>  |  RSE Privacy</a>",
-        /* "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto/'>CARTO</a>", */
+        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto/'>CARTO</a>",
       subdomains: ["a", "b", "c", "d"],
       opacity: 1.0
     },
@@ -120,7 +119,7 @@ export function defaultBaseMaps(terria: Terria): any[] {
       type: "open-street-map",
       url: "https://basemaps.cartocdn.com/dark_all/",
       attribution:
-      "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'> CARTO </a>, <a href='https://www.rse-web.it/cookie/'>  |  RSE Cookies</a> , <a href='https://www.rse-web.it/privacy/'>  |  RSE Privacy</a>",
+        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto/'>CARTO</a>",
       subdomains: ["a", "b", "c", "d"],
       opacity: 1.0
     },

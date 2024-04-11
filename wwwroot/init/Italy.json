@@ -118,7 +118,7 @@
               
               {
                 "type": "wms",
-                "name": "WORK IN PROGRESS Italy - Floating Offshore Wind  FOW projects",
+                "name": "Floating Offshore Wind  FOW projects",
                 "description": "Italy Floating Offshore Wind  FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
@@ -126,7 +126,19 @@
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
                 }],
-                "styles":"new_atlante_integrato:linea_24mn",
+                "layers": "marinewind:floating_offshore_wind_farms_IT",
+                "id": "italy_new_inst"
+              },
+              {
+                "type": "wms",
+                "name": "Italy - Floating Offshore Wind Farms",
+                "description": "<p align=\"justify\">Italy Floating Offshore Wind Farms - FOW projects   -   DESCRIPTION: WORK IN PROGRESS",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=120"
+                }],
+                "layers": "marinewind:floating_offshore_wind_farms_IT",
                 "id": "italy_new_inst"
               }
             ]

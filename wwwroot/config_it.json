@@ -1,5 +1,5 @@
 {
-  /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
+  /* aNames of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": [
     //"it_aeo_cartografia",
     "it_aeo_dati_cartografici",

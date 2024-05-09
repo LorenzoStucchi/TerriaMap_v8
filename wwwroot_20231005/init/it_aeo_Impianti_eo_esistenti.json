@@ -1,0 +1,28 @@
+{
+  "catalog": [
+    {
+      "id": "impiantieoesistenti",
+      "type": "group",
+      "name": "Aerogeneratori esistenti",
+      "description": "Questa raccolta comprende informazioni relative alla posizione e alla classe di potenza degli aerogeneratori di potenza superiore a 200 kW installati sul territorio nazionale.",
+      "isOpen": false,
+      "members": [
+        {
+          "type": "wms",
+          "name": "Database degli aerogeneratori",
+          "description": "Mappa degli aerogeneratori presenti sul territorio nazionale (anno di riferimento 2019), derivante da un' elaborazione di Ricerca sul Sistema Energetico - RSE S.p.A. a partire da dati GSE , The Wind Power e da immagini satellitari Sentinel-2. A ciascun aerogeneratore è associata una classe di potenza.",
+          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "featureInfoTemplate": {
+            "template": "<p>Classe di potenza <b>{{classe_pot}}</b></p>"
+          },
+          "metadataUrls":[{
+            "title":"link metadato",
+            "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=229"
+          }],
+          "layers": "new_atlante_integrato:aerogeneratori",
+          "id": "aerogeneratori_2019"
+        }
+       ]
+    }
+  ]
+}

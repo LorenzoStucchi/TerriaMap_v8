@@ -1,0 +1,73 @@
+{
+  "title": "Items",
+  "description": "List of items or groups",
+  "type": "array",
+  "format": "tabs",
+  "items": {
+    "type": "object",
+    "title": "Item",
+    "headerTemplate": "{{ self.name }}",
+    "allOf": [
+      {
+        "$ref": "CatalogMember.json"
+      }
+    ],
+    "required": [
+      "name",
+      "type"
+    ],
+    "oneOf": [
+      {
+        "$ref": "CatalogGroup.json"
+      },
+      {
+        "$ref": "WebMapServiceCatalogItem.json"
+      },
+      {
+        "$ref": "WebMapServiceCatalogGroup.json"
+      },
+      {
+        "$ref": "CkanCatalogGroup.json"
+      },
+      {
+        "$ref": "SocrataCatalogGroup.json"
+      },
+      {
+        "$ref": "CsvCatalogItem.json"
+      },
+      {
+        "$ref": "WebFeatureServiceCatalogItem.json"
+      },
+      {
+        "$ref": "WebFeatureServiceCatalogGroup.json"
+      },
+      {
+        "$ref": "KmlCatalogItem.json"
+      },
+      {
+        "$ref": "GeoJsonCatalogItem.json"
+      },
+      {
+        "$ref": "CzmlCatalogItem.json"
+      },
+      {
+        "$ref": "GpxCatalogItem.json"
+      },
+      {
+        "$ref": "OgrCatalogItem.json"
+      },
+      {
+        "$ref": "ArcGisCatalogItem.json"
+      },
+      {
+        "$ref": "ArcGisCatalogGroup.json"
+      },
+      {
+        "$ref": "AbsIttCatalogItem.json"
+      },
+      {
+        "$ref": "AbsIttCatalogGroup.json"
+      }
+    ]
+  }
+}

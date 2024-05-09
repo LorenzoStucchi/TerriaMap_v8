@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Calculation of producibility</title>
+	<link rel="stylesheet" href="css/screen.css">
+ 	<script src="lib/jquery.js"></script>
+	<script src="dist/jquery.validate.js"></script>
+
+<link rel="stylesheet" href="https://atlanteeolico.rse-web.it/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://atlanteeolico.rse-web.it/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://atlanteeolico.rse-web.it/bootstrap/3.3.1/css/dropdown-submenu.css">
+<script src="3.3.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript"> var lingua = "en"; </script>
+<script type="text/javascript" src="./pro.js"></script>
+<script type="text/javascript" src="./valid.js"></script>
+<!-- <script type="text/javascript" src="./dizionario.js"></script> -->
+
+
+<style type="text/css">
+	.bs-example{
+		margin: 20px;
+	}	
+	#labAWeibull {
+		margin: 0px;
+	}
+	.mialabel {
+	  display: inline;
+	  padding: .2em .6em .3em;
+	  //font-size: 75%;
+	  font-weight: bold;
+	  line-height: 1;
+	  color: #fff;
+	  text-align: center;
+	  white-space: nowrap;
+	  vertical-align: baseline;
+	  border-radius: .25em;
+	}
+</style>
+
+<!--<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-3419972-15']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script> -->
+	
+    <!-- Matomo -->
+	<script>  var _paq = window._paq = window._paq || []; 
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */ 
+	_paq.push(['trackPageView']); 
+	_paq.push(['enableLinkTracking']); 
+	(function() { 
+    var u="https://rseweb.matomo.cloud/"; 
+    _paq.push(['setTrackerUrl', u+'matomo.php']); 
+    _paq.push(['setSiteId', '11']); 
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.async=true; g.src='//cdn.matomo.cloud/rseweb.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s); 
+	})(); 
+	</script>
+	<!-- End Matomo Code -->
+</head>
+
+<body>
+
+<div class="bs-example">
+	<h2 align="center"><img src="./resources/logoRSEsmall.png" align="left" alt="logo" height="41" width="90"/>Technical economic evaluation of a wind farm</h2>
+	<p><br></p>
+	<h5 align="center">(Result saving soon available)</h5>
+    <p><br></p>
+	<ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#sectionA">Project name</a></li>
+        <li><a data-toggle="tab" href="#sectionB">Wind farm configuration</a></li>
+        <li><a data-toggle="tab" href="#sectionC">Wind Resource Site</a></li>
+        <li><a data-toggle="tab" href="#sectionD">Data summary</a></li>
+        <li><a data-toggle="tab" href="#sectionE">Cost Analysis</a></li>
+        <li><a data-toggle="tab" href="#sectionF">Results</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active">
+            <h3>Name of project</h3>
+			<form class="form-horizontal" role="form" id="formA">
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="NomeProg">Project name</label>
+				  <div class="col-sm-8">
+					<input type="text" class="form-control" id="NomeProg" name="NomeProg" placeholder="Project name" title="Project name" />
+				  </div>
+				</div>
+
+<!-- 				<div class="form-group">    
+				  <label class="control-label col-sm-4" for="Lati">Coordinate sito (Lat Lon):</label>
+				  <div class="col-sm-4">
+					<label class="form-control" id="Lati"> </label>
+				  </div>
+				   <div class="col-sm-4">
+					<label class="form-control" id="Long"> </label>
+				  </div>
+				</div> -->
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Site coordinates</label>
+				  <div class="col-sm-3">
+					<label id="Lati">Lat</label>
+				  </div>
+				  <div class="col-sm-3">
+					<label id="Long">Lon</label>
+				  </div>				  
+				</div>				
+				
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Municipality</label>
+				  <div class="col-sm-8">
+					<label id="Comune"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Province</label>
+				  <div class="col-sm-8">
+					<label id="Provincia"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Region</label>
+				  <div class="col-sm-8">
+					<label id="Regione"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Site elevation m.a.s.l. / Seabed depth [m]</label>
+				  <div class="col-sm-8">
+					<label id="Altitudine"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Average air density at the site [kg/m3]</label>
+				  <div class="col-sm-8">
+					<label id="Densita"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Minimum distance of the site from delivery power network (CP/ST) [km]</label>
+				  <div class="col-sm-8">
+					<label id="DistanzaImp"></label>
+				  </div>				  
+				</div>
+			</form>
+			<ul class="pager">
+				<li class="next"><a href="#sectionB" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+		
+		
+        <div id="sectionB" class="tab-pane fade">
+			<h3>Wind farm configuration</h3>
+ 			<form class="form-horizontal" role="form" id="formB">
+
+				<div class="form-group">
+					<div class="col-sm-4">
+						<div class="dropdown" id="combomacchine"></div>
+					</div>
+					<label class="col-sm-8" id="labAerog" align="center"></label>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-4">
+						<div class="dropdown" id="comboHaerog"></div>
+					</div>
+					<label class="col-sm-8" id="labHaerog" align="center"></label>
+				</div>	
+		
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="NumAgen">Number of wind turbines units of the wind farm:</label>
+				  <div class="col-sm-8">
+					<input onchange="calcPot()" type="text" class="form-control" id="NumAgen" name="NumAgen"	placeholder="Number of wind turbines" title="Number of wind turbines units of the wind farm"/>
+				  </div>
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Overall rated power of the wind farm  [kW]</label>
+				  <div class="col-sm-8">
+					<label id="PotParco"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-4">graph</label>
+				  <div class="col-sm-8">
+					<div id="curpot"></div>
+				  </div>
+				</div>
+				
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionA" data-trigger="tab">&larr; Previous</a></li>
+				<li class="next"><a href="#sectionC" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+
+
+		
+        <div id="sectionC" class="tab-pane fade">
+			<h3>Data related to the wind resource at the plant site</h3>
+
+ 			<form class="form-horizontal" role="form" id="formC">
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="VelMedAnnua" id="labVelMedAnnua">Annual average wind speed [m/s]:</label>
+				  <div class="col-sm-4">
+					<input type="text" class="form-control" id="VelMedAnnua" name="VelMedAnnua" placeholder="Annual average wind speed [m/s]" title="Annual average wind speed [m/s]"/>
+				  </div>
+				  <label class="col-sm-2" id="labVelMedAnnAtl"></label>
+				  <label class="control-label col-sm-2"></label>
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="KWeibull">Shape factor (k) of Weibull distribution:</label>
+				  <div class="col-sm-4">
+					<input type="text" class="form-control" id="KWeibull" name="KWeibull" placeholder="Shape factor (k) of Weibull distribution" title="Shape factor (k) of Weibull distribution"/>
+				  </div>
+				  <label class="col-sm-2" id="labKWeibullAtl"></label>
+				  <label class="control-label col-sm-2"></label>
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Characteristic wind speed (A) of Weibull distribution: </label>
+				  <label class="col-sm-8" id="labAWeibull"></label>
+				</div>
+				
+				<div class="form-group">
+				  <p><br /></p>
+				  <label class="control-label col-sm-2">graph:</label>
+				  <div class="col-sm-10">
+				  	<div id="curweib"></div>
+				  </div>
+				</div>
+
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionB" data-trigger="tab">&larr; Previous</a></li>
+				<li class="next"><a href="#sectionD" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+		
+        <div id="sectionD" class="tab-pane fade">
+            <h3>Wind farm data summary</h3>
+			<form class="form-horizontal" role="form" id="formD">
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Project name</label>
+				  <label class="col-sm-8" id="lrNomeProg">Project name</label>
+				<!-- 					  <div class="col-sm-8">
+					<label class="form-control" id="lrNomeProg">Nome progetto</label>
+				  </div> -->
+				  <!-- <div class="clearfix visible-sm-block"></div> -->
+				</div>
+				  
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Site location of the wind farm</label>
+				  <div class="col-sm-3">
+					<label id="lrComune">Municipality</label>
+				  </div>
+				  <div class="col-sm-3">
+					<label id="lrProvincia">Province</label>
+				  </div>
+				  <div class="col-sm-2">
+					<label id="lrRegione">Region</label>
+				  </div>
+				  <!-- <div class="clearfix visible-sm-block"></div> -->
+				</div>
+				  
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Site coordinates</label>
+				  <div class="col-sm-3">
+					<label id="lrLati">Lat</label>
+				  </div>
+				  <div class="col-sm-3">
+					<label id="lrLong">Lon</label>
+				  </div>				  
+				</div>
+				  
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Average air density at the site</label>
+				  <div class="col-sm-8">
+					<label id="lrDensita">density</label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Minimum distance of the site from delivery power network (CP/ST) </label>
+				  <div class="col-sm-8">
+					<label id="lrDistanzaImp"></label>
+				  </div>				  
+				</div>
+				<p><br></p>	
+				
+				<h4>Features of the wind farm configuration</h4>
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Wind turbine</label>
+				  <div class="col-sm-8">
+					<label id="lrAerogeneratore"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Wind turbine rated power (Pr)</label>
+				  <div class="col-sm-8">
+					<label id="lrPotNom"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Wind turbine rotor diameter</label>
+				  <div class="col-sm-8">
+					<label id="lrDiamRot"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Wind turbine hub height a.t.l.</label>
+				  <div class="col-sm-8">
+					<label id="lrhaerog"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">No. of wind turbine units of the wind farm (N)</label>
+				  <div class="col-sm-8">
+					<label id="lrNumAerog"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Overall wind farm rated power (Pr*N)</label>
+				  <div class="col-sm-8">
+					<label id="lrPotParco"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-2">Power curve</label>
+				  <div class="col-sm-10">
+					<div id="lrcurpot"></div>
+				  </div>
+				</div>
+				
+				<p><br></p>	
+				<h4>Statistical data related to the site wind resource</h4>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Annual average wind speed at wind turbine</label>
+				  <div class="col-sm-8">
+					<label id="lrVelMedAnnua"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Shape factor (k) of Weibull distribution</label>
+				  <div class="col-sm-8">
+					<label id="lrKWeibull"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Characteristic wind speed (A) of Weibull distribution</label>
+				  <div class="col-sm-8">
+					<label id="lrlabAWeibull"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-2">Weibull distribution graph</label>
+				  <div class="col-sm-10">
+					<div id="lrcurweib"></div>
+				  </div>
+				</div>
+				
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionC" data-trigger="tab">&larr; Previous</a></li>
+				<li class="next"><a href="#sectionE" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+		
+        <div id="sectionE" class="tab-pane fade">
+            <h3>Cost analysis</h3>
+			<form class="form-horizontal" role="form" id="formE">
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">PROJECT</label>
+				  <label class="col-sm-6" id="secENomeProg">Project name</label>
+				</div>
+				<h4>Time parameters</h4>
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secEAnnoAvvio">
+				  Starting year of the wind farm project (zero year)</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secEAnnoAvvio" name="secEAnnoAvvio" 
+					placeholder="Starting year of the wind farm project (zero year)" 
+					title="Starting year of the wind farm project (zero year)" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Year of the project fulfilment (zero year + one)</label>
+				  <div class="col-sm-6">
+					<label id="secEAnnoRealiz"></label>
+				  </div>				  
+				</div>
+			
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Wind farm lifetime   [years]</label>
+				  <div class="col-sm-6">
+					<label id="secEVitaUtile"></label>
+				  </div>				  
+				</div>
+			
+				<p><br></p>	
+				<h4>Investment</h4>
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostoCapitSpec">
+				  Specific capital cost (€ per installed kW) [€ /kW]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostoCapitSpec" name="secECostoCapitSpec" 
+					placeholder="typical values: on-shore 1500-1800, off-shore 2500-3000 [€ /kW]" 
+					title="typical values: on-shore 1500-1800, off-shore 2500-3000 [€ /kW]" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Wind farm capital cost (without connection to the grid) [k€]</label>
+				  <div class="col-sm-6">
+					<label id="secECostoCapitale"></label>
+				  </div>				  
+				</div>
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secEDistcab">
+				  Distance of the plant site from suitable electric infrastructure for connection to the grid [km]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secEDistcab" name="secEDistcab" 
+					placeholder="Distance of the plant site from suitable electric infrastructure for connection to the grid [km]" 
+					title="Distance of the plant site from suitable electric infrastructure for connection to the grid [km]" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secETipoCollegamento">
+				  Type of connection to the electric grid (MV cable, MV overhead line, HV cable,  HV overhead line)</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secETipoCollegamento" name="secETipoCollegamento" 
+					placeholder="Type of connection to the electric grid (MV cable, MV overhead line, HV cable,  HV overhead line)" 
+					title="Type of connection to the electric grid (MV cable, MV overhead line, HV cable,  HV overhead line)" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostoKmCollegamento">
+				  Cost per kilometer of the connection to the electric grid [k€/km]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostoKmCollegamento" name="secECostoKmCollegamento" 
+					placeholder="Cost per kilometer of the connection to the electric grid [k€/km]" 
+					title="Cost per kilometer of the connection to the electric grid [k€/km]" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostoInfrastrElett">
+				  Cost of the infrastructure necessary for connection to the grid (MV bay, HV bay, HV/MV transformer, etc.) [k€]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostoInfrastrElett" name="secECostoInfrastrElett" 
+					placeholder="Cost of the infrastructure necessary for connection to the grid (MV bay, HV bay, HV/MV transformer, etc.) [k€]" 
+					title="Cost of the infrastructure necessary for connection to the grid (MV bay, HV bay, HV/MV transformer, etc.) [k€]" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Overall cost for connection to the electric grid [k€]</label>
+				  <div class="col-sm-6">
+					<label id="secECostoComplCollegamento"></label>
+				  </div>				  
+				</div>
+		
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Overall wind farm cost [k€]</label>
+				  <div class="col-sm-6">
+					<label id="secECostoComplParcoEol"></label>
+				  </div>				  
+				</div>
+		
+				<p><br></p>	
+				<h4>Operation and maintenance (O&M)</h4>
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostiFissiOM">
+				  Annual fixed cost for O&M : in % of the overall investment cost [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostiFissiOM" name="secECostiFissiOM" 
+					placeholder="typical values are included within the range 1% - 3%" title="typical values are included within the range 1% - 3%" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostiVariabiliOM">
+				  Variable cost for O&M [c€/kWh]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostiVariabiliOM" name="secECostiVariabiliOM" 
+					placeholder="typical values are included within the range 0.5 - 1" 
+					title="typical values are included within the range 0.5 - 1" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secEOneriAnnuiRicavi">
+				  Annual allowance to landowners and/or local authorities: in % of the proceeds [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secEOneriAnnuiRicavi" name="secEOneriAnnuiRicavi" 
+					placeholder="typical values are included within the range 1.5 - 3%" 
+					title="typical values are included within the range 1.5 - 3%" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secEOneriAnnuiFissi">
+				  Annual allowance to landowners and/or local authorities: annual fixed fee [k€/MW]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secEOneriAnnuiFissi" name="secEOneriAnnuiFissi" 
+					placeholder="typical values are included within the range  2 - 4" 
+					title="typical values are included within the range  2 - 4" />
+				  </div>
+				</div>			
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionD" data-trigger="tab">&larr; Previous</a></li>
+				<li class="next"><a href="#sectionF" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+		
+        <div id="sectionF" class="tab-pane fade">
+            <h3>Results</h3>
+			<form class="form-horizontal" role="form" id="formF">
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">PROJECT</label>
+				  <label class="col-sm-6" id="secFNomeProg">Project name</label>
+				</div>
+				<h4>Technical parameters of the wind farm</h4>
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Selected wind turbine model</label>
+				  <div class="col-sm-6">
+					<label id="secFAerogeneratore"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Rated power of the wind turbine model [kW]</label>
+				  <div class="col-sm-6">
+					<label id="secFPotNom"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  No. of wind turbine units of the wind farm</label>
+				  <div class="col-sm-6">
+					<label id="secFNumAerog"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Overall rated power of the wind farm [kW]</label>
+				  <div class="col-sm-6">
+					<label id="secFPotParco"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Gross annual energy production of the wind farm [MWh]</label>
+				  <div class="col-sm-6">
+					<label id="secFProdLorda"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Specific gross annual energy production of the wind farm [MWh/MW]</label>
+				  <div class="col-sm-6">
+					<label id="secFProdSpecLorda"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="PercPotGarantita">
+				  Percentage value of the guaranteed generated power (typical value 95%) [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFPercPotGarantita" name="secFPercPotGarantita" 
+					placeholder="typical value 95%" 
+					title="typical value 95%" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFDispAnnua">
+				  Annual availability index of the wind farm (typical values within the range 95-98%) [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFDispAnnua" name="secFDispAnnua" 
+					placeholder="typical values within the range 95-98%" 
+					title="typical values within the range 95-98%" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFPerditeAerodin">
+				  Energy losses due to wake effect among the wind turbines [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFPerditeAerodin" name="secFPerditeAerodin" 
+					placeholder=" Energy losses due to wake effect among the wind turbines" 
+					title=" Energy losses due to wake effect among the wind turbines" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFPerditeElettr">
+				  Energy losses due to the electric connection within the wind farm (typical values within the range 2-3%) [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFPerditeElettr" name="secFPerditeElettr" 
+					placeholder="typical values 2-3%" 
+					title="typical values 2-3%" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFDispAnnReteEl">
+				  Annual availability index of the external electric grid (typical value 99.5%) [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFDispAnnReteEl" name="secFDispAnnReteEl" 
+					placeholder="typical value 99.5%%" 
+					title="typical value 99.5%" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Overall efficiency of the wind farm [%]</label>
+				  <div class="col-sm-6">
+					<label id="secFEffComplParco"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Net annual energy production [MWh]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFProdNetta"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFTassoAtt">
+				  Discount rate [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFTassoAtt" name="secFTassoAtt" 
+					placeholder="Discount rate [%]" 
+					title="Discount rate [%]" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Levelised kWh cost over the whole wind farm lifetime [c€/kWh]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFCostoMedkWh"></label>
+				  </div>				  
+				</div>
+				
+				<p><br></p>	
+				<h4>Avoided emissions</h4>
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Carbon dioxide     (CO2) [tons/year]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFCO2"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Nitrogen oxide           (NOx) [tons/year]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFNOx"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Sulfur AE dioxide     (SO2) [tons/year]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFSO2"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Particulate [tons/year]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFPM"></label>
+				  </div>				  
+				</div>
+		
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionE" data-trigger="tab">&larr; Previous</a></li>
+			</ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>                                		

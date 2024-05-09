@@ -1,0 +1,21 @@
+{
+  "title": "Items",
+  "description": "List of items or groups",
+  "type": "array",
+  "format": "tabs",
+  "items": {
+    "type": "object",
+    "title": "item",
+    "headerTemplate": "{{ self.name }}",
+    "required": [
+      "name",
+      "type"
+    ],
+    "allOf": [
+      {
+        "$ref": "CatalogMember.json"
+      }
+    ],
+    "oneOf": []
+  }
+}

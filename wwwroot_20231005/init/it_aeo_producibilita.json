@@ -1,0 +1,129 @@
+{
+  "catalog": [
+    {
+      "id": "producibilita",
+      "type": "group",
+      "name": "Producibilità",
+      "description": "Questa raccolta contiene le mappe di producibilità del vento espresse in MWh/MW calcolate come media annua su 30 anni di dati a diverse altezze. \n<br> In particolare, queste elaborazioni derivano dalla nuova banca dati anemologica italiana costituita da 30 anni di dati a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF) combinato con un post-processing statistico basato su Analog Ensemble (AnEn).",
+      "isOpen": false,
+      "members": [
+        {
+          "id": "prod_onshore",
+          "type": "group",
+          "name": "Producibilità Onshore",
+          "description": "Questa raccolta comprende le mappe di producibilità del vento onshore (MWh/MW) alle altezze di 50, 75 e 100 m s.l.t.",
+          "isOpen": false,
+          "members": [
+            
+            {
+              "type": "wms",
+              "name": "Producibilità specifica onshore a 50 m s.l.t.",
+              "description": "Producibilità specifica onshore a 50 m s.l.t. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore Riva Calzoni ATB 500.54 con diametro del rotore pari a 54 m e potenza nominale pari a 500 kW. ",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>La producibilità specifica del vento è pari a <b>{{prod_50}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=240"
+              }],
+              "layers": "aeolian:griglia_dati_23022023",
+              "id": "eo_prod50_onshore",
+              "styles":"aeolian:prod50_onshore"
+            },
+            {
+              "type": "wms",
+              "name": "Producibilità specifica onshore a 75 m s.l.t.",
+              "description": "Producibilità specifica onshore a 75 m s.l.t. espressa in MWh/MW. <br> La mappa riporta per ogni cella il valore di producibilità massimo tra quelli calcolati utilizzando i seguenti aerogeneratori: Leitwind LTW [potenza nominale: 2 MW], Enercon E92 [potenza nominale: 2.3 MW], Vestas V90 [potenza nominale: 2MW] e Vestas V110 [potenza nominale: 2MW].",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>La producibilità' specifica del vento è pari a <b>{{prod_75}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=241"
+              }],
+              "layers": "aeolian:griglia_dati_23022023",
+              "id": "eo_prod75_onshore",
+              "styles":"aeolian:prod75_onshore"
+            } ,
+            {
+              "type": "wms",
+              "name": "Producibilità specifica onshore a 100 m s.l.t.",
+              "description": "Producibilità specifica onshore a 100 m s.l.t. espressa in MWh/MW. <br> La mappa riporta per ogni cella il valore di producibilità massimo tra quelli calcolati utilizzando i seguenti aerogeneratori: Nordex N131 [potenza nominale: 3.6 MW], Nordex N117 [potenza nominale: 3.6 MW], Enercon E115 [potenza nominale: 3 MW], Vestas V117 [potenza nominale: 3.4 MW] e Vestas V136 [potenza nominale: 3.4MW].",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>La producibilità specifica del vento è pari a <b>{{prod_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=242"
+              }],
+              "layers": "aeolian:griglia_dati_23022023",
+              "id": "eo_prod100_onshore",
+              "styles":"aeolian:prod100_onshore"
+            }  
+  
+          ]
+        },
+        {
+          "id": "prod_offshore",
+          "type": "group",
+          "name": "Producibilità Offshore",
+          "description": "Questa raccolta comprende le mappe di producibilità del vento offshore (MWh/MW) alle altezze di 100, 125 e 150 m s.l.t.",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "wms",
+              "name": "Producibilità specifica offshore a 100 m s.l.m.",
+              "description": "Producibilità specifica offshore a 100 m s.l.m. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore NREL_Reference con diametro del rotore pari a 155 m e potenza nominale pari a 6 MW.",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>La producibilità specifica del vento è pari a <b>{{prod_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=243"
+              }],
+              "layers": "aeolian:griglia_dati_23022023",
+              "id": "eo_prod100_offshore",
+              "styles":"aeolian:prod100_offshore"
+            },
+            {
+              "type": "wms",
+              "name": "Producibilità specifica offshore a 125 m s.l.m.",
+              "description": "Producibilità specifica offshore a 125 m s.l.m. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore IEA_10MW_RTW con diametro del rotore pari a 198 m e potenza nominale pari a 10 MW.",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>La producibilità specifica del vento è pari a <b>{{prod_125}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/aaeolian_metadati.php?var_id=244"
+              }],
+              "layers": "aeolian:griglia_dati_23022023",
+              "id": "eo_prod125_offshore",
+              "styles":"aeolian:prod125_offshore"
+            },
+            {
+              "type": "wms",
+              "name": "Producibilità specifica offshore a 150 m s.l.m.",
+              "description": "Producibilità specifica offshore a 150 m s.l.m. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore IEA_15MW_RTW con diametro del rotore pari a 240 m e potenza nominale pari a 15 MW.",
+              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "featureInfoTemplate": {
+                "template": "<p>La producibilità' specifica del vento è pari a <b>{{prod_150}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+              },
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=245"
+              }],
+              "layers": "aeolian:griglia_dati_23022023",
+              "id": "eo_prod150_offshore",
+              "styles":"aeolian:prod150_offshore"
+            }    
+          ]
+        }
+      ]
+    }
+  ]
+}

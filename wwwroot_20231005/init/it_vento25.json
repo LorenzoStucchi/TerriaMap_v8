@@ -1,0 +1,44 @@
+{
+  "catalog": [
+    {
+      "type": "group",
+      "name": "toolvento25",
+      "isOpen": true,
+      "members": [
+        {
+          "type": "wms",
+          "name": "toolvento25",
+          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "layers": "atlante_integrato:reticolo_tiles_3857",
+          "styles": "polygon",
+          "opacity": 0.5,
+          "featureInfoTemplate": {
+            "template": "<br><p>cper far funzionare occorre inserire la variabile e sostituirla a den_uts<p style='display: block; text-align: center;'><button><a href=\"http://rakino.ricerca.lan/?prov={{den_uts}}\" style='color: black; padding: 0px 10px 0px 10px'>Avvia</a></button></p>"
+          },
+          "id": "it_vento25",
+          "initialMessage": {
+            "title": "Per accedere:",
+            "content": "Seleziona il punto direttamente sulla mappa.",
+            "key": "it_vento25",
+            "confirmation": true,
+            "confirmText": "Avvia"
+          }
+        }
+      ]
+    }
+  ],
+  "homeCamera": {
+    "north": 48,
+    "east": 19,
+    "south": 35,
+    "west": 6
+  },
+  "baseMaps": {
+    "defaultBaseMapId": "basemap-positron",
+    "previewBaseMapId": "basemap-positron"
+  },
+  "viewerMode": "2d",
+  "workbench": [
+    "it_vento25"
+  ]
+}

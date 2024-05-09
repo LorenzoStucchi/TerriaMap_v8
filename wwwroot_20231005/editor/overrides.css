@@ -1,0 +1,96 @@
+.foundation-dnu-panel {
+  /* So many levels of nesting hurts your eyes... */
+  margin-right: -2px;
+  padding-right: 0;
+}
+
+.well-sm,.col-md-10 {
+  padding-right: 0;
+  margin-left:-11px;
+  margin-right:-1px;
+}
+
+label {
+  font-size:24px;
+}
+
+label.control-label {
+  font-size:14px;
+}
+
+button.btn.btn-default.json-editor-btn-delete[title="Delete Last Item"],
+button.btn.btn-default.json-editor-btn-delete[title="Delete All"] {
+  display: none; /* spammy buttons at the top of each object */
+}
+
+.container-catalog>h3, .container-catalog>p {
+  /* The extra heading for the catalogue itself is just confusing. */
+  /*display: none;*/
+}
+
+.well[data-schemapath="root.catalog.0"],
+.well[data-schemapath="root.catalog.1"],
+.well[data-schemapath="root.catalog.2"],
+.well[data-schemapath="root.catalog.3"],
+.well[data-schemapath="root.catalog.4"],
+.well[data-schemapath="root.catalog.5"],
+.well[data-schemapath="root.catalog.6"],
+.well[data-schemapath="root.catalog.7"],
+.well[data-schemapath="root.catalog.8"]
+ {
+  /* Visual separation for top level catalog items */
+  border-bottom: 20px solid hsl(208, 56%, 72%);
+
+}
+
+.well[data-schemapath="root.catalog.0"]>label,
+.well[data-schemapath="root.catalog.1"]>label,
+.well[data-schemapath="root.catalog.2"]>label,
+.well[data-schemapath="root.catalog.3"]>label,
+.well[data-schemapath="root.catalog.4"]>label,
+.well[data-schemapath="root.catalog.5"]>label,
+.well[data-schemapath="root.catalog.6"]>label,
+.well[data-schemapath="root.catalog.7"]>label,
+.well[data-schemapath="root.catalog.8"]>label {
+  /*background: hsl(0,0%,85%);*/
+  background: hsl(208, 56%, 80%);
+  display:block;
+}
+
+div[data-schemapath="root"] > p { display: none; }
+div[data-schemapath="root"] > h3 > span { display: none; }
+
+
+
+body {
+  background-color: hsl(0,0%,85%);
+}
+
+/* Make the visual hierarchy for subproperties more obvious. */
+.container-itemProperties {
+  padding-left: 4em !important;
+}
+
+.container-itemProperties > h3 {
+  margin-left: -2em !important;
+}
+
+#savejson {
+  display:none;
+}
+
+#loadingmsg {
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 0em 0em 2em 2em;
+  background-color: hsl(60,100%, 85%);
+}
+
+textarea.form-control {
+  /* By default some get created at 1px */
+  min-height: 2.5em;
+}
+
+.property-selector {
+  max-height: 400px !important;
+}

@@ -55,17 +55,9 @@ export function Chart(props: ChartPropTypes) {
       .scaleLinear() // you can try scaleRadial but it scales differently
       .range([innerRadius, outerRadius]);
 
-    const z = d3.scaleOrdinal().range([
-      "#8e44ad",
-      "#4242f4",
-      "#42c5f4",
-      // "#42f4ce",
-      "#42f456",
-      // "#adf442",
-      "#f4e242",
-      "#f4a142",
-      "#f44242"
-    ]);
+    const z = d3
+      .scaleOrdinal()
+      .range(["#42c5f4", "#42f456", "#f4e242", "#f44242", "#de73ff"]);
     x.domain(data.map(d => String(d.angle)));
     // xGroup.domain(columns.map((d) => d));
     y.domain([
@@ -167,6 +159,7 @@ export function Chart(props: ChartPropTypes) {
       .attr("x", 0) //.attr("x", () => -10)
       // .text(y.tickFormat(5, "s"))
       .text(x => `${x.toFixed(0)} %`)
+      .style("fill", "white") // colore testo %
       .style("font-size", 14);
     const legend = g
       .append("g")
@@ -193,6 +186,7 @@ export function Chart(props: ChartPropTypes) {
       .attr("y", 9)
       .attr("dy", "0.35em")
       .text(d => d + " m/s")
+      .style("fill", "white") // colore testo legenda
       .style("font-size", 12);
     g.exit().remove();
   }, [containerSize.width]);

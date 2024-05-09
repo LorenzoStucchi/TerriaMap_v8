@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Calcolo della producibilit&agrave</title>
+	<link rel="stylesheet" media="print" href="css/print.css" />
+ 	<script src="lib/jquery.js"></script>
+	<script src="dist/jquery.validate.js"></script>
+
+<link rel="stylesheet" href="https://atlanteeolico.rse-web.it/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://atlanteeolico.rse-web.it/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://atlanteeolico.rse-web.it/bootstrap/3.3.1/css/dropdown-submenu.css">
+<script src="3.3.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript"> var lingua = "it"; </script>
+<script type="text/javascript" src="pro.js"></script>
+<script type="text/javascript" src="valid.js"></script>
+<!-- <script type="text/javascript" src="./dizionario.js"></script> -->
+
+
+<style type="text/css">
+	.bs-example{
+		margin: 20px;
+	}	
+	#labAWeibull {
+		margin: 0px;
+	}
+	.mialabel {
+	  display: inline;
+	  padding: .2em .6em .3em;
+	  //font-size: 75%;
+	  font-weight: bold;
+	  line-height: 1;
+	  color: #fff;
+	  text-align: center;
+	  white-space: nowrap;
+	  vertical-align: baseline;
+	  border-radius: .25em;
+	}
+</style>
+
+<!--<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-3419972-15']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script> -->
+	
+    <!-- Matomo -->
+	<script>  var _paq = window._paq = window._paq || []; 
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */ 
+	_paq.push(['trackPageView']); 
+	_paq.push(['enableLinkTracking']); 
+	(function() { 
+    var u="https://rseweb.matomo.cloud/"; 
+    _paq.push(['setTrackerUrl', u+'matomo.php']); 
+    _paq.push(['setSiteId', '11']); 
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.async=true; g.src='//cdn.matomo.cloud/rseweb.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s); 
+	})(); 
+	</script>
+	<!-- End Matomo Code -->
+</head>
+
+<body>
+
+<div class="bs-example">
+	<h2 align="center"><img src="./resources/logoRSEsmall.png" align="left" alt="logo" height="41" width="90"/>Valutazione tecnico economica di un parco eolico</h2>
+    <p><br></p>
+	<h5 id="IdAvviso" align="center">(per la stampa utilizzare la funzione di stampa del browser)</h5>
+    <p><br></p>
+	<ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#sectionA">Denominazione progetto</a></li>
+        <li><a data-toggle="tab" href="#sectionB">Configurazione</a></li>
+        <li><a data-toggle="tab" href="#sectionC">Risorsa eolica sito</a></li>
+        <li><a data-toggle="tab" href="#sectionD">Riepilogo dati</a></li>
+        <li><a data-toggle="tab" href="#sectionE">Analisi costi</a></li>
+        <li><a data-toggle="tab" href="#sectionF">Risultati</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active">
+            <h3>Denominazione progetto</h3>
+			<form class="form-horizontal" role="form" id="formA">
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="NomeProg">Nome progetto</label>
+				  <div class="col-sm-8">
+					<input type="text" class="form-control" id="NomeProg" name="NomeProg" placeholder="Nome del progetto" title="Nome del progetto" />
+				  </div>
+				</div>
+
+<!-- 				<div class="form-group">    
+				  <label class="control-label col-sm-4" for="Lati">Coordinate sito (Lat Lon):</label>
+				  <div class="col-sm-4">
+					<label class="form-control" id="Lati"> </label>
+				  </div>
+				   <div class="col-sm-4">
+					<label class="form-control" id="Long"> </label>
+				  </div>
+				</div> -->
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Coordinate sito</label>
+				  <div class="col-sm-3">
+					<label id="Lati">Lat</label>
+				  </div>
+				  <div class="col-sm-3">
+					<label id="Long">Lon</label>
+				  </div>				  
+				</div>				
+				
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Comune</label>
+				  <div class="col-sm-8">
+					<label id="Comune"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Provincia</label>
+				  <div class="col-sm-8">
+					<label id="Provincia"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Regione</label>
+				  <div class="col-sm-8">
+					<label id="Regione"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Altitudine sito s.l.m. / Profondit&agrave fondale marino [m]</label>
+				  <div class="col-sm-8">
+					<label id="Altitudine"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Densit&agrave media dell'aria del sito [kg/m3]</label>
+				  <div class="col-sm-8">
+					<label id="Densita"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Distanza minima del sito da impianti elettrici di possibile collegamento alla rete (CP/ST) [km]</label>
+				  <div class="col-sm-8">
+					<label id="DistanzaImp"></label>
+				  </div>				  
+				</div>
+			</form>
+			<ul class="pager">
+				<li class="next"><a href="#sectionB" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+		
+		
+        <div id="sectionB" class="tab-pane fade">
+			<h3>Configurazione del parco eolico</h3>
+ 			<form class="form-horizontal" role="form" id="formB">
+
+				<div class="form-group">
+					<div class="col-sm-4">
+						<div class="dropdown" id="combomacchine"></div>
+					</div>
+					<label class="col-sm-8" id="labAerog" align="center"></label>
+<!-- 				  <label class="col-sm-4" id="PotNom" align="center">Potenza nominale dell'aerogeneratore</label>
+				  <label class="col-sm-4" id="DiamRot" align="center">Diametro</label> -->
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-4">
+						<div class="dropdown" id="comboHaerog"></div>
+					</div>
+					<label class="col-sm-8" id="labHaerog" align="center"></label>
+				</div>	
+		
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="NumAgen">Numero di aerogeneratori del Parco Eolico:</label>
+				  <div class="col-sm-8">
+					<input onchange="calcPot()" type="text" class="form-control" id="NumAgen" name="NumAgen" placeholder="Numero di aerogeneratori" title="Numero di aerogeneratori del Parco Eolico"/>
+				  </div>
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">
+				  Potenza nominale del parco eolico [kW]</label>
+				  <div class="col-sm-8">
+					<label id="PotParco"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-4">grafico</label>
+				  <div class="col-sm-8">
+					<div id="curpot"></div>
+				  </div>
+				</div>
+				
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionA" data-trigger="tab">&larr; Previous</a></li>
+				<li class="next"><a href="#sectionC" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+		
+        <div id="sectionC" class="tab-pane fade">
+			<h3>Dati relativi alla risorsa eolica del sito</h3>
+
+ 			<form class="form-horizontal" role="form" id="formC">
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="VelMedAnnua" id="labVelMedAnnua">Velocit&agrave media annua del vento ad altezza mozzo [m/s]:</label>
+				  <div class="col-sm-4">
+					<input type="text" class="form-control" id="VelMedAnnua" name="VelMedAnnua" placeholder="Velocit&agrave media annua del vento [m/s]" title="Velocit&agrave media annua del vento [m/s]" />
+				  </div>
+				  <label class="col-sm-2" id="labVelMedAnnAtl"></label>
+				  <label class="control-label col-sm-2"></label>
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="KWeibull">Fattore di forma k della distribuzione di Weibull:</label>
+				  <div class="col-sm-4">
+					<input type="text" class="form-control" id="KWeibull" name="KWeibull" placeholder="Fattore di forma k della distribuzione di Weibull" title="Fattore di forma k della distribuzione di Weibull" />
+				  </div>
+				  <label class="col-sm-2" id="labKWeibullAtl"></label>
+				  <label class="control-label col-sm-2"></label>
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Velocit&agrave caratteristica A della distribuzione di Weibull: </label>
+				  <label class="col-sm-8" id="labAWeibull"></label>
+				</div>
+				
+				<div class="form-group">
+				  <p><br /></p>
+				  <label class="control-label col-sm-2">grafico:</label>
+				  <div class="col-sm-10">
+				  	<div id="curweib"></div>
+				  </div>
+				</div>
+
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionB" data-trigger="tab">&larr; Previous</a></li>
+				<li class="next"><a href="#sectionD" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+		
+        <div id="sectionD" class="tab-pane fade">
+            <h3>Dati di riepilogo del parco eolico</h3>
+			<form class="form-horizontal" role="form" id="formD">
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Nome progetto</label>
+				  <label class="col-sm-8" id="lrNomeProg">Nome progetto</label>
+				<!-- 					  <div class="col-sm-8">
+					<label class="form-control" id="lrNomeProg">Nome progetto</label>
+				  </div> -->
+				  <!-- <div class="clearfix visible-sm-block"></div> -->
+				</div>
+				  
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Ubicazione del Parco Eolico</label>
+				  <div class="col-sm-3">
+					<label id="lrComune">Comune</label>
+				  </div>
+				  <div class="col-sm-3">
+					<label id="lrProvincia">Provincia</label>
+				  </div>
+				  <div class="col-sm-2">
+					<label id="lrRegione">Regione</label>
+				  </div>
+				  <!-- <div class="clearfix visible-sm-block"></div> -->
+				</div>
+				  
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Coordinate sito</label>
+				  <div class="col-sm-3">
+					<label id="lrLati">Lat</label>
+				  </div>
+				  <div class="col-sm-3">
+					<label id="lrLong">Lon</label>
+				  </div>				  
+				</div>
+				  
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Densit&agrave media dell'aria del sito</label>
+				  <div class="col-sm-8">
+					<label id="lrDensita">Densita</label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Distanza minima del sito da impianti elettrici di possibile collegamento alla rete (CP/ST) </label>
+				  <div class="col-sm-8">
+					<label id="lrDistanzaImp"></label>
+				  </div>				  
+				</div>
+				<p><br></p>	
+				
+				<h4>Caratteristiche della configurazione del Parco Eolico</h4>
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Aerogeneratore</label>
+				  <div class="col-sm-8">
+					<label id="lrAerogeneratore"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Potenza nominale (Pn)</label>
+				  <div class="col-sm-8">
+					<label id="lrPotNom"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Diametro del rotore</label>
+				  <div class="col-sm-8">
+					<label id="lrDiamRot"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Altezza s.l.t. del mozzo dell'aerogeneratore</label>
+				  <div class="col-sm-8">
+					<label id="lrhaerog"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Numero di aerogeneratori del Parco Eolico</label>
+				  <div class="col-sm-8">
+					<label id="lrNumAerog"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Potenza nominale del Parco Eolico</label>
+				  <div class="col-sm-8">
+					<label id="lrPotParco"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-2">Curva di potenza</label>
+				  <div class="col-sm-10">
+					<div id="lrcurpot"></div>
+				  </div>
+				</div>
+				
+				<p><br></p>	
+				<h4>Dati statistici sulle risorse eoliche del sito</h4>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Velocit&agrave media annua del vento ad altezza mozzo</label>
+				  <div class="col-sm-8">
+					<label id="lrVelMedAnnua"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Fattore di forma k della distribuzione di Weibull</label>
+				  <div class="col-sm-8">
+					<label id="lrKWeibull"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-4" style="text-align:right">Velocit&agrave caratteristica A della distribuzione di Weibull</label>
+				  <div class="col-sm-8">
+					<label id="lrlabAWeibull"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-2">grafico distribuzione di Weibull</label>
+				  <div class="col-sm-10">
+					<div id="lrcurweib"></div>
+				  </div>
+				</div>
+				
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionC" data-trigger="tab">&larr; Previous</a></li>
+				<li class="next"><a href="#sectionE" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+		
+        <div id="sectionE" class="tab-pane fade">
+            <h3>Analisi dei costi</h3>
+			<form class="form-horizontal" role="form" id="formE">
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">PROGETTO</label>
+				  <label class="col-sm-6" id="secENomeProg">Nome progetto</label>
+				</div>
+				<h4>Parametri temporali</h4>
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secEAnnoAvvio">
+				  Anno di avvio del progetto del Parco Eolico (Anno zero)</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secEAnnoAvvio" name="secEAnnoAvvio" 
+					placeholder="Anno di avvio del progetto del Parco Eolico (Anno zero)" 
+					title="Anno di avvio del progetto del Parco Eolico (Anno zero)" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Anno di realizzazione del progetto (Anno uno)</label>
+				  <div class="col-sm-6">
+					<label id="secEAnnoRealiz"></label>
+				  </div>				  
+				</div>
+			
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Vita utile dell'impianto [anni]</label>
+				  <div class="col-sm-6">
+					<label id="secEVitaUtile"></label>
+				  </div>				  
+				</div>
+			
+				<p><br></p>	
+				<h4>Investimento</h4>
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostoCapitSpec">
+				  Costo capitale specifico (€/kW installato) [€ /kW]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostoCapitSpec" name="secECostoCapitSpec" 
+					placeholder="valori tipici: on-shore 1500-1800, off-shore 2500-3000 [€ /kW]" 
+					title="valori tipici: on-shore 1500-1800, off-shore 2500-3000 [€ /kW]" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Costo capitale Parco Eolico (senza collegamento a rete) [k€]</label>
+				  <div class="col-sm-6">
+					<label id="secECostoCapitale"></label>
+				  </div>				  
+				</div>
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secEDistcab">
+				  Distanza del sito dell'impianto da cabine primarie, sottostazioni esistenti  di possibile collegamento [km]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secEDistcab" name="secEDistcab" 
+					placeholder="Distanza del sito dell'impianto da cabine primarie, sottostazioni esistenti  di possibile collegamento [km]" 
+					title="Distanza del sito dell'impianto da cabine primarie, sottostazioni esistenti  di possibile collegamento [km]" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secETipoCollegamento">
+				  Tipologia del collegamento alla rete elettrica (cavo MT, linea MT , cavo AT,  linea AT)</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secETipoCollegamento" name="secETipoCollegamento" 
+					placeholder="Tipologia del collegamento alla rete elettrica (cavo MT, linea MT , cavo AT,  linea AT)" 
+					title="Tipologia del collegamento alla rete elettrica (cavo MT, linea MT , cavo AT,  linea AT)" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostoKmCollegamento">
+				  Costo chilometrico della linea di collegamento alla rete [k€/km]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostoKmCollegamento" name="secECostoKmCollegamento" 
+					placeholder="Costo chilometrico della linea di collegamento alla rete [k€/km]" 
+					title="Costo chilometrico della linea di collegamento alla rete [k€/km]" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostoInfrastrElett">
+				  Costo delle infrastrutture elettriche necessarie per il collegamento alla rete (stallo MT, stallo AT, trasformatore AT/MT, ecc.) [k€]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostoInfrastrElett" name="secECostoInfrastrElett" 
+					placeholder="Costo delle infrastrutture elettriche necessarie per il collegamento alla rete (stallo MT, stallo AT, trasformatore AT/MT, ecc.) [k€]" 
+					title="Costo delle infrastrutture elettriche necessarie per il collegamento alla rete (stallo MT, stallo AT, trasformatore AT/MT, ecc.) [k€]" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Costo complessivo del collegamento alla rete [k€]</label>
+				  <div class="col-sm-6">
+					<label id="secECostoComplCollegamento"></label>
+				  </div>				  
+				</div>
+		
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Costo complessivo del Parco Eolico [k€]</label>
+				  <div class="col-sm-6">
+					<label id="secECostoComplParcoEol"></label>
+				  </div>				  
+				</div>
+		
+				<p><br></p>	
+				<h4>Gestione e esercizio</h4>
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostiFissiOM">
+				  Costi annui fissi di O&M : % dell'investimento complessivo [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostiFissiOM" name="secECostiFissiOM" 
+					placeholder="valori tipici sono compresi nell'intervallo 1-3%" title="valori tipici sono compresi nell'intervallo 1-3%" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secECostiVariabiliOM">
+				  Costi variabili di O&M [c€/kWh]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secECostiVariabiliOM" name="secECostiVariabiliOM" 
+					placeholder="valori tipici sono compresi nell'intervallo 0.5-1" 
+					title="valori tipici sono compresi nell'intervallo 0.5-1" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secEOneriAnnuiRicavi">
+				  Oneri annui verso proprietari e/o enti locali: % su ricavi [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secEOneriAnnuiRicavi" name="secEOneriAnnuiRicavi" 
+					placeholder="valori tipici sono compresi nell'intervallo 1.5-3%" 
+					title="valori tipici sono compresi nell'intervallo 1.5-3%" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secEOneriAnnuiFissi">
+				  Oneri verso proprietari e/o enti locali: canone annuo fisso [k€/MW]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secEOneriAnnuiFissi" name="secEOneriAnnuiFissi" 
+					placeholder="valori tipici sono compresi nell'intervallo 2 - 4" 
+					title="valori tipici sono compresi nell'intervallo 2 - 4" />
+				  </div>
+				</div>			
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionD" data-trigger="tab">&larr; Previous</a></li>
+				<li class="next"><a href="#sectionF" data-trigger="tab">Next &rarr;</a></li>
+			</ul>
+        </div>
+		
+        <div id="sectionF" class="tab-pane fade">
+            <h3>Risultati</h3>
+			<form class="form-horizontal" role="form" id="formF">
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">PROGETTO</label>
+				  <label class="col-sm-6" id="secFNomeProg">Nome progetto</label>
+				</div>
+				<h4>Parametri tecnici del Parco Eolico</h4>
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Modello di aerogeneratore selezionato</label>
+				  <div class="col-sm-6">
+					<label id="secFAerogeneratore"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Potenza nominale dell'aerogeneratore [kW]</label>
+				  <div class="col-sm-6">
+					<label id="secFPotNom"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Numero di aerogeneratori del Parco Eolico</label>
+				  <div class="col-sm-6">
+					<label id="secFNumAerog"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Potenza nominale complessiva del Parco Eolico [kW]</label>
+				  <div class="col-sm-6">
+					<label id="secFPotParco"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Producibilità lorda del Parco Eolico  (GROSS ANNUAL ENERGY PRODUCTION) [MWh]</label>
+				  <div class="col-sm-6">
+					<label id="secFProdLorda"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Producibilità specifica lorda del sito del Parco Eolico [MWh/MW]</label>
+				  <div class="col-sm-6">
+					<label id="secFProdSpecLorda"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="PercPotGarantita">
+				  Valore percentuale della potenza generata garantita  (valore tipico 95%) [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFPercPotGarantita" name="secFPercPotGarantita" 
+					placeholder="valore tipico 95%" 
+					title="valore tipico 95%" />
+				  </div>
+				</div>			
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFDispAnnua">
+				  Indice di disponibilità annua del Parco Eolico (valori tipici compresi tra 95-98%) [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFDispAnnua" name="secFDispAnnua" 
+					placeholder="valori tipici compresi tra 95-98%" 
+					title="valori tipici compresi tra 95-98%" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFPerditeAerodin">
+				  Perdite di energia per interferenza aerodinamica tra gli aerogeneratori [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFPerditeAerodin" name="secFPerditeAerodin" 
+					placeholder="Perdite di energia per interferenza aerodinamica tra gli aerogeneratori" 
+					title="Perdite di energia per interferenza aerodinamica tra gli aerogeneratori" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFPerditeElettr">
+				  Perdite elettriche nel Parco Eolico (valori tipici 2-3%) [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFPerditeElettr" name="secFPerditeElettr" 
+					placeholder="valori tipici 2-3%" 
+					title="valori tipici 2-3%" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFDispAnnReteEl">
+				  Indice di disponibilità annua della rete elettrica (valore tipico 99.5%) [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFDispAnnReteEl" name="secFDispAnnReteEl" 
+					placeholder="valore tipico 99.5%%" 
+					title="valore tipico 99.5%" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Efficienza complessiva del parco eolico [%]</label>
+				  <div class="col-sm-6">
+					<label id="secFEffComplParco"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Producibilità netta del Parco Eolico (NET ANNUAL ENERGY PRODUCTION) [MWh]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFProdNetta"></label>
+				  </div>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-6" for="secFTassoAtt">
+				  Tasso di attualizzazione [%]</label>
+				  <div class="col-sm-6">
+					<input type="text" class="form-control" id="secFTassoAtt" name="secFTassoAtt" 
+					placeholder="Tasso di attualizzazione [%]" 
+					title="Tasso di attualizzazione [%]" />
+				  </div>
+				</div>			
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Costo medio del kWh relativo alla vita utile dell'impianto [c€/kWh]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFCostoMedkWh"></label>
+				  </div>				  
+				</div>
+				
+				<p><br></p>	
+				<h4>Emissioni evitate</h4>
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Anidride carbonica     (CO2) [ton/anno]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFCO2"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Ossidi di azoto           (NOx) [ton/anno]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFNOx"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Anidride solforosa     (SO2) [ton/anno]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFSO2"></label>
+				  </div>				  
+				</div>
+
+				<div class="form-group">
+				  <label class="col-sm-6" style="text-align:right">
+				  Particolato [ton/anno]</label>
+				  <div class="col-sm-6">
+					<label class="mialabel label-success" id="secFPM"></label>
+				  </div>				  
+				</div>
+		
+			</form>
+			<ul class="pager">
+				<li class="previous"><a href="#sectionE" data-trigger="tab">&larr; Previous</a></li>
+			</ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>                                		

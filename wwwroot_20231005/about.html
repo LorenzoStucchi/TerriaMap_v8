@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Aeolian - About</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="help/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="help/css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<?php
+
+	$sito_web = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+	
+?>
+
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.rse-web.it/" target="_blank">
+            <img alt="Brand" src="help/img/aeolian_logo_9_bis.png">
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">About Aeolian</a></li>
+            <li ><a href="https://www.rse-web.it/cookie/">Cookies</a></li>
+            <li ><a href="https://www.rse-web.it/privacy/"> Privacy </a></li>
+            <br>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container content">
+    <div class="row">
+    <div class="col-sm-12">
+
+
+      <!--<h1>About Aeolian data</h2>-->
+
+        <!--new ver-->
+      <p align="justify"; style="font-size: 24px;"><strong>Informazioni su Aeolian</strong>  
+      <p align="justify">L’impulso che le politiche energetiche con i loro ambiziosi obiettivi di riduzione delle emissioni di gas serra per il 2030 e il 2050 stanno dando allo sviluppo del settore eolico, unito alla crescente attenzione verso l’eolico offshore, rende particolarmente urgente disporre di dati accurati ed affidabili sulla disponibilità e sulla distribuzione della risorsa eolica nel territorio nazionale, sia per consentire una corretta pianificazione territoriale, che come strumento di supporto alla realizzazione di interventi efficaci e sostenibili.</p>
+      
+      <p align="justify">L’obiettivo di AEOLIAN è, quindi, fornire una banca dati anemologica sul territorio italiano consultabile attraverso uno strumento WebGIS facilmente fruibile allo scopo di costituire un supporto tangibile alla pianificazione energetica per diversi stakeholder, come costruttori di impianti eolici, autorità responsabili della pianificazione territoriale, società coinvolte nello sviluppo della rete elettrica o anche privati cittadini.</p>
+
+      <p align="justify">AEOLIAN è stato elaborato per fornire informazioni sulla distribuzione generale delle risorse eoliche sul territorio italiano ed aiutare ad individuare le aree dove tali risorse possono essere interessanti per lo sfruttamento energetico.<br> Si precisa, tuttavia, che i contenuti dell'Atlante non possono e non intendono sostituirsi al quadro valutativo di dettaglio (micrositing) che chiunque si prefigga di realizzare un impianto eolico per la produzione di energia elettrica deve sempre e comunque acquisire presso i siti candidati per qualificarli dal punto di vista anemologico.</p>
+	  
+	  <p align="justify">Tutti i dati presentati (anche quelli derivati a partire da dati statistici) sono forniti a scopo di studio e di ricerca e non sostituiscono in alcun modo i dati prodotti dai soggetti deputati (es: GSE, ANEV).</p>
+	  
+      <p align="justify">RSE adotta una ragionevole cura nel raccogliere e presentare le informazioni contenute in questo sito ed a verificarne l’esattezza al momento della loro redazione. RSE tuttavia non assume alcuna responsabilità per qualsiasi inesattezza od omissione delle informazioni contenute nel predetto sito internet. RSE non è responsabile dei dati e notizie pubblicati ove elaborati da terzi e del contenuto di ogni altro sito che possa essere raggiunto dal sito stesso o attraverso il quale si possa accedere a questo sito. RSE non assume alcuna responsabilità per qualsiasi decisione basata sulle informazioni contenute nel predetto sito internet che resta nella responsabilità esclusiva del visitatore nè per qualsiasi perdita o danno, diretto o indiretto, che possa sorgere dall’uso del predetto sito internet e delle informazioni pubblicate.<br> I documenti contenuti sul predetto sito internet possono essere soggetti a cambiamento in qualsiasi momento senza alcun preavviso.</p>
+	<br> 
+	<br> 
+
+
+	<p align="justify"; style="font-size: 24px;"><strong>Metodologia</strong>  
+	  
+	<p align="justify">Il nuovo Atlante eolico italiano AEOLIAN fornisce un database anemologico aggiornato costituito da 30 anni (1990-2019) di dati orari del vento a risoluzione orizzontale di 1,4 km che coprono l'intero territorio italiano e le aree marine, stimati attraverso il modello meteorologico Weather Research and Forecasting (WRF) combinato con una post-elaborazione statistica basata su Analog Ensemble (AnEn). <br> Sono state, inizialmente, eseguite simulazioni dinamiche a passo orario per il periodo 1990-2019 con una risoluzione orizzontale di 4 km. Per il periodo 2015-2019 è stato successivamente effettuato un nesting con una griglia interna di 1,33 km, utilizzando in seguito l'AnEn per estendere temporalmente i 5 anni di elaborazioni ad alta risoluzione all’indietro fino al 1990, in modo da creare un dataset di 30 anni ad alta risoluzione su tutta l'Italia e le aree marine circostanti. La risoluzione finale del dataset a seguito della riproiezione su questo WebGIS è pari a 1,4 km nel sistema di riferimento WGS84 UTM32.</p>
+	
+	<p align="justify">Queste elaborazioni sono il risultato di una collaborazione tra Ricerca sul Sistema Energetico (RSE) SpA e il National Center for Atmospheric Research (NCAR).</p>
+
+	<p align="justify">Per ulteriori approfondimenti si rimanda a rapporto di Ricerca di Sistema <a href="https://www.rse-web.it/rapporti/il-nuovo-atlante-eolico-italiano-sviluppo-e-guida-duso-per-lutente/" target="_blank">«Il Nuovo Atlante Eolico Italiano: sviluppo e guida d’uso per l’utente»</a>.</p>	
+ 
+ 
+	<p align="justify">I dati storici relativi alle stazioni anemometriche sono attualmente consultabili nell'<a href="https://atlanteintegrato.rse-web.it/" target="_blank">Atlante Integrato</a> e scaricabili dal <a href="http://dbeta.rse-web.it/" target="_blank">GeoDB ETA</a>.</p>
+        <!--end new ver-->
+      <div>
+      <br> 
+      <br> 
+      <p align="justify"; style="font-size: 24px;"><strong>Disclaimer</strong>  
+        <p align="justify">Questo lavoro è stato finanziato dal Fondo di Ricerca per il Sistema elettrico nell’ambito dell’Accordo di Programma tra RSE S.p.A. ed il Ministero dello Sviluppo Economico - Direzione generale per il mercato elettrico, le rinnovabili e l’efficienza energetica, il nucleare - in ottemperanza del DM, 16 aprile 2018.</p>
+        <br>       
+      </div>
+      <br> 
+      <p align="justify"; style="font-size: 24px;"><strong>Contatti</strong>  
+        <p align="justify">Per segnalazioni tecniche legate alle funzionalità dell'atlante potete <a href="mailto:utenti-atlanteeolico@rse-web.it">inviarci una mail</a>.</p>
+      <br>
+        <!-- <p align="justify"; style="font-size: 24px;"><strong>Feedback</strong>  
+        <p align="justify">Per segnalazioni tecniche legate alle funzionalità dell'atlante potete <a href="mailto:utenti-atlanteeolico@rse-web.it">inviarci una mail</a>.</p>-->
+        <!-- <a class="navbar-brand" href="http://dbeta.rse-web.it/form_feedback_bis.phtml?language=IT" target="_blank">
+          <img alt="Brand" src="help/img/feedback.png">
+        </a>-->
+		
+      <br>   
+    <br>  
+	
+	<a class="navbar-brand" href='javascript: apri_Pagina()'>
+          <img alt="Brand" src="help/img/feedback.png">
+    </a>
+     
+	</div>
+    </div>
+
+   <!-- <aside class="col-sm-3 partners">
+      <img class="center-block" src="help/img/logo_rse.png" alt="Ricerca sul sistema energetico - logo">
+    </aside> -->
+
+
+  </div>
+  </div><!-- End container -->
+
+      
+      
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Ricerca sul Sistema Energetico - RSE S.p.A. rse@legalmail.it Italia: +39 023992.1</p>
+        <p><strong><a href="https://www.rse-web.it/note-legali/"> Note legali </a></strong><strong><a href="https://www.rse-web.it/privacy/">- Privacy </a></strong><strong><a href="https://www.rse-web.it/cookie/">- Cookies</a></strong></p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="help/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+	
+<script type="text/javascript">	
+
+var Window_feedback;
+function apri_Pagina(origine) {
+	var iMyWidth;
+	var iMyHeight;
+	//half the screen width minus half the new window width (plus 5 pixel borders).
+	iMyWidth = (window.screen.width / 2) - (475 + 10);
+	//half the screen height minus half the new window height (plus title and status bars).
+	iMyHeight = (window.screen.height / 2) - (250 + 50);
+	if(Window_feedback) {
+			window.Window_feedback.close();
+	}
+	var sito_web = window.location.href;
+
+	Window_feedback= window.open("http://dbeta.rse-web.it/form_feedback_terria.phtml"+ "?language=IT" + "&sito_web=" + sito_web,"", "left=320,width=980,height=630,top=150"); 
+	
+	
+	
+		
+}
+</script>	
+	
+  </body>
+</html>

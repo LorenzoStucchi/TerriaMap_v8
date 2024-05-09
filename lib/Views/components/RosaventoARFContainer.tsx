@@ -31,6 +31,14 @@ const RosaventoContainer = (props: any) => {
   const catalogItemName = (props.catalogItem && props.catalogItem.name) || "";
 
   if (
+    catalogItemUniqueId == "eo_speed10_onshore" ||
+    catalogItemUniqueId == "eo_speed10_offshore"
+  ) {
+    numlevel = 0;
+    renderOK = true;
+    altezza = "10";
+  }
+  if (
     catalogItemUniqueId == "eo_speed50_onshore" ||
     catalogItemUniqueId == "eo_speed50_offshore"
   ) {

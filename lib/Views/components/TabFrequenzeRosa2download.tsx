@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { ChartPropTypes } from "../Types";
 import { useTranslation } from "react-i18next";
-import FeatureInfoDownloadMio from "../../../node_modules/terriajs/lib/ReactViews/FeatureInfo/FeatureInfoDownloadMio";
+import FeatureInfoDownloadRosa from "../../../node_modules/terriajs/lib/ReactViews/FeatureInfo/FeatureInfoDownloadRosa";
 
 type Props_TabFrequenzeRosa = {
   mostra: boolean;
@@ -37,7 +37,7 @@ const TabFrequenzeRosa: FC<Props_TabFrequenzeRosa> = ({
       <>
         <h2>{t("rosaDeiVenti.titleTabella")}</h2>
         <TabRosa dati={datiTabella.datirosa} />
-        <FeatureInfoDownloadMio
+        <FeatureInfoDownloadRosa
           key="download"
           viewState={viewState}
           data={datixDownload}

@@ -140,8 +140,8 @@
             "members": [
               {
                 "type": "wms",
-                "name": "Portugal - Important Bird Areas (IBA) WORK IN PROGRESS",
-                "description": "<p align=\"justify\">WORK IN PROGRESS ..... Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n which are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
+                "name": "Portugal - WORK IN PROGRESS",
+                "description": "<p align=\"justify\">WORK IN PROGRESS ..... </p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"metadata link",

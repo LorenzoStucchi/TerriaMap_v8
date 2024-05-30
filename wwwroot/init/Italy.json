@@ -131,7 +131,7 @@
               },
               {
                 "type": "wms",
-                "name": "Italy - Floating Offshore Wind Farms",
+                "name": "Italy - FOW Project locations",
                 "description": "<p align=\"justify\">Italy Floating Offshore Wind Farms - FOW projects   -   DESCRIPTION: WORK IN PROGRESS",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{

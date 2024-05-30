@@ -111,7 +111,7 @@
           {
             "id": "ukNewinstallations",
             "type": "group",
-            "name": "Floating Offshore Wind  FOW projects",
+            "name": "Floating Offshore Wind  FOW Projects",
             "description": "Floating Offshore Wind  FOW projects description ....",
             "isOpen": false,
             "members": [
@@ -131,7 +131,7 @@
               },
               {
                 "type": "wms",
-                "name": "UK - Floating Offshore Wind Farms",
+                "name": "UK - FOW Project locations",
                 "description": " UK Floating Offshore Wind Farms. \n<br>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{

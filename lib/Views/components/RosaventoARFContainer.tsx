@@ -80,9 +80,10 @@ const RosaventoContainer = (props: any) => {
   }
 
   let basefilenameout =
-    `Rosa dei venti ` + `${onshore == "1" ? "onshore" : "offshore"}`;
+    t("rosaDeiVenti.info") + `${onshore == "1" ? "onshore" : "offshore"}`;
+  // `Rosa dei venti ` + `${onshore == "1" ? "onshore" : "offshore"}`;
   basefilenameout +=
-    ` a ${altezza} m s.l.` +
+    ` ${altezza} m s.l.` +
     `${onshore == "1" ? "t" : "m"}` +
     ` - Lat ${lat} Lon ${long}`;
   // console.log('basefilenameout',basefilenameout)
@@ -165,13 +166,13 @@ const RosaventoContainer = (props: any) => {
             <h4>{basefilenameout}</h4>
             {errore.valueOf() && <h4>errore: punto o livello non corretto</h4>}
 
-            <Rosavento key={miakey} datirosa={datirosa} />
             <h3>{t("rosaDeiVenti.avvertenza")}</h3>
             <p>
               {mostraTabella
                 ? t("rosaDeiVenti.msgNascondi")
                 : t("rosaDeiVenti.msgMostra")}
             </p>
+            <Rosavento key={miakey} datirosa={datirosa} />
           </div>
           <div>
             <TabFrequenzeRosa

@@ -125,7 +125,8 @@
     "aboutlink": "about-en.html"
   },
   "rosaDeiVenti": {
-    "avvertenza": "Warning: windrose calculated on 2015-2019 period",
+    "info": "Windrose ",
+    "avvertenza": "Data calculated on 2015-2019 period",
     "msgMostra": "click on the chart to show the frequency table",
     "msgNascondi": "click on the chart to hide the frequency table",
     "titleTabella": "Frequency table in percentage"

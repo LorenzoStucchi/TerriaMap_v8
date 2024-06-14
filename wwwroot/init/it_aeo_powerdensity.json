@@ -3,25 +3,25 @@
     {
       "id": "powerdensity",
       "type": "group",
-      "name": "Power density",
-      "description": "Questa raccolta contiene le mappe di power density del vento espresse in MWh/MW calcolate come media annua su 30 anni di dati a diverse altezze. \n<br> In particolare, queste elaborazioni derivano dalla nuova banca dati anemologica italiana costituita da 30 anni di dati a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF) combinato con un post-processing statistico basato su Analog Ensemble (AnEn).",
+      "name": "Densità di potenza",
+      "description": "Questa raccolta contiene le mappe di densità di potenza eolica (wind power density) espresse in W/m<sup>2</sup> calcolate come media annua su 30 anni di dati a diverse altezze. \n<br> In particolare, queste elaborazioni derivano dalla nuova banca dati anemologica italiana costituita da 30 anni di dati a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF) combinato con un post-processing statistico basato su Analog Ensemble (AnEn).",
       "isOpen": false,
       "members": [
         {
           "id": "powerdensity_onshore",
           "type": "group",
-          "name": "Power density Onshore",
-          "description": "Questa raccolta comprende le mappe di power density del vento onshore (MWh/MW) alle altezze di 50, 75, 100, 125 e 150 m s.l.t.",
+          "name": "Densità di potenza eolica onshore",
+          "description": "Questa raccolta comprende le mappe di densità di potenza eolica onshore (W/m<sup>2</sup>) alle altezze di 50, 75, 100, 125 e 150 m s.l.t.",
           "isOpen": false,
           "members": [
             
             {
               "type": "wms",
-              "name": "Power density onshore a 50 m s.l.t.",
-              "description": "Power density specifica onshore a 50 m s.l.t. espressa in MWh/MW. <br> Per il calcolo della power density è stato utilizzato un aerogeneratore Riva Calzoni ATB 500.54 con diametro del rotore pari a 54 m e potenza nominale pari a 500 kW. ",
+              "name": "Densità di potenza eolica onshore a 50 m s.l.t.",
+              "description": "Densità di potenza eolica onshore a 50 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La power density specifica del vento è pari a <b>{{dens_50}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -33,11 +33,11 @@
             },
             {
               "type": "wms",
-              "name": "Power density onshore a 75 m s.l.t.",
-              "description": "Power density specifica onshore a 75 m s.l.t. espressa in MWh/MW. <br> La mappa riporta per ogni cella il valore di producibilità massimo tra quelli calcolati utilizzando i seguenti aerogeneratori: Leitwind LTW [potenza nominale: 2 MW], Enercon E92 [potenza nominale: 2.3 MW], Vestas V90 [potenza nominale: 2MW] e Vestas V110 [potenza nominale: 2MW].",
+              "name": "Densità di potenza eolica onshore a 75 m s.l.t.",
+              "description": "Densità di potenza eolica onshore a 75 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La power density' specifica del vento è pari a <b>{{dens_75}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -49,11 +49,11 @@
             } ,
             {
               "type": "wms",
-              "name": "Power density onshore a 100 m s.l.t.",
-              "description": "Power density specifica onshore a 100 m s.l.t. espressa in MWh/MW. <br> La mappa riporta per ogni cella il valore di producibilità massimo tra quelli calcolati utilizzando i seguenti aerogeneratori: Nordex N131 [potenza nominale: 3.6 MW], Nordex N117 [potenza nominale: 3.6 MW], Enercon E115 [potenza nominale: 3 MW], Vestas V117 [potenza nominale: 3.4 MW] e Vestas V136 [potenza nominale: 3.4MW].",
+              "name": "Densità di potenza eolica onshore a 100 m s.l.t.",
+              "description": "Densità di potenza eolica onshore a 100 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La power density specifica del vento è pari a <b>{{dens_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a 100 m s.l.t. a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -65,11 +65,11 @@
             },
             {
               "type": "wms",
-              "name": "Power density onshore a 125 m s.l.t.",
-              "description": "Power density specifica onshore a 125 m s.l.t. espressa in MWh/MW. <br> La mappa riporta per ogni cella il valore di producibilità massimo tra quelli calcolati utilizzando i seguenti aerogeneratori: Nordex N131 [potenza nominale: 3.6 MW], Nordex N117 [potenza nominale: 3.6 MW], Enercon E115 [potenza nominale: 3 MW], Vestas V117 [potenza nominale: 3.4 MW] e Vestas V136 [potenza nominale: 3.4MW].",
+              "name": "Densità di potenza eolica onshore a 125 m s.l.t.",
+              "description": "Densità di potenza eolica onshore a 125 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La power density specifica del vento è pari a <b>{{dens_125}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -81,11 +81,11 @@
             },
             {
               "type": "wms",
-              "name": "Power density onshore a 150 m s.l.t.",
-              "description": "Power density specifica onshore a 150 m s.l.t. espressa in MWh/MW. <br> La mappa riporta per ogni cella il valore di producibilità massimo tra quelli calcolati utilizzando i seguenti aerogeneratori: Nordex N131 [potenza nominale: 3.6 MW], Nordex N117 [potenza nominale: 3.6 MW], Enercon E115 [potenza nominale: 3 MW], Vestas V117 [potenza nominale: 3.4 MW] e Vestas V136 [potenza nominale: 3.4MW].",
+              "name": "Densità di potenza eolica onshore a 150 m s.l.t.",
+              "description": "Densità di potenza eolica onshore a 150 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La power density specifica del vento è pari a <b>{{dens_150}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -101,17 +101,17 @@
         {
           "id": "dens_offshore",
           "type": "group",
-          "name": "Power density Offshore",
-          "description": "Questa raccolta comprende le mappe di power density del vento offshore (MWh/MW) alle altezze di 50, 75, 100, 125 e 150 m s.l.t.",
+          "name": "Densità di potenza eolica offshore",
+          "description": "Questa raccolta comprende le mappe di densità di potenza offshore (W/m<sup>2</sup>) alle altezze di 50, 75, 100, 125 e 150 m s.l.t.",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Power density specifica offshore a 50 m s.l.m.",
-              "description": "Producibilità specifica offshore a 50 m s.l.m. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore NREL_Reference con diametro del rotore pari a 155 m e potenza nominale pari a 6 MW.",
+              "name": "Densità di potenza eolica offshore a 50 m s.l.m.",
+              "description": "Densità di potenza eolica offshore a 50 m s.l.m. espressa in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La producibilità specifica del vento è pari a <b>{{dens_50}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -123,11 +123,11 @@
             },
             {
               "type": "wms",
-              "name": "Power density specifica offshore a 75 m s.l.m.",
-              "description": "Power density specifica offshore a 75 m s.l.m. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore IEA_10MW_RTW con diametro del rotore pari a 198 m e potenza nominale pari a 10 MW.",
+              "name": "Densità di potenza eolica offshore a 75 m s.l.m.",
+              "description": "Densità di potenza eolica offshore a 75 m s.l.m. espressa in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La power density specifica del vento è pari a <b>{{dens_75}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -139,11 +139,11 @@
             },
             {
               "type": "wms",
-              "name": "Power density specifica offshore a 100 m s.l.m.",
-              "description": "Power density specifica offshore a 100 m s.l.m. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore IEA_15MW_RTW con diametro del rotore pari a 240 m e potenza nominale pari a 15 MW.",
+              "name": "Densità di potenza eolica offshore a 100 m s.l.m.",
+              "description": "Densità di potenza eolica offshore a 100 m s.l.m. espressa in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La producibilità' specifica del vento è pari a <b>{{dens_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -155,11 +155,11 @@
             },
             {
               "type": "wms",
-              "name": "Power density specifica offshore a 125 m s.l.m.",
-              "description": "Power density specifica offshore a 125 m s.l.m. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore IEA_15MW_RTW con diametro del rotore pari a 240 m e potenza nominale pari a 15 MW.",
+              "name": "Densità di potenza eolica offshore a 125 m s.l.m.",
+              "description": "Densità di potenza eolica offshore a 125 m s.l.m. espressa in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La producibilità' specifica del vento è pari a <b>{{dens_125}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -171,11 +171,11 @@
             },
             {
               "type": "wms",
-              "name": "Power density specifica offshore a 150 m s.l.m.",
-              "description": "Power density specifica offshore a 150 m s.l.m. espressa in MWh/MW. <br> Per il calcolo della producibilità è stato utilizzato un aerogeneratore IEA_15MW_RTW con diametro del rotore pari a 240 m e potenza nominale pari a 15 MW.",
+              "name": "Densità di potenza eolica offshore a 150 m s.l.m.",
+              "description": "Densità di potenza eolica offshore a 150 m s.l.m. espressa in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La producibilità' specifica del vento è pari a <b>{{dens_150}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",

@@ -10,7 +10,7 @@
         {
           "id": "prod_onshore",
           "type": "group",
-          "name": "Producibilità Onshore",
+          "name": "Producibilità onshore",
           "description": "Questa raccolta comprende le mappe di producibilità del vento onshore (MWh/MW) alle altezze di 50, 75 e 100 m s.l.t.",
           "isOpen": false,
           "members": [
@@ -69,8 +69,8 @@
         {
           "id": "prod_offshore",
           "type": "group",
-          "name": "Producibilità Offshore",
-          "description": "Questa raccolta comprende le mappe di producibilità del vento offshore (MWh/MW) alle altezze di 100, 125 e 150 m s.l.t.",
+          "name": "Producibilità offshore",
+          "description": "Questa raccolta comprende le mappe di producibilità del vento offshore (MWh/MW) alle altezze di 100, 125 e 150 m s.l.m.",
           "isOpen": false,
           "members": [
             {

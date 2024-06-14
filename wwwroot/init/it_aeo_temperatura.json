@@ -6,23 +6,23 @@
       "id": "temperatura",
       "type": "group",
       "name": "Temperatura",
-      "description": "Questa raccolta contiene le mappe di temperatura ....... del vento espresse in m/s calcolate come media annua su 30 anni di dati a diverse altezze. \n<br> In particolare, queste elaborazioni derivano dalla nuova banca dati anemologica italiana costituita da 30 anni di dati a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF) combinato con un post-processing statistico basato su Analog Ensemble (AnEn).",
+      "description": "Questa raccolta contiene la mappa di temperatura a 2 m s.l.t./s.l.m. espressa in °C calcolata come media sul periodo 2015-2019. \n<br> Queste informazioni derivano dalle elaborazioni condotte a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF).",
       "isOpen": false,
       "members": [
         {
           "id": "temperatura_onshore",
           "type": "group",
-          "name": "Temperatura Onshore",
-          "description": "Questa raccolta comprende le mappe di temperatura .....",
+          "name": "Temperatura",
+          "description": "Questa raccolta contiene la mappa di temperatura a 2 m s.l.t./s.l.m. espressa in °C calcolata come media sul periodo 2015-2019.",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Temperatura °C",
-              "description": "Descrizione Temperatura",
+              "name": "Temperatura a 2 m s.l.t./s.l.m.",
+              "description": "Temperatura a 2 m s.l.t./s.l.m. espressa in °C.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La temperatura del vento è pari a <b>{{temp_2}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La temperatura a 2 m s.l.t./s.l.m. è pari a <b>{{temp_2}}</b> °C. </p><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",

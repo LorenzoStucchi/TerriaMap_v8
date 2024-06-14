@@ -5,15 +5,15 @@
     {
       "id": "velocita",
       "type": "group",
-      "name": "Velocità media annua del vento",
+      "name": "Velocità del vento",
       "description": "Questa raccolta contiene le mappe di velocità del vento espresse in m/s calcolate come media annua su 30 anni di dati a diverse altezze. \n<br> In particolare, queste elaborazioni derivano dalla nuova banca dati anemologica italiana costituita da 30 anni di dati a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF) combinato con un post-processing statistico basato su Analog Ensemble (AnEn).",
       "isOpen": false,
       "members": [
         {
           "id": "speed_onshore",
           "type": "group",
-          "name": "Velocità Onshore",
-          "description": "Questa raccolta comprende le mappe di velocità media del vento onshore (m/s) alle altezze di 50, 75, 100, 125 e 150 m s.l.t.",
+          "name": "Velocità onshore",
+          "description": "Questa raccolta comprende le mappe di velocità media del vento onshore (m/s) alle altezze di 10, 50, 75, 100, 125 e 150 m s.l.t.",
           "isOpen": false,
           "members": [
             {
@@ -22,7 +22,7 @@
               "description": "Velocità media annua del vento onshore alla quota di 10 m s.l.t. espressa in m/s.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La velocità del vento è pari a <b>{{vento_10}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
+                "template": "<p>La velocità del vento è pari a <b>{{vento_10}}</b> m/s </p><br><table width=\"900\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -121,7 +121,7 @@
         {
           "id": "speed_offshore",
           "type": "group",
-          "name": "Velocità Offshore",
+          "name": "Velocità offshore",
           "description": "Questa raccolta comprende le mappe di velocità media del vento offshore (m/s) alle altezze di 10, 50, 75, 100, 125 e 150 m s.l.m.",
           "isOpen": false,
           "members": [

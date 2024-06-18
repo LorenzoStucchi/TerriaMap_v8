@@ -3,57 +3,57 @@
     {
       "id": "powerdensity",
       "type": "group",
-      "name": "Densità di potenza",
-      "description": "Questa raccolta contiene le mappe di densità di potenza eolica (wind power density) espresse in W/m<sup>2</sup> calcolate come media annua su 30 anni di dati a diverse altezze. \n<br> In particolare, queste elaborazioni derivano dalla nuova banca dati anemologica italiana costituita da 30 anni di dati a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF) combinato con un post-processing statistico basato su Analog Ensemble (AnEn).",
+      "name": "Power density",
+      "description": "This collection contains wind power density maps expressed in W/m<sup>2</sup> calculated as an annual average over 30 years of data at different heights. \n<br> In particular, these calculations derive from the new Italian anemological database consisting of 30 years of data at an hourly and spatial time step of 1.4 km, using the Weather Research and Forecasting (WRF) meteorological model combined with post-processing statistical based on Analog Ensemble (AnEn).",
       "isOpen": false,
       "members": [
         {
           "id": "powerdensity_onshore",
           "type": "group",
-          "name": "Densità di potenza eolica onshore",
-          "description": "Questa raccolta comprende le mappe di densità di potenza eolica onshore (W/m<sup>2</sup>) alle altezze di 50, 75, 100, 125 e 150 m s.l.t.",
+          "name": "Onshore wind power density",
+          "description": "This collection includes maps of onshore wind power density (W/m<sup>2</sup>) at heights of 50, 75, 100, 125 and 150 m s.l.t.",
           "isOpen": false,
           "members": [
             
             {
               "type": "wms",
-              "name": "Densità di potenza eolica onshore a 50 m s.l.t.",
-              "description": "Densità di potenza eolica onshore a 50 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 50 m s.l.t.",
+              "description": "Onshore wind power density at 50 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>The onshore wind power density is equal to <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=240"
               }],
               "layers": "aeolian:griglia_dati_20240221",
-              "id": "eo_dens50_onshore",
+              "id": "en_eo_dens50_onshore",
               "styles":"aeolian:power_density_onshore"
             },
             {
               "type": "wms",
-              "name": "Densità di potenza eolica onshore a 75 m s.l.t.",
-              "description": "Densità di potenza eolica onshore a 75 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 75 m s.l.t.",
+              "description": "Onshore wind power density at 75 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>The onshore wind power density is equal to <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=241"
               }],
               "layers": "aeolian:griglia_dati_20240221",
-              "id": "eo_dens75_onshore",
+              "id": "en_eo_dens75_onshore",
               "styles":"aeolian:power_density_onshore"
             } ,
             {
               "type": "wms",
-              "name": "Densità di potenza eolica onshore a 100 m s.l.t.",
-              "description": "Densità di potenza eolica onshore a 100 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 100 m s.l.t.",
+              "description": "Onshore wind power density at 100 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a 100 m s.l.t. a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>The onshore wind power density is equal to 100 m s.l.t. a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -65,34 +65,34 @@
             },
             {
               "type": "wms",
-              "name": "Densità di potenza eolica onshore a 125 m s.l.t.",
-              "description": "Densità di potenza eolica onshore a 125 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 125 m s.l.t.",
+              "description": "Onshore wind power density at 125 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>The onshore wind power density is equal to <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=242"
               }],
               "layers": "aeolian:griglia_dati_20240221",
-              "id": "eo_dens125_onshore",
+              "id": "en_eo_dens125_onshore",
               "styles":"aeolian:power_density_onshore"
             },
             {
               "type": "wms",
-              "name": "Densità di potenza eolica onshore a 150 m s.l.t.",
-              "description": "Densità di potenza eolica onshore a 150 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 150 m s.l.t.",
+              "description": "Onshore wind power density at 150 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>The onshore wind power density is equal to <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=242"
               }],
               "layers": "aeolian:griglia_dati_20240221",
-              "id": "eo_dens150_onshore",
+              "id": "en_eo_dens150_onshore",
               "styles":"aeolian:power_density_onshore"
             }     
   
@@ -101,33 +101,33 @@
         {
           "id": "dens_offshore",
           "type": "group",
-          "name": "Densità di potenza eolica offshore",
+          "name": "Offshore wind power density",
           "description": "Questa raccolta comprende le mappe di densità di potenza offshore (W/m<sup>2</sup>) alle altezze di 50, 75, 100, 125 e 150 m s.l.t.",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Densità di potenza eolica offshore a 50 m s.l.m.",
-              "description": "Densità di potenza eolica offshore a 50 m s.l.m. espressa in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 50 m s.l.m.",
+              "description": "Offshore wind power density at 50 m s.l.m. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>The offshore wind power density is equal to <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=243"
               }],
               "layers": "aeolian:griglia_dati_20240221",
-              "id": "eo_dens50_offshore",
+              "id": "en_eo_dens50_offshore",
               "styles":"aeolian:power_density_offshore"
             },
             {
               "type": "wms",
-              "name": "Densità di potenza eolica offshore a 75 m s.l.m.",
-              "description": "Densità di potenza eolica offshore a 75 m s.l.m. espressa in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 75 m s.l.m.",
+              "description": "Offshore wind power density at 75 m s.l.m. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>Offshore wind power density is equal to <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -139,27 +139,27 @@
             },
             {
               "type": "wms",
-              "name": "Densità di potenza eolica offshore a 100 m s.l.m.",
-              "description": "Densità di potenza eolica offshore a 100 m s.l.m. espressa in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 100 m s.l.m.",
+              "description": "Offshore wind power density at 100 m s.l.m. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>The offshore wind power density is equal to <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=245"
               }],
               "layers": "aeolian:griglia_dati_20240221",
-              "id": "eo_dens100_offshore",
+              "id": "en_eo_dens100_offshore",
               "styles":"aeolian:power_density_offshore"
             },
             {
               "type": "wms",
-              "name": "Densità di potenza eolica offshore a 125 m s.l.m.",
-              "description": "Densità di potenza eolica offshore a 125 m s.l.m. espressa in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 125 m s.l.m.",
+              "description": "Offshore wind power density at 125 m s.l.m. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>Offshore wind power density is equal to <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -171,18 +171,18 @@
             },
             {
               "type": "wms",
-              "name": "Densità di potenza eolica offshore a 150 m s.l.m.",
-              "description": "Densità di potenza eolica offshore a 150 m s.l.m. espressa in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 150 m s.l.m.",
+              "description": "Offshore wind power density at 150 m s.l.m. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>The offshore wind power density is equal to <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=245"
               }],
               "layers": "aeolian:griglia_dati_20240221",
-              "id": "eo_dens150_offshore",
+              "id": "en_eo_dens150_offshore",
               "styles":"aeolian:power_density_offshore"
             }            
           ]

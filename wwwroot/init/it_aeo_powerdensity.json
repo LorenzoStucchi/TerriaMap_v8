@@ -53,7 +53,7 @@
               "description": "Densità di potenza eolica onshore a 100 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>La densità di potenza eolica è pari a 100 m s.l.t. a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>La densità di potenza eolica è pari a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",

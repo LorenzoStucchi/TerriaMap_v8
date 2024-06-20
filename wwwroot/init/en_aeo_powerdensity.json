@@ -11,14 +11,14 @@
           "id": "powerdensity_onshore",
           "type": "group",
           "name": "Onshore wind power density",
-          "description": "This collection includes maps of onshore wind power density (W/m<sup>2</sup>) at heights of 50, 75, 100, 125 and 150 m s.l.t.",
+          "description": "This collection includes maps of onshore wind power density (W/m<sup>2</sup>) at heights of 50, 75, 100, 125 and 150 m a.g.l.",
           "isOpen": false,
           "members": [
             
             {
               "type": "wms",
-              "name": "Onshore wind power density at 50 m s.l.t.",
-              "description": "Onshore wind power density at 50 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 50 m a.g.l.",
+              "description": "Onshore wind power density at 50 m a.g.l. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The onshore wind power density is equal to <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
@@ -33,8 +33,8 @@
             },
             {
               "type": "wms",
-              "name": "Onshore wind power density at 75 m s.l.t.",
-              "description": "Onshore wind power density at 75 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 75 m a.g.l.",
+              "description": "Onshore wind power density at 75 m a.g.l. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The onshore wind power density is equal to <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
@@ -49,11 +49,11 @@
             } ,
             {
               "type": "wms",
-              "name": "Onshore wind power density at 100 m s.l.t.",
-              "description": "Onshore wind power density at 100 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 100 m a.g.l.",
+              "description": "Onshore wind power density at 100 m a.g.l. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
-                "template": "<p>The onshore wind power density is equal to 100 m s.l.t. a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
+                "template": "<p>The onshore wind power density is equal to 100 m a.g.l. a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
               },
               "metadataUrls":[{
                 "title":"link metadato",
@@ -65,8 +65,8 @@
             },
             {
               "type": "wms",
-              "name": "Onshore wind power density at 125 m s.l.t.",
-              "description": "Onshore wind power density at 125 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 125 m a.g.l.",
+              "description": "Onshore wind power density at 125 m a.g.l. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The onshore wind power density is equal to <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
@@ -81,8 +81,8 @@
             },
             {
               "type": "wms",
-              "name": "Onshore wind power density at 150 m s.l.t.",
-              "description": "Onshore wind power density at 150 m s.l.t. expressed in W/m<sup>2</sup>. <br>",
+              "name": "Onshore wind power density at 150 m a.g.l.",
+              "description": "Onshore wind power density at 150 m a.g.l. expressed in W/m<sup>2</sup>. <br>",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The onshore wind power density is equal to <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"
@@ -102,13 +102,13 @@
           "id": "dens_offshore",
           "type": "group",
           "name": "Offshore wind power density",
-          "description": "Questa raccolta comprende le mappe di densità di potenza offshore (W/m<sup>2</sup>) alle altezze di 50, 75, 100, 125 e 150 m s.l.t.",
+          "description": "Questa raccolta comprende le mappe di densità di potenza offshore (W/m<sup>2</sup>) alle altezze di 50, 75, 100, 125 e 150 m a.g.l.",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Offshore wind power density at 50 m s.l.m.",
-              "description": "Offshore wind power density at 50 m s.l.m. expressed in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 50 m a.s.l.",
+              "description": "Offshore wind power density at 50 m a.s.l. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The offshore wind power density is equal to <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
@@ -123,8 +123,8 @@
             },
             {
               "type": "wms",
-              "name": "Offshore wind power density at 75 m s.l.m.",
-              "description": "Offshore wind power density at 75 m s.l.m. expressed in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 75 m a.s.l.",
+              "description": "Offshore wind power density at 75 m a.s.l. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>Offshore wind power density is equal to <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
@@ -139,8 +139,8 @@
             },
             {
               "type": "wms",
-              "name": "Offshore wind power density at 100 m s.l.m.",
-              "description": "Offshore wind power density at 100 m s.l.m. expressed in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 100 m a.s.l.",
+              "description": "Offshore wind power density at 100 m a.s.l. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The offshore wind power density is equal to <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
@@ -155,8 +155,8 @@
             },
             {
               "type": "wms",
-              "name": "Offshore wind power density at 125 m s.l.m.",
-              "description": "Offshore wind power density at 125 m s.l.m. expressed in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 125 m a.s.l.",
+              "description": "Offshore wind power density at 125 m a.s.l. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>Offshore wind power density is equal to <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
@@ -171,8 +171,8 @@
             },
             {
               "type": "wms",
-              "name": "Offshore wind power density at 150 m s.l.m.",
-              "description": "Offshore wind power density at 150 m s.l.m. expressed in W/m<sup>2</sup>.",
+              "name": "Offshore wind power density at 150 m a.s.l.",
+              "description": "Offshore wind power density at 150 m a.s.l. expressed in W/m<sup>2</sup>.",
               "url": "http://gis2.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The offshore wind power density is equal to <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"

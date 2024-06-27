@@ -67,25 +67,25 @@ if ($pos === false) {
         <tr>
             <td style="border-top: thin solid gray; border-right: thin solid gray; width: 100px; height: 400px; text-align: center; vertical-align: text-top; text-indent: 2px; background-color: white;">
 
-<a href="download/Grid_nazionale23022023.zip">Download the national grid file in .zip format</a>
+<a href="download/Grid_nazionale20240221.zip">Download the national grid file in .zip format</a>
             </td>
             <td style="border-top: thin solid gray; width: 623px; height: 400px; text-align: justify; vertical-align: text-top; background-color: white;">
-                The file contains the coverage in ESRI shapefiles format representing the 1.4x1.4 km grid&nbsp;relating to the parameters of the Italy Wind Atlas<br>
-                <br>
-                The shapefile attribute table is composed of 16 numeric fields containing
-the values of onshore annual mean wind speed expressed in m/s on the levels of altitude
-above ground level/sea level respectively 50, 75, 100, 125 and 150 meters
-and specific annual energy production expressed in MWh/MW, on the levels of altitude
-above ground level/sea level 50, 75 and 100 meters for onshore cells and 100, 125 and 150 meters for offshore cells.
-The grid also contains a field called "onshore", which reports the value 1 if the grid point falls within the onshore domain or the value 0 if the grid point falls within the offshore domain, the values ​​of the form of the Weibull distribution of wind intensity, the elevation above sea level and the distance of each cell from the nearest primary cabin.
-The wind speed and producibility values ​​are reported accordingly within the grid.
+                The file contains the coverage in ESRI shapefiles format representing the 1.4x1.4 km grid relating to the parameters of the Italy Wind Atlas.<br>
 				<br>
-                <br>
-                The cells are represented in the projection system UTM zone 32N ellipsoid WGS84, as defined in the associated file .prj.<br>
-                <br>
-                Two files are also provided, "vento_grid_shape.lyr" and "prod_grid_shape.lyr",
-useful for representing the data&nbsp;consistent to that displayed in
-the Interactive Wind Atlas.
+				The shapefile attribute table is composed of 20 numeric fields containing the values of:<br>
+				<ul>
+					<li>annual mean temperature expressed in °C, on the level of altitude above ground level/sea level 2 meters;<br></li>
+					<li>onshore and offshore annual mean wind speed expressed in m/s, on the levels of altitude above ground level/sea level respectively 10, 50, 75, 100, 125 and 150 meters;</li>
+					<li>onshore and offshore wind energy density expressed in m/s, on the levels of altitude above ground level/sea level respectively 50, 75, 100, 125 and 150 meters;</li>
+					<li>specific annual energy production expressed in MWh/MW, on the levels of altitude above ground level/sea level 50, 75 and 100 meters for onshore cells and 100, 125 and 150 meters for offshore cells;</li>
+					<li>shape parameter of the Weibull distribution of wind intensity,on the levels of altitude above ground level/sea level 50, 75 and 100 meters for onshore cells and 100, 125 and 150 meters for offshore cells.</li>
+				</ul>
+<br>
+The grid also contains a field called "onshore", which reports the value 1 if the grid point falls within the onshore domain or the value 0 if the grid point falls within the offshore domain, the values of the form of the Weibull distribution of wind intensity, the elevation above sea level and the distance of each cell from the nearest primary cabin. The wind speed and producibility values are reported accordingly within the grid.<br>
+<br>
+The cells are represented in the projection system UTM zone 32N ellipsoid WGS84, as defined in the associated file .prj.<br>
+<br>
+Two files are also provided, "vento_grid_shape.lyr" and "prod_grid_shape.lyr", useful for representing the data consistent to that displayed in the Interactive Wind Atlas.
             </td>
         </tr>
     </tbody></table>

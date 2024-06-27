@@ -67,29 +67,28 @@ if ($pos === false) {
         <tr>
             <td style="border-top: thin solid gray; border-right: thin solid gray; width: 100px; height: 400px; text-align: center; vertical-align: text-top; text-indent: 2px; background-color: white;">
 
-<a href="download/Grid_nazionale23022023.zip">Scarica il file del Grid Nazionale in formato zip</a>
+<a href="download/Grid_nazionale20240221.zip">Scarica il file del Grid Nazionale in formato zip</a>
             </td>
             <td style="border-top: thin solid gray; width: 623px; height: 400px; text-align: justify; vertical-align: text-top; background-color: white;">
-                Il file contiene la copertura in formato ESRI Shapefile che rappresenta la griglia
-                con passo 1.4x1.4 km relativa ai parametri dell'Atlante Eolico dell'Italia.<br>
+			
+				Il file contiene la copertura in formato ESRI Shapefile che rappresenta la griglia con passo 1.4x1.4 km relativa ai parametri dell'Atlante Eolico dell'Italia.<br>
                 <br>
-                Nella tabella
-                attributi associata allo Shapefile sono presenti 16 campi numerici contenenti i valori
-                di velocita' media annua onshore e offshore espressi in m/s relativi
-				ai livelli di quota sul livello del terreno/mare rispettivamente
-                di 50, 75, 100, 125 e 150 metri e di producibilita'specifica espressi in
-                MWh/MW, relativi ai livelli di quota sul livello del terreno/mare rispettivamente
-                di 50, 75 e 100 metri onshore e 100, 125 e 150 m offshore.
-			    La griglia contiene, inoltre, un campo denominato "onshore", che riporta il valore 1 se il punto griglia ricade all'interno del dominio onshore o il valore 0 se il punto griglia ricade all'interno del dominio offshore, i valori del parametro di forma della distribuzione Weibull di intensità del vento, la quota sul livello del mare e la distanza di ogni cella dalla cabina primaria più vicina.
-				I valori di velocità del vento e producibilità sono riportati di conseguenza all'interno della griglia.
+				Nella tabella attributi associata allo Shapefile sono presenti 20 campi numerici contenenti i valori di: <br>
+				<ul>
+					  <li>temperatura media annua espressa in °C, relativa al livello di quota sul livello del terreno/mare di 2 metri;</li>
+					  <li>velocita' media annua onshore e offshore espressa in m/s, relativa ai livelli di quota sul livello del terreno/mare rispettivamente di 10, 50, 75, 100, 125 e 150 metri;</li>
+					  <li>densità di energia eolica onshore e offshore espressa in W/m2, relativa ai livelli di quota sul livello del terreno/mare rispettivamente di 50, 75, 100, 125 e 150 metri;</li>
+					  <li>producibilita'specifica espressa in MWh/MW, relativa ai livelli di quota sul livello del terreno/mare rispettivamente di 50, 75 e 100 metri onshore e 100, 125 e 150 metri offshore;</li>
+					  <li>parametro di forma della distribuzione di Weibul, relativo ai livelli di quota sul livello del terreno/mare rispettivamente di 50, 75 e 100 metri onshore e 100 metri offshore.</li>
+				</ul>
 				<br>
-                <br>
-                Le celle sono rappresentate nel sistema di proiezione
-                UTM Fuso 32N ellissoide WGS84, come definito nel file associato "Grid_Nazionale.prj".<br>
-                <br>
-                Vengono forniti due file, "vento_grid_shape.lyr" e "prod_grid_shape.lyr", utili
-                per la rappresentazione tematica dei dati congruente a quella visualizzabile nell'Atlante
-                Eolico interattivo.
+
+				Le celle sono rappresentate nel sistema di proiezione UTM Fuso 32N sferoide WGS84, come definito nel file associato "Grid_Nazionale.prj".<br>
+				<br>
+				La griglia contiene un campo denominato "onshore", che riporta il valore 1 se il punto griglia ricade all'interno del dominio onshore o il valore 0 se il punto griglia ricade all'interno del dominio offshore.<br>
+				I valori di velocità del vento e producibilità sono riportati di conseguenza all'interno della griglia.<br>
+				<br>
+				Vengono forniti due file, "vento_grid_shape.lyr" e "prod_grid_shape.lyr", utili per la rappresentazione tematica dei dati congruente a quella visualizzabile nell'Atlante Eolico interattivo.
             </td>
         </tr>
     </tbody></table>

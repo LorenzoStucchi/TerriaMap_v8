@@ -66,7 +66,7 @@
       ""
     ],
     // Shown when things go wrong.
-    "supportEmail": "rse@legalmail.it",
+    "supportEmail": "geoportale@rse-web.it",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this

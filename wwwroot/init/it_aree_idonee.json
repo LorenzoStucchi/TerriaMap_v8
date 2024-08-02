@@ -4,14 +4,14 @@
       "id": "available_areas",
       "type": "group",
       "name": "Aree idonee",
-      "description":"Il raggiungimento degli sfidanti obiettivi per lo sviluppo delle FER al 2030 è fortemente dipendente dall’occupazione del suolo e delle acque e degli usi competitivi degli stessi. Mentre la disponibilità di risorsa fotovoltaica ed eolica, seppure con rilevanti differenze nord-sud, risulta più omogeneamente distribuita e comunque sfruttabile su gran parte del territorio nazionale, la disponibilità di aree atte ad ospitare le installazioni, invece, appare come elemento discriminante delle diverse realtà territoriali e in grado di evidenziare anche potenziali limiti allo sviluppo stesso. </br> La potenza aggiuntiva fotovoltaica ed eolica al 2030 viene, quindi, calcolata anche sulla base delle superfici disponibili per alcune tipologie di aree “eleggibili” (ovvero da considerarsi potenzialmente sfruttabili) per le installazioni di fotovolotaico su tetto e a terra e di eolico onshore e offshore.",
+      "description":"Il raggiungimento degli sfidanti obiettivi per lo sviluppo delle FER al 2030 è fortemente dipendente dall’occupazione del suolo e delle acque e degli usi competitivi degli stessi. Mentre la disponibilità di risorsa fotovoltaica ed eolica, seppure con rilevanti differenze nord-sud, risulta più omogeneamente distribuita e comunque sfruttabile su gran parte del territorio nazionale, la disponibilità di aree atte ad ospitare le installazioni, invece, appare come elemento discriminante delle diverse realtà territoriali e in grado di evidenziare anche potenziali limiti allo sviluppo stesso. </br> La potenza aggiuntiva fotovoltaica ed eolica al 2030 viene, quindi, calcolata anche sulla base delle superfici disponibili per alcune tipologie di aree “eleggibili” (ovvero da considerarsi potenzialmente sfruttabili) per le installazioni di fotovolotaico su tetto e a terra e di eolico onshore e offshore. \n\n <div><img src=\"/public/img/Energie Rinnovabili-iStock-586163548.jpg\" style=\"width:640px;height:427px;\"></div> ",
       "isOpen": false,
       "members": [
         {
           "id": "Fotovoltaico",
           "type": "group",
           "name": "Fotovoltaico",
-          "description": "Questa raccolta comprende informazioni a scala comunale riguardanti la percentuale di area disponibile a nuove installazioni fotovoltaiche a terra e su tetto rispetto alla superficie comunale per ciascuna tipologia di area. Tali dati possono costituire validi input ad analisi di ripartizione tra Regioni e Province Autonome degli obiettivi FER nazionali al 2030. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a>",
+          "description": "Questa raccolta comprende informazioni a scala comunale riguardanti la percentuale di area disponibile a nuove installazioni fotovoltaiche a terra e su tetto rispetto alla superficie comunale per ciascuna tipologia di area. Tali dati possono costituire validi input ad analisi di ripartizione tra Regioni e Province Autonome degli obiettivi FER nazionali al 2030. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a> \n\n <div><img src=\"/public/img/Fotolia_53185812_Subscription_Monthly_XXL.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
         {
@@ -166,14 +166,14 @@
           "id": "Eolico",
           "type": "group",
           "name": "Eolico",
-          "description": "Questa raccolta comprende informazioni sull'estensione delle aree idonee per nuove installazioni eoliche onshore e offshore. Tali dati possono costituire validi input ad analisi di ripartizione tra Regioni e Province Autonome degli obiettivi FER nazionali al 2030. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
+          "description": "Questa raccolta comprende informazioni sull'estensione delle aree idonee per nuove installazioni eoliche onshore e offshore. Tali dati possono costituire validi input ad analisi di ripartizione tra Regioni e Province Autonome degli obiettivi FER nazionali al 2030. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a> \n\n <div><img src=\"/public/img/shutterstock_1349148488.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
             {
               "id": "Onshore",
               "type": "group",
               "name": "Aree disponibili per l'eolico onshore",
-              "description": "Questa raccolta comprende la mappa delle aree idonee per nuove installazioni eoliche onshore. </br> Tali aree sono state calcolate a partire dalle aree con producibilità eolica ad una altezza di 100m superiore a 2250 MWh/MW ed escludendo le aree urbanizzate e le aree soggette a vincolo ambientale e culturale. </br> La mappa di producibilità specifica annua teorica deriva dalla nuova banca dati anemologica italiana prodotta da RSE ed è consultabile dall'<a href=\"http://atlanteeolico.rse-web.it\" target=\"_blank\"> Atlante Eolico Italiano AEOLIAN.</a></br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "description": "Questa raccolta comprende la mappa delle aree idonee per nuove installazioni eoliche onshore. </br> Tali aree sono state calcolate a partire dalle aree con producibilità eolica ad una altezza di 100m superiore a 2250 MWh/MW ed escludendo le aree urbanizzate e le aree soggette a vincolo ambientale e culturale. </br> La mappa di producibilità specifica annua teorica deriva dalla nuova banca dati anemologica italiana prodotta da RSE ed è consultabile dall'<a href=\"https://aeolian.rse-web.it/\" target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo </a></br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
               "isOpen": false,
               "members": [
                 {
@@ -198,7 +198,7 @@
               "id": "Offshore",
               "type": "group",
               "name": "Aree disponibili per l'eolico offshore",
-              "description": "Questa raccolta comprende le mappe delle aree idonee per nuove installazioni eoliche offshore per fascia batimetrica e range di producibilità ottenute a partire dalla mappa di batimetria del Mar Mediterraneo generata e rilasciata da European Marine Observation and Data Network (EMODnet) e dalle mappe di producibilità specifica annua teorica a un'altezza di 150 m derivanti dalla nuova banca dati anemologica italiana prodotta da RSE e consultabili dall'<a href=\"http://atlanteeolico.rse-web.it\"  target=\"_blank\"> Atlante Eolico Italiano AEOLIAN.</a></p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
+              "description": "Questa raccolta comprende le mappe delle aree idonee per nuove installazioni eoliche offshore per fascia batimetrica e range di producibilità ottenute a partire dalla mappa di batimetria del Mar Mediterraneo generata e rilasciata da European Marine Observation and Data Network (EMODnet) e dalle mappe di producibilità specifica annua teorica a un'altezza di 150 m derivanti dalla nuova banca dati anemologica italiana prodotta da RSE e consultabili dall'<a href=\"https://aeolian.rse-web.it/\" target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo </a></p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
               "isOpen": false,
               "members": [
                 {

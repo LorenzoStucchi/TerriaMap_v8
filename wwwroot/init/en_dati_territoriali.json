@@ -133,13 +133,13 @@
               "parameters": {
                 "cql_filter": "var_id=88"
               },
-              "initialMessage": {
+              /* "initialMessage": {
                 "title": "Layer view:",
-                "content": "<p align=\"justify\">Data available for the years from 2015 to 2020.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
+                "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
                 "key": "88",
                 "confirmation": true,
                 "confirmText": "I understand"
-              },
+              }, */
               "id": "88",
 			        "styles":"popolazione_regionale"
             },
@@ -159,13 +159,13 @@
               "parameters": {
                 "cql_filter": "var_id=87"
               },
-              "initialMessage": {
-                "title": "Layer view:",
-                "content": "<p align=\"justify\">Data available for the years from 2015 to 2020.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
-                "key": "87",
-                "confirmation": true,
-                "confirmText": "I understand"
-              },
+              // "initialMessage": {
+               // "title": "Layer view:",
+               // "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
+               // "key": "87",
+               // "confirmation": true,
+               // "confirmText": "I understand"
+              //},
               "id": "87",
               "styles":"popolazione_provinciale"
             },
@@ -185,13 +185,13 @@
               "parameters": {
                 "cql_filter": "var_id=65"
               },
-              "initialMessage": {
+              /* "initialMessage": {
                 "title": "Layer view:",
-                "content": "<p align=\"justify\">Data available for the years from 2015 to 2020.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
+                "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
                 "key": "65",
                 "confirmation": true,
                 "confirmText": "I understand"
-              },
+              }, */
               "id": "65",
               "styles":"popolazione_comunale"
             }

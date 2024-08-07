@@ -133,13 +133,13 @@
               "parameters": {
                 "cql_filter": "var_id=88"
               },
-              "initialMessage": {
+              /* "initialMessage": {
                 "title": "Visualizzazione strato:",
-                "content": "Dati disponibili per gli anni dal 2015 al 2020.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
+                "content": "Dati disponibili per gli anni dal 2015 al 2022.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
                 "key": "88",
                 "confirmation": true,
                 "confirmText": "Ho capito"
-              },
+              }, */
               "id": "88",
 			        "styles":"popolazione_regionale"
             },
@@ -159,13 +159,13 @@
               "parameters": {
                 "cql_filter": "var_id=87"
               },
-              "initialMessage": {
+              /* "initialMessage": {
                 "title": "Visualizzazione strato:",
-                "content": "Dati disponibili per gli anni dal 2015 al 2020.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
+                "content": "Dati disponibili per gli anni dal 2015 al 2022.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
                 "key": "87",
                 "confirmation": true,
                 "confirmText": "Ho capito"
-              },
+              }, */
               "id": "87",
               "styles":"popolazione_provinciale"
             },
@@ -186,13 +186,13 @@
                 "cql_filter": "var_id=65"
               },
               "id": "65",
-              "initialMessage": {
+              /* "initialMessage": {
                 "title": "Visualizzazione strato:",
-                "content": "Dati disponibili per gli anni dal 2015 al 2020.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
+                "content": "Dati disponibili per gli anni dal 2015 al 2022.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
                 "key": "65",
                 "confirmation": true,
                 "confirmText": "Ho capito"
-              },
+              }, */
               "styles":"popolazione_comunale"
             }
           ]

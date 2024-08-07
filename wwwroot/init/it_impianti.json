@@ -29,7 +29,8 @@
                   "styles":"eo_imp_reg_potenza",
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "featureInfoTemplate": {
-                    "template": "<br><br><p>Potenza regionale (MW) <b>{{valore}}</b></p><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled height=\"20\" style=\"border-radius: 2px; border-style: none\"><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr><tr><td style=\"border-style: none\"></td></tr><tr><td bgcolor='#519AC2' align='center' disabled height=\"20\" style=\"border-radius: 2px; border-style: none\"><a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"><font color='#FFFFFF'>Download copertura anno selezionato</a></font></td></tr><tr><td style=\"border-style: none\"></td></tr><tr><td bgcolor='#519AC2' align='center' disabled height=\"20\" style=\"border-radius: 2px; border-style: none\"><a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"><font color='#FFFFFF'>link al metadato </a></font></td></tr></table>"
+                    "template": "<br><p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"                    
+                    /*"<br><br><p>Potenza regionale (MW) <b>{{valore}}</b></p><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled height=\"20\" style=\"border-radius: 2px; border-style: none\"><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr><tr><td style=\"border-style: none\"></td></tr><tr><td bgcolor='#519AC2' align='center' disabled height=\"20\" style=\"border-radius: 2px; border-style: none\"><a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"><font color='#FFFFFF'>Download copertura anno selezionato</a></font></td></tr><tr><td style=\"border-style: none\"></td></tr><tr><td bgcolor='#519AC2' align='center' disabled height=\"20\" style=\"border-radius: 2px; border-style: none\"><a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"><font color='#FFFFFF'>link al metadato </a></font></td></tr></table>"*/
                   },
                   "parameters": {
                     "cql_filter": "var_id=89"
@@ -393,19 +394,19 @@
                         "title":"link metadato",
                         "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=95&anno=2020"
                       }],
+                      "initialMessage": {
+                        "title": "Visualizzazione strato:",
+                        "content": "Dati disponibili per gli anni dal 2015 al 2020.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto lo strato informativo alla mappa.",
+                        "key": "id_95",
+                        "confirmation": true,
+                        "confirmText": "Ho capito"
+                      },
                       "layers": "new_atlante_integrato:v_regioni_t",
                       "styles":"new_atlante_integrato:id_imp_reg_pot_tot",
                       "parameters": {
                         "cql_filter": "var_id=95"
                       },
-                      "id": "95",
-                      "initialMessage": {
-                        "title": "Visualizzazione strato:",
-                        "content": "Dati disponibili per gli anni dal 2015 al 2020.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
-                        "key": "var_95",
-                        "confirmation": true,
-                        "confirmText": "Ho capito"
-                      }
+                      "id": "95"
                     },
                     {
                       "type": "wms",
@@ -1033,13 +1034,13 @@
                   "parameters": {
                     "cql_filter": "var_id=203"
                   },
-                  /* "initialMessage": {
+                  "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "ge_203",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  }, */
+                  },
                   "styles":"ge_num_impianti_com",
                   "id": "ge_203"
                 },
@@ -1084,6 +1085,13 @@
                   "parameters": {
                     "cql_filter": "var_id=78"
                   },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=78",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "id": "78"
                 },
                 {
@@ -1102,6 +1110,13 @@
                   "styles":"bi_num_imp_reg",
                   "parameters": {
                     "cql_filter": "var_id=201"
+                  },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=201",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
                   },
                   "id": "201"
                 },
@@ -1141,6 +1156,13 @@
                   "parameters": {
                     "cql_filter": "var_id=195"
                   },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=195",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "id": "195"
                 },
                 {
@@ -1159,6 +1181,13 @@
                   "styles":"bi_bioliquidi_energia_reg",
                   "parameters": {
                     "cql_filter": "var_id=189"
+                  },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=189",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
                   },
                   "id": "189"
                 },
@@ -1179,6 +1208,13 @@
                   "parameters": {
                     "cql_filter": "var_id=198"
                   },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=198",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+                  },
                   "id": "198"
                 },
                 {
@@ -1197,6 +1233,13 @@
                   "styles":"bi_ru_biodegradabili_energia_reg",
                   "parameters": {
                     "cql_filter": "var_id=192"
+                  },
+                  "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili dal 2015 al 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=192",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
                   },
                   "id": "192"
                 },

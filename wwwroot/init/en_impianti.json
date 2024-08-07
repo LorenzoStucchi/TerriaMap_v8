@@ -1026,13 +1026,13 @@
                   "parameters": {
                     "cql_filter": "var_id=203"
                   },
-                  /* "initialMessage": {
-                    "title": "Visualizzazione strato:",
-                    "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
+                  "initialMessage": {
+                    "title": "Layer view:",
+                    "content": "Data available for the year 2019.<br>To view this layer, select the year 2019 in the sidebar after adding the information layer to the map.",
                     "key": "ge_203",
                     "confirmation": true,
-                    "confirmText": "Ho capito"
-                  }, */
+                    "confirmText": "I understand"
+                  },
                   "styles":"ge_num_impianti_com",
                   "id": "ge_203"
                 },
@@ -1076,6 +1076,13 @@
                   "styles":"bi_imp_reg_potenza_installata",
                   "parameters": {
                     "cql_filter": "var_id=78"
+                  },                  
+                  "initialMessage": {
+                    "title": "Layer view:",
+                    "content": "Data available from 2015 to 2021.<br>To view this layer, select an available year in the sidebar after adding the information layer to the map.",
+                    "key": "78",
+                    "confirmation": true,
+                    "confirmText": "I understand"
                   },
                   "id": "78"
                 },
@@ -1095,6 +1102,13 @@
                   "styles":"bi_num_imp_reg",
                   "parameters": {
                     "cql_filter": "var_id=201"
+                  },                  
+                  "initialMessage": {
+                    "title": "Layer view:",
+                    "content": "Data available from 2015 to 2021.<br>To view this layer, select an available year in the sidebar after adding the information layer to the map.",
+                    "key": "201",
+                    "confirmation": true,
+                    "confirmText": "I understand"
                   },
                   "id": "201"
                 },
@@ -1134,6 +1148,13 @@
                   "parameters": {
                     "cql_filter": "var_id=195"
                   },
+                  "initialMessage": {
+                    "title": "Layer view:",
+                    "content": "Data available from 2015 to 2021.<br>To view this layer, select an available year in the sidebar after adding the information layer to the map.",
+                    "key": "195",
+                    "confirmation": true,
+                    "confirmText": "I understand"
+                  },
                   "id": "195"
                 },
                 {
@@ -1152,6 +1173,13 @@
                   "styles":"bi_bioliquidi_energia_reg",
                   "parameters": {
                     "cql_filter": "var_id=189"
+                  },
+                  "initialMessage": {
+                    "title": "Layer view:",
+                    "content": "Data available from 2015 to 2021.<br>To view this layer, select an available year in the sidebar after adding the information layer to the map.",
+                    "key": "189",
+                    "confirmation": true,
+                    "confirmText": "I understand"
                   },
                   "id": "189"
                 },
@@ -1172,6 +1200,13 @@
                   "parameters": {
                     "cql_filter": "var_id=198"
                   },
+                  "initialMessage": {
+                    "title": "Layer view:",
+                    "content": "Data available from 2015 to 2021.<br>To view this layer, select an available year in the sidebar after adding the information layer to the map.",
+                    "key": "198",
+                    "confirmation": true,
+                    "confirmText": "I understand"
+                  },
                   "id": "198"
                 },
                 {
@@ -1190,6 +1225,13 @@
                   "styles":"bi_ru_biodegradabili_energia_reg",
                   "parameters": {
                     "cql_filter": "var_id=192"
+                  },
+                  "initialMessage": {
+                    "title": "Layer view:",
+                    "content": "Data available from 2015 to 2021.<br>To view this layer, select an available year in the sidebar after adding the information layer to the map.",
+                    "key": "192",
+                    "confirmation": true,
+                    "confirmText": "I understand"
                   },
                   "id": "192"
                 },

@@ -111,22 +111,22 @@
           {
             "id": "greeceNewinstallations",
             "type": "group",
-            "name": "Floating Offshore Wind  FOW projects",
+            "name": "Floating Offshore Wind Projects",
             "description": "Floating Offshore Wind  FOW projects description ....",
             "isOpen": false,
             "members": [
               
               {
                 "type": "wms",
-                "name": "WORK IN PROGRESS Greece - Floating Offshore Wind  FOW projects",
+                "name": "Greece - FOW Project Areas",
                 "description": "Greece Floating Offshore Wind  FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
                 }],
-                "styles":"new_atlante_integrato:linea_24mn",
+                "layers":"marinewind:greece_potential_offshore_wind_areas",
                 "id": "greece_new_inst"
               }
             ]

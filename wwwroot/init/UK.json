@@ -111,27 +111,14 @@
           {
             "id": "ukNewinstallations",
             "type": "group",
-            "name": "Floating Offshore Wind  FOW Projects",
+            "name": "Floating Offshore Wind Projects",
             "description": "Floating Offshore Wind  FOW projects description ....",
             "isOpen": false,
             "members": [
               
               {
                 "type": "wms",
-                "name": "UK - Floating Offshore Wind FOW projects WORK IN PROGRESS",
-                "description": "UK Floating Offshore Wind FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://ows.emodnet-bathymetry.eu/wms/inspire_quad",
-                //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
-                }],
-                //"styles":"new_atlante_integrato:linea_24mn",
-                "id": "uk_new_inst"
-              },
-              {
-                "type": "wms",
-                "name": "UK - FOW Project locations",
+                "name": "UK - FOW Project Locations",
                 "description": " UK Floating Offshore Wind Farms. \n<br>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{

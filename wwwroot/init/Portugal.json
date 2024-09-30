@@ -111,23 +111,34 @@
           {
             "id": "portugalNewinstallations",
             "type": "group",
-            "name": "Floating Offshore Wind FOW projects",
+            "name": "Floating Offshore Wind Projects",
             "description": "Floating Offshore Wind  FOW projects description ....",
             "isOpen": false,
             "members": [
               
               {
                 "type": "wms",
-                "name": "WORK IN PROGRESS Portugal - Floating Offshore Wind FOW projects",
-                "description": "Portugal Floating Offshore Wind FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
-                //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
+                "name": "Portugal - Potential FOW Farm Areas",
+                "description": "<p align=\"justify\">Portugal - Potential areas for FOW farms ..... </p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
                   "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 }],
-                "styles":"new_atlante_integrato:linea_24mn",
+                "layers": "marinewind:potential_areas_for_fow_farms",
                 "id": "portugal_new_inst"
+              },
+              {
+                "type": "wms",
+                "name": "Portugal - Existing FOW Farm Areas",
+                "description": "<p align=\"justify\">Portugal - Existing FOW farms areas ..... </p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                }],
+                "layers": "marinewind:portugal_existing_fow_farms_areas",
+                "id": "portugal_inst_esistenti"
               }
             ]
           },

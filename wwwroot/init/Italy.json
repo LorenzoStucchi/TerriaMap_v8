@@ -111,7 +111,7 @@
           {
             "id": "ItalyNewinstallations",
             "type": "group",
-            "name": "Floating Offshore Wind  FOW projects",
+            "name": "Floating Offshore Wind Projects",
             "description": "Floating Offshore Wind  FOW projects description .....",
             "isOpen": false,
             "members": [
@@ -131,7 +131,7 @@
               },
               {
                 "type": "wms",
-                "name": "Italy - FOW Project locations",
+                "name": "Italy - FOW Project Locations",
                 "description": "<p align=\"justify\">Italy Floating Offshore Wind Farms - FOW projects   -   DESCRIPTION: WORK IN PROGRESS",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{
@@ -154,7 +154,7 @@
                 "type": "wms",
                 "name": "Italy - Important Bird Areas (IBA)",
                 "description": "<p align=\"justify\">Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n which are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3iba",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
@@ -166,7 +166,7 @@
                 "type": "wms",
                 "name": "Italy - Wetlands (Ramsar)",
                 "description": "<p align=\"justify\">Map of Ramsar areas, areas of the Italian territory that meet the requirements of the international convention relating to wetlands of international importance, especially as a habitat for aquatic birds, known as the Ramsar Convention. The Ramsar Convention is an act signed in Ramsar, Iran, on February 2nd, 1971. The Ramsar Convention was ratified and implemented by Italy with Presidential Decree no. 448 of 13rd March 1976 and with the subsequent Presidential Decree n. 184 of 11th February 1987. According to the Convention are meant for wetlands marshes, peats or basins, natural or artificial, permanent or temporary, with stagnant or flowing water, fresh, brackish or salty, including expanses of sea water the depth of which, at low tide, does not exceed six metres. According to the Convention, waterbirds are birds ecologically dependent on wetlands. Ramsar areas update September 2011.<br><br>Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3ramsar",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=120"
@@ -178,7 +178,7 @@
                 "type": "wms",
                 "name": "Italy - Special Protection Areas (ZPS)",
                 "description": "<p align=\"justify\">Map of the Special Protection Areas present on the Italian territory updated in January 2017. The Special Protection Areas (ZPS), in Italy, in accordance with art. 1 paragraph 5 of Law No. 157/1992 are protection zones chosen along the bird migration routes, aimed at the maintenance and arrangement of suitable habitats for the conservation and management of migratory wild bird populations. The associated table contains a series of information among which code, denomination, surface, perimeter and Region to which each zone belongs.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3zps",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=118"
@@ -190,7 +190,7 @@
                 "type": "wms",
                 "name": "Italy - Sites of Community Importance (SIC)",
                 "description": "<p align=\"justify\">Map of sites of Community Importance and Special Areas of Conservation (ZSC) present in Italy updated in January 2017. The Site of Community Importance (SIC) and the Special Conservation Area (ZSC), are concepts defined by the Community Directive n. 43 of 21 May 1992, (92/43/EEC), also known as the \\\"Habitats\\\" Directive, and implemented in Italy in 1997. The Directive relates to the conservation of natural and semi-natural habitats and wild flora and fauna.<br><br> Source: Ministry of the Environment and the Protection of the Territory and the Sea - General Directorate for the Protection of Nature and the Sea.</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3sic",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=118"
@@ -202,7 +202,7 @@
                 "type": "wms",
                 "name": "Italy - Official Protected Area List (EUAP)",
                 "description": "<p align=\"justify\">Map of the VI Official List of Protected Natural Areas (EUAP).\n\n Established on the basis of law 394/91 Framework law on protected areas, the official list currently in force is that relating to the 6th Update approved with D.M. 27/04/2010 and published in the Ordinary Supplement n. 115 to the Official Journal no. 125 of 05/31/2010. According to the law 394/91, the protected areas are divided into National Parks (PNZ), Natural Marine Protected Areas (MAR), Marine State Natural Parks (PNZ_m), State Natural Reserves (RNS), Regional Natural Parks and Reserves (PNR - RNR), Submerged Natural Parks (GAPN), Other Protected Natural Areas (AAPN). The list is compiled and periodically updated by the Ministry of the Environment and the Protection of the Territory and the Sea - Nature Protection Directorate. \n\n Source: Ministry of the Environment and Protection of the Land and Sea - General Directorate for the Protection of Nature and the Sea.</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3euap",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=117"

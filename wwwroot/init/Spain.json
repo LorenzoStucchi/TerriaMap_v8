@@ -111,14 +111,14 @@
           {
             "id": "spainNewinstallations",
             "type": "group",
-            "name": "Floating Offshore Wind  FOW projects",
+            "name": "Floating Offshore Wind Projects",
             "description": "Floating Offshore Wind  FOW projects description ......",
             "isOpen": false,
             "members": [
  
               {
                 "type": "wms",
-                "name": "Spain - High Potential Offshore Wind  Zones",
+                "name": "Spain - High Potential Offshore Wind Zones",
                 "description": "<p align=\"justify\">Map of High Potential Offshore Wind  Zones. Description .... WORK IN PROGRESS",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "metadataUrls":[{

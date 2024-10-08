@@ -47,10 +47,10 @@
               "description": "Portugal internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "marinewind:portugal_internal_waters",
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
-              }],
+              //"metadataUrls":[{
+              //  "title":"metadata link",
+              //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
+              //}],
               //"styles":"new_atlante_integrato:acque_interne",
               "id": "portugal_int_waters"
             },
@@ -60,10 +60,10 @@
                 "description": "12 nautical miles line from Portugal coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:portugal_12nml",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=265"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=265"
+                //}],
                 //"styles":"new_atlante_integrato:linea_12mn",
                 "id": "portugal_line_12nm"
               },
@@ -73,10 +73,10 @@
                 "description": "24 nautical miles line from Portugal coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:portugal_24nml",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
+                //}],
                 //"styles":"new_atlante_integrato:linea_24mn",
                 "id": "portugal_line_24nm"
               },
@@ -85,10 +85,10 @@
                 "name": "Portugal - Exclusive Economic Zone",
                 "description": " Portugal Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
+                //}],
                 "layers": "marinewind:portugal_eez",
                 //"styles":"aeolian:linea_blu_2",
                 "id": "portugal_eez"
@@ -98,10 +98,10 @@
                 "name": "Portugal - Maritime Spatial Planning   WORK IN PROGRESS",
                 "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
+                //}],
                 "layers": "marinewind:portugal_eez",
                 //"styles":"aeolian:linea_blu_2",
                 "id": "portugal_mar_spat_planning"
@@ -121,10 +121,10 @@
                 "name": "Portugal - Potential FOW Farm Areas",
                 "description": "<p align=\"justify\">Portugal - Potential areas for FOW farms ..... </p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
                 "layers": "marinewind:potential_areas_for_fow_farms",
                 "id": "portugal_new_inst"
               },
@@ -133,10 +133,10 @@
                 "name": "Portugal - Existing FOW Farm Areas",
                 "description": "<p align=\"justify\">Portugal - Existing FOW farms areas ..... </p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
                 "layers": "marinewind:portugal_existing_fow_farms_areas",
                 "id": "portugal_inst_esistenti"
               }
@@ -154,10 +154,10 @@
                 "name": "Portugal - WORK IN PROGRESS",
                 "description": "<p align=\"justify\">WORK IN PROGRESS ..... </p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
                 "layers": "portugal_iba",
                 "id": "portugal_iba"
               }
@@ -179,10 +179,10 @@
                   "template": "<p>WP1 First round of co-creation workshops – Aveiro (Portugal)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Aveiro&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },
     
-                "metadataUrls":[{
-                  "title":"metaddddddata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metaddddddata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
                 "layers": "marinewind:workshop_aveiro",
                 "id": "1st_workshop_aveiro"
               }

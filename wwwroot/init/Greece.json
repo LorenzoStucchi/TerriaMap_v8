@@ -47,10 +47,10 @@
               "description": "WORK IN PROGRESS - Greek internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "marinewind:greece_internal_waters",
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
-              }],
+              //"metadataUrls":[{
+              //  "title":"metadata link",
+              //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
+              //}],
               //"styles":"new_atlante_integrato:acque_interne",
               "id": "greece_int_waters"
             },
@@ -60,10 +60,10 @@
                 "description": "12 nautical miles line from Greek coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:greece_12nml",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=265"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=265"
+                //}],
                 //"styles":"new_atlante_integrato:linea_12mn",
                 "id": "greece_line_12nm"
               },
@@ -73,10 +73,10 @@
                 "description": "24 nautical miles line from Greek coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:greece_24nml",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
+                //}],
                 //"styles":"new_atlante_integrato:linea_24mn",
                 "id": "greece_line_24nm"
               },
@@ -85,10 +85,10 @@
                 "name": "Greece - Exclusive Economic Zone",
                 "description": " Greek Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+               //   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
+                //}],
                 "layers": "marinewind:greece_eez",
                 //"styles":"aeolian:linea_blu_2",
                 "id": "greece_eez"
@@ -98,10 +98,10 @@
                 "name": "Greece - Maritime Spatial Planning  WORK IN PROGRESS",
                 "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
+                //}],
                 "layers": "marinewind:greece_eez",
                 //"styles":"aeolian:linea_blu_2",
                 "id": "greece_mar_spat_planning"
@@ -122,10 +122,10 @@
                 "description": "Greece Floating Offshore Wind  FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
+                //}],
                 "layers":"marinewind:greece_potential_offshore_wind_areas",
                 "id": "greece_new_inst"
               }
@@ -143,10 +143,10 @@
                 "name": "WORK IN PROGRESS  Greece - WDPA WDOECM",
                 "description": "<p align=\"justify\">WORK IN PROGRESS  .......</p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
                 "layers": "marinewind:WDPA_WDOECM",
                 "id": "greece_iba"
               }
@@ -168,10 +168,10 @@
                   "template": "<p>WP1 First round of co-creation workshops – Athens (Greece)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Athens&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },
     
-                "metadataUrls":[{
-                  "title":"metaddddddata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metaddddddata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
                 "layers": "marinewind:workshop_athens",
                 "id": "1st_workshop_athens"
               }

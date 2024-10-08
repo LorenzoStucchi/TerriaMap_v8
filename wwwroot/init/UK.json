@@ -47,10 +47,10 @@
               "description": "UK internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
               "url": "https://gis2.rse-web.it/geoserver/wms",
               "layers": "marinewind:uk_internal_waters",
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
-              }],
+              //"metadataUrls":[{
+              //  "title":"metadata link",
+              //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
+              //}],
               //"styles":"new_atlante_integrato:acque_interne",
               "id": "uk_int_waters"
             },
@@ -60,10 +60,10 @@
                 "description": "12 nautical miles line from UK coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:uk_12nml",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=265"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=265"
+                //}],
                 //"styles":"new_atlante_integrato:linea_12mn",
                 "id": "uk_line_12nm"
               },
@@ -73,10 +73,10 @@
                 "description": "24 nautical miles line from UK coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
                 "layers": "marinewind:uk_24nml",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
+                //}],
                 //"styles":"new_atlante_integrato:linea_24mn",
                 "id": "uk_line_24nm"
               },
@@ -85,10 +85,10 @@
                 "name": "UK - Exclusive Economic Zone",
                 "description": " UK Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
+                //}],
                 "layers": "marinewind:uk_eez",
                 //"styles":"aeolian:linea_blu_2",
                 "id": "uk_eez"
@@ -98,10 +98,10 @@
                 "name": "UK - Maritime Spatial Planning WORK IN PROGRESS",
                 "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
                 "url": "http://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
+                //}],
                 "layers": "marinewind:uk_eez",
                 //"styles":"aeolian:linea_blu_2",
                 "id": "uk_mar_spat_planning"
@@ -121,10 +121,10 @@
                 "name": "UK - FOW Project Locations",
                 "description": " UK Floating Offshore Wind Farms. \n<br>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link"
+                //"metadataUrls":[{
+                //  "title":"metadata link"
                   //"url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
-                }],
+                //}],
                 "layers": "marinewind:floating offshore wind farms UK",
                 //"styles":"aeolian:linea_blu_2",
                 "id": "uk_floating_offshore_wind_farms"
@@ -143,10 +143,10 @@
                 "name": "UK - UNESCO",
                 "description": "<p align=\"justify\">UK UNESCO.</p><p align=\"justify\">Data provided by Flanders Marine Institute https://www.marineregions.org/.</p>",
                 "url": "https://gis2.rse-web.it/geoserver/wms",
-                "metadataUrls":[{
-                  "title":"metadata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
                 "layers": "uk_unesco",
                 "id": "uk_unesco"
               }
@@ -168,10 +168,10 @@
                   "template": "<p>WP1 First round of co-creation workshops – Aberdeen (UK)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Aberdeen&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },
     
-                "metadataUrls":[{
-                  "title":"metaddddddata link",
-                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
-                }],
+                //"metadataUrls":[{
+                //  "title":"metaddddddata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
                 "layers": "marinewind:workshop_aberdeen",
                 "id": "1st_workshop_aberdeen"
               }

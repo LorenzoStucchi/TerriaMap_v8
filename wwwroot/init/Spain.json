@@ -102,7 +102,7 @@
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 //}],
-                "layers": "marinewind:Spain_maritime_spatial_planning_emodnet",
+                "layers": "marinewind:spain_msp",
                 "id": "spain_msp_emodnet"
               }
             ]
@@ -150,6 +150,31 @@
              // }
             ]
           },
+          {
+            "id": "spain_network_infrastructure",
+            "type": "group",
+            "name": "Network Infrastructures",
+            "description": "Spain Network Infrastructures",
+            "isOpen": false,
+            "members": [
+              {
+                "type": "wms",
+                "name": "Spain - Powerline",
+                "description": "<p align=\"justify\">Spain - Powerline.</p><p align=\"justify\">Spain - Powerline</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                //"featureInfoTemplate": {
+                //  "template": "<p>WP1 First round of co-creation workshops – Bari (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Bari&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                //},
+    
+                //"metadataUrls":[{
+                //  "title":"metaddddddata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
+                "layers": "marinewind:powerline_spain",
+                "id": "spain_powerline"
+              }
+            ]
+          },           
           {
             "id": "spain_workshop",
             "type": "group",

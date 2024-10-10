@@ -153,6 +153,31 @@
             ]
           },
           {
+            "id": "uk_network_infrastructure",
+            "type": "group",
+            "name": "Network Infrastructures",
+            "description": "UK Network Infrastructures",
+            "isOpen": false,
+            "members": [
+              {
+                "type": "wms",
+                "name": "UK - Powerline",
+                "description": "<p align=\"justify\">UK - Powerline.</p><p align=\"justify\">UK - Powerline</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                //"featureInfoTemplate": {
+                //  "template": "<p>WP1 First round of co-creation workshops – Bari (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Bari&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                //},
+    
+                //"metadataUrls":[{
+                //  "title":"metaddddddata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
+                "layers": "marinewind:powerline_uk",
+                "id": "uk_powerline"
+              }
+            ]
+          },
+          {
             "id": "uk_workshop",
             "type": "group",
             "name": "UK Labs",

@@ -226,6 +226,31 @@
             ]
           },
           {
+            "id": "italy_network_infrastructure",
+            "type": "group",
+            "name": "Network Infrastructures",
+            "description": "Italy Network Infrastructures",
+            "isOpen": false,
+            "members": [
+              {
+                "type": "wms",
+                "name": "Italy - Powerline",
+                "description": "<p align=\"justify\">Italy - Powerline.</p><p align=\"justify\">Italy - Powerline</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                //"featureInfoTemplate": {
+                //  "template": "<p>WP1 First round of co-creation workshops – Bari (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Bari&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                //},
+    
+                //"metadataUrls":[{
+                //  "title":"metaddddddata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
+                "layers": "marinewind:powerline_italy",
+                "id": "italy_powerline"
+              }
+            ]
+          },           
+          {
             "id": "italy_workshop",
             "type": "group",
             "name": "Italy Labs",

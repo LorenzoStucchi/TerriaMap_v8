@@ -95,16 +95,15 @@
               },
               {
                 "type": "wms",
-                "name": "Spain - Maritime Spatial Planning  WORK IN PROGRESS",
-                "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "http://gis2.rse-web.it/geoserver/wms",
+                "name": "Spain - Maritime Spatial Planning EMODnet",
+                "description": "<p align=\"justify\">Spain - Maritime Spatial Planning EMODnet</p><p align=\"justify\">Data provided by EMODnet https://emodnet.ec.europa.eu/geoviewer/#!/.</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%Spain_maritime_spatial_planning_emodnet",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
-                //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 //}],
-                "layers": "marinewind:spain_eez",
-                //"styles":"aeolian:linea_blu_2",
-                "id": "spain_mar_spat_planning"
+                "layers": "marinewind:Spain_maritime_spatial_planning_emodnet",
+                "id": "spain_msp_emodnet"
               }
             ]
           },
@@ -137,18 +136,18 @@
             "description": "This collection includes information on the environmental constraints present in the area.",
             "isOpen": false,
             "members": [
-              {
-                "type": "wms",
-                "name": "Spain - UNESCO",
-                "description": "<p align=\"justify\">Spain UNESCO.</p><p align=\"justify\">Data provided by Flanders Marine Institute https://www.marineregions.org/.</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+             // {
+             //   "type": "wms",
+             //   "name": "Spain - UNESCO",
+             //   "description": "<p align=\"justify\">Spain UNESCO.</p><p align=\"justify\">Data provided by Flanders Marine Institute https://www.marineregions.org/.</p>",
+             //   "url": "https://gis2.rse-web.it/geoserver/wms",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 //}],
-                "layers": "spain_unesco",
-                "id": "spain_unesco"
-              }
+             //   "layers": "spain_unesco",
+             //   "id": "spain_unesco"
+             // }
             ]
           },
           {

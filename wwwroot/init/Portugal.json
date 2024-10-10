@@ -96,15 +96,15 @@
               {
                 "type": "wms",
                 "name": "Portugal - Maritime Spatial Planning   WORK IN PROGRESS",
-                "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "http://gis2.rse-web.it/geoserver/wms",
+                "description": "Portugal - Maritime Spatial Planning. \n<br>"
+                //"url": "http://gis2.rse-web.it/geoserver/wms",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
                 //}],
-                "layers": "marinewind:portugal_eez",
+                //"layers": "marinewind:portugal_eez",
                 //"styles":"aeolian:linea_blu_2",
-                "id": "portugal_mar_spat_planning"
+                //"id": "portugal_mar_spat_planning"
               }
             ]
           },

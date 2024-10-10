@@ -96,15 +96,15 @@
               {
                 "type": "wms",
                 "name": "Greece - Maritime Spatial Planning  WORK IN PROGRESS",
-                "description": " CAMBIARE SERVIZIO    Italian Maritime Spatial Planning. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "http://gis2.rse-web.it/geoserver/wms",
+                "description": "Greece - Maritime Spatial Planning. \n<br>"
+                //"url": "http://gis2.rse-web.it/geoserver/wms",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
                 //}],
-                "layers": "marinewind:greece_eez",
+                //"layers": "marinewind:greece_eez",
                 //"styles":"aeolian:linea_blu_2",
-                "id": "greece_mar_spat_planning"
+                //"id": "greece_mar_spat_planning"
               }
              ]
           },
@@ -174,6 +174,38 @@
                 //}],
                 "layers": "marinewind:workshop_athens",
                 "id": "1st_workshop_athens"
+              },
+              {
+                "type": "wms",
+                "name": "2nd Co-creation workshop",
+                "description": "<p align=\"justify\">Greece WORKSHOPS.</p><p align=\"justify\">Workshops in Greece</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "featureInfoTemplate": {
+                  "template": "<p>WP1 Second  round of co-creation workshops – Thessaloniki (Greece)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Thessaloniki&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                },
+    
+                //"metadataUrls":[{
+                //  "title":"metaddddddata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
+                "layers": "marinewind:workshop_thessaloniki",
+                "id": "2nd_workshop_thessaloniki"
+              },
+              {
+                "type": "wms",
+                "name": "3rd Co-creation workshop",
+                "description": "<p align=\"justify\">Greece WORKSHOPS.</p><p align=\"justify\">Workshops in Greece</p>",
+                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "featureInfoTemplate": {
+                  "template": "<p>WP1 Third round of co-creation workshops – Heraklion (Greece)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Heraklion&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                },
+    
+                //"metadataUrls":[{
+                //  "title":"metaddddddata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
+                "layers": "marinewind:workshop_heraklion",
+                "id": "3rd_workshop_heraklion"
               }
             ]
           }

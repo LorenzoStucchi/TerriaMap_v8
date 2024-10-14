@@ -20,8 +20,8 @@
             {
               "type": "wms",
               "name": "Spain - Administrative limits",
-              "description": "Spain administrative limits (NUTS2 level) of the last available year (2021). Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "description": "Spain administrative limits (NUTS2 level) of the last available year (2021). <br> Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
+              "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%Spain",
               "featureInfoTemplate": {
                "template": "<p>Region: <b>{{nuts_name}}</b></p><p style='display: block; text-align: center;'></p>"
               },
@@ -45,7 +45,7 @@
               "type": "wms",
               "name": "Spain - Internal waters limit",
               "description": "Spain internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%spain_internal_waters",
               "layers": "marinewind:spain_internal_waters",
               //"metadataUrls":[{
               //  "title":"metadata link",
@@ -58,7 +58,7 @@
                 "type": "wms",
                 "name": "spain - 12 nautical miles line from coast",
                 "description": "12 nautical miles line from Spain coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%spain_12nml",
                 "layers": "marinewind:spain_12nml",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -71,7 +71,7 @@
                 "type": "wms",
                 "name": "Spain - 24 nautical miles line from coast",
                 "description": "24 nautical miles line from Spain coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%spain_24nml",
                 "layers": "marinewind:spain_24nml",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -84,7 +84,7 @@
                 "type": "wms",
                 "name": "Spain - Exclusive Economic Zone",
                 "description": "Spanish Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%spain_eez",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
@@ -106,27 +106,36 @@
                 "id": "spain_msp_emodnet"
               },
               {
-                "type": "wms",
-                "name": "Spain - Geomorphological Map (Areas)",
-                "description": "<p>Spain - Geomorphological Map (Areas)</p>",
-                "url": "https://mapas.igme.es/gis/services/Geologia_Marina/GeologiaMarina_IGME_Geomorfologico/MapServer/WMSServer?service=wms&request=getcapabilities&version=1.3.0",
-                //"featureInfoTemplate": {
-                //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
-                //},
-                "layers": "Atlas_IGME_Geomorfologia_Formas",
-                "id": "spain_geomorfological_areas"
-              },
-              {
-                "type": "wms",
-                "name": "Spain - Geomorphological Map (Lines)",
-                "description": "<p>Spain - Geomorphological Map (Lines)</p>",
-                "url": "https://mapas.igme.es/gis/services/Geologia_Marina/GeologiaMarina_IGME_Geomorfologico/MapServer/WMSServer?service=wms&request=getcapabilities&version=1.3.0",
-                //"featureInfoTemplate": {
-                //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
-                //},
-                "layers": "Atlas_IGME_Geomorfologia_Lineas",
-                "id": "spain_geomorfological_lines"
-              }
+                "id": "spain_geomorphology",
+                "type": "group",
+                "name": "Spain - Marine geomorphology",
+                "description": "Spain marine geomorphological map.\n\n",
+                "isOpen": false,
+                "members": [
+                {
+                 "type": "wms",
+                 "name": "Spain - Marine geomorphological Map (Areas)",
+                 "description": "<p>Spain - Geomorphological Map (Areas)</p>This data is part of the Geological Atlas of the Continental Margin of Spain provided by IGME.</p>",
+                 "url": "https://mapas.igme.es/gis/services/Geologia_Marina/GeologiaMarina_IGME_Geomorfologico/MapServer/WMSServer?service=wms&request=getcapabilities&version=1.3.0",
+                 //"featureInfoTemplate": {
+                  //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                 //},
+                 "layers": "Atlas_IGME_Geomorfologia_Formas",
+                 "id": "spain_geomorfological_areas"
+                },
+                {
+                  "type": "wms",
+                  "name": "Spain - Marine geomorphological Map (Lines)",
+                  "description": "<p>Spain - Geomorphological Map (Lines)</p>This data is part of the Geological Atlas of the Continental Margin of Spain provided by IGME.</p>",
+                  "url": "https://mapas.igme.es/gis/services/Geologia_Marina/GeologiaMarina_IGME_Geomorfologico/MapServer/WMSServer?service=wms&request=getcapabilities&version=1.3.0",
+                  //"featureInfoTemplate": {
+                  //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  //},
+                  "layers": "Atlas_IGME_Geomorfologia_Lineas",
+                  "id": "spain_geomorfological_lines"
+                }
+              ]
+            }         
             ]
           },
           {
@@ -141,7 +150,7 @@
                 "type": "wms",
                 "name": "Spain - High Potential Offshore Wind Zones",
                 "description": "<p align=\"justify\">Map of High Potential Offshore Wind  Zones. Description .... WORK IN PROGRESS",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%spain_high_potential_offshore_wind_zones",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
@@ -151,13 +160,13 @@
               }
             ]
           },
-          {
-            "id": "spain_protectedareas",
-            "type": "group",
-            "name": "Protected Areas",
-            "description": "This collection includes information on the environmental constraints present in the area.",
-            "isOpen": false,
-            "members": [
+          //{
+            //"id": "spain_protectedareas",
+            //"type": "group",
+            //"name": "Protected Areas",
+            //"description": "This collection includes information on the environmental constraints present in the area.",
+            //"isOpen": false,
+            //"members": [
              // {
              //   "type": "wms",
              //   "name": "Spain - UNESCO",
@@ -170,20 +179,20 @@
              //   "layers": "spain_unesco",
              //   "id": "spain_unesco"
              // }
-            ]
-          },
+            //]
+          //},
           {
             "id": "spain_network_infrastructure",
             "type": "group",
             "name": "Network Infrastructures",
-            "description": "Spain Network Infrastructures",
+            "description": "This collection includes information of high voltage power lines, useful to support assessments of the energy system as a whole and to identify potential critical issues.",
             "isOpen": false,
             "members": [
               {
                 "type": "wms",
                 "name": "Spain - Powerline",
-                "description": "<p align=\"justify\">Spain - Powerline.</p><p align=\"justify\">Spain - Powerline</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "description": "<p align=\"justify\">Track of high voltage (220 and 400 kV) power lines for the spanish territory provided by <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a>.</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%powerline_spain",
                 //"featureInfoTemplate": {
                 //  "template": "<p>WP1 First round of co-creation workshops – Bari (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Bari&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 //},
@@ -201,14 +210,14 @@
             "id": "spain_workshop",
             "type": "group",
             "name": "Spain Labs",
-            "description": "Workshops Information",
+            "description": "This section includes location and main results of co-creation workshops.",
             "isOpen": false,
             "members": [
               {
                 "type": "wms",
-                "name": "1st Co-creation workshop",
-                "description": "<p align=\"justify\">Spain WORKSHOPS.</p><p align=\"justify\">Workshops in Spain</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "name": "1st Co-creation workshop - Empordà",
+                "description": "<p align=\"justify\">Spain first co-creation workshop.</p><p align=\"justify\">Add the point to the map and click on it to view workshop documentation</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%workshop_spain",
                 "featureInfoTemplate": {
                   "template": "<p>WP1 First round of co-creation workshops – Empordà (Spain)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Empordà&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },

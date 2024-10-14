@@ -20,8 +20,8 @@
             {
               "type": "wms",
               "name": "UK - Administrative limits",
-              "description": "UK administrative limits (NUTS2 level) of the last available year (2021). Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "description": "UK administrative limits (NUTS2 level) of the last available year (2021). <br> Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
+              "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%United Kingdom",
               "featureInfoTemplate": {
                "template": "<p>Region: <b>{{nuts_name}}</b></p><p style='display: block; text-align: center;'></p>"
               },
@@ -45,7 +45,7 @@
               "type": "wms",
               "name": "UK - Internal waters limit",
               "description": "UK internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%uk_int_waters",
               "layers": "marinewind:uk_internal_waters",
               //"metadataUrls":[{
               //  "title":"metadata link",
@@ -58,7 +58,7 @@
                 "type": "wms",
                 "name": "UK - 12 nautical miles line from coast",
                 "description": "12 nautical miles line from UK coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%uk_12nml",
                 "layers": "marinewind:uk_12nml",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -71,7 +71,7 @@
                 "type": "wms",
                 "name": "UK - 24 nautical miles line from coast",
                 "description": "24 nautical miles line from UK coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%uk_24nml",
                 "layers": "marinewind:uk_24nml",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -84,7 +84,7 @@
                 "type": "wms",
                 "name": "UK - Exclusive Economic Zone",
                 "description": " UK Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%uk_eez",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
@@ -120,7 +120,7 @@
                 "type": "wms",
                 "name": "UK - FOW Project Locations",
                 "description": " UK Floating Offshore Wind Farms. \n<br>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%floating offshore wind farms UK",
                 //"metadataUrls":[{
                 //  "title":"metadata link"
                   //"url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
@@ -131,13 +131,13 @@
               }
             ]
           },
-          {
-            "id": "uk_protectedareas",
-            "type": "group",
-            "name": "Protected Areas",
-            "description": "This collection includes information on the environmental constraints present in the area.",
-            "isOpen": false,
-            "members": [
+         // {
+           // "id": "uk_protectedareas",
+           // "type": "group",
+           // "name": "Protected Areas",
+           // "description": "This collection includes information on the environmental constraints present in the area.",
+           // "isOpen": false,
+           // "members": [
               //{
               //  "type": "wms",
               //  "name": "UK - UNESCO",
@@ -150,8 +150,8 @@
               //  "layers": "uk_unesco",
               //  "id": "uk_unesco"
               //}
-            ]
-          },
+           // ]
+          //},
           {
             "id": "uk_network_infrastructure",
             "type": "group",
@@ -163,7 +163,7 @@
                 "type": "wms",
                 "name": "UK - Powerline",
                 "description": "<p align=\"justify\">UK - Powerline.</p><p align=\"justify\">UK - Powerline</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%powerline_uk",
                 //"featureInfoTemplate": {
                 //  "template": "<p>WP1 First round of co-creation workshops – Bari (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Bari&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 //},
@@ -181,14 +181,14 @@
             "id": "uk_workshop",
             "type": "group",
             "name": "UK Labs",
-            "description": "Workshops Information",
+            "description": "This section includes location and main results of co-creation workshops.",
             "isOpen": false,
             "members": [
               {
                 "type": "wms",
-                "name": "1st Co-creation workshop",
-                "description": "<p align=\"justify\">UK WORKSHOPS.</p><p align=\"justify\">Workshops in UK</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "name": "1st Co-creation workshop - Aberdeen",
+                "description": "<p align=\"justify\">UK first co-creation workshop.</p><p align=\"justify\">Add the point to the map and click on it to view workshop documentation</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%workshop_aberdeen",
                 "featureInfoTemplate": {
                   "template": "<p>WP1 First round of co-creation workshops – Aberdeen (UK)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Aberdeen&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },

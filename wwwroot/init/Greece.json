@@ -20,8 +20,8 @@
             {
               "type": "wms",
               "name": "Greece - Administrative limits",
-              "description": "Greek administrative limits (NUTS2 level) of the last available year (2021). Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "description": "Greek administrative limits (NUTS2 level) of the last available year (2021). <br> Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
+              "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%3Greece",
               "featureInfoTemplate": {
                "template": "<p>Region: <b>{{nuts_name}}</b></p><p style='display: block; text-align: center;'></p>"
               },
@@ -43,22 +43,22 @@
           "members": [
             {
               "type": "wms",
-              "name": "Greece - Internal waters limit  WORK IN PROGRESS",
-              "description": "WORK IN PROGRESS - Greek internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
-              "layers": "marinewind:greece_internal_waters",
+              "name": "Greece - Internal waters limit - NOT AVAILABLE",
+              //"description": "WORK IN PROGRESS - Greek internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+              //"url": "https://gis2.rse-web.it/geoserver/wms",
+             // "layers": "marinewind:greece_internal_waters",
               //"metadataUrls":[{
               //  "title":"metadata link",
               //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
               //}],
               //"styles":"new_atlante_integrato:acque_interne",
-              "id": "greece_int_waters"
+              //"id": "greece_int_waters"
             },
             {
                 "type": "wms",
                 "name": "Greece - 12 nautical miles line from coast",
                 "description": "12 nautical miles line from Greek coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%3greece_12nml",
                 "layers": "marinewind:greece_12nml",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -71,7 +71,7 @@
                 "type": "wms",
                 "name": "Greece - 24 nautical miles line from coast",
                 "description": "24 nautical miles line from Greek coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%3greece_24nml",
                 "layers": "marinewind:greece_24nml",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -84,7 +84,7 @@
                 "type": "wms",
                 "name": "Greece - Exclusive Economic Zone",
                 "description": " Greek Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%3greece_eez",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                //   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
@@ -120,7 +120,7 @@
                 "type": "wms",
                 "name": "Greece - FOW Project Areas",
                 "description": "Greece Floating Offshore Wind  FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%3greece_potential_offshore_wind_areas",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -131,39 +131,39 @@
               }
             ]
           },
-          {
-            "id": "greece_protectedareas",
-            "type": "group",
-            "name": "Protected Areas",
-            "description": "This collection includes information on the environmental constraints present in the area.",
-            "isOpen": false,
-            "members": [
-              {
-                "type": "wms",
-                "name": "WORK IN PROGRESS  Greece - WDPA WDOECM",
-                "description": "<p align=\"justify\">WORK IN PROGRESS  .......</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+          //{
+            //"id": "greece_protectedareas",
+            //"type": "group",
+            //"name": "Protected Areas",
+            //"description": "This collection includes information on the environmental constraints present in the area.",
+            //"isOpen": false,
+            //"members": [
+              //{
+               // "type": "wms",
+               // "name": "WORK IN PROGRESS  Greece - WDPA WDOECM",
+               // "description": "<p align=\"justify\">WORK IN PROGRESS  .......</p>",
+                //"url": "https://gis2.rse-web.it/geoserver/wms",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 //}],
-                "layers": "marinewind:WDPA_WDOECM",
-                "id": "greece_iba"
-              }
-            ]
-          },
+                //"layers": "marinewind:WDPA_WDOECM",
+                //"id": "greece_iba"
+             // }
+           // ]
+          //},
           {
             "id": "greece_network_infrastructure",
             "type": "group",
             "name": "Network Infrastructures",
-            "description": "Greece Network Infrastructures",
+            "description": "This collection includes information of high voltage power lines, useful to support assessments of the energy system as a whole and to identify potential critical issues.",
             "isOpen": false,
             "members": [
               {
                 "type": "wms",
                 "name": "Greece - Powerline",
-                "description": "<p align=\"justify\">Greece - Powerline.</p><p align=\"justify\">Greece - Powerline</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "description": "<p align=\"justify\">Track of high voltage (220 and 400 kV) power lines for the greek territory provided by <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a>.</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%3mw_powerline_greece",
                 //"featureInfoTemplate": {
                 //  "template": "<p>WP1 First round of co-creation workshops – Bari (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Bari&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 //},
@@ -181,14 +181,14 @@
             "id": "greece_workshop",
             "type": "group",
             "name": "Greece Labs",
-            "description": "Workshops Information",
+            "description": "This section includes location and main results of co-creation workshops.",
             "isOpen": false,
             "members": [
               {
                 "type": "wms",
-                "name": "1st Co-creation workshop",
-                "description": "<p align=\"justify\">Greece WORKSHOPS.</p><p align=\"justify\">Workshops in Greece</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "name": "1st Co-creation workshop - Athens",
+                "description": "<p align=\"justify\">Greece first co-creation workshop.</p><p align=\"justify\">Add the point to the map and click on it to view workshop documentation</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%workshop_athens",
                 "featureInfoTemplate": {
                   "template": "<p>WP1 First round of co-creation workshops – Athens (Greece)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Athens&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },
@@ -202,11 +202,11 @@
               },
               {
                 "type": "wms",
-                "name": "2nd Co-creation workshop",
-                "description": "<p align=\"justify\">Greece WORKSHOPS.</p><p align=\"justify\">Workshops in Greece</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "name": "2nd Co-creation workshop - Thessaloniki",
+                "description": "<p align=\"justify\">Greece second co-creation workshop.</p><p align=\"justify\">Add the point to the map and click on it to view workshop documentation</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%workshop_thessaloniki",
                 "featureInfoTemplate": {
-                  "template": "<p>WP1 Second  round of co-creation workshops – Thessaloniki (Greece)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Thessaloniki&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                  "template": "<p>WP1 Second round of co-creation workshops – Thessaloniki (Greece)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Thessaloniki&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },
     
                 //"metadataUrls":[{
@@ -218,9 +218,9 @@
               },
               {
                 "type": "wms",
-                "name": "3rd Co-creation workshop",
-                "description": "<p align=\"justify\">Greece WORKSHOPS.</p><p align=\"justify\">Workshops in Greece</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "name": "3rd Co-creation workshop - Heraklion",
+                "description": "<p align=\"justify\">Greece third co-creation workshop.</p><p align=\"justify\">Add the point to the map and click on it to view workshop documentation</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%workshop_Heraklion",
                 "featureInfoTemplate": {
                   "template": "<p>WP1 Third round of co-creation workshops – Heraklion (Greece)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Heraklion&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },

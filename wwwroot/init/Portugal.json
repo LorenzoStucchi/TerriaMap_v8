@@ -20,8 +20,8 @@
             {
               "type": "wms",
               "name": "Portugal - Administrative limits",
-              "description": "Portugal administrative limits (NUTS2 level) of the last available year (2021). Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "description": "Portugal administrative limits (NUTS2 level) of the last available year (2021). <br> Eurostat data source https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21.",
+              "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%Portugal",
               "featureInfoTemplate": {
                "template": "<p>Region: <b>{{nuts_name}}</b></p><p style='display: block; text-align: center;'></p>"
               },
@@ -45,7 +45,7 @@
               "type": "wms",
               "name": "Portugal - Internal waters limit",
               "description": "Portugal internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-              "url": "https://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%portugal_internal_waters",
               "layers": "marinewind:portugal_internal_waters",
               //"metadataUrls":[{
               //  "title":"metadata link",
@@ -58,7 +58,7 @@
                 "type": "wms",
                 "name": "Portugal - 12 nautical miles line from coast",
                 "description": "12 nautical miles line from Portugal coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%fportugal_12nml",
                 "layers": "marinewind:portugal_12nml",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -71,7 +71,7 @@
                 "type": "wms",
                 "name": "Portugal - 24 nautical miles line from coast",
                 "description": "24 nautical miles line from Portugal coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%portugal_24nml",
                 "layers": "marinewind:portugal_24nml",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -84,7 +84,7 @@
                 "type": "wms",
                 "name": "Portugal - Exclusive Economic Zone",
                 "description": " Portugal Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%portugal_eez",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
@@ -120,7 +120,7 @@
                 "type": "wms",
                 "name": "Portugal - Potential FOW Farm Areas",
                 "description": "<p align=\"justify\">Portugal - Potential areas for FOW farms ..... </p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%potential_areas_for_fow_farms",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
@@ -132,7 +132,7 @@
                 "type": "wms",
                 "name": "Portugal - Existing FOW Farm Areas",
                 "description": "<p align=\"justify\">Portugal - Existing FOW farms areas ..... </p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%portugal_existing_fow_farms_areas",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
@@ -142,39 +142,39 @@
               }
             ]
           },
-          {
-            "id": "portugal_protectedareas",
-            "type": "group",
-            "name": "Protected Areas",
-            "description": "This collection includes information on the environmental constraints present in the area.",
-            "isOpen": false,
-            "members": [
-              {
-                "type": "wms",
-                "name": "Portugal - WORK IN PROGRESS",
-                "description": "<p align=\"justify\">WORK IN PROGRESS ..... </p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+         // {
+          //  "id": "portugal_protectedareas",
+           // "type": "group",
+            //"name": "Protected Areas",
+            //"description": "This collection includes information on the environmental constraints present in the area.",
+            //"isOpen": false,
+            //"members": [
+              //{
+                //"type": "wms",
+                //"name": "Portugal - WORK IN PROGRESS",
+                //"description": "<p align=\"justify\">WORK IN PROGRESS ..... </p>",
+                //"url": "https://gis2.rse-web.it/geoserver/wms",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 //}],
-                "layers": "portugal_iba",
-                "id": "portugal_iba"
-              }
-            ]
-          },
+                //"layers": "portugal_iba",
+                //"id": "portugal_iba"
+              //}
+            //]
+          //},
           {
             "id": "portugal_network_infrastructure",
             "type": "group",
             "name": "Network Infrastructures",
-            "description": "Portugal Network Infrastructures",
+            "description": "This collection includes information of high voltage power lines, useful to support assessments of the energy system as a whole and to identify potential critical issues.",
             "isOpen": false,
             "members": [
               {
                 "type": "wms",
                 "name": "Portugal - Powerline",
-                "description": "<p align=\"justify\">Portugal - Powerline.</p><p align=\"justify\">Portugal - Powerline</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "description": "<p align=\"justify\">Track of high voltage (220 and 400 kV) power lines for the portuguese territory provided by <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a>.</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%powerline_portugal",
                 //"featureInfoTemplate": {
                 //  "template": "<p>WP1 First round of co-creation workshops – Bari (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Bari&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 //},
@@ -192,14 +192,14 @@
             "id": "portugal_workshop",
             "type": "group",
             "name": "Portugal Labs",
-            "description": "Workshops Information",
+            "description": "This section includes location and main results of co-creation workshops.",
             "isOpen": false,
             "members": [
               {
                 "type": "wms",
-                "name": "1st Co-creation workshop",
-                "description": "<p align=\"justify\">Portugal WORKSHOPS.</p><p align=\"justify\">Workshops in Portugal</p>",
-                "url": "https://gis2.rse-web.it/geoserver/wms",
+                "name": "1st Co-creation workshop - Aveiro",
+                "description": "<p align=\"justify\">Portugal first co-creation workshop.</p><p align=\"justify\">Add the point to the map and click on it to view workshop documentation</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%workshop_aveiro",
                 "featureInfoTemplate": {
                   "template": "<p>WP1 First round of co-creation workshops – Aveiro (Portugal)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Aveiro&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },

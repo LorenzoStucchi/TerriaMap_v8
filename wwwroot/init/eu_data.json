@@ -1,0 +1,130 @@
+{
+  "corsDomains" : [
+    "gis2.rse-web.it",
+    "gis2.rse-web.it:8080"
+  ],
+  "catalog": [
+    {
+      "type": "group",
+      "name": "General Data - European Level Layers",
+      "description": " ",
+      "isOpen": false,
+      "members": [
+        {
+          "type": "wms",
+          "name": "European Bathymetry",
+          "description": "Average depth of the seabed. </p> Data provided by the <a https://emodnet.ec.europa.eu/en/bathymetry#bathymetry-services\"> EMODnet-Bathymetry services for the European Sea Regions</a>.",
+          "url": "https://ows.emodnet-bathymetry.eu/wms/inspire_quad",
+          //"featureInfoTemplate": {
+          //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+          //},
+          "layers": "emodnet:mean_multicolour",
+          "id": "eu_bath"
+        },
+        {
+          "type": "wms",
+          "name": "UNESCO World Heritage Convention",
+          "description": "<p align=\"justify\">Location of coastal sites from the UNESCO World Heritage Convention list.</p><p align=\"justify\">Data provided by <a href=\"https://emodnet.ec.europa.eu/geoviewer/#!/\"> EMODnet</a>. For more information click on <a href=\"https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/890a0d41-60c2-4bb8-bb65-136c7c2c9f8b/\"> metadata</a>.</p>",
+          "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%3unesco_EMODnet",
+          //"metadataUrls":[{
+          //  "title":"metadata link",
+          //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+          //}],
+          "layers": "marinewind:unesco_EMODnet",
+          "id": "generale_unesco"
+        },
+        {
+          "type": "wms",
+          "name": "Nationally designated areas",
+          "description": "<p align=\"justify\">Nationally designated areas - version 21 June 2023.</p><br>The European inventory of Nationally designated areas holds information about designated areas and their designation types, which directly or indirectly create protected areas. The Nationally designated areas is the official source of protected area information from the 38 European member countries to the World Database of Protected Areas (WDPA). <p align=\"justify\">Data provided by the <a href=\"https://www.eea.europa.eu/en\"> European Environment Agency</a>. For more information click<a href=\"https://www.eea.europa.eu/en/datahub/datahubitem-view/f60cec02-6494-4d08-b12d-17a37012cb28/\"> here</a>.</p>",
+          "url": "https://bio.discomap.eea.europa.eu/arcgis/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+          //"featureInfoTemplate": {
+           //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+          //},
+          "layers": "CDDA - IUCN management categories - small scale viewing (raster)",
+          "id": "nationally_designated_areas"
+         },
+         {
+          "type": "wms",
+          "name": "World Protected Areas",
+          "description": "<p align=\"justify\">World protected areas - version 1 February 2023. <br>This series refers to The World Database on Protected Areas (WDPA) and other effective area-based conservation measures (OECM) database are joint products of UNEP and IUCN, managed by UNEP-WCMC and the IUCN working with governments, communities and collaborating partners.</p><p align=\"justify\">Data provided by the <a href=\"https://www.eea.europa.eu/en\"> European Environment Agency</a>. For more information click<a href=\"https://www.eea.europa.eu/en/datahub/datahubitem-view/a95b6d2d-2d41-4c27-9d1d-d15bbf29d27e/\"> here</a>.</p>",
+          "url": "https://data-gis.unep-wcmc.org/server/rest/services/ProtectedSites/The_World_Database_of_Protected_Areas/MapServer/WMTS?",
+          //"featureInfoTemplate": {
+           //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+          //},
+          "layers": "ProtectedSites_The_World_Database_of_Protected_Areas",
+          "id": "world_protected_areas"
+         },
+         {
+          "type": "wms",
+          "name": "Oil and Gas active licences",
+          "description": "<p align=\"justify\">Offshore active licences for Oil and Gas exploitation and exploration in the EU.</p><p align=\"justify\">Data provided by<a href=\"https://emodnet.ec.europa.eu/geoviewer/#!/\"> EMODnet</a>. For more information click on <a href=\"https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/d9da64ae-4bff-4cae-9ee8-58d9acc1d0fe/\"> metadata</a>.</p>",
+          "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%active_licences_emodnet",
+          //"metadataUrls":[{
+          //  "title":"metadata link",
+          //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+          //}],
+          "layers": "marinewind:active_licences_emodnet",
+          "id": "generale_active_licences_emodnet"
+        },
+        {
+          "type": "wms",
+          "name": "Oil and Gas offshore Installations",
+          "description": "<p align=\"justify\">Offshore installations for Oil and Gas exploitation and exploration activities. </p><p align=\"justify\">Data provided by<a href=\"https://emodnet.ec.europa.eu/geoviewer/#!/\"> EMODnet</a>. For more information click on <a href=\"https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/ddbe3597-4e3f-4e74-8d31-947c4efef2e9/\"> metadata</a>.</p>",
+          "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%offshore_installations_emodnet",
+          //"metadataUrls":[{
+          //  "title":"metadata link",
+          //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+          //}],
+          "layers": "marinewind:offshore_installations_emodnet",
+          "id": "generale_offshore_installations_emodnet"
+        },
+        {
+          "type": "wms",
+          "name": "Military Areas",
+          "description": "<p align=\"justify\">Offshore military areas in the European seas </p><p align=\"justify\">Data provided by<a href=\"https://emodnet.ec.europa.eu/geoviewer/#!/\"> EMODnet</a>. For more information click on <a href=\"https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/579e4a3b-95e4-48c6-8352-914ebae0ae1d/\"> metadata</a>.</p>",
+          "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%military_areas_emodnet",
+          //"metadataUrls":[{
+          //  "title":"metadata link",
+          //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+          //}],
+          "layers": "marinewind:military_areas_emodnet",
+          "id": "generale_military_areas_emodnet"
+        },
+        {
+          "type": "wms",
+          "name": "Telecommunication Cables",
+          "description": "<p>This dataset provides subsea telecommunication cables in the European waters.</p><p align=\"justify\">Data provided by<a href=\"https://emodnet.ec.europa.eu/geoviewer/#!/\"> EMODnet</a>. For more information click on<a href=\"https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/39ebe289-410b-4a5d-88a4-51bfcde538de/\"> metadata</a>.</p>",
+          "url": "https://ows.emodnet-humanactivities.eu/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+          //"featureInfoTemplate": {
+          //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+          //},
+          "layers": "telecablesactual",
+          "id": "eu_bath1"
+        },
+        {
+          "type": "wms",
+          "name": "Biogenic substrate in Europe",
+          "description": "<p>This layer shows the current known extent of biogenic substrate in European waters.</p><p align=\"justify\">Data provided by<a href=\"https://emodnet.ec.europa.eu/geoviewer/#!/\"> EMODnet</a>. For more information click on<a href=\"https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/2328d839-8024-47f3-aca6-32d788afe3dd/\"> metadata</a>.</p>",
+          "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%biogenic_substrate",
+          //"featureInfoTemplate": {
+          //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+          //},
+          "layers": "marinewind:biogenic_substrate",
+          "id": "generale_biogenic_substrate_2023"
+        },
+        {
+          "type": "wms",
+          "name": "Route Density (EMSA) Annual Totals 2019-2023",
+          "description": "<p>This layer shows the annual route density map for all vessels at 1 km resolution for the period 2019-2023.</p><p align=\"justify\">Data provided by<a href=\"https://emodnet.ec.europa.eu/geoviewer/#!/\"> EMODnet</a>. For more information click on<a href=\"https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/74eef9c6-13fe-4630-b935-f26871c8b661/\"> metadata</a>.</p>",
+          "url": "https://ows.emodnet-humanactivities.eu/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+          //"featureInfoTemplate": {
+          //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+          //},
+          "layers": "routedensity_allavg",
+          "id": "eu_bath2"
+        }
+       ]
+    }
+  ]
+}

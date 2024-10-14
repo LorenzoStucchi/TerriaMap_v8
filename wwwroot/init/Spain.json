@@ -104,6 +104,28 @@
                 //}],
                 "layers": "marinewind:spain_msp",
                 "id": "spain_msp_emodnet"
+              },
+              {
+                "type": "wms",
+                "name": "Spain - Geomorphological Map (Areas)",
+                "description": "<p>Spain - Geomorphological Map (Areas)</p>",
+                "url": "https://mapas.igme.es/gis/services/Geologia_Marina/GeologiaMarina_IGME_Geomorfologico/MapServer/WMSServer?service=wms&request=getcapabilities&version=1.3.0",
+                //"featureInfoTemplate": {
+                //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                //},
+                "layers": "Atlas_IGME_Geomorfologia_Formas",
+                "id": "spain_geomorfological_areas"
+              },
+              {
+                "type": "wms",
+                "name": "Spain - Geomorphological Map (Lines)",
+                "description": "<p>Spain - Geomorphological Map (Lines)</p>",
+                "url": "https://mapas.igme.es/gis/services/Geologia_Marina/GeologiaMarina_IGME_Geomorfologico/MapServer/WMSServer?service=wms&request=getcapabilities&version=1.3.0",
+                //"featureInfoTemplate": {
+                //  "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                //},
+                "layers": "Atlas_IGME_Geomorfologia_Lineas",
+                "id": "spain_geomorfological_lines"
               }
             ]
           },

@@ -119,7 +119,7 @@
               {
                 "type": "wms",
                 "name": "Greece - FOW Project Areas",
-                "description": "Greece Floating Offshore Wind  FOW projects. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/.",
+                "description": "Greece Floating Offshore Wind  FOW projects. \n<br>Data provided by....",
                 "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%3greece_potential_offshore_wind_areas",
                 //"layers": "https://tiles.emodnet-bathymetry.eu/wmts/1.0.0/WMTSCapabilities.xml",
                 //"metadataUrls":[{
@@ -131,27 +131,50 @@
               }
             ]
           },
-          //{
-            //"id": "greece_protectedareas",
-            //"type": "group",
-            //"name": "Protected Areas",
-            //"description": "This collection includes information on the environmental constraints present in the area.",
-            //"isOpen": false,
-            //"members": [
-              //{
-               // "type": "wms",
-               // "name": "WORK IN PROGRESS  Greece - WDPA WDOECM",
-               // "description": "<p align=\"justify\">WORK IN PROGRESS  .......</p>",
-                //"url": "https://gis2.rse-web.it/geoserver/wms",
+          {
+            "id": "greece_protectedareas",
+            "type": "group",
+            "name": "Protected Areas",
+            "description": "This collection includes information on the environmental constraints present in the area.",
+            "isOpen": false,
+            "members": [
+              {
+                "type": "wms",
+                "name": "Greece - Natura2000",
+                "description": "<p align=\"justify\">WORK IN PROGRESS  .......</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%N2000_spatial_GR_2020_08_10_greece",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
                 //}],
-                //"layers": "marinewind:WDPA_WDOECM",
-                //"id": "greece_iba"
-             // }
-           // ]
-          //},
+                "layers": "marinewind:N2000_spatial_GR_2020_08_10_greece",
+                "id": "greece_natura2000"
+              },
+              {
+                "type": "wms",
+                "name": "Greece - World Heritage Monuments",
+                "description": "<p align=\"justify\">WORK IN PROGRESS  .......</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%WorldHeritageMonuments_ArchaeologicalCadastre_greece",
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
+                "layers": "marinewind:WorldHeritageMonuments_ArchaeologicalCadastre_greece",
+                "id": "greece_world_heritage"
+              },             {
+                "type": "wms",
+                "name": "Greece - Island Wetlands",
+                "description": "<p align=\"justify\">WORK IN PROGRESS  .......</p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%WorldHeritageMonuments_ArchaeologicalCadastre_greece",
+                //"metadataUrls":[{
+                //  "title":"metadata link",
+                //  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
+                //}],
+                "layers": "marinewind:Island_Wetlands_greece",
+                "id": "greece_island_wetlands"
+              }
+            ]
+          },
           {
             "id": "greece_network_infrastructure",
             "type": "group",

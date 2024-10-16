@@ -335,8 +335,8 @@ export const WelcomeMessagePure = props => {
                 <Spacing bottom={13} />
               </If>
               <Box fullWidth centered>
-              <p style={styleCookiesMsgObj}>{t("welcomeMessage.msgCookies1")}<br />
-                <a href='https://www.rse-web.it/cookie/' target='_blank' style={{color: "#519AC2", fontSize: 16, fontWeight: "bold", fontFamily: "Nunito"}}>
+              <p style={styleCookiesMsgObj}>{"welcomeMessage.msgCookies1"}<br />
+                <a href='https://www.rse-web.it/en/cookie/' target='_blank' style={{color: "#519AC2", fontSize: 16, fontWeight: "bold", fontFamily: "Nunito"}}>
                 {t("welcomeMessage.msgCookies4")}</a></p>
               </Box>
               <Box fullWidth centered>

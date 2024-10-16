@@ -131,7 +131,7 @@
               {
                 "type": "wms",
                 "name": "Italy - FOW Project Locations",
-                "description": "<p align=\"justify\">Italy Floating Offshore Wind Farms - FOW projects   -   DESCRIPTION: WORK IN PROGRESS",
+                "description": "<p align=\"justify\">Italy Floating Offshore Wind Farms - FOW projects.</p><p align=\"justify\">Data provided by <a href=\"https://va.mite.gov.it/en-GB\">Ministry of Environment and Energy Security</a> from<a href=\"https://va.mite.gov.it/en-GB/Ricerca/ViaTipologia?__RequestVerificationToken=iwmCphMvOBVMhOhOTbPZ8Fk2U9LPgreM7LmzTM9dem-nyA9UNmKkes06JIbdVWcjy5Sr2hPIZVQG10puxBIA6F3qN0GnLsXP6O2cIC8HJAkZ-unPL73TpYoDgCra6aaeLkzvm9TFDS5EscuuiJILT3sIu9W6E3WffSokraSMVp01&tipologiaID=34&x=11&y=14\"> Environmental Assessments and Authorizations portal</a>.</p><p>Last update March 2024.</p>",
                 "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%floating_offshore_wind_farms_IT",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -287,11 +287,11 @@
               },
               {
                 "type": "wms",
-                "name": "2nd Co-creation workshop - Marsala",
+                "name": "3rd Co-creation workshop - Marsala",
                 "description": "<p align=\"justify\">Italy third co-creation workshop.</p><p align=\"justify\">Add the point to the map and click on it to view workshop documentation</p>",
                 "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%workshop_marsala",
                 "featureInfoTemplate": {
-                  "template": "<p>WP1 First round of co-creation workshops – Marsala (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Marsala&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
+                  "template": "<p>WP1 Third round of co-creation workshops – Marsala (Italy)​</b></p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/mw_connessione_documentazione_workshop.php?place=Marsala&titolo=on&lingua=IT\"><font color='#FFFFFF'>View Documentation</a></font></td></tr></table>"
                 },    
                 //"metadataUrls":[{
                 //  "title":"metaddddddata link",

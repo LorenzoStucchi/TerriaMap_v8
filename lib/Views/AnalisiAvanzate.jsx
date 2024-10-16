@@ -60,7 +60,7 @@ function AnalisiAvanzate(props) {
               </td>
               <td>
                 <p align="justify">
-                  Insert text and{" "}
+                  WORK IN PROGRESS Insert text and{" "}
                   <a
                     target="_blank"
                     link

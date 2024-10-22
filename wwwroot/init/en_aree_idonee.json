@@ -11,7 +11,7 @@
           "id": "Fotovoltaico",
           "type": "group",
           "name": "Solar",
-          "description": "This collection includes municipal-scale information regarding the percentage of area available for new ground-based and rooftop photovoltaic installations compared to the municipal area for each land use category. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>\n\n <div><img src=\"/public/img/Fotolia_53185812_Subscription_Monthly_XXL.jpg\" style=\"width:640px;height:427px;\"></div> ",
+          "description": "This collection includes municipal-scale information regarding the percentage of area available for new ground-based and rooftop photovoltaic installations compared to the municipal area for each land use category. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </p> Results reported in these maps derive from studies that are based on specific hypotheses and should be understood as a guide to the identification of areas potentially available for new photovoltaic installations, providing planners with preliminary indications on the areas with greatest potential.</br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p>\n\n <div><img src=\"/public/img/Fotolia_53185812_Subscription_Monthly_XXL.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
         {
@@ -157,7 +157,23 @@
                 "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_211netta}}</b></p><p>Area extension [kmq] <b>{{area211net}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
               },
               "id": "seminativi_netti"
-            }
+            },
+            {
+              "type": "wms",
+              "name": "Abandoned agricultural areas",
+              "description": "<p style=\"text-align:justify\">Percentage of abandoned agricultural area with respect to the municipal area. Details on methodology used for the estimate are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a></p> </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Arable land in non-irrigated areas net of constraints\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee_aal",
+              "metadataUrls":[{
+                "title":"metadata link",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
+              }],
+              "styles":"new_atlante_integrato:p_aal",
+              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
+              "featureInfoTemplate": {
+                "template": "<p>Municipal <b>{{comune}}</b></p></p><p>Province <b>{{den_uts}}</b></p></p><p>Region <b>{{den_reg}}</b></p></p><p>Area percentage [%] <b>{{p_aal}}</b></p><p>Area extension [kmq] <b>{{areakmqaal}}</b></p><p>Municipal Extention [kmq] <b>{{areakmq}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261\">metadata link </a> </p>"
+              },
+              "id": "aal"
+            },
           ]
         }
       ]
@@ -166,7 +182,7 @@
       "id": "Eolico",
       "type": "group",
       "name": "Wind",
-      "description": "This collection includes maps of suitable areas for new onshore and offshore wind power installations. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030. </br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>\n\n <div><img src=\"/public/img/shutterstock_1349148488.jpg\" style=\"width:640px;height:427px;\"></div> ",
+      "description": "This collection includes maps of suitable areas for new onshore and offshore wind power installations. These data can constitute valid inputs for the analysis of the distribution between Regions and Autonomous Provinces of the national RES targets for 2030.  </p> Results reported in these maps derive from studies that are based on specific hypotheses and should be understood as a guide to the identification of areas potentially available for new photovoltaic installations, providing planners with preliminary indications on the areas with greatest potential.</br> </p><p style=\"text-align:justify\">For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>\n\n <div><img src=\"/public/img/shutterstock_1349148488.jpg\" style=\"width:640px;height:427px;\"></div> ",
       "isOpen": false,
       "members": [
         {

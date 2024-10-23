@@ -97,16 +97,16 @@
           "members": [
             {
               "type": "wms",
-              "name": "Seismic classification of Italian municipalities in 2021",
-              "description": "Seismic classification of Italian municipalities updated in April 2021. Source: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\"><br>Civil Protection</p></a>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3class_sismica_2021",
+              "name": "Seismic classification of Italian municipalities in 2023",
+              "description": "Seismic classification of Italian municipalities updated in April 2023. Source: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\"><br>Civil Protection</p></a>",
+              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3class_sismica_2023",
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=214"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=288"
               }],
-              "styles":"new_atlante_integrato:sism_21",
-              "layers": "new_atlante_integrato:class_sismica_2021",
-              "id": "sisma21"
+              "styles":"new_atlante_integrato:sism_23",
+              "layers": "new_atlante_integrato:class_sismica_2023",
+              "id": "sisma23"
             }
           ]
         },

@@ -119,7 +119,7 @@
               {
                 "type": "wms",
                 "name": "Portugal - Potential FOW Farm Areas",
-                "description": "<p align=\"justify\">Portugal - Potential areas for FOW farms ..... <br><br><p><table width=\"100%\"><tr><td colspan=\"5\">Potentially interested stakeholders</td></tr><tr style=\"height:8px;\"><td></td></tr><tr style=\"height:40px;\"><td align=\"center\" style=\"background-color:#D0D0D0; width: fit-content;\">#industry</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#C0E4F5; width: fit-content;\">#academia</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#F5C6AB; width: fit-content;\">#public authorities</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#ECF68C; width: fit-content;\">#civil society</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#B5E6A2; width: fit-content;\">#green innovation</td></tr></table><br></p>",
+                "description": "<p align=\"justify\">This GIS dataset highlights potential areas for Floating Offshore Wind (FOW) farms as outlined in the <i>Plano de Afetação para as Energias Renováveis Offshore – Costa Ocidental da subdivisão do Continente</i>. These areas are designated for commercial renewable energy exploration but are still preliminary and have not yet received official approval.<br><p><table width=\"100%\"><tr><td colspan=\"5\">Potentially interested stakeholders</td></tr><tr style=\"height:8px;\"><td></td></tr><tr style=\"height:40px;\"><td align=\"center\" style=\"background-color:#D0D0D0; width: fit-content;\">#industry</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#C0E4F5; width: fit-content;\">#academia</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#F5C6AB; width: fit-content;\">#public authorities</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#ECF68C; width: fit-content;\">#civil society</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#B5E6A2; width: fit-content;\">#green innovation</td></tr></table><br></p>",
                 "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%potential_areas_for_fow_farms",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -131,7 +131,7 @@
               {
                 "type": "wms",
                 "name": "Portugal - Existing FOW Farm Areas",
-                "description": "<p align=\"justify\">Portugal - Existing FOW farms areas ..... </p><br><p><table width=\"100%\"><tr><td colspan=\"5\">Potentially interested stakeholders</td></tr><tr style=\"height:8px;\"><td></td></tr><tr style=\"height:40px;\"><td align=\"center\" style=\"background-color:#D0D0D0; width: fit-content;\">#industry</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#C0E4F5; width: fit-content;\">#academia</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#F5C6AB; width: fit-content;\">#public authorities</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#ECF68C; width: fit-content;\">#civil society</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#B5E6A2; width: fit-content;\">#green innovation</td></tr></table><br></p>",
+                "description": "<p align=\"justify\">This GIS dataset represents the existing area corresponding to the floating offshore wind farm WindFloat Atlantic and the subsea electrical cable that connects the wind farm to mainland.</p><br><p><table width=\"100%\"><tr><td colspan=\"5\">Potentially interested stakeholders</td></tr><tr style=\"height:8px;\"><td></td></tr><tr style=\"height:40px;\"><td align=\"center\" style=\"background-color:#D0D0D0; width: fit-content;\">#industry</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#C0E4F5; width: fit-content;\">#academia</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#F5C6AB; width: fit-content;\">#public authorities</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#ECF68C; width: fit-content;\">#civil society</td><td width=\"4%\"></td><td align=\"center\" style=\"background-color:#B5E6A2; width: fit-content;\">#green innovation</td></tr></table><br></p>",
                 "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%portugal_existing_fow_farms_areas",
                 //"metadataUrls":[{
                 //  "title":"metadata link",
@@ -163,6 +163,32 @@
               //}
             //]
           //},
+          {
+            "id": "portugal_protected_areas",
+            "type": "group",
+            "name": "Protected Areas",
+            "description": "This collection includes information on the environmental constraints present in the area.",
+            "isOpen": false,
+            "members": [
+              {
+                "type": "wms",
+                "name": "Portugal - Sites of Community Importance (SIC)",
+                "description": "<p align=\"justify\">Map of sites of Community Importance and Special Areas of Conservation (ZSC) present in Portugal ........ <br><br> Source: Ministry of the Environment and Energy Security - General Directorate for the Protection of Nature and the Sea.</p><br><br><p><table width=\"100%\"><tr><td colspan=\"3\">Potentially interested stakeholders</td></tr><tr style=\"height:8px;\"><td></td></tr><tr style=\"height:40px;\"><td align=\"center\" width=\"18%\" style=\"background-color:#C0E4F5;\">#academia</td><td width=\"5%\"></td><td align=\"center\" width=\"20%\" style=\"background-color:#F5C6AB;\">#public authorities</td><td width=\"5%\"></td><td align=\"center\" width=\"18%\" style=\"background-color:#ECF68C;\">#civil society</td><td width=\"34%\"></td></tr></table><br></p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%portugal_sic",
+                "layers": "marinewind:portugal_sic",
+                "id": "portugal_sic"
+              },
+              {
+                "type": "wms",
+                "name": "Portugal - Special Protection Areas (ZPE)",
+                "description": "<p align=\"justify\">Map of sites of Special Protection Areas (ZPE) present in Portugal ........ <br><br> Source: Ministry of the Environment and Energy Security - General Directorate for the Protection of Nature and the Sea.</p><br><br><p><table width=\"100%\"><tr><td colspan=\"3\">Potentially interested stakeholders</td></tr><tr style=\"height:8px;\"><td></td></tr><tr style=\"height:40px;\"><td align=\"center\" width=\"18%\" style=\"background-color:#C0E4F5;\">#academia</td><td width=\"5%\"></td><td align=\"center\" width=\"20%\" style=\"background-color:#F5C6AB;\">#public authorities</td><td width=\"5%\"></td><td align=\"center\" width=\"18%\" style=\"background-color:#ECF68C;\">#civil society</td><td width=\"34%\"></td></tr></table><br></p>",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%portugal_zpe",
+                "layers": "marinewind:portugal_zpe",
+                "id": "portugal_zpe"
+              }
+
+            ]
+          },  
           {
             "id": "portugal_network_infrastructure",
             "type": "group",

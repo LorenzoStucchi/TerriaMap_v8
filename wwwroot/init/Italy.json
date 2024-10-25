@@ -90,21 +90,21 @@
                 //  "title":"metadata link",
                 //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
                 //}],
-                //"styles":"aeolian:linea_blu_2",
+                //"styles":"https://www.sid.mit.gov.it/ppsm2/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=msp_italy_flat_zoning_elements_v1",
                 "id": "italy_eez"
               },
               {
                 "type": "wms",
-                "name": "Italy - Maritime Spatial Planning NOT AVAILABLE",
-                "description": "Italy - Maritime Spatial Planning. \n<br><br><p><table width=\"100%\"><tr><td colspan=\"3\">Potentially interested stakeholders</td></tr><tr style=\"height:8px;\"><td></td></tr><tr style=\"height:40px;\"><td align=\"center\" width=\"18%\" style=\"background-color:#C0E4F5;\">#academia</td><td width=\"5%\"></td><td align=\"center\" width=\"20%\" style=\"background-color:#F5C6AB;\">#public authorities</td><td width=\"5%\"></td><td align=\"center\" width=\"18%\" style=\"background-color:#ECF68C;\">#civil society</td><td width=\"34%\"></td></tr></table><br></p><br>"
-                //"url": "http://gis2.rse-web.it/geoserver/wms",
-                //"metadataUrls":[{
-                //  "title":"metadata link",
-                //  "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
-                //}],
-                //"layers": "marinewind:italy_eez",
-                //"styles":"aeolian:linea_blu_2",
-                //"id": "italy_mar_spat_planning"
+                "name": "Italy - Maritime Spatial Planning ",
+                "description": "<p align=\"justify\">Italy - Maritime Spatial Planning</p><p align=\"justify\">Data provided by <a href=\"https://www.sid.mit.gov.it/login\">SID IL PORTALE DEL MARE</a>.<br><br><p><table width=\"100%\"><tr><td colspan=\"3\">Potentially interested stakeholders</td></tr><tr style=\"height:8px;\"><td></td></tr><tr style=\"height:40px;\"><td align=\"center\" style=\"background-color:#C0E4F5; width: fit-content;\">#academia</td><td width=\"5%\"></td><td align=\"center\" style=\"background-color:#F5C6AB; width: fit-content;\">#public authorities</td><td width=\"5%\"></td><td align=\"center\" style=\"background-color:#ECF68C; width: fit-content;\">#civil society</td><td width=\"34%\"></td></tr></table><br></p></p>",
+                //"url": "https://www.sid.mit.gov.it/ppsm2/ows?SERVICE=WMS&",
+                //"url": "https://www.sid.mit.gov.it/ppsm2/ows?SERVICE=WMS&request=Getcapabilities",
+                //"layers": "zoning_elements",
+                "url": "https://gis2.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%italy_msp",
+                "layers": "marinewind:italy_msp",
+                //https://www.sid.mit.gov.it/ppsm2/wms?SERVICE=WMS&VERSION=1.3.0&request=GetMap&layers=msp_italy_flat_zoning_elements_v1%zoning_elements
+                //"styles":"https://www.sid.mit.gov.it/ppsm2/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=msp_italy_flat_zoning_elements_v1",
+                "id": "italy_mar_spat_planningg"
               }
             ]
           },

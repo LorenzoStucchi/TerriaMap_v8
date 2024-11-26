@@ -1,5 +1,14 @@
 import Terria from "../Terria";
 
+var userLang = navigator.language;
+//console.log("The language is: " + userLang);
+var path_cookies = "https://www.rse-web.it/en/cookie/";
+var path_privacy = "https://www.rse-web.it/en/privacy/";
+if (userLang === "it-IT" || userLang === "it") {
+  path_cookies = "https://www.rse-web.it/cookie/";
+  path_privacy = "https://www.rse-web.it/privacy/";
+}
+
 export function defaultBaseMaps(terria: Terria): any[] {
   const baseMaps: any[] = [];
 
@@ -105,7 +114,7 @@ export function defaultBaseMaps(terria: Terria): any[] {
       type: "open-street-map",
       url: "https://basemaps.cartocdn.com/light_all/",
       attribution:
-        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'>CARTO </a>, <a href='https://www.rse-web.it/cookie/'>  |  RSE Cookies</a> , <a href='https://www.rse-web.it/privacy/'>  |  RSE Privacy</a>",
+        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'>CARTO </a>, <a href='" + path_cookies + "'>  |  RSE Cookies</a> , <a href='" + path_privacy + "'>  |  RSE Privacy</a>",
       subdomains: ["a", "b", "c", "d"],
       opacity: 1.0
     },
@@ -119,7 +128,7 @@ export function defaultBaseMaps(terria: Terria): any[] {
       type: "open-street-map",
       url: "https://basemaps.cartocdn.com/dark_all/",
       attribution:
-        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'>CARTO </a>, <a href='https://www.rse-web.it/cookie/'>  |  RSE Cookies</a> , <a href='https://www.rse-web.it/privacy/'>  |  RSE Privacy</a>", 
+        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'>CARTO </a>, <a href='" + path_cookies + "'>  |  RSE Cookies</a> , <a href='" + path_privacy + "'>  |  RSE Privacy</a>", 
         subdomains: ["a", "b", "c", "d"],    
         opacity: 1.0
     },

@@ -44,6 +44,7 @@ export default function UserInterface(props) {
         <AnalisiAvanzate viewState={props.viewState} />
       </MenuLeft>
       <ExperimentalMenu>
+        
         {/* <If condition={isBrowserSupportedAV()}>
           <SplitPoint
             loadComponent={loadAugmentedVirtuality}

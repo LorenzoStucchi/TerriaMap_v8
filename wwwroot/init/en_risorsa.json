@@ -11,7 +11,7 @@
           "id": "eolica",
           "type": "group",
           "name": "Wind",
-          "description": "<p align=\"justify\">This collection includes information on the wind resource available on the territory.\n\n <a title=\"Ximonic (Simo Räsänen), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Coconut_trees_in_Boa_Vista,_Cape_Verde,_December_2010.jpg\"><img width=\"640\" alt=\"Coconut trees in Boa Vista, Cape Verde, December 2010\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg/512px-Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg\"></a></p>",
+          "description": "<p align=\"justify\">This collection includes information on the wind resource available on the territory.\n\n For more details refer to the dedicated wind atlas \n <a href=\"https://aeolian.rse-web.it/\" target=\"_blank\">AEOLIAN</a> and to the paper <a href=\"https://onlinelibrary.wiley.com/doi/epdf/10.1002/we.2890\" target=\"_blank\">A new Wind Atlas to support the expansion of the Italian windpower fleet</a>.</p><a title=\"Ximonic (Simo Räsänen), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Coconut_trees_in_Boa_Vista,_Cape_Verde,_December_2010.jpg\"><img width=\"640\" alt=\"Coconut trees in Boa Vista, Cape Verde, December 2010\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg/512px-Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg\"></a></p>",
           "isOpen": false,
           "members": [
             {

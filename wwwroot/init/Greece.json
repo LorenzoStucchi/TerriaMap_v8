@@ -112,7 +112,7 @@
             "id": "greeceNewinstallations",
             "type": "group",
             "name": "Floating Offshore Wind Projects",
-            "description": "Floating Offshore Wind  FOW projects description ....",
+            "description": "Floating Offshore Wind (FOW) projects",
             "isOpen": false,
             "members": [
               {

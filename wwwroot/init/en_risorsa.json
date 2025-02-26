@@ -702,6 +702,39 @@
             ]
             },
             {  
+              "id": "marenergy",
+              "type": "group",
+              "name": "Dati Marini",
+              "description": "Questa raccolta comprende la Rete Mareografica Nazionale - ISPRA (Istituto Superiore per la Protezione e la Ricerca Ambientale)",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "National Wavemetric Network",
+                  "description": "National Wavemetric Network - Dataset. The National Wave Measurement Network (RON), is ISPRA's wave motion detection system, consisting of a network of fifteen measuring stations at fixed points along the national coasts for the collection of data which, properly processed, characterize the state of the sea. The descriptive parameters derive from the continuous observation of the variation of the sea surface through directional wave buoys and are processed at regular time intervals according to the definitions of the guideline n.702 'Guide to wave analysis and forecasting' of the World Meteorological Organization (WMO). \n\n Additional information: </br></br><a href='https://inspire-geoportal.ec.europa.eu/srv/api/records/ispra_rm:Meta002RON_DT'>National Wavemetric Network - Dataset</a>.</br></br><a href='https://www.mareografico.it/'>National Monitoring Network - ISPRA </a>.</br></br> ",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3rete_ondametrica_nazionale",
+                  "layers": "new_atlante_integrato:rete_ondametrica_nazionale",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=292"
+                  }],
+                  "id": "onde_metri"
+                },
+                {
+                  "type": "wms",
+                  "name": "National Tide Gauge Network",
+                  "description": "The National Tide Gauge Network (NMR) is composed of 36 measuring stations uniformly distributed throughout the country and located mainly within the port facilities. All stations are equipped with a local data management and storage system and a transmission device (UMTS) in real time to the ISPRA headquarters in Rome. In addition, in 9 strategic stations for the measurement of particular phenomena (anomalous waves) there is a second satellite data transmission system with IRIDIUM technology that guarantees the connection even in the presence of black-out situations of the UMTS system. Since the new National Tide Gauge Network is fully operational, ISPRA has been providing users with updated information relating to time series, real-time observations, astronomical tide data forecasting, data analysis for design and scientific purposes. \n\n Additional information: </br></br><a href='https://inspire-geoportal.ec.europa.eu/srv/api/records/ispra_rm:Meta001RMN_DT'> National Tide Gauge Network - Dataset</a>.</br></br><a href='https://www.mareografico.it/'>National Monitoring Network - ISPRA </a>.</br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3rete_mareografica_nazionale",
+                  "layers": "new_atlante_integrato:rete_mareografica_nazionale",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=291"
+                  }],
+                  "id": "mareografi"
+                }
+              ]
+            },
+            {  
               "id": "monitor",
               "type": "group",
               "name": "Measurement campaigns",

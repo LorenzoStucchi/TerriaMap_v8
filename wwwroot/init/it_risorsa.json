@@ -713,12 +713,12 @@
               "id": "marenergy",
               "type": "group",
               "name": "Dati Marini",
-              "description": "Questa raccolta comprende la Rete Mareografica Nazionale - ISPRA (Istituto Superiore per la Protezione e la Ricerca Ambientale)",
+              "description": "Questa raccolta comprende la localizzazione della Rete Mareografica ed Ondametrica Nazionale - ISPRA (Istituto Superiore per la Protezione e la Ricerca Ambientale)",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
-                  "name": "Ondametriche",
+                  "name": "Rete Ondametrica Nazionale",
                   "description": "La Rete Ondametrica Nazionale (RON), è il sistema di rilevamento del moto ondoso dell'ISPRA, costituito da una rete di quindici stazioni di misura in punti fissi lungo le coste nazionali per la raccolta di dati che, opportunamente elaborati, caratterizzano lo stato del mare. I parametri descrittivi derivano dall'osservazione in continuo della variazione della superficie del mare attraverso boe ondametriche direzionali e vengono elaborati ad intervalli di tempo regolari secondo le definizioni della linea guida n.702 “Guide to wave analysis and forecasting” della World Meteorological Organization (WMO). \n\n Informazioni aggiuntive: </br></br><a href='https://inspire-geoportal.ec.europa.eu/srv/api/records/ispra_rm:Meta002RON_DT'>Rete Ondametrica Nazionale - Dataset</a>.</br></br><a href='https://www.mareografico.it/'>Rete Nazionale di monitoraggio - ISPRA </a>.</br></br> ",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3rete_ondametrica_nazionale",
                   "layers": "new_atlante_integrato:rete_ondametrica_nazionale",
@@ -730,7 +730,7 @@
                 },
                 {
                   "type": "wms",
-                  "name": "Mareografica",
+                  "name": "Rete Mareografica Nazionale",
                   "description": "La Rete Mareografica Nazionale (RMN) è composta di 36 stazioni di misura uniformemente distribuite sul territorio nazionale ed ubicate prevalentemente all'interno delle strutture portuali.Tutte le stazioni sono dotate di un sistema locale di gestione e memorizzazione dei dati e di un apparato di trasmissione (UMTS) in tempo reale alla sede centrale ISPRA di Roma. Inoltre in 9 stazioni strategiche per la misura di fenomeni particolari (onde anomale) è presente un secondo sistema di trasmissione dati via satellite con tecnologia IRIDIUM che garantisce il collegamento anche in presenza di situazioni di black-out del sistema UMTS. Da quando la nuova Rete Mareografica Nazionale è pienamente operativa, ISPRA mette a disposizione degli utenti informazioni aggiornate relative a serie storiche, osservazioni in tempo reale, previsione dei dati di marea astronomica, analisi dei dati a fini progettuali e scientifici. \n\n Informazioni aggiuntive: </br></br><a href='https://inspire-geoportal.ec.europa.eu/srv/api/records/ispra_rm:Meta001RMN_DT'>Rete Mareografica Nazionale - Dataset</a>.</br></br><a href='https://www.mareografico.it/'>Rete Nazionale di monitoraggio - ISPRA </a>.</br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3rete_mareografica_nazionale",
                   "layers": "new_atlante_integrato:rete_mareografica_nazionale",

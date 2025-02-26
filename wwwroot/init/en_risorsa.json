@@ -704,8 +704,8 @@
             {  
               "id": "marenergy",
               "type": "group",
-              "name": "Dati Marini",
-              "description": "Questa raccolta comprende la Rete Mareografica Nazionale - ISPRA (Istituto Superiore per la Protezione e la Ricerca Ambientale)",
+              "name": "Marine Data",
+              "description": "This collection includes the localization of the National Mareographic and Wavemetric Network - ISPRA (Higher Institute for Environmental Protection and Research)",
               "isOpen": false,
               "members": [
                 {
@@ -715,7 +715,7 @@
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3rete_ondametrica_nazionale",
                   "layers": "new_atlante_integrato:rete_ondametrica_nazionale",
                   "metadataUrls":[{
-                    "title":"link metadato",
+                    "title":"metadata link",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=292"
                   }],
                   "id": "onde_metri"
@@ -727,7 +727,7 @@
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3rete_mareografica_nazionale",
                   "layers": "new_atlante_integrato:rete_mareografica_nazionale",
                   "metadataUrls":[{
-                    "title":"link metadato",
+                    "title":"metadata link",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=291"
                   }],
                   "id": "mareografi"
